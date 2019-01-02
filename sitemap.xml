@@ -10,50 +10,74 @@
   </url>
   <url>
     <loc>https://LightOfScience.eu.org/index.html</loc>
-    <lastmod>2019-01-01</lastmod>
+    <lastmod>2019-01-02</lastmod>
     <priority>1</priority>
     <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://LightOfScience.eu.org/Notifications.html</loc>
-    <lastmod>2019-01-01</lastmod>
-    <priority>0.37</priority>
+    <lastmod>2019-01-02</lastmod>
+    <priority>0.35</priority>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://LightOfScience.eu.org/Events.html</loc>
-    <lastmod>2019-01-01</lastmod>
-    <priority>0.37</priority>
+    <loc>https://LightOfScience.eu.org/events/Events-2019.html</loc>
+    <lastmod>2019-01-02</lastmod>
+    <priority>0.48</priority>
     <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://LightOfScience.eu.org/Books.html</loc>
-    <lastmod>2019-01-01</lastmod>
+    <lastmod>2019-01-02</lastmod>
     <priority>0.68</priority>
     <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://LightOfScience.eu.org/Member.html</loc>
-    <lastmod>2019-01-01</lastmod>
+    <lastmod>2019-01-02</lastmod>
     <priority>0.68</priority>
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://LightOfScience.eu.org/Contact_Us.html</loc>
-    <lastmod>2018-12-31</lastmod>
-    <priority>0.37</priority>
+    <loc>https://LightOfScience.eu.org/About_Us.html</loc>
+    <lastmod>2019-01-02</lastmod>
+    <priority>0.35</priority>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://LightOfScience.eu.org/events/Events-2018.html</loc>
+    <lastmod>2019-01-02</lastmod>
+    <priority>0.19</priority>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://LightOfScience.eu.org/events/Events-2017.html</loc>
+    <lastmod>2019-01-02</lastmod>
+    <priority>0.19</priority>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://LightOfScience.eu.org/events/Events-2016.html</loc>
+    <lastmod>2019-01-02</lastmod>
+    <priority>0.19</priority>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://LightOfScience.eu.org/events/Events-1998-2015.html</loc>
+    <lastmod>2019-01-02</lastmod>
+    <priority>0.16</priority>
     <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://LightOfScience.eu.org/data/other_files/Light%20of%20Science%20Membership%20Form.pdf</loc>
     <lastmod>2018-12-31</lastmod>
-    <priority>0.11</priority>
+    <priority>0.06</priority>
     <changefreq>hourly</changefreq>
   </url>
   <url>
     <loc>https://LightOfScience.eu.org/data/other_files/Breakthrough%20Science%20Society%20Constitution.pdf</loc>
     <lastmod>2018-10-02</lastmod>
-    <priority>0.11</priority>
+    <priority>0.06</priority>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>
