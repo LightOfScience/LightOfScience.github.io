@@ -46,10 +46,24 @@
 }
 
 @font-face{
-	font-family:'NirmalaUI';
-	src:url('../fonts/bengali/Nirmala.ttf');
+	font-family:'SutonnyMJ-Regular';
+	src:url('../fonts/bengali/SutonnyMJ-Regular.ttf');
 	font-style:normal;
 	font-weight:normal;
+}
+.Font-SutonnyMJ-Regular
+{
+	font-family: SutonnyMJ-Regular;
+}
+@font-face{
+	font-family:'SutonnyMJ-Bold';
+	src:url('../fonts/bengali/SutonnyMJ-Bold.ttf');
+	font-style:normal;
+	font-weight:normal;
+}
+.Font-SutonnyMJ-Bold
+{
+	font-family: SutonnyMJ-Bold;
 }
 @font-face{
 	font-family: 'KongshoMJ';
@@ -57,9 +71,17 @@
 	font-style:normal;
 	font-weight:normal;
 }
+.Font-KongshoMJ
+{
+	font-family:KongshoMJ;
+}
 @font-face{
 	font-family: 'KirtankhulaCMJ_Bold';
 	src:url('../fonts/bengali/KirtankhulaCMJ_Bold.ttf');
 	font-style:normal;
 	font-weight:normal;
+}
+.Font-KirtankhulaCMJ
+{
+	font-family: KirtankhulaCMJ_Bold;
 }

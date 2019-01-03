@@ -51,7 +51,7 @@
 	text-align: center;
 	z-index: 99999999;
 	background-color: transparent;
-	color: rgba(255,87,0,0.70);
+	color: rgba(255,87,0,0.50);
 	width: 100px;
 	height:85px;
 	line-height: 50px;
@@ -69,7 +69,7 @@
 	transition: all 0.5s ease-in-out;
 }
 .scroll-top-wrapper:hover {
-	background-color: rgba(46,206,255,0.73);
+	color: rgba(255,87,0,1.00);
 }
 .scroll-top-wrapper.show {
     visibility:visible;
