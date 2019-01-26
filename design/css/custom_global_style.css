@@ -80,3 +80,14 @@
 	line-height: inherit;
 }
 
+
+
+/* Home Caresoul */
+.carousel-control-prev:hover
+{
+	background-image: linear-gradient(to right, black, rgba(0,0,0,0.00));
+}
+.carousel-control-next:hover
+{
+	background-image: linear-gradient(to left, black, rgba(0,0,0,0.00));
+}
