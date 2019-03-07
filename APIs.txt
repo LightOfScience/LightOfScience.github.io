@@ -1,0 +1,3 @@
+Github Repository API: 
+		https://api.github.com/repos/LightOfScience/LightOfScience.tk/tags
+		https://api.github.com/repos/LightOfScience/LightOfScience.tk/releases
