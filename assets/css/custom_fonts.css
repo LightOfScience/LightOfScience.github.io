@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+	font-family: 'OldEnglishFont';
+	src: url('../fonts/english/Old_English_TextMT.ttf');
+	font-style:normal;
+	font-weight:normal;
+}
+.Font-OldEnglishMT
+{
+	font-family: OldEnglishFont; 
+}
+
+@font-face{
+	font-family: "Adhunik";
+	src:url(../fonts/english/Aadhunik.ttf);
+	font-style:normal;
+	font-weight:normal;
+}
+.Font-Adhunik
+{
+	font-family: Adhunik;
+}
+
+@font-face{
+	font-family:'Coda-Regular';
+	src:url(../fonts/english/Coda-Regular.ttf);
+	font-style:normal;
+	font-weight: normal;
+}
+.Font-Coda
+{
+	font-family: Coda-Regular;
+}
+@font-face{
+	font-family: 'Quenda';
+	src:url('../fonts/english/Quenda-Medium.otf');
+	font-style:normal;
+	font-weight:normal;
+}
+.Font-Quenda
+{
+	font-family: Quenda;
+}
+
+@font-face{
+	font-family:'Bangla';
+	src:url('../fonts/bengali/Bangla.ttf');
+	font-style:normal;
+	font-weight:normal;
+}
+.Font-Bangla
+{
+	font-family: Bangla;
+}
