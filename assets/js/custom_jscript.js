@@ -51,7 +51,7 @@ let toggleVisibility = function()
 
 
 
-/* Scrool to Top Javascript */
+/* Scroll to Top Javascript */
 $(function(){
  
 $(document).on( 'scroll', function(){
@@ -73,4 +73,4 @@ offset = element.offset();
 offsetTop = offset.top;
 $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
 }
-/* Scrool to Top Javascript */
+/* Scroll to Top Javascript */
