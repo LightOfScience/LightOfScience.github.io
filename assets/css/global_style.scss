@@ -311,6 +311,7 @@ header
 			display:grid;
 			grid-template-columns: 25% 75%;
 			text-align:center;
+			justify-items: center;
 			.BSSLogo
 			{
 				text-align: right;
@@ -320,7 +321,16 @@ header
 			.BSSText
 			{
 				text-align:center;
+				
 				word-wrap: break-word;
+				a
+				{
+					color:black;
+				}
+				a:hover
+				{
+					text-decoration: underline;
+				}
 			}
 		}
 
@@ -458,7 +468,14 @@ header
 	#intro
 	{
 		width:100%;
-		height:75vh;
+		@include desktop
+		{
+			height:75vh;
+		}
+		@include mobile
+		{
+			height:50vh;
+		}
 		display:flex;
 		justify-content: center;
 		align-items: center;
@@ -469,10 +486,47 @@ header
 		{
 			-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-			background-color:color(intro-bg);
-			opacity:0.8;
-			width:60%;
-			height:75vh;
+			/* Background Color Animation */
+			background: linear-gradient(270deg, #0044ff,#2ea1ff );
+			background-size: 800% 800%;
+			
+			-webkit-animation: welcomebannerbackground 20s ease infinite;
+			-moz-animation: welcomebannerbackground 20s ease infinite;
+			-o-animation: welcomebannerbackground 20s ease infinite;
+			animation: welcomebannerbackground 20s ease infinite;
+			
+			@-webkit-keyframes welcomebannerbackground {
+				0%{background-position:0% 53%}
+				50%{background-position:100% 48%}
+				100%{background-position:0% 53%}
+			}
+			@-moz-keyframes welcomebannerbackground {
+				0%{background-position:0% 53%}
+				50%{background-position:100% 48%}
+				100%{background-position:0% 53%}
+			}
+			@-o-keyframes welcomebannerbackground {
+				0%{background-position:0% 53%}
+				50%{background-position:100% 48%}
+				100%{background-position:0% 53%}
+			}
+			@keyframes welcomebannerbackground {
+				0%{background-position:0% 53%}
+				50%{background-position:100% 48%}
+				100%{background-position:0% 53%}
+			}
+			/* Background Color Animation */
+			opacity:0.5;
+			@include desktop
+			{
+				width:60%;
+				height:75vh;
+			}
+			@include mobile
+			{
+				width:100%;
+				height:100%;
+			}
 			float:left;
 			display:table;
 			
@@ -489,15 +543,27 @@ header
 				width:55%;
 				padding:10px;
 				color:rgba(255, 255, 255, 0.800);
-				font-size:1vw;
+				font-size:20px;
+				@include mobile
+				{
+					font-size:15px;
+				}
 			}
 		}
 		/* NASA Daily Image API - START */
 		#NASA
 		{
-			width:70%;
-			height: 100%;
-			overflow:scroll;
+			@include desktop
+			{
+				width:70%;
+				height: 100%;
+			}
+			@include mobile
+			{
+				width:100%;
+				height: 100%;
+			}
+			overflow:hidden;
 			flex:right;
 			-webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
 			clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
@@ -561,7 +627,12 @@ header
 				float:left;
 				margin:0;
 				padding:5px;
-				font-size:0.8vw;
+				font-size:15px;
+				@include mobile
+				{
+					font-size:8px;
+					overflow:scroll;
+				}
 			}
 			.NASAimgCopyright
 			{

@@ -266,6 +266,7 @@ header .nav-element-wrapper .nav-element-icon a:hover {
   display: grid;
   grid-template-columns: 25% 75%;
   text-align: center;
+  justify-items: center;
 }
 .footer-container footer .BSSlink .BSSLogo {
   text-align: right;
@@ -274,6 +275,12 @@ header .nav-element-wrapper .nav-element-icon a:hover {
 .footer-container footer .BSSlink .BSSText {
   text-align: center;
   word-wrap: break-word;
+}
+.footer-container footer .BSSlink .BSSText a {
+  color: black;
+}
+.footer-container footer .BSSlink .BSSText a:hover {
+  text-decoration: underline;
 }
 .footer-container footer .footer-social-link {
   text-align: center;
@@ -386,7 +393,6 @@ header .nav-element-wrapper .nav-element-icon a:hover {
 }
 #content #intro {
   width: 100%;
-  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -395,15 +401,86 @@ header .nav-element-wrapper .nav-element-icon a:hover {
   /* NASA Daily Image API - START */
   /* NASA Daily Image API - END */
 }
+@media (min-width: 872px) {
+  #content #intro {
+    height: 75vh;
+  }
+}
+@media (max-width: 871px) {
+  #content #intro {
+    height: 50vh;
+  }
+}
 #content #intro .welcome-banner {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  background-color: rgba(46, 161, 255, 0.5);
-  opacity: 0.8;
-  width: 60%;
-  height: 75vh;
+  /* Background Color Animation */
+  background: linear-gradient(270deg, #0044ff, #2ea1ff);
+  background-size: 800% 800%;
+  -webkit-animation: welcomebannerbackground 20s ease infinite;
+  -moz-animation: welcomebannerbackground 20s ease infinite;
+  -o-animation: welcomebannerbackground 20s ease infinite;
+  animation: welcomebannerbackground 20s ease infinite;
+  /* Background Color Animation */
+  opacity: 0.5;
   float: left;
   display: table;
+}
+@-webkit-keyframes welcomebannerbackground {
+  0% {
+    background-position: 0% 53%;
+  }
+  50% {
+    background-position: 100% 48%;
+  }
+  100% {
+    background-position: 0% 53%;
+  }
+}
+@-moz-keyframes welcomebannerbackground {
+  0% {
+    background-position: 0% 53%;
+  }
+  50% {
+    background-position: 100% 48%;
+  }
+  100% {
+    background-position: 0% 53%;
+  }
+}
+@-o-keyframes welcomebannerbackground {
+  0% {
+    background-position: 0% 53%;
+  }
+  50% {
+    background-position: 100% 48%;
+  }
+  100% {
+    background-position: 0% 53%;
+  }
+}
+@keyframes welcomebannerbackground {
+  0% {
+    background-position: 0% 53%;
+  }
+  50% {
+    background-position: 100% 48%;
+  }
+  100% {
+    background-position: 0% 53%;
+  }
+}
+@media (min-width: 872px) {
+  #content #intro .welcome-banner {
+    width: 60%;
+    height: 75vh;
+  }
+}
+@media (max-width: 871px) {
+  #content #intro .welcome-banner {
+    width: 100%;
+    height: 100%;
+  }
 }
 #content #intro .welcome-banner h1 {
   color: white;
@@ -416,12 +493,15 @@ header .nav-element-wrapper .nav-element-icon a:hover {
   width: 55%;
   padding: 10px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1vw;
+  font-size: 20px;
+}
+@media (max-width: 871px) {
+  #content #intro .welcome-banner p {
+    font-size: 15px;
+  }
 }
 #content #intro #NASA {
-  width: 70%;
-  height: 100%;
-  overflow: scroll;
+  overflow: hidden;
   flex: right;
   -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
@@ -429,6 +509,18 @@ header .nav-element-wrapper .nav-element-icon a:hover {
   text-align: right;
   overflow: hidden;
   position: relative;
+}
+@media (min-width: 872px) {
+  #content #intro #NASA {
+    width: 70%;
+    height: 100%;
+  }
+}
+@media (max-width: 871px) {
+  #content #intro #NASA {
+    width: 100%;
+    height: 100%;
+  }
 }
 #content #intro #NASA .NASAimg {
   width: 100%;
@@ -480,7 +572,13 @@ header .nav-element-wrapper .nav-element-icon a:hover {
   float: left;
   margin: 0;
   padding: 5px;
-  font-size: 0.8vw;
+  font-size: 15px;
+}
+@media (max-width: 871px) {
+  #content #intro #NASA .NASAimgDescription {
+    font-size: 8px;
+    overflow: scroll;
+  }
 }
 #content #intro #NASA .NASAimgCopyright {
   width: 200px;
