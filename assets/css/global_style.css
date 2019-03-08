@@ -1,5 +1,6 @@
 /* External Imports -START*/
 @import "custom_fonts.css";
+@import "hover.css";
 /* External Imports -END */
 /* Color Variables - START */
 /* Color Variables - END */
@@ -26,6 +27,59 @@ hr {
   border: none;
   border-top: 1px solid #aaaaaa;
   border-bottom: 1px solid #ffffff;
+}
+
+.parallax-window {
+  min-height: 250px;
+  padding: 100px 30%;
+  background: transparent;
+}
+.parallax-window .parallax-content {
+  z-index: 10;
+  position: relative;
+  font-weight: 5px;
+  padding: 20px;
+  /* Backgkground Gradient ANimated -START */
+  background: linear-gradient(270deg, #35eeffa1, #b8ffab9d, #fcff3fab);
+  background-size: 600% 600%;
+  -webkit-animation: ParallaxAnimation 20s ease infinite;
+  -moz-animation: ParallaxAnimation 20s ease infinite;
+  animation: ParallaxAnimation 20s ease infinite;
+  /* Backgkground Gradient ANimated -END */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.774);
+}
+@-webkit-keyframes ParallaxAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes ParallaxAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes ParallaxAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Global Tags */
@@ -184,47 +238,6 @@ header .nav-element-wrapper .nav-element-icon a:hover {
 }
 
 /* Header - END */
-/* Back to Top */
-.scroll-top-wrapper {
-  position: fixed;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  text-align: center;
-  z-index: 99999999;
-  background-color: transparent;
-  color: rgba(0, 113, 206, 0.5);
-  width: 100px;
-  height: 85px;
-  line-height: 50px;
-  right: 0px;
-  bottom: 0px;
-  padding-top: 2px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.scroll-top-wrapper:hover {
-  color: #ff5500;
-}
-
-.scroll-top-wrapper.show {
-  visibility: visible;
-  cursor: pointer;
-  opacity: 1;
-}
-
-.scroll-top-wrapper i.fa {
-  line-height: inherit;
-}
-
 /* Footer - START */
 .footer-container {
   width: 100%;
@@ -376,7 +389,10 @@ header .nav-element-wrapper .nav-element-icon a:hover {
 /*Content - START */
 #content {
   width: 100%;
-  min-height: 1200px;
+  height: auto;
+  /* Intro -END */
+  /* Main Content - START*/
+  /* Main Content - END*/
 }
 #content #homeVideo {
   position: fixed;
@@ -394,16 +410,14 @@ header .nav-element-wrapper .nav-element-icon a:hover {
 #content #intro {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
+  z-index: 10;
   overflow: hidden;
   /* NASA Daily Image API - START */
   /* NASA Daily Image API - END */
 }
 @media (min-width: 872px) {
   #content #intro {
-    height: 75vh;
+    height: 80vh;
   }
 }
 @media (max-width: 871px) {
@@ -473,7 +487,7 @@ header .nav-element-wrapper .nav-element-icon a:hover {
 @media (min-width: 872px) {
   #content #intro .welcome-banner {
     width: 60%;
-    height: 75vh;
+    height: 100%;
   }
 }
 @media (max-width: 871px) {
@@ -581,7 +595,7 @@ header .nav-element-wrapper .nav-element-icon a:hover {
   }
 }
 #content #intro #NASA .NASAimgCopyright {
-  width: 200px;
+  width: auto;
   color: white;
   position: absolute;
   bottom: 0px;
@@ -590,7 +604,127 @@ header .nav-element-wrapper .nav-element-icon a:hover {
   margin: 0;
   padding: 0;
 }
+#content .video-bg {
+  width: 150%;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
+#content .video-bg #video-container-wide {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  padding: 0;
+}
+#content .video-bg #video-container-wide #video-back-wide {
+  min-width: 100%;
+  min-height: 100%;
+}
+#content .video-bg h1 {
+  padding: 0;
+  margin: 0;
+  color: red;
+}
+#content .badge-header {
+  width: 100%;
+  height: auto;
+}
+#content .badge-header h1 {
+  text-align: center;
+  vertical-align: middle;
+}
+#content #main-content-wrapper {
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  padding: 50px 20px;
+  margin: 0 auto;
+  background: rgba(200, 200, 200, 0.5);
+}
+#content #main-content-wrapper #top-main-content {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+@media (max-width: 871px) {
+  #content #main-content-wrapper #top-main-content {
+    grid-template-columns: 100%;
+  }
+}
+#content #main-content-wrapper #top-main-content .highlights {
+  margin: 10px;
+  padding: 10px;
+  height: 500px;
+  background: white;
+  box-shadow: 0 0px 10px #000000c5;
+}
+#content #main-content-wrapper #top-main-content .highlights:hover {
+  box-shadow: 0 0px 30px #000000c5;
+}
+#content #main-content-wrapper #top-main-content .carousel {
+  margin: 10px;
+  padding: 0px;
+  height: 500px;
+  background: transparent;
+  box-shadow: 0 0px 10px #000000c5;
+}
+#content #main-content-wrapper #bottom-main-content {
+  width: 100%;
+  height: auto;
+  padding: 50px 10px 10px 10px;
+}
+#content #main-content-wrapper #bottom-main-content .card {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 2.5%;
+  background: white;
+  min-height: 200px;
+}
 
 /*Content - END */
+/* Back to Top -START*/
+.scroll-top-wrapper {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  z-index: 99999999;
+  background-color: transparent;
+  color: rgba(0, 113, 206, 0.5);
+  width: 100px;
+  height: 85px;
+  line-height: 50px;
+  right: 0px;
+  bottom: 0px;
+  padding-top: 2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.scroll-top-wrapper:hover {
+  color: #ff5500;
+}
+
+.scroll-top-wrapper.show {
+  visibility: visible;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.scroll-top-wrapper i.fa {
+  line-height: inherit;
+}
+
+/* Back to Top -END*/
 
 /*# sourceMappingURL=global_style.css.map */

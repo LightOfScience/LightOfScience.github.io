@@ -25,24 +25,21 @@
             type="text/css" 
             href="assets/css/global_style.css">
         <!-- Font Awesome CDN -->
-        <link   rel="stylesheet" 
-                href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
-                integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
-                crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
         <!-- Font Awesome CDN -->
-        <link rel="stylesheet"
-            type="text/css" 
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
             
         <!--CSS Libraries-->
 
         <!--JS Libraries-->
-        <script src="https://code.jquery.com/jquery-3.3.1.js"
-                integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-                crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="assets/js/custom_jscript.js"></script>
         <script src="assets/js/API.js"></script>
-        <!--JS Libraries-->
+        <script src="assets/js/parallax.js"></script>
+        <script src="assets/js/jssor.slider-27.5.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/jssor.slider-27.5.0.css">
+        <!-- JS Libraries -->
     </head>
 
 
@@ -127,6 +124,119 @@
                 </div>
             </div>
 
+            <!--
+                <div class="video-bg">
+                    <div id="video-container-wide">
+                        <video id="video-back-wide" preload="true" autoplay="autoplay" muted="muted" loop="loop" id="Video" poster="assets/videos/DNA_helix_poster.jpg">
+                            <source src="assets/videos/DNA_helix.mp4" type="video/mp4"> 
+                        </video>
+                    </div>
+                    <h1>HOME</h1>
+                </div>
+            -->
+
+            <!-- Parallax Badge Header - START-->
+            <div class="badge-header">
+                <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/mountain-forest.jpg" data-z-index="1">
+                    <h1 class="parallax-content">HOME</h1>
+                </div>
+            </div>            
+            <!-- Parallax Badge Header - START-->
+
+            <div id="main-content-wrapper">
+                <div id="top-main-content"> <!-- Main Top Content Start -->
+                    <div id="highlights" class="highlights"><!-- Highlights - START-->
+                        <h1 style="text-align: center;">HIGHLIGHTS</h1>
+                        <hr>
+                    </div><!-- Highlights - END-->
+
+                    <div id="carousel" class="carousel"><!-- cAROUSEL - START-->
+                        <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1000px;height:500px;overflow:hidden;visibility:hidden;">
+                                <!-- Loading Screen -->
+                                <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(255, 255, 255, 0.7);">
+                                    <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+                                </div>
+                                <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1000px;height:500px;overflow:hidden;">
+                                    <!-- Just Add Images to the Slider in the following format
+                                    <div>
+                                        <img data-u="image" src="image location" />
+                                    </div>
+                                    Images should be of 800px x 500px to avoid bad scalling
+                                    -->
+                                    <div>
+                                        <img data-u="image" src="data/carousel/001.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="data/carousel//002.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="data/carousel//003.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="data/carousel//004.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="data/carousel//005.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="data/carousel//006.jpg" />
+                                    </div>
+                                    <div>
+                                        <img data-u="image" src="data/carousel//007.jpg" />
+                                    </div>
+                                    
+                                </div>
+                                <!-- Bullet Navigator -->
+                                <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                                    <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                            <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <!-- Arrow Navigator -->
+                                <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:35px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                        <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                                    </svg>
+                                </div>
+                                <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:35px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                        <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                                    </svg>
+                                </div>
+                        </div>
+                        <!-- #endregion Jssor Slider End -->
+                    </div><!-- CAROUSEL - END-->
+                </div>
+                <!-- Main Top Content Start -->
+
+                <!--Detailed Content - START-->
+                <div id="bottom-main-content">
+
+                    <div class="card hvr-grow-shadow">
+                        <h1 class="card-heading">Card</h1>
+
+                    </div>
+                    <div class="card hvr-grow-shadow">
+                        <h1 class="card-heading">Card</h1>
+
+                    </div>
+                    <div class="card hvr-grow-shadow">
+                        <h1 class="card-heading">Card</h1>
+
+                    </div>
+                    <div class="card hvr-grow-shadow">
+                        <h1 class="card-heading">Card</h1>
+
+                    </div>
+                    
+
+                </div>
+                <!--Detailed Content - END-->
+
+            </div>
+
         
         </div>
         <!-- CONTENT - END -->
@@ -190,9 +300,9 @@
             </footer>
             
         </div>
-     
         <!-- Footer -END -->
-        
+
+        <!-- Footer Credits - START -->        
         <div class="footer-credits">
             <!-- Website Version -->
             <h5 class="web-ver"></h5>
@@ -200,7 +310,8 @@
             <a class="github-repo" href="https://github.com/LightOfScience/LightOfScience.tk" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a>
             <h5 class="credit">Designed and Developed by Light of Science</h5>
         </div>
-        
+        <!-- Footer Credits - END -->
+
         <!-- Back to Top -->
         <div class="scroll-top-wrapper ">
             <span class="scroll-top-inner" title="Go to Top">
@@ -208,8 +319,6 @@
             </span>
         </div>	
         <!-- Back to Top -->
-
-    
     </body>
 
 </html>
