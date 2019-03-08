@@ -660,9 +660,6 @@ header .nav-element-wrapper .nav-element-icon a:hover {
   background: white;
   box-shadow: 0 0px 10px #000000c5;
 }
-#content #main-content-wrapper #top-main-content .highlights:hover {
-  box-shadow: 0 0px 30px #000000c5;
-}
 #content #main-content-wrapper #top-main-content .carousel {
   margin: 10px;
   padding: 0px;
@@ -676,9 +673,9 @@ header .nav-element-wrapper .nav-element-icon a:hover {
   padding: 50px 10px 10px 10px;
 }
 #content #main-content-wrapper #bottom-main-content .card {
-  width: 95%;
+  width: 100%;
   padding: 10px;
-  margin: 10px 2.5%;
+  margin: 10px 0;
   background: white;
   min-height: 200px;
 }

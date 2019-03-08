@@ -1961,7 +1961,7 @@
 .hvr-trim:before {
   content: '';
   position: absolute;
-  border: white solid 4px;
+  border: rgba(0, 0, 0, 0.274) solid 4px;
   top: 4px;
   left: 4px;
   right: 4px;
@@ -2075,7 +2075,7 @@
 .hvr-outline-out:before {
   content: '';
   position: absolute;
-  border: #e1e1e1 solid 4px;
+  border: rgb(255, 255, 255) solid 4px;
   top: 0;
   right: 0;
   bottom: 0;
