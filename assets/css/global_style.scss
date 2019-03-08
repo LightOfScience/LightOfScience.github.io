@@ -719,11 +719,6 @@ header
 				background:white;
 				box-shadow: 0 0px 10px #000000c5;
 			}
-			.highlights:hover
-			{
-				
-				box-shadow: 0 0px 30px #000000c5;
-			}
 			.carousel
 			{
 				margin:10px;
@@ -741,9 +736,9 @@ header
 			padding: 50px 10px 10px 10px;
 			.card
 			{
-				width:95%;
+				width:100%;
 				padding:10px;
-				margin: 10px 2.5%;
+				margin: 10px 0;
 				background:white;
 				min-height: 200px;
 			}
