@@ -87,10 +87,12 @@
         <!-- CONTENT - START -->
         
         <div id="content">
+                <!-- Background Video - START -->
                 <div id="homeVideo">
                         <video src="assets/videos/air_particle.mp4" preload="auto" autoplay="autoplay" muted="muted" loop="loop" id="Video"></video>
                 </div>
-            <div id="intro">
+                <!-- Background Video - END -->
+            <div id="intro" class="intro" onload="autoheight()">
                 <div class="welcome-banner">
                     <h1 class="animated slideInLeft introH1">Welcome to,</h1>
                     <h1 class="animated slideInLeft introH2">Light of Science</h1>
@@ -104,6 +106,7 @@
                     <p id="NASAimgDescription" class="NASAimgDescription toggle-visibility animated"></p>
                     <p id="NASAimgCopyright" class="NASAimgCopyright"></p>
                 </div>
+                <button onclick="autoHeightIntro();"></button>
             </div>
 
             <!--
@@ -196,7 +199,7 @@
                 <!--Detailed Content - START-->
                 <div id="bottom-main-content">
 
-                    <div class="card hvr-outline-out">
+                    <div id=class="card hvr-outline-out">
                         <h1 class="card-heading">Card</h1>
 
                     </div>

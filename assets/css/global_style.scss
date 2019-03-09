@@ -124,25 +124,26 @@ header
 	top:0;
 	width:100%;
 	padding: 10px 10px 10px 10px;
-	//background-color: color(nav-bg);
-	/**/
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e76cc+0,0070cc+100&1+0,0.93+54,0.93+65,0.75+100 */
-	background: -moz-linear-gradient(left, rgba(14,118,204,1) 0%, rgba(6,115,204,0.93) 54%, rgba(5,114,204,0.93) 65%, rgba(0,112,204,0.75) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgba(14,118,204,1) 0%,rgba(6,115,204,0.93) 54%,rgba(5,114,204,0.93) 65%,rgba(0,112,204,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, rgba(14,118,204,1) 0%,rgba(6,115,204,0.93) 54%,rgba(5,114,204,0.93) 65%,rgba(0,112,204,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e76cc', endColorstr='#bf0070cc',GradientType=1 ); /* IE6-9 */
-	/**/
+	background-color: color(nav-bg);
 	box-shadow: 0 0px 10px #000000c5;
 	color:color(nav-text);
-	//box-shadow: 3px 0px 5px 6px rgba(255, 255, 255, 0.5);
+	box-shadow: 3px 0px 5px 6px rgba(255, 255, 255, 0.5);
 	display:grid;
 	
 	@include desktop
 	{
 		grid-template-columns: 0 50% 50%;
+		/* Background Color Gradient*/
+		background: rgb(0,113,206);
+		background: -moz-linear-gradient(90deg, rgba(0,113,206,1) 0%, rgba(0,113,206,1) 40%, rgba(0,113,206,0.7007003484987745) 100%);
+		background: -webkit-linear-gradient(90deg, rgba(0,113,206,1) 0%, rgba(0,113,206,1) 40%, rgba(0,113,206,0.7007003484987745) 100%);
+		background: linear-gradient(90deg, rgba(0,113,206,1) 0%, rgba(0,113,206,1) 40%, rgba(0,113,206,0.7007003484987745) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0071ce",endColorstr="#0071ce",GradientType=1); 	/**/
+		/* Background Color Gradient*/
 	}
 	@include mobile
 	{
+		background:color(nav-bg);
 		grid-template-columns: 50px auto;
 	}
 
@@ -496,7 +497,7 @@ header
 			min-height:100%;
 		}
 	}
-	#intro
+	.intro
 	{
 		width:100%;
 		@include desktop
@@ -505,7 +506,7 @@ header
 		}
 		@include mobile
 		{
-			height:50vh;
+			height:50px;
 		}
 		display:flex;
 		z-index:10;
@@ -794,8 +795,8 @@ header
 				background:white;
 				min-height: 200px;
 				box-shadow: 0 0px 10px #000000c5;
-				position:sticky;
-				top:150px;
+				//position:sticky;
+				//top:150px;
 			}
 		}
 	}
