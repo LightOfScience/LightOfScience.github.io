@@ -58,8 +58,6 @@ let autoHeightIntro = function()
     let intro = document.getElementById('intro');
 
     intro.style.height = introHeight+"px";
-    
-    console.log(introHeight);
 }
 /* full screen intro - END */
 
