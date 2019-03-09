@@ -1,16 +1,3 @@
-/* full screen intro - START */
-let autoHeightIntro = function()
-{`                          `0000000000000000
-    let screenHeight = screen.height;
-    let navHeight = document.getElementById('header').clientHeight;
-    let introHeight = (screenHeight - navHeight);
-
-    let intro = document.getElementById('intro');
-    console.log(introHeight);
-    intro.style.height = ((introHeight)+"px;");
-}
-/* full screen intro - END */
-
 /* Hamber Menu Toggle Action -START */
 let NavStatus = false;
 
@@ -60,6 +47,21 @@ let toggleVisibility = function()
     }
 }
 /* Toggle Visibility */
+
+/* full screen intro - START */
+let autoHeightIntro = function()
+{
+    let screenHeight = window.innerHeight;
+    let navHeight = document.getElementById('header').clientHeight;
+    let introHeight = (screenHeight - navHeight);
+
+    let intro = document.getElementById('intro');
+
+    intro.style.height = introHeight+"px";
+    
+    console.log(introHeight);
+}
+/* full screen intro - END */
 
 /* Scroll sticky - START*/
 /* Scroll sticky - END*/

@@ -16,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/global_style.css">
         <!--CSS Libraries-->
         <!--JS Libraries-->
-        <script src="assets/js/custom_jscript.js"></script>
+        <script src="assets/js/global_jscript.js"></script>
         <script src="assets/js/API.js"></script>
         <script src="assets/js/parallax.js"></script>
         <script src="assets/js/jssor.slider-27.5.0.min.js"></script>
@@ -92,7 +92,7 @@
                         <video src="assets/videos/air_particle.mp4" preload="auto" autoplay="autoplay" muted="muted" loop="loop" id="Video"></video>
                 </div>
                 <!-- Background Video - END -->
-            <div id="intro" class="intro" onload="autoheight()">
+            <div id="intro" class="intro" onload="autoHeightIntro();">
                 <div class="welcome-banner">
                     <h1 class="animated slideInLeft introH1">Welcome to,</h1>
                     <h1 class="animated slideInLeft introH2">Light of Science</h1>
@@ -121,7 +121,7 @@
             -->
 
             <!-- Parallax Badge Header - START-->
-            <div class="badge-header">
+            <div class="badge-header" onload="autoHeightIntro();">
                 <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/mountain-forest.jpg" data-z-index="1">
                     <h1 class="parallax-content">HOME</h1>
                 </div>
@@ -199,7 +199,7 @@
                 <!--Detailed Content - START-->
                 <div id="bottom-main-content">
 
-                    <div id=class="card hvr-outline-out">
+                    <div class="card hvr-outline-out">
                         <h1 class="card-heading">Card</h1>
 
                     </div>
