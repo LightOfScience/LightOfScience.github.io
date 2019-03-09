@@ -1,1 +1,2 @@
-﻿sass --watch .\assets\css\global_style.scss .\assets\css\gloabl_style.css --style compressed
+﻿sass --watch .\assets\css\global_style.scss .\assets\css\global_style.css --style compressed;
+clear;
