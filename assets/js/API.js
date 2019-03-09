@@ -9,7 +9,8 @@ $.getJSON("https://api.nasa.gov/planetary/apod?api_key=9MMPtpLjuZpqBVofZOguKFtSa
     var NASAimgCopyright = "Image from NASA Ⓒ " + data.copyright;
 
     $('.NASAimg').attr('src',NASAimgURL);
-    $('.NASAimgHD').attr('src',NASAimgURLHD);
+    $('.NASAimgHD').attr('download',NASAimgTitle);
+    $('.NASAimgHD').attr('href',NASAimgURLHD);
     $('.NASAimgTitle').append(NASAimgTitle);
     $('.NASAimgDescription').append(NASAimgDescription);
     $('.NASAimgDate').append(NASAimgDate);
