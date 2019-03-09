@@ -127,8 +127,8 @@ header
 	background-color: color(nav-bg);
 	box-shadow: 0 0px 10px #000000c5;
 	color:color(nav-text);
-	box-shadow: 3px 0px 5px 6px rgba(255, 255, 255, 0.5);
-	display:grid;
+	display:flex;
+	flex-wrap: wrap;
 	
 	@include desktop
 	{
@@ -154,11 +154,10 @@ header
 	/* Light Of Science Banner - START */
 	.banner
 	{
-		grid-column-start: 2;
-		grid-column-end: 3;
-		display: grid;
-		grid-template-columns:100px auto;
+		flex:1;
+		display: flex;
 		text-align: center;
+		align-items: center;
 		.banner-logo
 		{
 			@include desktop
@@ -214,18 +213,19 @@ header
 		}
 	}
 	/* Light Of Science Banner -END */
+
 	/* Nav Toggle Button - START */
 	#btn-toggleNav
 	{
-		grid-column-start:1; 
-		grid-column-end:2; 
 		cursor: pointer;
 		@include desktop
 		{
+			flex:0;
 			visibility:hidden;
 		}
 		@include mobile
 		{
+			flex:0.5;
 			visibility:visible;
 		}
 	}
@@ -233,6 +233,7 @@ header
 	/* Light Of Science Navigation Menu - START */
 	.navmenu
 	{
+		flex:1.5;
 		margin:0;
 		visibility: visible;
 		@include desktop
@@ -241,8 +242,9 @@ header
 		}
 		@include mobile
 		{
-			grid-column-start:1;
-			grid-column-end:3;
+			flex:0;
+			flex-basis: 100%;
+			align-self: middle;
 			height:0px;
 			visibility: hidden;
 			opacity:0;
@@ -255,16 +257,18 @@ header
 	}
 	.nav-element-wrapper
 	{	
-		display: grid;
+		display: flex;
 		text-align: center;
 		padding:0;
 		@include desktop
 		{
-			grid-template-columns:repeat(8, 1fr);
+			flex-direction: row;
+			justify-content: right;
 		}
 		@include mobile
 		{
-			grid-template-columns:100%;
+			flex-direction: column;
+			justify-content: center;
 		}
 
 		.nav-element a
@@ -273,7 +277,7 @@ header
 			font-family: Adhunik;
 			font-size:17px;
 			text-align:center;
-			padding:0 5px 0 5px;
+			
 		}
 		.active a
 		{
@@ -283,6 +287,9 @@ header
 		{
 			border-bottom: 5px solid transparent ;
 			border-top: 1px solid transparent ;
+			//flex:1;
+			margin:0 5px;
+			padding:5px 5px;
 		}
 		.nav-element:hover
 		{
@@ -499,6 +506,7 @@ header
 	}
 	.intro
 	{
+	
 		width:100%;
 		@include desktop
 		{
@@ -506,29 +514,29 @@ header
 		}
 		@include mobile
 		{
-			height:50px;
+			height:48vh;
 		}
 		display:flex;
 		z-index:10;
 		overflow: hidden;
-		
+			
 		.welcome-banner
 		{
-			-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-			/* Background Color Animation */
-			background: linear-gradient(270deg, #0044ff,#2ea1ff );
-			background-size: 800% 800%;
+		//-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		//clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		/* Background Color Animation */
+		background: linear-gradient(270deg, #0044ff,#2ea1ff );
+		background-size: 800% 800%;
 			
-			-webkit-animation: welcomebannerbackground 20s ease infinite;
-			-moz-animation: welcomebannerbackground 20s ease infinite;
-			-o-animation: welcomebannerbackground 20s ease infinite;
-			animation: welcomebannerbackground 20s ease infinite;
-			
-			@-webkit-keyframes welcomebannerbackground {
-				0%{background-position:0% 53%}
-				50%{background-position:100% 48%}
-				100%{background-position:0% 53%}
+		-webkit-animation: welcomebannerbackground 20s ease infinite;
+		-moz-animation: welcomebannerbackground 20s ease infinite;
+		-o-animation: welcomebannerbackground 20s ease infinite;
+		animation: welcomebannerbackground 20s ease infinite;
+		
+		@-webkit-keyframes welcomebannerbackground {
+			0%{background-position:0% 53%}
+			50%{background-position:100% 48%}
+			100%{background-position:0% 53%}
 			}
 			@-moz-keyframes welcomebannerbackground {
 				0%{background-position:0% 53%}
@@ -547,6 +555,7 @@ header
 			}
 			/* Background Color Animation */
 			opacity:0.5;
+			
 			@include desktop
 			{
 				width:60%;
