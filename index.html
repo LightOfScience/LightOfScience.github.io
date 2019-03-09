@@ -92,8 +92,8 @@
                         <video src="assets/videos/air_particle.mp4" preload="auto" autoplay="autoplay" muted="muted" loop="loop" id="Video"></video>
                 </div>
                 <!-- Background Video - END -->
-            <div id="intro" class="intro" onload="autoHeightIntro();">
-                <div class="welcome-banner">
+            <div id="intro" class="intro">
+                <div id="welcome-banner" class="welcome-banner">
                     <h1 class="animated slideInLeft introH1">Welcome to,</h1>
                     <h1 class="animated slideInLeft introH2">Light of Science</h1>
                     <p class="animated zoomIn">Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</p>
@@ -106,7 +106,7 @@
                     <p id="NASAimgDescription" class="NASAimgDescription toggle-visibility animated"></p>
                     <p id="NASAimgCopyright" class="NASAimgCopyright"></p>
                 </div>
-                <button onclick="autoHeightIntro();"></button>
+                <script>document.getElementById("welcome-banner").addEventListener("onload", autoHeightIntro());</script><!--Even Listener-->
             </div>
 
             <!--
