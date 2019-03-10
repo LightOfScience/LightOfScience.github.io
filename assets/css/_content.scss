@@ -573,8 +573,14 @@ $mobile:871px;
 								.flickr-container
 								{
 									flex:1;
-									width:100%;
+									width:100%!important;
+									height:auto;
 									margin:10px;
+									a img
+									{
+										width:100%!important;
+										height:auto;
+									}
 								}
 								.youtube-container
 								{
