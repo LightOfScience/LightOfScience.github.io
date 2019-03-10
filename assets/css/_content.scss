@@ -120,19 +120,25 @@ $mobile:871px;
 			float:left;
 			display:table;
 			
-			h1
+			.intro-heading
 			{
-				color: white;
-				font-size:5.5vw;
-				font-family: 'Abril Fatface', cursive;
-				width:100%;
-				vertical-align:middle;
-				text-overflow: ellipsis;
+				margin:20vh 10px 10px 10px;
+				h1
+				{
+					color: white;
+					font-size:5.5vw;
+					font-family: 'Abril Fatface', cursive;
+					width:100%;
+					vertical-align:middle;
+					text-overflow: ellipsis;
+					padding: 0;
+					margin:0;
+				}
 			}
 			p
 			{
-				width:70%;
-				padding:10px;
+				width:50%;
+				padding: 30px 0 30px 30px;
 				color:rgba(255, 255, 255, 0.800);
 				font-size:20px;
 				font-family: 'Patrick Hand', cursive;
