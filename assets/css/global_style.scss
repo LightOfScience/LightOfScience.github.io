@@ -120,7 +120,7 @@ hr {
  /* Global Tags */
 
 /* Header - START */
-header
+#header
 {
 	z-index: 999;
 	position: sticky;
@@ -473,10 +473,19 @@ header
 	width:100%;
 	padding:5px;
 	background-color:black;
-	display:inline-grid;
+	display:inline-flex;
+	flex-direction: row;
+	overflow-wrap: break-word;
+	text-overflow: break-word;
 	grid-template-columns: repeat(3,1fr);
 	.web-ver, .github-repo, .credit
 	{
+		text-decoration: none;
+		flex:1;
+		justify-content: center;
+		align-content: center;
+		text-overflow: break-word;
+		overflow-wrap: break-word;
 		padding:0;
 		margin:0;
 		color:white;
@@ -840,16 +849,15 @@ header
 					{
 						z-index: 10;
 						position:relative;
-						@include desktop {width:25%;}
-						@include mobile {width:50%;}
+						flex:1; 
+						//@include desktop {width:25%;}
+						//@include mobile {width:50%;}
 						padding:10px;
-						margin: 20px 15px;
+						margin: 20px 25px;
 						background:rgba(255, 255, 255, 0.643);
 						//filter: blur(5px);
 						min-height: 200px;
 						box-shadow: 0 0px 10px #000000c5;
-						//position:sticky;
-						//top:150px;
 						display:block;
 						h1
 						{
@@ -860,10 +868,12 @@ header
 						{
 							font-family: 'Josefin Sans', sans-serif;
 							display:inline;
+							text-justify: inter-word;
 							img
 							{
 								width:50%;
 								height:auto;
+								margin:5px;
 							}
 						}
 						.btn
@@ -894,12 +904,71 @@ header
 				{
 					width:100%;
 					padding:10px;
-					margin: 10px 0;
+					margin: 20px 0;
 					background:white;
 					min-height: 200px;
 					box-shadow: 0 0px 10px #000000c5;
 					//position:sticky;
 					//top:150px;
+
+					header {display:flex; flex-direction: row;} h1
+					{
+						width:50%;
+						flex-shrink:20%;
+						padding:5px;
+						font-family: 'Fjalla One', sans-serif;
+						font-weight: 900;
+						font-size:40px;
+						color:rgb(197, 3, 3);
+						text-align: center;
+						clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+						text-align: left;
+
+						/**/
+						background: rgba(242,173,12,1);
+						background: -moz-linear-gradient(left, rgba(242,173,12,1) 0%, rgba(220,230,39,0.56) 100%);
+						background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242,173,12,1)), color-stop(100%, rgba(220,230,39,0.56)));
+						background: -webkit-linear-gradient(left, rgba(242,173,12,1) 0%, rgba(220,230,39,0.56) 100%);
+						background: -o-linear-gradient(left, rgba(242,173,12,1) 0%, rgba(220,230,39,0.56) 100%);
+						background: -ms-linear-gradient(left, rgba(242,173,12,1) 0%, rgba(220,230,39,0.56) 100%);
+						background: linear-gradient(to right, rgba(242,173,12,1) 0%, rgba(220,230,39,0.56) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ad0c', endColorstr='#dce627', GradientType=1 );
+						/**/
+					}
+					header {display:flex;flex-direction: row;} h2
+					{
+						width:50%;
+					}
+					.card-description
+					{
+						font-family: 'Josefin Sans', sans-serif;
+						color:black;
+						font-size: 20px;
+						overflow-wrap:break-word;
+						img
+						{
+							width:50%;
+							height:auto;
+						}
+					}
+					img
+					{
+						width:50%;
+						height:auto;
+					}
+					.btn
+					{
+						width:100%;
+						min-height:60px;
+						border:5px solid transparent;
+						border-radius: 50px;
+						border-color: color(nav-bg);
+						background-color:rgba(255, 255, 255, 0.541);
+						font-family: 'Josefin Sans', sans-serif;
+						font-weight: 900;
+						font-size:15px;
+						overflow-wrap: break-word;
+					}
 				}
 			}
 			
