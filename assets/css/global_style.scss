@@ -1,7 +1,7 @@
 /* External Imports -START*/
 @import "animate";
 @import "hover";
-@import "custom_fonts";
+@import "fonts.css";
 @import "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
 /* External Imports -END */
 
@@ -49,7 +49,9 @@ $mobile:871px;
 html 
 {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+	box-sizing: border-box;
+	cursor: default;
+	font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -203,9 +205,10 @@ header
 		}
 		.org-motto
 		{
+			font-family: 'Lato', sans-serif;
 			@include desktop
 			{
-				font-size: 12px;
+				font-size: 15px;
 			}
 			@include mobile
 			{
@@ -275,8 +278,8 @@ header
 		.nav-element a
 		{
 			color:color(nav-text-inactive);
-			font-family: Adhunik;
-			font-size:17px;
+			font-family: 'Comfortaa', cursive;
+			font-size:15px;
 			text-align:center;
 			
 		}
@@ -574,16 +577,18 @@ header
 			{
 				color: white;
 				font-size:5.5vw;
+				font-family: 'Abril Fatface', cursive;
 				width:100%;
 				vertical-align:middle;
 				text-overflow: ellipsis;
 			}
 			p
 			{
-				width:55%;
+				width:70%;
 				padding:10px;
 				color:rgba(255, 255, 255, 0.800);
 				font-size:20px;
+				font-family: 'Patrick Hand', cursive;
 				@include mobile
 				{
 					font-size:15px;
@@ -625,6 +630,7 @@ header
 				right: 10px;
 				top: 10px;
 				font-size:3vw;
+				font-family: 'Fjalla One', sans-serif;
 			}
 			.NASAimgHD
 			{
@@ -737,6 +743,7 @@ header
 			//display: table-cell;
 			text-align: center;
 			vertical-align: middle;
+			font-family: 'Comfortaa', cursive;
 		}
 	}
 
@@ -790,6 +797,7 @@ header
 				height:500px;
 				background:white;
 				box-shadow: 0 0px 10px #000000c5;
+				h1 {font-family: 'Fjalla One', sans-serif;}
 			}
 			.carousel
 			{
@@ -831,9 +839,9 @@ header
 					.card
 					{
 						z-index: 10;
-						flex:1;
 						position:relative;
-						width:100%;
+						@include desktop {width:25%;}
+						@include mobile {width:50%;}
 						padding:10px;
 						margin: 20px 15px;
 						background:rgba(255, 255, 255, 0.643);
@@ -842,6 +850,35 @@ header
 						box-shadow: 0 0px 10px #000000c5;
 						//position:sticky;
 						//top:150px;
+						display:block;
+						h1
+						{
+							font-family: 'Fjalla One', sans-serif;
+							text-align: center;
+						}
+						.card-description
+						{
+							font-family: 'Josefin Sans', sans-serif;
+							display:inline;
+							img
+							{
+								width:50%;
+								height:auto;
+							}
+						}
+						.btn
+						{
+							width:100%;
+							min-height:60px;
+							border:5px solid transparent;
+							border-radius: 50px;
+							border-color: color(nav-bg);
+							background-color:rgba(255, 255, 255, 0.541);
+							font-family: 'Josefin Sans', sans-serif;
+							font-weight: 900;
+							font-size:15px;
+							overflow-wrap: break-word;
+						}
 					}
 				}
 			}

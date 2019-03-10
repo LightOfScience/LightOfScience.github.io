@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa|Fredoka+One|Patrick+Hand|Lato|Fjalla+One|Josefin+Sans');
+
+
+@font-face {
+	font-family: 'OldEnglishFont';
+	src: url('../fonts/english/Old_English_TextMT.ttf');
+	font-style:normal;
+	font-weight:normal;
+}
+.Font-OldEnglishMT
+{
+	font-family: OldEnglishFont; 
+}
+
+@font-face{
+	font-family:'Bangla';
+	src:url('../fonts/bengali/Bangla.ttf');
+	font-style:normal;
+	font-weight:normal;
+}
+.Font-Bangla
+{
+	font-family: Bangla;
+}
+
+.font-Abril-Fatface
+{
+	font-family: 'Abril Fatface', cursive;
+}
+
+
+.font-Comfortaa
+{	/* Use for Nav Elements */
+	font-family: 'Comfortaa', cursive;
+}
+.font-Fredoka-One
+{
+font-family: 'Fredoka One', cursive;
+}
+
+.font-Patrik-Hand
+{
+	font-family: 'Patrick Hand', cursive;
+}
+
+.font-Lato
+{
+	font-family: 'Lato', sans-serif;
+}
+
+.font-Fjalla-One
+{	/* Use for General Heading */
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.font-Josefin-Sans
+{
+	font-family: 'Josefin Sans', sans-serif;
+}
