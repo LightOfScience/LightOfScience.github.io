@@ -344,7 +344,31 @@ $mobile:871px;
 				height:500px;
 				background:white;
 				box-shadow: 0 0px 10px #000000c5;
-				h1 {font-family: 'Fjalla One', sans-serif;}
+				overflow-wrap: break-word;
+				.highlight-wrapper
+				{
+					overflow:break-word;
+					overflow-y:scroll;
+					padding-bottom:30px;
+					.highlight-card
+					{
+						h1 
+						{
+							font-family: 'Fjalla One', sans-serif;
+							font-size: 20px;
+							text-decoration: underline;
+							list-style: disclosure-closed;
+						}
+						h2 
+						{
+
+						}
+						h3 
+						{
+
+						}
+					}
+				}
 			}
 			.carousel
 			{
@@ -452,7 +476,7 @@ $mobile:871px;
 					//position:sticky;
 					//top:150px;
 
-					header {display:flex; flex-direction: row;} h1
+					header {display:flex; flex-direction: column;} h1
 					{
 						width:80%;
 						flex-shrink:20%;
@@ -477,7 +501,7 @@ $mobile:871px;
 						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ad0c', endColorstr='#dce627', GradientType=1 );
 						/**/
 					}
-					header {display:flex;flex-direction: row;} h2
+					header {display:flex;flex-direction: column;} h2
 					{
 						width:50%;
 						overflow-wrap: break-word;
