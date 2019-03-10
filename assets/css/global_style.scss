@@ -168,6 +168,7 @@ hr {
 		display: flex;
 		text-align: center;
 		align-items: center;
+		flex-basis: 10%;
 		.banner-logo
 		{
 			@include desktop
@@ -233,6 +234,7 @@ hr {
 		{
 			flex:0;
 			visibility:hidden;
+			flex-basis: 0%;
 		}
 		@include mobile
 		{
@@ -244,7 +246,7 @@ hr {
 	/* Light Of Science Navigation Menu - START */
 	.navmenu
 	{
-		flex:1.5;
+		flex:2;
 		margin:0;
 		visibility: visible;
 		@include desktop
