@@ -1,0 +1,593 @@
+
+/* Color Variables - START */
+$color: 
+(
+	nav-bg:#0071CE,
+	intro-bg:rgba(46, 161, 255, 0.5),
+	nav-text:#ffffff,
+	nav-text-inactive:#ffffff96,
+	nav-text-active:#ffffff,
+	nav-text-hover:#000000,
+);
+/* Color Variables - END */
+
+@function color($color-name)
+{
+	@return map-get($color, $color-name);
+}
+
+$desktop:872px;
+$mobile:871px;
+@mixin desktop 
+{
+	@media (min-width:#{$desktop})
+	{
+		@content;
+	}
+}
+@mixin mobile 
+{
+	@media (max-width:#{$mobile})
+	{
+		@content;
+	}
+}
+
+/*Content - START */
+#content
+{
+	width:100%;
+	height:auto;
+	//box-shadow: 0 0 5px #000000c5;
+	#homeVideo
+	{
+		position: fixed;
+		top:0;
+		left: 0;
+		width: 100%;
+		height:100vh;
+		overflow: hidden;
+		z-index:-1;
+
+		#Video
+		{
+			min-width:100%;
+			min-height:100%;
+		}
+	}
+	.intro
+	{
+	
+		width:100%;
+		@include desktop
+		{
+			height:80vh;
+		}
+		@include mobile
+		{
+			height:48vh;
+		}
+		display:flex;
+		z-index:10;
+		overflow: hidden;
+			
+		.welcome-banner
+		{
+		//-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		//clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		/* Background Color Animation */
+		background: linear-gradient(270deg, #0044ff,#2ea1ff );
+		background-size: 800% 800%;
+			
+		-webkit-animation: welcomebannerbackground 20s ease infinite;
+		-moz-animation: welcomebannerbackground 20s ease infinite;
+		-o-animation: welcomebannerbackground 20s ease infinite;
+		animation: welcomebannerbackground 20s ease infinite;
+		
+		@-webkit-keyframes welcomebannerbackground {
+			0%{background-position:0% 53%}
+			50%{background-position:100% 48%}
+			100%{background-position:0% 53%}
+			}
+			@-moz-keyframes welcomebannerbackground {
+				0%{background-position:0% 53%}
+				50%{background-position:100% 48%}
+				100%{background-position:0% 53%}
+			}
+			@-o-keyframes welcomebannerbackground {
+				0%{background-position:0% 53%}
+				50%{background-position:100% 48%}
+				100%{background-position:0% 53%}
+			}
+			@keyframes welcomebannerbackground {
+				0%{background-position:0% 53%}
+				50%{background-position:100% 48%}
+				100%{background-position:0% 53%}
+			}
+			/* Background Color Animation */
+			opacity:0.5;
+			
+			@include desktop
+			{
+				width:60%;
+				height:100%;
+			}
+			@include mobile
+			{
+				width:100%;
+				height:100%;
+			}
+			float:left;
+			display:table;
+			
+			h1
+			{
+				color: white;
+				font-size:5.5vw;
+				font-family: 'Abril Fatface', cursive;
+				width:100%;
+				vertical-align:middle;
+				text-overflow: ellipsis;
+			}
+			p
+			{
+				width:70%;
+				padding:10px;
+				color:rgba(255, 255, 255, 0.800);
+				font-size:20px;
+				font-family: 'Patrick Hand', cursive;
+				@include mobile
+				{
+					font-size:15px;
+				}
+			}
+		}
+		/* NASA Daily Image API - START */
+		#NASA
+		{
+			@include desktop
+			{
+				width:70%;
+				height: 100%;
+			}
+			@include mobile
+			{
+				width:100%;
+				height: 100%;
+			}
+			overflow:hidden;
+			flex:right;
+			-webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+			clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+			background-color:white;
+			text-align: right;
+			overflow: hidden;
+			position: relative;
+
+			.NASAimg
+			{
+				width:100%;
+				height:100%;
+			}
+			.NASAimgTitle
+			{
+				color:white;
+				width:40vw;
+				position:absolute;
+				right: 10px;
+				top: 10px;
+				font-size:3vw;
+				font-family: 'Fjalla One', sans-serif;
+			}
+			.NASAimgHD
+			{
+				color:white;
+				width:40vw;
+				position:absolute;
+				right: 10px;
+				top: 0px;
+				font-size:10px;
+			}
+			.btn-intro
+			{
+				width:200px;
+				height: 40px;
+				position:absolute;
+				left: -10px;
+				bottom: 0px;
+				padding:0;
+				margin:0;
+				border:none;
+				cursor: pointer;
+				background-color:rgba(255, 255, 255, 0.417);
+				color:white;
+				transition: all 0.2s ease-in-out;
+			}
+			.btn-intro:hover
+			{
+				width:250px;
+				transition: all 0.2s ease-in-out;
+				height: 40px;
+				position:absolute;
+				left: -10px;
+				bottom: 0px;
+				padding:0;
+				margin:0;
+				border:none;
+				cursor: pointer;
+				background-color:rgba(255, 255, 255, 0.417);
+				color:white;
+			}
+			.NASAimgDescription
+			{
+				visibility:hidden;
+				color:white;
+				width:40vw;
+				position:absolute;
+				bottom: 30px;
+				right: 10px;
+				float:left;
+				margin:0;
+				padding:5px;
+				font-size:15px;
+				@include mobile
+				{
+					font-size:8px;
+					overflow:scroll;
+				}
+			}
+			.NASAimgCopyright
+			{
+				width:auto;
+				color:white;
+				position:absolute;
+				bottom: 0px;
+				right: 10px;
+				float:right;
+				margin:0;
+				padding:0;
+			}
+
+		}
+		/* NASA Daily Image API - END */
+	} /* Intro -END */
+
+	.video-bg
+		{
+			width:150%;
+			z-index:1;
+			padding:0;
+			margin:0;
+			#video-container-wide
+			{
+				position: absolute;
+				width: 100%;
+				height:500px;
+				overflow: hidden;
+				padding:0;
+				#video-back-wide
+				{
+					min-width:100%;
+					min-height:100%;
+				}
+			}
+			h1
+			{
+				padding:0; 
+				margin:0;
+			  	color:red;
+			}
+		}
+
+	.badge-header
+	{
+		width:100%;
+		height:auto;
+		//display:table;
+		
+		h1
+		{	
+			//display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+			font-family: 'Comfortaa', cursive;
+		}
+	}
+
+	/* Main Content - START*/
+	#main-content-wrapper
+	{
+		z-index: 10;
+		width:100%;
+		height:auto;
+		padding: 50px 20px;
+		margin:0 auto;
+		background:#c8c8c859;
+		/**
+		background: linear-gradient(270deg, #c8c8c880, #c3c3c328);
+		background-size: 400% 400%;
+		
+		-webkit-animation: AnimationName 30s ease infinite;
+		-moz-animation: AnimationName 30s ease infinite;
+		animation: AnimationName 30s ease infinite;
+		
+		@-webkit-keyframes AnimationName {
+			0%{background-position:0% 50%}
+			50%{background-position:100% 50%}
+			100%{background-position:0% 50%}
+		}
+		@-moz-keyframes AnimationName {
+			0%{background-position:0% 50%}
+			50%{background-position:100% 50%}
+			100%{background-position:0% 50%}
+		}
+		@keyframes AnimationName {
+			0%{background-position:0% 50%}
+			50%{background-position:100% 50%}
+			100%{background-position:0% 50%}
+		}
+		/**/
+
+		#top-main-content
+		{
+			width:100%;
+			height:auto;
+			display:grid;
+			grid-template-columns: 25% 75%;
+			@include mobile
+			{grid-template-columns: 100%;}
+
+			.highlights
+			{
+				margin:10px;
+				padding:10px;
+				height:500px;
+				background:white;
+				box-shadow: 0 0px 10px #000000c5;
+				h1 {font-family: 'Fjalla One', sans-serif;}
+			}
+			.carousel
+			{
+				margin:10px;
+				padding:0px;
+				height:500px;
+				background:transparent;
+				box-shadow: 0 0px 10px #000000c5;
+				@include mobile
+				{
+				height:100%;
+				}
+				@include desktop
+				{
+				width:100%;
+				}
+			}
+		}
+
+		#bottom-main-content
+		{
+			width:100%;
+			height:auto;
+			padding: 50px 10px 10px 10px;
+
+			.highlight-card-wrap
+			{
+				width:100%;
+				margin:0;
+				padding:0;
+				.parallax-window 
+				{
+					height:auto;
+					display:flex;
+					flex-direction: row;
+					padding:100px 30px;
+					margin:0;
+					margin-bottom: 30px;
+					.card
+					{
+						z-index: 10;
+						position:relative;
+						flex:1; 
+						//@include desktop {width:25%;}
+						//@include mobile {width:50%;}
+						padding:10px;
+						margin: 20px 25px;
+                        background:rgba(255, 255, 255, 0.643);
+                        box-shadow: 0 0px 10px #000000c5;
+						//filter: blur(5px);
+						min-height: 200px;
+						box-shadow: 0 0px 10px #000000c5;
+						display:block;
+						h1
+						{
+							font-family: 'Fjalla One', sans-serif;
+							text-align: center;
+						}
+						.card-description
+						{
+							font-family: 'Josefin Sans', sans-serif;
+							display:inline;
+							text-justify: inter-word;
+							img
+							{
+								width:50%;
+								height:auto;
+								margin:5px;
+							}
+						}
+						.btn
+						{
+							width:100%;
+							min-height:60px;
+							border:5px solid transparent;
+							border-radius: 50px;
+							border-color: color(nav-bg);
+                            background-color:rgba(255, 255, 255, 0.541);
+                            box-shadow: 0 0px 10px #000000c5;
+							font-family: 'Josefin Sans', sans-serif;
+							font-weight: 900;
+							font-size:15px;
+							overflow-wrap: break-word;
+						}
+					}
+				}
+			}
+
+			.detailed-card-wrap
+			{
+				margin:0;
+				margin-top:10px;
+				padding:0;
+				display:flex;
+				flex-direction: column;
+				.card
+				{
+					width:100%;
+					padding:10px;
+					margin: 20px 0;
+                    background:white;
+                    box-shadow: 0 0px 10px #000000c5;
+					min-height: 200px;
+					box-shadow: 0 0px 10px #000000c5;
+					//position:sticky;
+					//top:150px;
+
+					header {display:flex; flex-direction: row;} h1
+					{
+						width:80%;
+						flex-shrink:20%;
+						padding:5px;
+						font-family: 'Fjalla One', sans-serif;
+						font-weight: 900;
+						font-size:40px;
+						color:rgb(197, 3, 3);
+						text-align: center;
+						clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+						text-align: left;
+						overflow-wrap: break-word;
+
+						/**/
+						background: rgba(242,173,12,1);
+						background: -moz-linear-gradient(left, rgba(242,173,12,1) 0%, rgba(220,230,39,0.56) 100%);
+						background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242,173,12,1)), color-stop(100%, rgba(220,230,39,0.56)));
+						background: -webkit-linear-gradient(left, rgba(242,173,12,1) 0%, rgba(220,230,39,0.56) 100%);
+						background: -o-linear-gradient(left, rgba(242,173,12,1) 0%, rgba(220,230,39,0.56) 100%);
+						background: -ms-linear-gradient(left, rgba(242,173,12,1) 0%, rgba(220,230,39,0.56) 100%);
+						background: linear-gradient(to right, rgba(242,173,12,1) 0%, rgba(220,230,39,0.56) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ad0c', endColorstr='#dce627', GradientType=1 );
+						/**/
+					}
+					header {display:flex;flex-direction: row;} h2
+					{
+						width:50%;
+						overflow-wrap: break-word;
+					}
+					.card-description
+					{
+						font-family: 'Josefin Sans', sans-serif;
+						color:black;
+						font-size: 20px;
+						overflow-wrap:break-word;
+						img
+						{
+							width:50%;
+							height:auto;
+						}
+					}
+					img
+					{
+						width:50%;
+						height:auto;
+					}
+					.btn
+					{
+						margin:20px;
+						width:100%;
+						min-height:60px;
+						border:5px solid transparent;
+						border-radius: 50px;
+						border-color: color(nav-bg);
+                        background-color:rgba(255, 255, 255, 0.76);
+                        box-shadow: 0 0px 10px #000000c5;
+						font-family: 'Josefin Sans', sans-serif;
+						font-weight: 900;
+						font-size:15px;
+						overflow-wrap: break-word;
+					}
+					.event-description-container
+					{
+						width:100%;
+						height:auto;
+						display:flex;
+						padding:10px;
+						@include desktop {flex-direction: row;}
+						@include mobile {flex-direction: column;}
+
+						.event-description-left
+						{
+							margin:10px;
+							flex:1;
+							align-items: center;
+							justify-content: top;
+                            text-align: center;
+                            display:flex;
+                            flex-direction: column;
+							.description-text
+							{
+								font-family: 'Josefin Sans', sans-serif;
+								color:black;
+								font-size: 20px;
+								overflow-wrap:break-word;
+								img
+								{
+									width:50%;
+									height:auto;
+								}
+								.btn
+								{
+									flex:1!Important;
+									width:100%!Important;
+									margin:0 auto;
+								}
+							}
+							
+						}
+						.event-description-right
+						{
+							margin:10px;
+							flex:1;
+							align-items: center;
+							justify-content: top;
+                            text-align: center;
+                            display:flex;
+                            flex-direction: column;
+							.media-container
+							{
+								z-index: 100;
+								width:100%;
+								margin:0 auto;
+								display:flex;
+								flex-direction: column;
+
+								.flickr-container
+								{
+									flex:1;
+									width:100%;
+									margin:10px;
+								}
+								.youtube-container
+								{
+									flex:1;
+									margin:10px;
+								}
+							}
+						}
+					}
+				}
+			}
+			
+		}
+	}
+	/* Main Content - END*/
+}
+/*Content - END */
