@@ -77,7 +77,8 @@ hr {
 	border-bottom: 1px solid #ffffff;
  }
 
-.parallax-window {
+.parallax-window 
+{
 	min-height: 250px;
 	padding:100px 30%;
 	background: transparent;
@@ -116,6 +117,11 @@ hr {
 		/* Backgkground Gradient ANimated -END */
 		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.774)
 	}
+}//parallax -END
+
+.btn
+{
+	cursor:pointer!Important;
 }
  /* Global Tags */
 
@@ -913,7 +919,7 @@ hr {
 
 					header {display:flex; flex-direction: row;} h1
 					{
-						width:50%;
+						width:80%;
 						flex-shrink:20%;
 						padding:5px;
 						font-family: 'Fjalla One', sans-serif;
@@ -923,6 +929,7 @@ hr {
 						text-align: center;
 						clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
 						text-align: left;
+						overflow-wrap: break-word;
 
 						/**/
 						background: rgba(242,173,12,1);
@@ -938,6 +945,7 @@ hr {
 					header {display:flex;flex-direction: row;} h2
 					{
 						width:50%;
+						overflow-wrap: break-word;
 					}
 					.card-description
 					{
@@ -958,6 +966,7 @@ hr {
 					}
 					.btn
 					{
+						margin:20px;
 						width:100%;
 						min-height:60px;
 						border:5px solid transparent;
@@ -968,6 +977,71 @@ hr {
 						font-weight: 900;
 						font-size:15px;
 						overflow-wrap: break-word;
+					}
+					.event-description-container
+					{
+						width:100%;
+						height:auto;
+						display:flex;
+						padding:10px;
+						@include desktop {flex-direction: row;}
+						@include mobile {flex-direction: column;}
+
+						.event-description-left
+						{
+							margin:10px;
+							flex:1;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							.description-text
+							{
+								font-family: 'Josefin Sans', sans-serif;
+								color:black;
+								font-size: 20px;
+								overflow-wrap:break-word;
+								img
+								{
+									width:50%;
+									height:auto;
+								}
+								.btn
+								{
+									flex:1!Important;
+									width:100%!Important;
+									margin:0 auto;
+								}
+							}
+							
+						}
+						.event-description-right
+						{
+							margin:10px;
+							flex:1;
+							align-items: center;
+							justify-content: center;
+							text-align: center;
+							.media-container
+							{
+								z-index: 100;
+								width:100%;
+								margin:0 auto;
+								display:flex;
+								flex-direction: column;
+
+								.flickr-container
+								{
+									flex:1;
+									width:100%;
+									margin:10px;
+								}
+								.youtube-container
+								{
+									flex:1;
+									margin:10px;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -1019,3 +1093,8 @@ hr {
 	line-height: inherit;
 }
 /* Back to Top -END*/
+
+.font-niharika
+{	
+	font-family: 'NiharikaRegular';	
+}
