@@ -321,21 +321,15 @@ hr {
 .footer-container
 {
 	width:100%;
-	@include mobile
-	{
-		height:2000px;
-	}
-	@include desktop
-	{
-		height:700px;
-	}
-	overflow:hidden;
+	height:auto;
+	overflow-wrap: break-word;
+	text-overflow: break-word;
 	z-index:1;
 	margin:0;
 	padding:0;
 	position:relative;
 
-	.footer-wrapper
+	.footer-bg-wrapper
 	{
 		width:100%;
 		height:100%;
@@ -345,33 +339,42 @@ hr {
 		opacity:0.2;
 		/*background image */
 	}
-	footer
+	.footer-wrapper
 	{
-		position: absolute;
+		position: relative;
 		top:0;
 		left:0;
 		width:100%;
 		height:100%;
-		padding:50px 150px;
+		padding:50px 10px;
 		background-color:#ffffffaf;
+		display:flex;
+		flex-direction: column;
 
 		.BSSlink
 		{
-			display:grid;
-			grid-template-columns: 25% 75%;
+			flex:1;
+			width:100%;
+			display:flex;
 			text-align:center;
 			justify-items: center;
+			align-items: center;
+
+			@include desktop {flex-direction:row;}
+			@include mobile {flex-direction:column;}
 			.BSSLogo
 			{
-				text-align: right;
+				flex:1;
+				text-align: center;
 				margin:10px;
 
 			}
 			.BSSText
 			{
+				flex:1;
 				text-align:center;
-				
 				word-wrap: break-word;
+				margin:10px;
 				a
 				{
 					color:black;
@@ -385,9 +388,16 @@ hr {
 
 		.footer-social-link
 		{
+			flex:1;
+			display:flex;
+			flex-direction: column;
 			text-align:center;
+			justify-content: center;
+			align-content: center;
+
 			.footer-social-link-icon
 			{
+				text-align: center;
 				color:black;
 				padding:0 10px;
 				margin:10px 20px;
@@ -401,15 +411,12 @@ hr {
 
 		.footer-column-container
 		{
-			display:grid;
-			@include desktop
-			{
-			grid-template-columns: repeat(3,1fr);
-			}
-			@include mobile
-			{
-			grid-template-columns: repeat(1,1fr);
-			}
+			flex:1;
+			display:flex;
+			justify-content: top;
+			@include desktop {flex-direction: row;}
+			@include mobile {flex-direction: column;}
+
 			.footer-column h1
 			{
 				text-align: center!Important;
@@ -417,14 +424,8 @@ hr {
 			}
 			.footer-column1
 			{
-				@include desktop
-				{
-					text-align:left;
-				}
-				@include mobile
-				{
-					text-align:center;
-				}
+				flex:1;
+				text-align: center;
 				p
 				{
 					font-size:20px;
@@ -433,14 +434,8 @@ hr {
 			}
 			.footer-column2
 			{
-				@include desktop
-				{
-					text-align:center;
-				}
-				@include mobile
-				{
-					text-align:center;
-				}
+				flex:1;
+				text-align: center;
 				ul a
 				{
 					font-size:20px;
@@ -454,14 +449,8 @@ hr {
 			}
 			.footer-column3
 			{
-				@include desktop
-				{
-					text-align:right;
-				}
-				@include mobile
-				{
-					text-align:center;
-				}
+				flex:1;
+				text-align:center;
 				p
 				{
 					font-size:20px;
@@ -474,7 +463,7 @@ hr {
 /* Footer - END */
 
 /*Footer Credits - START*/
-.footer-credits
+.footer-credits,
 {
 	z-index: 999;
 	width:100%;
@@ -501,6 +490,16 @@ hr {
 	}
 }
 /*Footer Credits - END*/
+
+.sitemap
+{
+	text-decoration: none;
+	padding:0;
+	margin:0;
+	width:100%;
+	height:auto;
+	background:black;
+}
 
 /* Back to Top -START*/
 .scroll-top-wrapper {
