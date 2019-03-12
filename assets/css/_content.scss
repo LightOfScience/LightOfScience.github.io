@@ -409,7 +409,8 @@ $mobile:871px;
 				{
 					height:auto;
 					display:flex;
-					flex-direction: row;
+					@include desktop {flex-direction:row;flex-flow:row wrap;}
+					@include mobile {flex-direction:column!important;flex-flow:column wrap;}
 					padding:100px 30px;
 					margin:0;
 					margin-bottom: 30px;
@@ -484,12 +485,15 @@ $mobile:871px;
 
 					header {display:flex; flex-direction: column;} h1
 					{
-						width:80%;
+						@include desktop {width:80%;}
+						@include mobile {width:100%;}
 						flex-shrink:20%;
 						padding:5px;
 						font-family: 'Fjalla One', sans-serif;
 						font-weight: 900;
-						font-size:40px;
+						@include desktop {font-size:40px;}
+						@include mobile {font-size:20px;}
+						
 						color:rgb(197, 3, 3);
 						text-align: center;
 						clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
@@ -509,14 +513,18 @@ $mobile:871px;
 					}
 					header {display:flex;flex-direction: column;} h2
 					{
-						width:50%;
+						width:90%;
+						margin:10px;
 						overflow-wrap: break-word;
+						@include desktop {font-size:30px;}
+						@include mobile {font-size:17px;}
 					}
 					.card-description
 					{
 						font-family: 'Josefin Sans', sans-serif;
 						color:black;
-						font-size: 20px;
+						@include desktop {font-size:20px;}
+						@include mobile {font-size:13px;}
 						overflow-wrap:break-word;
 						img
 						{

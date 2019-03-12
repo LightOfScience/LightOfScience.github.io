@@ -361,7 +361,6 @@ hr {
 			text-align:center;
 			justify-items: center;
 			align-items: center;
-
 			@include desktop {flex-direction:row;}
 			@include mobile {flex-direction:column;}
 			.BSSLogo

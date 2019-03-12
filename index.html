@@ -94,13 +94,18 @@
                 </div>
                 <!-- Background Video - END -->
             <div id="intro" class="intro">
+           
                 <div id="welcome-banner" class="welcome-banner">
+                <!-- Full Screen Landing Page JS Function Call - Start -->
+                <script>document.getElementById("welcome-banner").addEventListener("onload", autoHeightIntro());</script><!--Even Listener-->
+                <!-- Full Screen Landing Page JS Function Call - END -->
                     <div class="intro-heading">
                         <h1 class="animated slideInLeft introH1">Welcome to,</h1>
                         <h1 class="animated slideInLeft introH2">Light of Science</h1>
                     </div>
                     <p class="animated zoomIn">Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</p>
                 </div>
+                
 
                 <div id="NASA" class="NASA">
                     <img id="NASAimg" class="NASAimg">
@@ -109,8 +114,7 @@
                     <button class="btn-intro visibility-toggler hvr-sweep-to-right" onclick="toggleVisibility();">Show Description</button>
                     <p id="NASAimgDescription" class="NASAimgDescription toggle-visibility animated"></p>
                     <p id="NASAimgCopyright" class="NASAimgCopyright"></p>
-                </div>
-                <script>document.getElementById("welcome-banner").addEventListener("onload", autoHeightIntro());</script><!--Even Listener-->
+                </div>  
             </div>
 
             <!--
@@ -262,9 +266,7 @@
                                 <a href="Contact-Us.html"><button class=btn>Contact Us to Get Your Copy</button></a>
                             </div>
                             <!-- Highlight Card 2 END -->
-
                         </div>
-
                     </div>
 
                     <div class="detailed-card-wrap">
@@ -273,9 +275,9 @@
                         <div class="card">
                             <header>
                                 <h1 class="card-heading">Observing National Science Day <br> 28 February 2019 @ Ananda Chandra College</h1>
-                                <h2 class="">Date: 28-February-2019</h2>
-                                <h2 class="">Place: Ananda Chandra College (Science & Arts) - Room No. 14</h2>
-                                <h2 class="">Time: 11:30 AM - 12:30 PM (1 hour)</h2>
+                                <h2 class="">Date: 28-February-2019
+                                            <br>Place: Ananda Chandra College (Science & Arts) - Room No. 14
+                                            <br>Time: 11:30 AM - 12:30 PM (1 hour)</h2>
                             </header>
                             
                             <p class="card-description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
