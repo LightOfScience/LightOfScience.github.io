@@ -409,6 +409,9 @@ $mobile:871px;
 				{
 					height:auto;
 					display:flex;
+					text-align: center;
+					justify-content: center;
+					align-items: top;
 					@include desktop {flex-direction:row;flex-flow:row wrap;}
 					@include mobile {flex-direction:column!important;flex-flow:column wrap;}
 					padding:100px 30px;
