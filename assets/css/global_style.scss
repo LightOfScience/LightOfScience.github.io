@@ -46,7 +46,10 @@ $mobile:871px;
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
-
+a, a:visited, a:hover, a:focus
+{
+	text-decoration: none;
+}
 html 
 {
   -webkit-box-sizing: border-box;
@@ -361,8 +364,7 @@ hr {
 			text-align:center;
 			justify-items: center;
 			align-items: center;
-			@include desktop {flex-direction:row;}
-			@include mobile {flex-direction:column;}
+			flex-direction:column;
 			.BSSLogo
 			{
 				flex:1;
@@ -500,6 +502,7 @@ hr {
 	width:100%;
 	height:auto;
 	background:black;
+	color:#ffffff80;
 }
 
 /* Back to Top -START*/
@@ -540,8 +543,3 @@ hr {
 	line-height: inherit;
 }
 /* Back to Top -END*/
-
-.font-niharika
-{	
-	font-family: 'NiharikaRegular';	
-}
