@@ -432,10 +432,28 @@ $mobile:871px;
 						min-height: 200px;
 						box-shadow: 0 0px 10px #000000c5;
 						display:block;
+						text-overflow:break-word;
+						overflow-wrap: break-word;
+						hyphens: auto;
+						word-break: break-all;
+						overflow-x:hidden;
 						h1
 						{
 							font-family: 'Fjalla One', sans-serif;
 							text-align: center;
+							text-overflow:break-word;
+							overflow-wrap: break-word;
+							hyphens: auto;
+							word-break: break-all;
+						}
+						h2
+						{
+							font-family: 'Fjalla One', sans-serif;
+							text-align: left;
+							text-overflow:break-word;
+							overflow-wrap: break-word;
+							hyphens: auto;
+							word-break: break-all;
 						}
 						.card-description
 						{
