@@ -1,0 +1,95 @@
+#bottom-main-content .h1-wrapper
+{
+    text-align: center;
+    margin:0 auto;
+    width:100%;
+    display: flex;
+    h1
+    {
+        margin:0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+        padding:10px;
+        background: white;
+        box-shadow: 0 0px 10px #000000c5;
+    }
+}
+#new-arrivals-wrap
+{
+    background:white;
+    width:100%;
+    h1
+    {
+        text-align: center;
+    }
+    #new-arrivals
+    {
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        .col
+        {
+            flex:1;
+            display:flex;
+            @include desktop {flex-direction: row;}
+            @include mobile {flex-direction:column;}
+            transform: scale(0.8);
+            margin:0 auto;
+            text-align: center;
+            img
+            {
+                @include desktop {width:20vw;}
+                @include mobile {width:40vw;}
+            }
+
+        }
+    }
+}
+#books-gallery
+{
+    width:100%;
+    background:rgba(255, 255, 255, 0.52);
+    display:flex;
+    flex-direction: column;
+
+    .row0,.row1,.row2,.row3,.row4
+    {
+        flex:1;
+        display: flex;
+        @include desktop {flex-direction: row;}
+        @include mobile {flex-direction: column;}
+        .col1, .col2
+        {
+            flex: 1;
+            display: flex;
+            .cell
+            {
+                background:white;
+                flex:1;
+                padding: 5px;
+                margin:0 auto;
+                text-align: center;
+                transition: all .5s;
+                transform: scale(.9);
+                box-shadow: 0 0px 10px #000000c5;
+                img
+                {
+                    @include desktop
+                    {
+                        width:20vw;
+                    }
+                    @include mobile
+                    {
+                        width:40vw;
+                    }
+                    
+                    height:auto;
+                }
+            }
+            .cell:hover, .cell:focus
+            {
+                transform: scale(.99);
+            }
+        }
+    }
+}
