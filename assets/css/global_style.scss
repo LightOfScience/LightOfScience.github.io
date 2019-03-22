@@ -4,6 +4,7 @@
 @import "hover";
 @import "fonts";
 @import "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
+@import "about-us";
 /* External Imports -END */
 
 /* Color Variables - START */
@@ -80,6 +81,31 @@ hr {
 	border-top: 1px solid #aaaaaa;
 	border-bottom: 1px solid #ffffff;
  }
+
+.btn
+{
+	width:100%;
+	min-height:60px;
+	border:2px solid transparent;
+	border-radius: 50px;
+	border-color: color(nav-bg);
+	transition: border-color .5s;
+	background-color:rgba(255, 255, 255, 0.541);
+	transition: background-color 3s;
+	transform: scale(.9);
+	transition: transform .5s;
+	//box-shadow: 0 0px 10px #000000c5;
+	overflow-wrap: break-word;
+	font-size:1.3em;
+}
+.btn:hover, .btn:focus
+{
+	border-color: red;
+	background-color:rgb(244, 255, 97);
+	transform: scale(1);
+	//box-shadow: 0 0px 10px #000000c5;
+	overflow-wrap: break-word;
+}
 
 .parallax-window 
 {
@@ -452,7 +478,6 @@ hr {
 	flex-direction: row;
 	overflow-wrap: break-word;
 	text-overflow: break-word;
-	grid-template-columns: repeat(3,1fr);
 	.web-ver, .github-repo, .credit
 	{
 		text-decoration: none;
