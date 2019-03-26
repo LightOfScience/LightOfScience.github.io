@@ -1,47 +1,3 @@
-/* External Imports -START*/
-@import "content";
-@import "animate";
-@import "hover";
-@import "fonts";
-@import "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
-@import "about-us";
-@import "publications-books";
-/* External Imports -END */
-
-/* Color Variables - START */
-$color: 
-(
-	nav-bg:#0071CE,
-	intro-bg:rgba(46, 161, 255, 0.5),
-	nav-text:#ffffff,
-	nav-text-inactive:#ffffff96,
-	nav-text-active:#ffffff,
-	nav-text-hover:#000000,
-);
-/* Color Variables - END */
-
-@function color($color-name)
-{
-	@return map-get($color, $color-name);
-}
-
-$desktop:872px;
-$mobile:871px;
-@mixin desktop 
-{
-	@media (min-width:#{$desktop})
-	{
-		@content;
-	}
-}
-@mixin mobile 
-{
-	@media (max-width:#{$mobile})
-	{
-		@content;
-	}
-}
-
 /* Global Tags */
 *, *:before, *:after 
 {
@@ -158,7 +114,6 @@ hr {
 	@include mobile
 	{
 		background:color(nav-bg);
-		grid-template-columns: 50px auto;
 	}
 
 	a
