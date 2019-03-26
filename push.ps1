@@ -4,6 +4,7 @@ for ($i = 3; $i -ge 0; $i-- )
     Start-Sleep -s 1;
 }
 git push --all website;
+git push website --tags;
 
 for ($i = 3; $i -ge 0; $i-- )
 {
