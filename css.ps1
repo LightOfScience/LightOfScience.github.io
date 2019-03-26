@@ -1,2 +1,2 @@
-﻿sass --watch .\assets\css\global_style.scss .\assets\css\global_style.css --style compressed --update -c --trace;
+﻿sass .\assets\css\compile.scss .\assets\css\global_style.css --style compressed --update -c --trace;
 clear;

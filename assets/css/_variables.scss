@@ -1,0 +1,33 @@
+/* Color Variables - START */
+$color: 
+(
+	nav-bg:#0071CE,
+	intro-bg:rgba(46, 161, 255, 0.5),
+	nav-text:#ffffff,
+	nav-text-inactive:#ffffff96,
+	nav-text-active:#ffffff,
+	nav-text-hover:#000000,
+);
+/* Color Variables - END */
+
+@function color($color-name)
+{
+	@return map-get($color, $color-name);
+}
+
+$desktop:872px;
+$mobile:871px;
+@mixin desktop 
+{
+	@media (min-width:#{$desktop})
+	{
+		@content;
+	}
+}
+@mixin mobile 
+{
+	@media (max-width:#{$mobile})
+	{
+		@content;
+	}
+}
