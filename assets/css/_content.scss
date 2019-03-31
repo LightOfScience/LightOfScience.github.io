@@ -73,8 +73,8 @@ $mobile:871px;
 			
 		.welcome-banner
 		{
-		//-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-		//clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 		/* Background Color Animation */
 		background: linear-gradient(270deg, #0044ff,#2ea1ff );
 		background-size: 800% 800%;
