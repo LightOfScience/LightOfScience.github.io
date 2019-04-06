@@ -287,9 +287,19 @@ $mobile:871px;
 
 	.badge-header
 	{
+		height: 250px;
 		width:100%;
-		height:auto;
+		margin-top:50px;
+		overflow: hidden;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+
 		//display:table;
+		.parallax-title
+		{
+			
+		}
 		
 		h1
 		{	
