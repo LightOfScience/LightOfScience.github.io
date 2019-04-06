@@ -18,6 +18,7 @@
         <!--JS Libraries-->
         <script src="assets/js/global_jscript.js"></script>
         <script src="assets/js/API.js"></script>
+        <script src="assets/js/rellax.min.js"></script>
         <script src="assets/js/parallax.js"></script>
         <script src="assets/js/jssor.slider-27.5.0.min.js"></script>
         <script src="assets/js/jassor-slider-setup.js"></script>
@@ -101,14 +102,15 @@
                     <h1>HOME</h1>
                 </div>
             -->
-
             <!-- Parallax Badge Header - START-->
             <div class="badge-header">
-                <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/mountain-forest.jpg" data-z-index="1">
-                    <h1 class="parallax-content">Notifications</h1>
+                <div class="parallax-img-wrapper">
+                    <img class="parallax parallax-img" src="assets/images/mountain-forest.jpg" data-rellax-zindex="1" data-rellax-speed="2">
                 </div>
-            </div>            
-            <!-- Parallax Badge Header - START-->
+                <h1 class="parallax-title">Notifications</h1>
+            </div>
+            <script>var rellax = new Rellax('.parallax',);</script>
+            <!-- Parallax Badge Header - END-->
 
             <div id="main-content-wrapper">
                 <div id="top-main-content"> <!-- Main Top Content Start -->

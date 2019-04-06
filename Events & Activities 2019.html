@@ -18,7 +18,7 @@
         <!--JS Libraries-->
         <script src="assets/js/global_jscript.js"></script>
         <script src="assets/js/API.js"></script>
-        <script src="assets/js/parallax.js"></script>
+        <script src="assets/js/rellax.min.js"></script>
         <script src="assets/js/jssor.slider-27.5.0.min.js"></script>
         <script src="assets/js/jassor-slider-setup.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/css/jssor.slider-27.5.0.css">
@@ -101,14 +101,15 @@
                     <h1>HOME</h1>
                 </div>
             -->
-
             <!-- Parallax Badge Header - START-->
             <div class="badge-header">
-                <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/mountain-forest.jpg" data-z-index="1">
-                    <h1 class="parallax-content">Events &amp; Activities</h1>
+                <div class="parallax-img-wrapper">
+                    <img class="parallax parallax-img" src="assets/images/mountain-forest.jpg" data-rellax-zindex="1" data-rellax-speed="2">
                 </div>
-            </div>            
-            <!-- Parallax Badge Header - START-->
+                <h1 class="parallax-title">Events &amp; Activities</h1>
+            </div>
+            <script>var rellax = new Rellax('.parallax',);</script>
+            <!-- Parallax Badge Header - END-->
 
             <div id="main-content-wrapper">
                 <div id="top-main-content"> <!-- Main Top Content Start -->
@@ -203,45 +204,6 @@
                 <div id="bottom-main-content">
 
                     <div class="highlight-card-wrap">
-
-                        <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/water.jpg" data-z-index="1">
-
-                            <!-- Highlight Card 1 START -->
-                            <div class="card hvr-grow">
-                                <h1 class="card-heading">March For Science - India</h1>
-                                <h2>Date: 09-August-2019</h2>
-                                <h2>Place: All Over India</h2>
-                                <h2>Organized by: Breakthrough Science Society</h2>
-                                <p class="card-description">Learn More About March For Science Here,<br>
-                                    <a href="https://www.marchforscience.com/" target="_blank">www.MarchForScience.com</a>,&nbsp;&nbsp;<a href="https://en.wikipedia.org/wiki/March_for_Science" target="_blank">Wikipedia - March For Science</a>,&nbsp;&nbsp;<a href="https://www.google.com/search?q=March+For+Science+India" target="_blank">Google Search Results</a>
-                                </p>
-                                <div style="display:flex; text-align:center; flex-direction:row;">
-                                        <p class="card-description">
-                                            <img src="data/campaigns/March-For-Science/march for science india logo.png" alt="March For Science India Logo">                                  
-                                        </p>
-                                        <p class="card-description">
-                                            <img src="data/campaigns/March-For-Science/march for science internation logo.png" alt="March For Science International Logo">
-                                        </p>
-                                    </div>
-                            </div>
-                            <!-- Highlight Card 1 END -->
-
-                            <!-- Highlight Card 2 START -->
-                            <div class="card hvr-grow">
-                                <h1 class="card-heading">Letest Publications & Books</h1>
-                                <div style="display:flex; text-align:center; flex-direction:row;">
-                                    <p class="card-description font-Niharika hvr-grow">
-                                        <img src="data/publications_books/prokriti_magazine/2018-dec/prokriti-magazine-2018-dec-cover.jpg" alt="Prokriti Magazine 2018 Dec (14/2) Edition"><br>Magazine: প্রকৃতি
-                                    </p>
-                                    <p class="card-description hvr-grow">
-                                        <img src="data/publications_books/breakthrough_magazine/oct-2018/Magazine_Breakthrough(20.3.Oct2018).jpg" alt="Breakthrough Magazine 2018 October (20/3) Edition"><br>Magazine: Breakthrough
-                                    </p>
-                                </div>
-                                <a href="Contact-Us.html"><button class=btn>Contact Us to Get Your Copy</button></a>
-                            </div>
-                            <!-- Highlight Card 2 END -->
-                        </div>
-                    </div>
 
                     <div class="detailed-card-wrap">
 
