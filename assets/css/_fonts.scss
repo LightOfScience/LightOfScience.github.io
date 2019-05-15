@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa|Fredoka+One|Patrick+Hand|Lato|Fjalla+One|Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Comfortaa|Fredoka+One|Patrick+Hand|Lato|Fjalla+One|Josefin+Sans|Roboto');
 
 @font-face{
 	font-family:'NiharikaRegular';
@@ -10,6 +10,7 @@
 {	
 	font-family: 'NiharikaRegular'!important;	
 }
+
 .font-Abril-Fatface
 {
 	font-family: 'Abril Fatface', cursive;
@@ -43,4 +44,16 @@ font-family: 'Fredoka One', cursive;
 .font-Josefin-Sans
 {
 	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+@font-face{
+	font-family:'OrgNameFont';
+	src:url('../fonts/english/LOS_name_font_minified.ttf');
+	font-style:normal;
+	font-weight:normal;
+}
+.org-name
+{
+	font-family: 'OrgNameFont'!important;
 }
