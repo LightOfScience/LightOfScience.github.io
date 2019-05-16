@@ -1,3 +1,6 @@
 [submodule "admin.LightOfScience.tk"]
 	path = admin.LightOfScience.tk
 	url = https://github.com/LightOfScience/admin.LightOfScience.tk.git
+[submodule "dev.LightOfScience.tk"]
+	path = dev.LightOfScience.tk
+	url = https://github.com/LightOfScience/dev.LightOfScience.tk.git
