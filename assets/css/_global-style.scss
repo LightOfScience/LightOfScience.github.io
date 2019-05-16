@@ -3,27 +3,38 @@
 {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
-}
-a, a:visited, a:hover, a:focus
-{
-	text-decoration: none;
+  text-decoration: none;
+  color:inherit;   
 }
 html 
 {
-  -webkit-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	cursor: default;
 	font-family: 'Lato', sans-serif;
 }
-
 body {
 	width:100%!Important;
-	height:100%;
 	margin:0;
 	padding:0;
 	background:white;
-	overflow-x:hidden;
 }
+a
+{
+    text-decoration: none;
+    color:inherit;
+}
+
+a:visited
+{
+    color:inherit;
+}
+a:hover
+{
+    color:blue;
+}
+
+
 hr {
 	display: block;
 	position: relative;
@@ -122,39 +133,6 @@ hr {
 /* Header - START */
 #header
 {
-	z-index: 999;
-	position: sticky;
-	top:0;
-	width:100%;
-	padding: 10px 10px 10px 10px;
-	background-color: color(nav-bg);
-	box-shadow: 0 0px 10px #000000c5;
-	color:color(nav-text);
-	display:flex;
-	flex-wrap: wrap;
-	
-	@include desktop
-	{
-		grid-template-columns: 0 50% 50%;
-		/* Background Color Gradient*/
-		background: rgb(0,113,206);
-		background: -moz-linear-gradient(90deg, rgba(0,113,206,1) 0%, rgba(0,113,206,1) 40%, rgba(0,113,206,0.7007003484987745) 100%);
-		background: -webkit-linear-gradient(90deg, rgba(0,113,206,1) 0%, rgba(0,113,206,1) 40%, rgba(0,113,206,0.7007003484987745) 100%);
-		background: linear-gradient(90deg, rgba(0,113,206,1) 0%, rgba(0,113,206,1) 40%, rgba(0,113,206,0.7007003484987745) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0071ce",endColorstr="#0071ce",GradientType=1); 	/**/
-		/* Background Color Gradient*/
-	}
-	@include mobile
-	{
-		background:color(nav-bg);
-	}
-
-	a
-	{
-		text-decoration: none;
-	}
-
-
 	/* Nav Toggle Button - START */
 	#btn-toggleNav
 	{
@@ -172,79 +150,6 @@ hr {
 		}
 	}
 	/* Nav Toggle Button - END */
-	/* Light Of Science Navigation Menu - START */
-	.navmenu
-	{
-		flex:2;
-		margin:0;
-		visibility: visible;
-		@include desktop
-		{
-			visibility: visible;
-		}
-		@include mobile
-		{
-			flex:0;
-			flex-basis: 100%;
-			align-self: middle;
-			height:0px;
-			visibility: hidden;
-			opacity:0;
-			transition: all 0.2s ease-in-out;
-		}
-	}
-	li
-	{
-		list-style-type: none;
-	}
-	.nav-element-wrapper
-	{	
-		display: flex;
-		text-align: center;
-		padding:0;
-		@include desktop
-		{
-			flex-direction: row;
-			justify-content: right;
-		}
-		@include mobile
-		{
-			flex-direction: column;
-			justify-content: center;
-		}
-
-		.nav-element a
-		{
-			color:color(nav-text-inactive);
-			font-family: 'Comfortaa', cursive;
-			font-size:15px;
-			text-align:center;
-			
-		}
-		.active a
-		{
-			color:color(nav-text-active);
-		}
-		.nav-element
-		{
-			border-bottom: 5px solid transparent ;
-			border-top: 1px solid transparent ;
-			//flex:1;
-			margin:0 5px;
-			padding:5px 5px;
-		}
-		.nav-element:hover
-		{
-
-			border-bottom: 5px solid #FFFFFF ;
-			border-top: 1px solid #FFFFFF ;
-		}
-		.nav-element-icon a:hover
-		{
-			color:color(nav-text-hover);
-		}
-	}
-	/* Light Of Science Navigation Menu - END */
 }
 /* Header - END */
 

@@ -1,0 +1,110 @@
+.header
+{
+    z-index: 999;
+    position:sticky;
+    width:100vw;
+    height: auto;
+    margin:0px;
+    padding:10px;
+    background: white;
+    //box-shadow: 0 0px 10px #000000c5;
+    @include desktop {}
+	@include mobile {}
+    display:flex;
+    @include desktop {flex-direction: row;}
+    @include mobile {flex-direction: column;}
+    justify-content: space-between;
+
+    .banner
+    {
+        margin:0;
+        padding:0 10px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+
+        .banner-logo
+        {
+            max-height: 65px;
+            width:auto;
+        }
+
+        .banner-text
+        {
+            margin:0;
+            padding:0 10px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .motto
+            {
+                font-family: 'Montserrat', sans-serif;
+                font-style: bold;
+                text-align: center;
+                color: #0073d1;
+            }
+            .org-name
+            {
+                font-size: 35px;
+                text-align: center;
+                color: #0073d1;
+            }
+        }//banner-text
+    }//banner-end
+    .navmenu
+    {
+        margin:0;
+        padding:0;
+        
+        .nav-element-wrapper
+        {
+            margin:0;
+            padding:0;
+
+            display: flex;
+            @include desktop {flex-direction: row;}
+            @include mobile {flex-direction: column;}
+            justify-content: right;
+
+            .nav-element
+            {
+                margin:10px;
+                padding:10px 10px;
+                text-align: center;
+
+                border:solid transparent;
+                color:grey;
+                font-family: "Comfortaa",cursive;
+                font-size:0.9em;
+                transform: scale(1);
+                //transition
+                transition-property: border, color, transform;
+                transition-duration: 0.3s;
+                transition-delay: 0s;
+                transition-timing-function: linear;
+            }
+
+            .nav-element:hover
+            {
+                font-weight: 500;
+                border-bottom-color:#0073d1;
+                color:#0073d1;
+                transform: scale(1.1);
+            }
+
+            //active element
+            .active
+            {
+                font-weight: 1000!important;
+                color:#0073d1;
+                border-color: #0073d1;
+                transform:scale(1)!important;
+            }
+        }
+    }//navmenu-end
+}//header-end
