@@ -8,12 +8,41 @@
     padding:10px;
     background: white;
     //box-shadow: 0 0px 10px #000000c5;
-    @include desktop {}
-	@include mobile {}
     display:flex;
     @include desktop {flex-direction: row;}
     @include mobile {flex-direction: column;}
     justify-content: space-between;
+
+    .ham-banner-container
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #ham 
+    {
+        @include desktop {display:none;}
+        @include mobile {display:block;}
+        position: relative;
+        min-height: 60px; 
+        min-width: 60px;
+        padding:5px 0;
+    }
+    #ham-menu-open 
+    {
+        position: absolute;
+    }
+    #ham-menu-close 
+    {
+        position: absolute; 
+        visibility: hidden;
+        transform: scale(0);
+    }
+    .ham-menu-icon 
+    {
+        width:60px; 
+        height: 60px;
+    }
 
     .banner
     {
@@ -60,6 +89,8 @@
     {
         margin:0;
         padding:0;
+        @include desktop {display:block;}
+        @include mobile {display:none;}
         
         .nav-element-wrapper
         {
@@ -108,3 +139,44 @@
         }
     }//navmenu-end
 }//header-end
+
+
+
+.hide // Used in hamburger menu icon toggler
+{
+    //transition
+    transition-property: visibility, opacity, transform;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+
+    visibility: hidden!important;
+    opacity: 0!important;
+    transform: scale(0)!important;
+}
+.show // Used in hamburger menu icon toggler
+{
+    //transition
+    transition-property: visibility, opacity, transform;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+
+    visibility: visible!important;
+    opacity: 100%!important;
+    transform: scale(1)!important;
+}
+
+.nav-expand //Used in Nav Menu Expansion in Mobile View
+{
+    display:block!important;
+    margin: 20px!important;
+    padding:0 40px!important;
+    background-color: #e2e2e2c0;
+    box-shadow: 0px 0px 15px #888888c0;
+}
+
+.nav-contract //Used in Nav Menu Contraction in Mobile View
+{
+    display:none!important;
+}
