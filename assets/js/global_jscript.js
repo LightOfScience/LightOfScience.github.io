@@ -1,28 +1,47 @@
+/* ALL VARIABLES - START */
+
+let NavVisibility = false; //used in navigation visibility function; see toggleVisibility()
+
+/* ALL VARIABLES - END */
+
+
 /* Hamber Menu Toggle Action -START */
-let NavStatus = false;
-
-let toggleNav = function()
+function hamIconOpen() 
 {
-    let NavMenu = document.querySelector(".navmenu");
+    document.getElementById('ham-menu-open').classList.add('hide'); 
+    document.getElementById('ham-menu-open').classList.remove('show');
+    document.getElementById('ham-menu-close').classList.remove('hide'); 
+    document.getElementById('ham-menu-close').classList.add('show');
+    NavVisibility = true;
+    document.getElementById('navmenu').classList.add('nav-expand');
+    document.getElementById('navmenu').classList.remove('nav-contract');
+};
 
-    if (NavStatus === false)
-    {
-        NavMenu.style.visibility = "visible";
-        NavMenu.style.height = "auto";
-        NavMenu.style.opacity = "1";
-        NavStatus = true;
-    }
-    else if (NavStatus === true)
-    {
-        NavMenu.style.visibility = "";
-        NavMenu.style.height = "0";
-        NavMenu.style.opacity = "";
-        NavStatus = false;
-    }
-}
+function hamIconClose() { 
+    document.getElementById('ham-menu-close').classList.add('hide');
+    document.getElementById('ham-menu-close').classList.remove('show');
+    document.getElementById('ham-menu-open').classList.remove('hide'); 
+    document.getElementById('ham-menu-open').classList.add('show');
+    NavVisibility = false;
+    document.getElementById('navmenu').classList.add('nav-contract');
+    document.getElementById('navmenu').classList.remove('nav-expand');
+};
 /* Hamber Menu Toggle Action -END */
-let Visibility = false;
 
+
+/* Navigation Menu Visibility - START */
+
+function NavExpand()
+{
+    document.getElementById('navmenu').classList.add('expand');
+    document.getElementById('navmenu').classList.remove('contract');
+};
+
+/* Navigation Menu Visibility - END */
+
+
+
+let Visibiilty = false;
 let toggleVisibility = function()
 {
     let element = document.querySelector(".toggle-visibility");
