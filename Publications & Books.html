@@ -28,15 +28,27 @@
     <body>
         <!-- Header START -->
         <header id="header" class="header">
-            <!-- Banner START -->
-            <a href="https://LightOfScience.tk/index.html" id="banner" class="banner">
-                <img id="banner-logo" class="banner-logo" src="assets/images/los_logo.png" alt="Light of Science Logo" style="max-width:100px;">
-                <div id="banner-text" class="banner-text">
-                    <div id="motto" class="motto">Science for Society&nbsp;&nbsp;&nbsp;&nbsp;Science for Man&nbsp;&nbsp;&nbsp;&nbsp;Science in Thinking</div>
-                    <div id="org-name" class="org-name">Light Of Science</div>
+            <!-- Banner + Ham Burger menu Icon(mobile) START -->
+            <div class="ham-banner-container">
+                <!-- Ham Burger menu icon for Mobile Navigation START -->
+                <div id="ham">
+                    <img id="ham-menu-open" class="ham-menu-icon open" src="assets/images/ham-menu-icon/open.svg" alt="Nav open icon" title="Open Menu"> 
+                    <img id="ham-menu-close" class="ham-menu-icon close" src="assets/images/ham-menu-icon/close.svg" alt="Nav open icon" title="Close Menu"> 
+                    <script>document.getElementById('ham-menu-open').addEventListener('click', hamIconOpen);</script>
+                    <script>document.getElementById('ham-menu-close').addEventListener('click', hamIconClose);</script>
                 </div>
-            </a>   
-            <!-- Banner END -->
+                <!-- Ham Burger menu icon for Mobile Navigation END -->
+                <!-- Banner START -->
+                <a href="https://LightOfScience.tk/index.html" id="banner" class="banner">
+                    <img id="banner-logo" class="banner-logo" src="assets/images/los_logo.png" alt="Light of Science Logo" style="max-width:100px;">
+                    <div id="banner-text" class="banner-text">
+                        <div id="motto" class="motto">Science for Society&nbsp;&nbsp;&nbsp;&nbsp;Science for Man&nbsp;&nbsp;&nbsp;&nbsp;Science in Thinking</div>
+                        <div id="org-name" class="org-name">Light Of Science</div>
+                    </div>
+                </a>   
+                <!-- Banner END -->
+            </div>
+            <!-- Banner + Ham Burger menu Icon(mobile) END -->
             <!-- Navigation Bar START-->
             <nav id="navmenu" class="navmenu">
                 <ul id="nav-element-wrapper" class="nav-element-wrapper">
