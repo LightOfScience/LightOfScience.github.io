@@ -611,7 +611,8 @@ $mobile:871px;
 							justify-content: top;
                             text-align: center;
                             display:flex;
-                            flex-direction: column;
+							flex-direction: column;
+							
 							.description-text
 							{
 								font-family: 'Josefin Sans', sans-serif;
@@ -647,7 +648,10 @@ $mobile:871px;
 								width:100%;
 								margin:0 auto;
 								display:flex;
-								flex-direction: column;
+								flex-direction: row;
+								justify-content: space-evenly;
+								align-items: center;
+								
 
 								.flickr-container
 								{
