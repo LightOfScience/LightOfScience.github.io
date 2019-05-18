@@ -30,10 +30,12 @@
     }
     #ham-menu-open 
     {
+        z-index: 554;
         position: absolute;
     }
     #ham-menu-close 
     {
+        z-index:555;
         position: absolute; 
         visibility: hidden;
         transform: scale(0);
@@ -75,13 +77,22 @@
                 font-family: 'Montserrat', sans-serif;
                 font-style: bold;
                 text-align: center;
-                color: #0073d1;
+                color: color(accent-color);
+                @include xl {font-size: 15px;}
+                @include lg {font-size: 15px;}
+                @include md {font-size: 15px;}
+                @include sm {font-size: 15px;}
+                @include xs {font-size: 6px;}
             }
             .org-name
             {
-                font-size: 35px;
+                @include xl {font-size: 35px;}
+                @include lg {font-size: 35px;}
+                @include md {font-size: 35px;}
+                @include sm {font-size: 35px;}
+                @include xs {font-size: 25px;}
                 text-align: center;
-                color: #0073d1;
+                color: color(accent-color);
             }
         }//banner-text
     }//banner-end
@@ -95,7 +106,9 @@
         .nav-element-wrapper
         {
             margin:0;
-            padding:0;
+            //padding:0;
+            @include desktop{padding:0;}
+            @include mobile{padding:0 30px;}
 
             display: flex;
             @include desktop {flex-direction: row;}
@@ -123,17 +136,18 @@
             .nav-element:hover
             {
                 font-weight: 500;
-                border-bottom-color:#0073d1;
-                color:#0073d1;
+                border-bottom-color:color(accent-color);
+                color:color(accent-color);
                 transform: scale(1.1);
+
             }
 
             //active element
             .active
             {
                 font-weight: 1000!important;
-                color:#0073d1;
-                border-color: #0073d1;
+                color:color(accent-color);
+                border-color: color(accent-color);
                 transform:scale(1)!important;
             }
         }
@@ -144,6 +158,7 @@
 
 .hide // Used in hamburger menu icon toggler
 {
+    z-index: 555!important;
     //transition
     transition-property: visibility, opacity, transform;
     transition-duration: 0.3s;
@@ -156,6 +171,7 @@
 }
 .show // Used in hamburger menu icon toggler
 {
+    z-index:554!important;
     //transition
     transition-property: visibility, opacity, transform;
     transition-duration: 0.3s;
@@ -170,10 +186,7 @@
 .nav-expand //Used in Nav Menu Expansion in Mobile View
 {
     display:block!important;
-    margin: 20px!important;
-    padding:0 40px!important;
-    background-color: #e2e2e2c0;
-    box-shadow: 0px 0px 15px #888888c0;
+    
 }
 
 .nav-contract //Used in Nav Menu Contraction in Mobile View

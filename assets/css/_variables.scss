@@ -1,6 +1,7 @@
 /* Color Variables - START */
 $color: 
 (
+	accent-color:#0073d1,
 	nav-bg:#0071CE,
 	intro-bg:rgba(46, 161, 255, 0.5),
 	nav-text:#ffffff,
@@ -27,6 +28,45 @@ $mobile:871px;
 @mixin mobile 
 {
 	@media (max-width:#{$mobile})
+	{
+		@content;
+	}
+}
+
+$xl-min:1600px;
+$lg-min:1200px;	$lg-max:1599px;
+$md-min:868px; 	$md-max:1200px;
+$sm-min:650px; 	$sm-max:868px;
+$xs-min:350px;	$xs-max:650px;
+
+@mixin xl
+{
+	@media (min-width:#{$xl-min})
+	{
+		@content;
+	}
+}
+@mixin lg
+{
+	@media (max-width:#{$lg-max})
+	{
+		@content;
+	}
+}@mixin md
+{
+	@media (max-width:#{$md-max})
+	{
+		@content;
+	}
+}@mixin sm
+{
+	@media (max-width:#{$sm-max})
+	{
+		@content;
+	}
+}@mixin xs
+{
+	@media (max-width:#{$xs-max})
 	{
 		@content;
 	}
