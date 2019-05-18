@@ -21,8 +21,9 @@ body {
 }
 a
 {
-    text-decoration: none;
-    color:inherit;
+    text-decoration: underline;
+	color:inherit;
+	
 }
 
 a:visited
@@ -389,3 +390,31 @@ hr {
 	line-height: inherit;
 }
 /* Back to Top -END*/
+
+
+button
+{
+	cursor:pointer!Important;
+	padding:5px 20px;
+	margin:5px;
+}
+
+.btn1
+{
+	//transition
+	transition-property: background-color;
+	transition-duration: 0.1s;
+	transition-delay: 0s;
+	transition-timing-function: linear;
+
+	border:solid transparent 5px;
+	border-radius:15px;
+
+	background-color: #f94b71//color(btton-bg-solid);
+	//background: color(button-bg-gradient);
+}
+.btn1:hover
+{
+	background-color: #f8184a//color(btton-bg-solid);
+	//background: color(button-bg-gradient);
+}

@@ -13,6 +13,8 @@
     @include mobile {flex-direction: column;}
     justify-content: space-between;
 
+    a {text-decoration: none;}
+
     .ham-banner-container
     {
         display: flex;
