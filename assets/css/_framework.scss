@@ -1,0 +1,100 @@
+// Buttons
+
+//Button 1
+.btn1
+{
+	//transition
+	transition-property: background-color;
+	transition-duration: 0.1s;
+	transition-delay: 0s;
+	transition-timing-function: linear;
+
+	border:solid transparent 5px;
+	border-radius:15px;
+
+	background-color: #f94b71//color(btton-bg-solid);
+	//background: color(button-bg-gradient);
+}
+.btn1:hover
+{
+	background-color: #f8184a//color(btton-bg-solid);
+	//background: color(button-bg-gradient);
+}
+
+// Button 2
+.btn2
+{
+
+}
+
+
+// Display Property
+.d-flex
+{
+    display:flex;
+}
+.flex-row
+{
+	flex-direction: row;
+}
+.flex-column
+{
+	flex-direction: column;
+}
+
+.d-grid
+{
+    display:grid;
+}
+
+.d-none
+{
+    display:none;
+}
+
+
+// Element Width
+.w-100
+{
+	width:100%;
+}
+
+
+// Margin
+.m-0
+{
+	margin:0;
+}
+.m-x-0
+{
+	margin-left:0;
+	margin-right:0;
+}
+.m-y-0
+{
+	margin-top:0;
+	margin-bottom:0;
+}
+.m-auto
+{
+	margin:auto;
+}
+
+
+// Padding
+.p-0
+{
+	padding:0;
+}
+.p-5
+{
+	padding:5px;
+}
+.p-10
+{
+	padding:10px;
+}
+.p-20
+{
+	padding:20px;
+}
