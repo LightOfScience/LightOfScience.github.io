@@ -3,6 +3,8 @@
 //Button 1
 .btn1
 {
+	width:75%;
+	height:auto;
 	//transition
 	transition-property: background-color;
 	transition-duration: 0.1s;
@@ -75,6 +77,11 @@
 	margin-top:0;
 	margin-bottom:0;
 }
+.m-y-10
+{
+	margin-top:10px;
+	margin-bottom:10px;
+}
 .m-auto
 {
 	margin:auto;
@@ -97,4 +104,21 @@
 .p-20
 {
 	padding:20px;
+}
+
+
+// Flickr Album
+.flickr-container
+{
+	width:100%!important;
+	height:auto;
+	margin:10px; //need to fix this
+	.flickr-link
+	{
+		.flckr-banner
+		{
+			width:100%!important;
+			height:auto;
+		}
+	}
 }
