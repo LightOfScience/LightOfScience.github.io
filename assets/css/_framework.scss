@@ -26,7 +26,15 @@
 // Button 2
 .btn2
 {
-
+	width:75%;
+	height:auto;
+	border-radius:15px;
+	background-color: #21D4FD;
+	background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+.btn2:hover
+{
+	
 }
 
 
@@ -121,4 +129,16 @@
 			height:auto;
 		}
 	}
+}
+
+
+//Animation
+.anim-hvr-lg
+{
+	transform: scale(1);
+	transition: transform 0.2s 0s linear;
+}
+.anim-hvr-lg:hover
+{
+	transform: scale(1.03);
 }
