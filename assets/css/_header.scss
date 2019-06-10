@@ -187,11 +187,19 @@
 
 .nav-expand //Used in Nav Menu Expansion in Mobile View
 {
+    transition: opacity;
+    transition-duration: 0.2s;
+    transition-delay: 0;
+    opacity:1!important;
     display:block!important;
     
 }
 
 .nav-contract //Used in Nav Menu Contraction in Mobile View
 {
+    transition: opacity;
+    transition-duration: 0.2s;
+    transition-delay: 0;
+    opacity:0!important;
     display:none!important;
 }
