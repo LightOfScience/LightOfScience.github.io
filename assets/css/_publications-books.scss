@@ -38,6 +38,7 @@
             text-align: center;
             img
             {
+                height:100%;
                 @include desktop {width:20vw;}
                 @include mobile {width:40vw;}
             }
