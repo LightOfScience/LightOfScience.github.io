@@ -22,7 +22,7 @@
 </item>
 <item>
      <link>https://lightofscience.tk/Notifications.html</link>
-     <title>Light of Science || Science for Man | Science for Society | Science in Thinking</title>
+     <title>Notifications</title>
      <description>Science Organization in Jalpaiguri</description>
      <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
@@ -30,7 +30,7 @@
 </item>
 <item>
      <link>https://lightofscience.tk/Events%20&amp;%20Activities%202019.html</link>
-     <title>Light of Science || Science for Man | Science for Society | Science in Thinking</title>
+     <title>Events &amp;amp; Activities (2019)</title>
      <description>Science Organization in Jalpaiguri</description>
      <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
@@ -38,7 +38,7 @@
 </item>
 <item>
      <link>https://lightofscience.tk/Publications%20&amp;%20Books.html</link>
-     <title>Light of Science || Science for Man | Science for Society | Science in Thinking</title>
+     <title>Publications &amp;amp; Books</title>
      <description>Science Organization in Jalpaiguri</description>
      <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
@@ -46,7 +46,7 @@
 </item>
 <item>
      <link>https://lightofscience.tk/Member.html</link>
-     <title>Light of Science || Science for Man | Science for Society | Science in Thinking</title>
+     <title>Member</title>
      <description>Science Organization in Jalpaiguri</description>
      <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
@@ -62,8 +62,16 @@
 </item>
 <item>
      <link>https://lightofscience.tk/Contact-Us.html</link>
-     <title>Light of Science || Science for Man | Science for Society | Science in Thinking</title>
+     <title>Contact Light of Science</title>
      <description>Science Organization in Jalpaiguri</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://lightofscience.tk/sitemap.html</link>
+     <title>Light of Science Site Map</title>
+     <description>Light of Science Site Map</description>
      <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
@@ -73,7 +81,23 @@
      <title></title>
      
      <ror:updatePeriod>weekly</ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://lightofscience.tk/data/publications_books/breakthrough_magazine/BREAKTHROUGH-Magazine-Catalog.html</link>
+     <title>BREAKTHROUGH Magazine Catalog</title>
+     <description>Science Organization in Jalpaiguri</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://lightofscience.tk/data/publications_books/prokriti_magazine/PROKRITI-Magazine-Catalog.html</link>
+     <title>প্রকৃতি Magazine Catalog</title>
+     <description>Science Organization in Jalpaiguri</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
