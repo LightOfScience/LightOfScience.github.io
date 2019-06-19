@@ -38,6 +38,29 @@
 	
 }
 
+//Button 3
+.btn3
+{
+	width:75%;
+	height:auto;
+	//transition
+	transition-property: background-color;
+	transition-duration: 0.1s;
+	transition-delay: 0s;
+	transition-timing-function: linear;
+
+	border:solid transparent 5px;
+	border-radius:15px;
+
+	background-color: #2575fc//color(btton-bg-solid);
+	//background: color(button-bg-gradient);
+}
+.btn3:hover
+{
+	background-color: #5292ff//color(btton-bg-solid);
+	//background: color(button-bg-gradient);
+}
+
 
 // Display Property
 .d-flex
@@ -60,7 +83,7 @@
 
 .d-none
 {
-    display:none;
+    display:none!important;
 }
 
 
