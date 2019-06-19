@@ -31,16 +31,26 @@
         {
             flex:1;
             display:flex;
-            @include desktop {flex-direction: row;}
-            @include mobile {flex-direction:column;}
+            //@include desktop {flex-direction: row;}
+            //@include mobile {flex-direction: column;}
             transform: scale(0.8);
             margin:0 auto;
             text-align: center;
+            max-height:400px;
             img
             {
                 height:100%;
-                @include desktop {width:20vw;}
-                @include mobile {width:40vw;}
+                @include desktop {max-width:100%;}
+                @include mobile {max-width:100%;}
+            }
+            .book-details
+            {
+                margin:0 10px;
+                h1, h2, h3, p
+                {
+                    text-align: left;
+                    color:#7c7c7c;
+                }
             }
 
         }
@@ -53,7 +63,7 @@
     display:flex;
     flex-direction: column;
 
-    .row0,.row1,.row2,.row3,.row4
+    .row0,.row1,.row2,.row3,.row4, .row5
     {
         flex:1;
         display: flex;
@@ -92,5 +102,43 @@
                 transform: scale(.99);
             }
         }
+    }
+}
+
+.cell03, .cell04
+{
+    display:block;
+    img
+    {
+        clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
+        float: left;
+        shape-outside: polygon(100% 0%, 0% 100%, 0% 0%);
+        clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
+        background-color:yellow;
+        
+    }
+
+    h2 
+    {
+        background-color:#2575fc;
+        padding:20px;
+        margin:0;
+        height:100%;
+        a
+        {
+            text-align:left;
+            text-decoration: none;
+            color:white;
+            word-wrap: break-word;
+            overflow-wrap:break-word;
+            word-break: break-all;
+            hyphens: auto;
+            line-height: 200%;
+
+        }
+    }
+    h2:hover
+    {
+        background-color: #5090ff;
     }
 }
