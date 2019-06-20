@@ -62,6 +62,19 @@
 }
 
 
+.btn-amazon
+{
+	border-radius: 50px;
+	border:#7b8fff solid;
+	background: linear-gradient(0deg, rgba(255,136,0,1) 0%, rgba(223,183,0,1) 100%);
+	color: #000099;
+}
+
+.btn-amazon:hover
+{
+	color: #97009c;
+}
+
 // Display Property
 .d-flex
 {
