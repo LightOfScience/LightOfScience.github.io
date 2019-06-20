@@ -70,7 +70,7 @@ let toggleVisibility = function()
 /* full screen intro - START */
 let autoHeightIntro = function()
 {
-    let screenHeight = window.innerHeight;
+    let screenHeight = window.visualViewport.height;
     let navHeight = document.getElementById('header').clientHeight;
     let introHeight = (screenHeight - navHeight);
 
