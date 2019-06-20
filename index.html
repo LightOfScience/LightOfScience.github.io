@@ -94,23 +94,20 @@
                         <video src="assets/videos/air_particle.mp4" preload="auto" autoplay="autoplay" muted="muted" loop="loop" id="Video"></video>
                 </div>
                 -- Background Video - END -->
+
             <div id="intro" class="intro">
-            <!-- Full Screen Landing Page JS Function Call - Start -->
-            <!--Even Listener--> <script>document.getElementById("intro").addEventListener("onload", autoHeightIntro());</script>
-            <!-- Full Screen Landing Page JS Function Call - END -->
-                <div id="welcome-banner" class="welcome-banner">
-                    <div class="intro-heading">
-                        <h1 class="animated slideInLeft introH1">Welcome to,</h1>
-                        <h1 class="animated slideInLeft introH2">Light of Science</h1>
-                    </div>
-                    <p class="animated zoomIn">Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</p>
-                </div>
-                
+            <img src onerror='autoHeightIntro()'><!-- forece an error to run autoHeightIntro()-->
 
                 <div id="NASA" class="NASA">
                     <img id="NASAimg" class="NASAimg">
                     <h1 id="NASAimgTitle" class="NASAimgTitle"></h1>
                     <a id="NASAimgHD" class="NASAimgHD" target="_blank"><h5>Download this Image</h5></a>
+
+                    <div class="intro-heading">
+                        <h1 class="animated slideInLeft introH1">Welcome to,</h1>
+                        <h1 class="animated slideInLeft introH2">Light of Science</h1>
+                        <p class="animated zoomIn intro-description">Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</p>
+                    </div>
                     <button class="btn-intro visibility-toggler hvr-sweep-to-right" onclick="toggleVisibility();">Show Description</button>
                     <p id="NASAimgDescription" class="NASAimgDescription toggle-visibility animated"></p>
                     <p id="NASAimgCopyright" class="NASAimgCopyright"></p>
