@@ -73,9 +73,7 @@ let autoHeightIntro = function()
     let screenHeight = window.visualViewport.height;
     let navHeight = document.getElementById('header').clientHeight;
     let introHeight = (screenHeight - navHeight);
-
     let intro = document.getElementById('intro');
-
     intro.style.height = introHeight+"px";
 }
 /* full screen intro - END */
