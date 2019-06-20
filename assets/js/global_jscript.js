@@ -138,3 +138,15 @@ var mouseleave = function(btn_ID)
 
                 }
 // Publications & Books - Books Details on hover show JS : END
+
+
+var scroll_to = function(id)
+{
+    scrolltoID = document.getElementById(id);
+    scrolltoID.scrollIntoView();
+}
+
+var printrandom = function()
+{
+    console.log("print working");
+}
