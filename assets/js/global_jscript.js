@@ -109,3 +109,53 @@ offsetTop = offset.top;
 $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
 }
 /* Scroll to Top Javascript */
+
+
+
+// Publications & Books - Books Details on hover show JS : START
+/* ################## USAGE #######################################################################################################
+Hover element will have these attributes :: onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);" id="element-id"
+On hover controlled element will have these attributes :: id="element-id-content"
+##################################################################################################################################*/ 
+
+let btn_content_visibility = 0 ;
+var mouseover =  function(btn_ID)
+                {
+                    
+                    button = document.getElementById(btn_ID);
+                    
+                    btn_content_ID = btn_ID + "-content";
+                    
+                    btn_content = document.getElementById(btn_content_ID);
+                    
+                    btn_content.classList.remove("slide-out");
+                    btn_content.classList.add("slide-in");
+                    btn_content_visibility = 1;
+                    
+
+                    console.log(button);
+                    console.log(btn_content_ID);
+                    console.log(btn_content_visibility);
+
+                }
+
+var mouseleave = function(btn_ID)
+                {
+                    
+                    button = document.getElementById(btn_ID);
+                    
+                    btn_content_ID = btn_ID + "-content";
+                    
+                    btn_content = document.getElementById(btn_content_ID);
+
+                    btn_content.classList.remove("slide-in");
+                    btn_content.classList.add("slide-out");
+                    btn_content_visibility = 0;
+                    
+
+                    console.log(button);
+                    console.log(btn_content_ID);
+                    console.log(btn_content_visibility);
+
+                }
+// Publications & Books - Books Details on hover show JS : END

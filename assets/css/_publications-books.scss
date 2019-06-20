@@ -83,6 +83,7 @@
                 transition: all .5s;
                 transform: scale(.9);
                 box-shadow: 0 0px 10px #000000c5;
+                overflow-x: hidden;
                 img
                 {
                     @include desktop
@@ -103,6 +104,37 @@
             }
         }
     }
+}
+
+.book-content
+{
+    width: 75%;
+    height: 100%;
+    background-color: black;
+    color:white;   
+    opacity:0;
+    padding:10px;
+    
+    position: absolute;
+    top:0;
+
+    left:100%;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    transition: left .3s, opacity .3s;
+}
+
+.slide-in
+{
+    left:0!important;
+    opacity:1;
+}
+
+.slide-out
+{
+    left:100%!important;
+    opacity:0;
 }
 
 .cell03, .cell04
