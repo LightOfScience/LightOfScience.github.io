@@ -16,44 +16,16 @@
 }
 #new-arrivals-wrap
 {
-    background:white;
     width:100%;
-    h1
-    {
-        text-align: center;
-    }
-    #new-arrivals
+    height:auto;
+    margin:0;
+    padding:0;
+
+    h1 
     {
         width:100%;
-        display: flex;
-        flex-direction: row;
-        .col
-        {
-            flex:1;
-            display:flex;
-            //@include desktop {flex-direction: row;}
-            //@include mobile {flex-direction: column;}
-            transform: scale(0.8);
-            margin:0 auto;
-            text-align: center;
-            max-height:400px;
-            img
-            {
-                height:100%;
-                @include desktop {max-width:100%;}
-                @include mobile {max-width:100%;}
-            }
-            .book-details
-            {
-                margin:0 10px;
-                h1, h2, h3, p
-                {
-                    text-align: left;
-                    color:#7c7c7c;
-                }
-            }
-
-        }
+        padding:10px 50px;
+        text-align:center;
     }
 }
 #books-gallery
@@ -63,44 +35,55 @@
     display:flex;
     flex-direction: column;
 
-    .row0,.row1,.row2,.row3,.row4, .row5
+    .row
     {
         flex:1;
         display: flex;
         @include desktop {flex-direction: row;}
         @include mobile {flex-direction: column;}
-        .col1, .col2
+        
+        .col
         {
+            padding: 0;
+            margin:0;
             flex: 1;
             display: flex;
             .cell
             {
+                @include desktop {margin:20px; }
+                @include mobile {margin:5px;}
                 background:white;
                 flex:1;
-                padding: 5px;
-                margin:0 auto;
+                padding: 0px;
                 text-align: center;
                 transition: all .5s;
-                transform: scale(.9);
+                transform: scale(.95);
                 box-shadow: 0 0px 10px #000000c5;
                 overflow-x: hidden;
-                img
+                .book-cover
                 {
-                    @include desktop
-                    {
-                        width:20vw;
-                    }
-                    @include mobile
-                    {
-                        width:40vw;
-                    }
-                    
-                    height:auto;
+                    width:100%;
+                    @include desktop {max-width:25vw;}
+                    @include mobile {max-width:50vw;}
+                    height:auto;    
+                }
+                .book-content
+                {
+                    @include desktop {font-size:10px;}
+                    @include mobile {font-size:5px;}
+                    h1 {font-size:3.5em;}
+                    h3 {font-size:1.5em;}
+                    h5 {font-size:1.3em}
+                    a button, a button h3 {font-size:1.2em;}
                 }
             }
             .cell:hover, .cell:focus
             {
                 transform: scale(.99);
+                .book-cover
+                {
+                    filter:blur(2px);
+                }
             }
         }
     }
