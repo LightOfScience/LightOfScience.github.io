@@ -77,11 +77,11 @@
         <!-- CONTENT - START -->
         
         <div id="content">
-                <!-- Background Video - START -->
+                <!-- Background Video - START --
                 <div id="homeVideo">
                         <video src="assets/videos/air_particle.mp4" preload="auto" autoplay="autoplay" muted="muted" loop="loop" id="Video"></video>
                 </div>
-                <!-- Background Video - END -->
+                !-- Background Video - END -->
 
             <!--
                 <div class="video-bg">
@@ -94,48 +94,32 @@
                 </div>
             -->
 
-            <!-- Parallax Badge Header - START-->
-            <div class="badge-header">
-                <div class="parallax-img-wrapper">
-                    <img class="parallax parallax-img" src="assets/images/mountain-forest.jpg" data-rellax-zindex="1" data-rellax-speed="2">
-                </div>
-                <h1 class="parallax-title">Publications &amp; Books</h1>
+            
+            <div id="page-title">
+                <h1 id="page-title-heading">Publications and Books</h1>
+                <img id="page-title-bg" src="assets/images/books-library.jpg" style="mask-image: url(/assets/images/book-mask.svg);"="">
             </div>
-            <script>var rellax = new Rellax('.parallax',);</script>
-            <!-- Parallax Badge Header - END-->
 
             <main id="main-content-wrapper">
-                <div id="top-main-content"> <!-- Main Top Content Start -->
+                 <div id="top-main-content"><!-- Main Top Content Start -->
                     <div id="new-arrivals-wrap">
                         <h1>New Arrivals</h1>
                         <div id="new-arrivals">
-                            <div class="col" onclick="scroll_to('integrating-science-with-society')">
-                                <img src="data/publications_books/Integrating-Science-With-Society/Integrating Science With Society - Cover.jpg" alt="&quot; Integrating Science With Society&quot; - Proceeding of the national conference held on 15-16 December 2018 at Jadavpur University, Kolkata, WB, IN - Breakthrough Science Society">
-                                <div class="book-details">
-                                    <h2>Proceeding of the national conference on</h2>
-                                    <h1>" Integrating Science With Society "</h1>
-                                    <h3>held on 15-16 December 2018 at Jadavpur University, Kolkata, WB, IN. Organized by Breakthrough Science Society</h3>
-                                </div>
-                            </div>
-                            <div class="col" onclick="scroll_to('book1')">
-                                <img src="data/publications_books/prokriti_magazine/2018-dec/prokriti-magazine-2018-dec-cover.jpg" alt="Prokriti Magazine December 2018 Issue Vol.14 No.2">
-                            </div>
-                            <div class="col" onclick="scroll_to('book2')">
-                                <img src="data/publications_books/breakthrough_magazine/20.4-2019-feb/Breakthrough_Magazine(20.4.Feb2019).jpg" alt="Breakthrough Magazine - February 2019 Issue - Vol.20 No.4">
-                            </div>
+                            
                         </div>
-                    </div>
-                </div>
+                    </div><!-- END OF new-arrival-wrap -->
+                 </div><!-- END OF Main Top Content -->
+                
                 <!-- Main Top Content END -->
 
                 <!--Detailed Content - START-->
                 <div id="bottom-main-content">
                     <div class="h1-wrapper"><h1>▼ Catalog ▼</h1></div>
                     <div id="books-gallery">
-                        <div class="row0">
-                            <div class="col1">
+                        <div class="row row0">
+                            <div class="col col1">
                                 <div id="book1" class="cell cell01"  class="book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id = "book1-cover" src="data/publications_books/prokriti_magazine/2018-dec/prokriti-magazine-2018-dec-cover.jpg" alt="Prokriti Magazine December 2018 Issue Vol.14 No.2">
+                                    <img id = "book1-cover" class="book-cover" src="data/publications_books/prokriti_magazine/2018-dec/prokriti-magazine-2018-dec-cover.jpg" alt="Prokriti Magazine December 2018 Issue Vol.14 No.2">
                                     <div id="book1-content" class="book-content">
                                         <h1 class="font-Niharika">প্রকৃতি - Letest Issue</h1>
                                         <p>December 2018 Issue Vol.14 No.2<br>Price: Rs. 20 only.</p>
@@ -144,7 +128,7 @@
                                     </div>
                                 </div>
                                 <div id="book2" class="cell cell02" class="book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img src="data/publications_books/breakthrough_magazine/20.4-2019-feb/Breakthrough_Magazine(20.4.Feb2019).jpg" alt="Breakthrough Magazine - February 2019 Issue - Vol.20 No.4">
+                                    <img id="book2-cover" class="book-cover" src="data/publications_books/breakthrough_magazine/20.4-2019-feb/Breakthrough_Magazine(20.4.Feb2019).jpg" alt="Breakthrough Magazine - February 2019 Issue - Vol.20 No.4">
                                     <div id="book2-content" class="book-content">
                                         <h1>BREAKTHROUGH - Letest Issue</h1>
                                         <p>December 2018 Issue Vol.14 No.2<br>Price: Rs. 20 only.</p>
@@ -153,9 +137,9 @@
                                     </div>                                
                                 </div>
                             </div>
-                            <div class="col2">
+                            <div class="col col2">
                                 <div class="cell cell03">
-                                    <img src="data/publications_books/breakthrough_magazine/20.3-2018-oct/Breakthrough_Magazine(20.3.Oct2018)-Cover.jpg" alt="Breakthrough Magazine - October 2018 Issue - Vol.20 No.3">
+                                    <img class="book-cover" src="data/publications_books/breakthrough_magazine/20.3-2018-oct/Breakthrough_Magazine(20.3.Oct2018)-Cover.jpg" alt="Breakthrough Magazine - October 2018 Issue - Vol.20 No.3">
                                     <h2>
                                         <a href="data/publications_books/breakthrough_magazine/BREAKTHROUGH-Magazine-Catalog.html">Old <br>BREAKTHROUGH <br>magazine issues.</a>
                                         <a href="https://LightOfScience.tk/data/publications_books/breakthrough_magazine/BREAKTHROUGH-Magazine-Catalog.html"><button class="btn1">Click Here</button></a>
@@ -163,7 +147,7 @@
                                     </h2>
                                 </div>
                                 <div class="cell cell04">
-                                    <img src="data/publications_books/prokriti_magazine/2018-dec/prokriti-magazine-2018-dec-cover.jpg" alt="Prokriti Magazine December 2018 Issue Vol.14 No.2">
+                                    <img class="book-cover" src="data/publications_books/prokriti_magazine/2018-dec/prokriti-magazine-2018-dec-cover.jpg" alt="Prokriti Magazine December 2018 Issue Vol.14 No.2">
 
                                     <h2>
                                         <a href="data/publications_books/prokriti_magazine/PROKRITI-Magazine-Catalog.html" class="font-Niharika">Old <br>প্রকৃতি <br>magazine issues.</a>
@@ -174,46 +158,46 @@
                             </div>     
                         </div>
 
-                        <div class="row1">
-                            <div class="col1">
+                        <div class="row row1">
+                            <div class="col col1">
                                 <div id="new-science-movement-bengali" class="cell cell11" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="new-science-movement-bengali-cover" src="data/publications_books/আজকের বিজ্ঞান আন্দোলন/আজকের বিজ্ঞান আন্দোলন Cover.jpg" alt="Ajker Biggan Andolon - Breakthrough Science Society">
+                                    <img id="new-science-movement-bengali-cover" class="book-cover" src="data/publications_books/আজকের বিজ্ঞান আন্দোলন/আজকের বিজ্ঞান আন্দোলন Cover.jpg" alt="Ajker Biggan Andolon - Breakthrough Science Society">
                                     <div id="new-science-movement-bengali-content" class="book-content">
                                         <h1 class="font-Niharika">আজকের বিজ্ঞান আন্দোলন<br><h3>সামাজিক ও ঐতিহাসিক প্রেক্ষাপট</h3></h1>
-                                        <p>Price: Rs. 10 only.</p>
+                                        <h5>Price: 10 INR only.</h5>
                                         <a href=""><button class="btn1"><h3>Table Of Content</h3></button></a>
                                         <a href="https://LightOfScience.tk/Contact-Us.html"><button class="btn3">Contact Us</button></a>
                                     </div> 
                                 </div>
                                 <div id="new-science-movement-english" class="cell cell12" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="new-science-movement-english-cover" src="data/publications_books/New Science Movement/New Science Movement Cover.jpg" alt="New Science Movement - Breakthrough Science Society">
+                                    <img id="new-science-movement-english-cover" class="book-cover" src="data/publications_books/New Science Movement/New Science Movement Cover.jpg" alt="New Science Movement - Breakthrough Science Society">
                                     <div id="new-science-movement-english-content" class="book-content">
                                         <h3>What We Need Is a</h3>
                                         <h1>New Science Movement</h1>
                                         <h3 style="color:rgb(104, 127, 255);">Manifesto of BREAKTHROUGH SCIENCE SOCIETY</h3>
-                                        <p>Price: Rs. 10 only.</p>
+                                        <h5>Price: 10 INR only.</h5>
                                         <a href=""><button class="btn1"><h3>Table Of Content</h3></button></a>
                                         <a href="https://LightOfScience.tk/Contact-Us.html"><button class="btn3">Contact Us</button></a>
                                     </div> 
                                 </div>
                             </div>
-                            <div class="col2">
+                            <div class="col col2">
                                 <div id="apc-roy" class="cell cell13 book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="apc-roy-cover" src="data/publications_books/APC Roy/APC Roy Cover.jpg" alt="Acharya Prafulla Chandra Roy - Breakthrough Science Society">
+                                    <img id="apc-roy-cover" class="book-cover" src="data/publications_books/APC Roy/APC Roy Cover.jpg" alt="Acharya Prafulla Chandra Roy - Breakthrough Science Society">
                                     <div id="apc-roy-content" class="book-content">
                                         <h1 class="font-Niharika">আচার্য প্রফুল্ল চন্দ্র রায়</h1>
                                         <h3 class="font-Niharika">বিজ্ঞানের ইতিহাসে মানবিক মূল্যবোধে ভাস্বর এক অবিস্মরণীয় চরিত্র</h3>
-                                        <p>Price: 40 INR only.</p>
+                                        <h5>Price: 40 INR only.</h5>
                                         <a href=""><button class="btn1"><h3>Table Of Content</h3></button></a>
                                         <a href="https://LightOfScience.tk/Contact-Us.html"><button class="btn3">Contact Us</button></a>
                                     </div>
                                 </div>
                                 <div id="madam-curie" class="cell cell14 book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="madam-curie-cover" src="data/publications_books/madam-curie/madam-curie-cover.jpg" alt="Madam Curie - Breakthrough Science Society">
+                                    <img id="madam-curie-cover" class="book-cover" src="data/publications_books/madam-curie/madam-curie-cover.jpg" alt="Madam Curie - Breakthrough Science Society">
                                     <div id="madam-curie-content" class="book-content">
                                         <h1 class="font-Niharika">মাদাম কুরী</h1>
                                         <h3 class="font-Niharika">বিজ্ঞানের জগতে মানবিকতা ও নৈতিকতার এক অনন্যসাধারন উজ্জ্বল নক্ষত্র</h3>
-                                        <p>Price: 50 INR only.</p>
+                                        <h5>Price: 50 INR only.</h5>
                                         <a href=""><button class="btn1"><h3>Table Of Content</h3></button></a>
                                         <a href="https://LightOfScience.tk/Contact-Us.html"><button class="btn3">Contact Us</button></a>
                                     </div>
@@ -221,10 +205,10 @@
                             </div>     
                         </div>
 
-                        <div class="row2">
-                            <div class="col1">
+                        <div class="row row2">
+                            <div class="col col1">
                                 <div id="a-brief-history-of-science" class="cell cell21 book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="a-brief-history-of-science" src="data/publications_books/A Brief History of Science/A Brief History of Science Cover.jpg" alt="A Brief History Of Science - Breakthrough Science Society">
+                                    <img id="a-brief-history-of-science-cover" class="book-cover" src="data/publications_books/A Brief History of Science/A Brief History of Science Cover.jpg" alt="A Brief History Of Science - Breakthrough Science Society">
                                     <div id="a-brief-history-of-science-content" class="book-content">
                                         <h1>A Brief History of Science</h1>
                                         <h3>And its Relationship with the Development of Productive Forces, Production Relations, and Philosophy</h3>
@@ -236,7 +220,7 @@
                                     </div>
                                 </div>
                                 <div id="biborton-juge-juge" class="cell cell22 book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="biborton-juge-juge-cover" src="data/publications_books/biborton-juge-juge/biborton-juge-juge-cover.jpg" alt="Biborton Juge Juge - Breakthrough Science Society">
+                                    <img id="biborton-juge-juge-cover" class="book-cover" src="data/publications_books/biborton-juge-juge/biborton-juge-juge-cover.jpg" alt="Biborton Juge Juge - Breakthrough Science Society">
                                     <div id="biborton-juge-juge-content" class="book-content">
                                         <h1 class="font-Niharika">বিবর্তন যুগে যুগে</h1>
                                         <h5>Price: 150 INR only.</h5>
@@ -245,9 +229,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col2">
+                            <div class="col col2">
                                 <div id="seminal-thoughts" class="cell cell23 book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="seminal-thoughts-cover" src="data/publications_books/Seminal Thoughts/Seminal Thoughts Cover.jpg" alt="Seminal Thoughts - Breakthrough Science Society">
+                                    <img id="seminal-thoughts-cover" class="book-cover" src="data/publications_books/Seminal Thoughts/Seminal Thoughts Cover.jpg" alt="Seminal Thoughts - Breakthrough Science Society">
                                     <div id="seminal-thoughts-content" class="book-content">
                                         <h1>Seminal Thoughts</h1>
                                         <h3>A collection of articles by great men of science.</h3>
@@ -258,7 +242,7 @@
                                     </div>
                                 </div>
                                 <div id="science-in-ancient-india" class="cell cell24 book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="science-in-ancient-india-cover" src="data/publications_books/Science In Ancient India/Science In Ancient India Cover.jpg" alt="Science In Ancient India - Breakthrough Science Society">
+                                    <img id="science-in-ancient-india-cover" class="book-cover" src="data/publications_books/Science In Ancient India/Science In Ancient India Cover.jpg" alt="Science In Ancient India - Breakthrough Science Society">
                                     <div id="science-in-ancient-india-content" class="book-content">
                                         <h1>Science In Ancient India</h1>
                                         <h3>Reality versus Myth</h3>
@@ -270,10 +254,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row3">
-                            <div class="col1">
+                        <div class="row row3">
+                            <div class="col col1">
                                 <div id="higs-boson-invention-significance" class="cell cell31 book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="higs-boson-invention-significance-cover" src="data/publications_books/higs-boson-konar-abiskarer-tatporjo/higs-boson-konar-abiskarer-tatporjo-cover.jpg" alt="Higs Boson Konar Abiskarer Tatporjo - Breakthrough Science Society">
+                                    <img id="higs-boson-invention-significance-cover" class="book-cover" src="data/publications_books/higs-boson-konar-abiskarer-tatporjo/higs-boson-konar-abiskarer-tatporjo-cover.jpg" alt="Higs Boson Konar Abiskarer Tatporjo - Breakthrough Science Society">
                                     <div id="higs-boson-invention-significance-content" class="book-content">
                                         <h1 class="font-Niharika" alt="Significance of Invention of the Higs Boson Particle">হিগস্ বোসন কনা আবিস্কারের তাৎপর্য</h1>
                                         <h5>Price: 10 INR only.</h5>
@@ -282,7 +266,7 @@
                                     </div>
                                 </div>
                                 <div id="jyotishsastro-biggan" class="cell cell32 book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="jyotishsastro-biggan-cover" src="data/publications_books/jyotish-shastro-ki-biggyan/jyotish-shastro-ki-biggyan-cover.jpg" alt="Jyotish Shastro Ki Biggan? - Breakthrough Science Society">
+                                    <img id="jyotishsastro-biggan-cover" class="book-cover" src="data/publications_books/jyotish-shastro-ki-biggyan/jyotish-shastro-ki-biggyan-cover.jpg" alt="Jyotish Shastro Ki Biggan? - Breakthrough Science Society">
                                     <div id="jyotishsastro-biggan-content" class="book-content">
                                         <h1 class="font-Niharika">জ্যোতিষ শাস্ত্র কি বিজ্ঞান?</h1>
                                         <h5>Price: 40 INR only.</h5>
@@ -291,9 +275,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col2">
+                            <div class="col col2">
                                 <div id="prachin-varote-bigganchorcha" class="cell cell33 book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="prachin-varote-bigganchorcha-cover" src="data/publications_books/prachin-bharote-bigyan-chorcha/prachin-bharote-bigyan-chorcha-cover.jpg" alt="Prachin Bharote Biggyan Chorcha - Breakthrough Science Society">
+                                    <img id="prachin-varote-bigganchorcha-cover" class="book-cover" src="data/publications_books/prachin-bharote-bigyan-chorcha/prachin-bharote-bigyan-chorcha-cover.jpg" alt="Prachin Bharote Biggyan Chorcha - Breakthrough Science Society">
                                     <div id="prachin-varote-bigganchorcha-content" class="book-content">
                                         <h1 class="font-Niharika">প্রাচীন ভারতে বিজ্ঞান চর্চা</h1>
                                         <h3 class="font-Niharika">বাস্তব বনাম কল্পনা</h3>
@@ -304,7 +288,7 @@
                                     </div>
                                 </div>
                                 <div id="dhumketu" class="cell cell34 book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="dhumketu-cover" src="data/publications_books/dhumketu/dhumketu-cover.jpg" alt="Dhumketu - Breakthrough Science Society">
+                                    <img id="dhumketu-cover" class="book-cover" src="data/publications_books/dhumketu/dhumketu-cover.jpg" alt="Dhumketu - Breakthrough Science Society">
                                     <div id="dhumketu-content" class="book-content">
                                         <h1 class="font-Niharika">ধূমকেতু</h1>
                                         <h5>Price: 7 INR only.</h5>
@@ -314,10 +298,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row4">
-                            <div class="col1">
+                        <div class="row row4">
+                            <div class="col col1">
                                 <div id="biggyan-dorshon" class="cell cell41 book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="biggyan-dorshon-cover" src="data/publications_books/biggan-o-dorshon/biggan-o-dorshon-cover.jpg" alt="Biggyan O Dorshon (Science and Philosophy) - Breakthrough Science Society">
+                                    <img id="biggyan-dorshon-cover" class="book-cover" src="data/publications_books/biggan-o-dorshon/biggan-o-dorshon-cover.jpg" alt="Biggyan O Dorshon (Science and Philosophy) - Breakthrough Science Society">
                                     <div id="biggyan-dorshon-content" class="book-content">
                                         <h1 class="font-Niharika">বিজ্ঞান ও দর্শন</h1>
                                         <h5>Price: 50 INR only.</h5>
@@ -326,7 +310,7 @@
                                     </div>
                                 </div>
                                 <div id="prachin-varote-bostubader-chorcha" class="cell cell42 book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="prachin-varote-bostubader-chorcha-cover" src="data/publications_books/prachin-bharote-bostubader-chorcha/prachin-bharote-bostubader-chorcha-cover.jpg" alt="Prachin Bharote Bostubader Chorcha - Breakthrough Science Society">
+                                    <img id="prachin-varote-bostubader-chorcha-cover" class="book-cover" src="data/publications_books/prachin-bharote-bostubader-chorcha/prachin-bharote-bostubader-chorcha-cover.jpg" alt="Prachin Bharote Bostubader Chorcha - Breakthrough Science Society">
                                     <div id="prachin-varote-bostubader-chorcha-content" class="book-content">
                                         <h1 class="font-Niharika">প্রাচীন ভারতে বস্তুবাদের চর্চা</h1>
                                         <h5>Price: 80 INR only.</h5>
@@ -335,9 +319,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col2">
+                            <div class="col col2">
                                 <div id="dbitiyo-sobuj-biplob" class="cell cell43 book"  onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="dbitiyo-sobuj-biplob-cover" src="data/publications_books/dbitiyo sobuj biplob/dbitiyo sobuj biplob Cover.jpg" alt="Ditio Sobuj Biplob! - Breakthrough Science Society">
+                                    <img id="dbitiyo-sobuj-biplob-cover" class="book-cover" src="data/publications_books/dbitiyo sobuj biplob/dbitiyo sobuj biplob Cover.jpg" alt="Ditio Sobuj Biplob! - Breakthrough Science Society">
                                     <div id="dbitiyo-sobuj-biplob-content" class="book-content">
                                         <h1 class="font-Niharika">দ্বিতীয় সবুজ বিপ্লব (!)</h1>
                                         <h3 class="font-Niharika">একটি পর্যালোচনা</h3>
@@ -347,7 +331,7 @@
                                     </div>
                                 </div>
                                 <div id="sukrer-surjo-otikrom"class="cell cell44 book"  onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="sukrer-surjo-otikrom-cover" src="data/publications_books/sukrer-surjo-otikromon/sukrer-surjo-otikromon-cover.jpg" alt="Sukrer Surjo Otikromon - Breakthrough Science Society">
+                                    <img id="sukrer-surjo-otikrom-cover" class="book-cover" src="data/publications_books/sukrer-surjo-otikromon/sukrer-surjo-otikromon-cover.jpg" alt="Sukrer Surjo Otikromon - Breakthrough Science Society">
                                     <div id="sukrer-surjo-otikrom-content" class="book-content">
                                         <h1 class="font-Niharika">শুক্রের সূর্য অতিক্রমণ</h1>
                                         <h5>Price: 10 INR only.</h5>
@@ -358,14 +342,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row5">
-                            <div class="col1">
+                        <div class="row row5">
+                            <div class="col col1">
                                 <div id="integrating-science-with-society" class="cell cell51 book" onmouseover="mouseover(this.id)"  onmouseleave="mouseleave(this.id);">
-                                    <img id="integrating-science-with-society-cover" class="book-cover" src="data/publications_books/Integrating-Science-With-Society/Integrating Science With Society - Cover.jpg" alt="&quot;Integrating Science With Society&quot; - Proceeding of the national conference held on 15-16 December 2018 at Jadavpur University, Kolkata, WB, IN - Breakthrough Science Society">
+                                    <img id="integrating-science-with-society-cover" class="book-cover" class="book-cover" class="book-cover" src="data/publications_books/Integrating-Science-With-Society/Integrating Science With Society - Cover.jpg" alt="&quot;Integrating Science With Society&quot; - Proceeding of the national conference held on 15-16 December 2018 at Jadavpur University, Kolkata, WB, IN - Breakthrough Science Society">
                                     <div id="integrating-science-with-society-content" class="book-content">
                                         <h3>Proceeding of the national conference</h3>
                                         <h1>Integrating Science With Society</h1>
-                                        <h4>This conference held on 15-16 December 2018 at Jadavpur University, Kolkata, WB, IN - organized by Breakthrough Science Society</h4>
+                                        <h3>This conference held on 15-16 December 2018 at Jadavpur University, Kolkata, WB, IN - organized by Breakthrough Science Society</h3>
                                         <h5>Price: Will be updated shortly.</h5>
                                         <a href="data/publications_books/Integrating-Science-With-Society/Integrating Science With Society - Table Of Content.jpg" target="_blank"><button class="btn1"><h3>Table Of Content</h3></button></a>
                                         <a href="https://LightOfScience.tk/Contact-Us.html"><button class="btn3">Contact Us</button></a>
@@ -375,7 +359,7 @@
                                         <img src="" alt="">
                                 </div>
                             </div>
-                            <div class="col2 "> 
+                            <div class="col col2 "> 
                                 <div class="cell cell53 d-none"> <!-- Display None-->
                                         <img src="" alt="">
                                 </div>
