@@ -146,7 +146,23 @@ var scroll_to = function(id)
     scrolltoID.scrollIntoView();
 }
 
-var printrandom = function()
-{
-    console.log("print working");
-}
+
+
+//##############################################
+var stickNav =  function ()
+                {
+                    navYoffset = document.getElementById("header").getBoundingClientRect().top;
+                    if (navYoffset <=0)
+                    {
+                        document.getElementById("header").classList.remove("nav-unstick");
+                        document.getElementById("header").classList.add("nav-stick");
+                    }
+                    else
+                    {
+                        document.getElementById("header").classList.remove("nav-stick");
+                        document.getElementById("header").classList.add("nav-unstick");
+                    }
+                    console.log("sticky ran successfully");
+                }
+
+//##############################################
