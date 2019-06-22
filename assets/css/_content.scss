@@ -225,58 +225,7 @@ $mobile:871px;
 	
 	} /* Intro -END */
 
-	.video-bg
-		{
-			width:150%;
-			z-index:1;
-			padding:0;
-			margin:0;
-			#video-container-wide
-			{
-				position: absolute;
-				width: 100%;
-				height:500px;
-				overflow: hidden;
-				padding:0;
-				#video-back-wide
-				{
-					min-width:100%;
-					min-height:100%;
-				}
-			}
-			h1
-			{
-				padding:0; 
-				margin:0;
-			  	color:red;
-			}
-		}
-
-	.badge-header
-	{
-		height: 250px;
-		width:100%;
-		margin-top:50px;
-		overflow: hidden;
-		display:flex;
-		justify-content: center;
-		align-items: center;
-
-		//display:table;
-		.parallax-title
-		{
-			
-		}
-		
-		h1
-		{	
-			//display: table-cell;
-			text-align: center;
-			vertical-align: middle;
-			font-family: 'Comfortaa', cursive;
-		}
-	}
-
+	
 	/* Main Content - START*/
 	#main-content-wrapper
 	{
@@ -309,6 +258,7 @@ $mobile:871px;
 				padding:10px;
 				height:500px;
 				background:white;
+				background-image:url('../images/highlight.jpg');
 				box-shadow: 0 0px 10px #000000c5;
 				overflow-wrap: break-word;
 				.highlight-wrapper
@@ -634,15 +584,11 @@ $mobile:871px;
 	height:100%;
 	margin:0;
 	padding:0;
-	overflow:hidden;
-
+	overflow-x:hidden;
 	display: flex;
 	justify-content: center;
 	align-content: center;
 	align-items:center;
-
-	
-
 
 	#page-title-heading
 	{
@@ -657,12 +603,16 @@ $mobile:871px;
 	}
 	#page-title-bg
 	{
-		width:100%;
-		height:100%;
+		min-width:100%;
+		min-height:100%;
 		top:0;
 		position: absolute;
 		z-index: -1;
-		filter:blur(2px);
+		//filter:blur(2px);
+		.bg-video
+		{
+			width:100%;
+		}
 	}
 }
 /* ##################################################### */

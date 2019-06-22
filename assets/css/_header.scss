@@ -6,8 +6,7 @@
     height: auto;
     margin:0px;
     padding:10px;
-    background: white;
-    //box-shadow: 0 0px 10px #000000c5;
+    background:white;
     display:flex;
     @include desktop {flex-direction: row;}
     @include mobile {flex-direction: column;}
@@ -203,3 +202,43 @@
     opacity:0!important;
     display:none!important;
 }
+
+
+
+//####################################################
+//####################################################
+#motto
+{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:black;
+
+    h1
+    {
+        padding:0;
+        margin:2px;
+        font-size: 1em;
+        color:white; //color(accent-color);
+    }
+}
+//####################################################
+//####################################################
+
+
+//###############################################################
+.nav-unstick
+{
+    position: relative;
+    background: red;
+}
+.nav-stick
+{
+    position: sticky;
+    background:white;
+}
+//###############################################################
