@@ -213,6 +213,7 @@
                 }
                 .book-content
                 {
+                    z-index: 999;  
                     @include desktop {font-size:10px;}
                     @include mobile {font-size:5px;}
                     h1 {font-size:3.5em;}
