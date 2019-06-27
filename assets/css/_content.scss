@@ -584,7 +584,7 @@ $mobile:871px;
 	height:100%;
 	margin:0;
 	padding:0;
-	overflow-x:hidden;
+	
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -592,26 +592,39 @@ $mobile:871px;
 
 	#page-title-heading
 	{
-		margin:150px;
+		width:100%;
+		margin:150px 0;
 		padding: 10px;
 		text-align: center;
 		font-family: 'Comfortaa', cursive;
-		font-size:4em;
+		@include desktop{font-size:4em;}
+		@include mobile{font-size:2em;}
 		color:white;
 		z-index: 999;
 		font-weight: 800;
 	}
 	#page-title-bg
 	{
-		min-width:100%;
-		min-height:100%;
+		width:100%;
 		top:0;
 		position: absolute;
 		z-index: -1;
-		//filter:blur(2px);
-		.bg-video
+		overflow:hidden;
+		#bg-img
 		{
-			width:100%;
+			@include desktop{width:100%; height:auto;}
+			@include mobile{height: 100%; width:auto;}
+			filter:blur(1px);
+		}
+		#bg-video-container
+		{
+			@include desktop{width:100%;}
+			@include mobile{height: 100%;}
+			#bg-video
+			{
+				@include desktop{width:100%;}
+				@include mobile{height: 100%;}
+			}
 		}
 	}
 }
