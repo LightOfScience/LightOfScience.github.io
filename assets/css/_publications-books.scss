@@ -157,3 +157,82 @@
         background-color: #5090ff;
     }
 }
+
+
+//#########################################################
+//#########################################################
+// BREAKTHROUGH - CATALOG - PAGE
+
+#volume-in-year-group
+{
+    width:100%;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    .year
+    {
+        width:100%;
+        text-align: left;
+    }
+    .row
+    {
+        width:100%;
+        display: flex;
+        flex:1;
+        @include desktop {flex-direction: row;}
+        @include mobile {flex-direction: column;}
+        .column
+        {
+            width:100%;
+            margin:0;
+            padding:0;
+            display: flex;
+            flex-direction: row;
+            flex:1;
+            .cell
+            {
+                @include desktop {margin:20px; }
+                @include mobile {margin:5px;}
+                background:white;
+                padding: 0px;
+                margin:5px;
+                text-align: center;
+                transition: all .5s;
+                transform: scale(.95);
+                box-shadow: 0 0px 10px #000000c5;
+                overflow-x: hidden;
+                .book-cover
+                {
+                    width:100%;
+                    @include desktop {max-width:25vw;}
+                    @include mobile {max-width:50vw;}
+                    height:auto; 
+                    z-index: 998;   
+                }
+                .book-content
+                {
+                    @include desktop {font-size:10px;}
+                    @include mobile {font-size:5px;}
+                    h1 {font-size:3.5em;}
+                    h3 {font-size:1.5em;}
+                    h5 {font-size:1.3em}
+                    a button, a button h3 {font-size:1.2em;}
+                }
+            }
+            .cell:hover, .cell:focus
+            {
+                transform: scale(.99);
+                .book-cover
+                {
+                    filter:blur(2px);
+                }
+            }
+        }
+    }
+}
+
+
+//#########################################################
+//#########################################################
