@@ -62,6 +62,27 @@
 }
 
 
+//button 4
+.btn4
+{
+	padding: 10px;
+	background-image: linear-gradient(to right, #C04848 0%, #480048 51%, #C04848 100%);
+}
+.btn4:hover
+{
+	background-position: right center;
+}
+
+.btn5
+{
+	padding: 10px;
+	background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%)
+}
+.btn5:hover
+{
+	background-position: right center;
+}
+
 .btn-amazon
 {
 	border-radius: 50px;
