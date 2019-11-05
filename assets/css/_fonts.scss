@@ -11,3 +11,17 @@
 {
     font-family: 'Comfortaa', cursive;
 }
+
+
+@font-face{
+	font-family:'Bangla';
+	src:url('../fonts/Bangla.ttf');
+	font-style:normal;
+	font-weight:normal;
+}
+
+.fontBangla
+{
+	font-family: 'Bangla';
+	font-size:2rem!important;
+}
