@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "India March For Science 2019"
+important_details: "Date: 09 August 2019"
+short_description: "The mission statement of the March for Science voices the aspirations of lakhs of scientists, researchers, science communicators, students and public-at-large who have taken part in the two earlier Marches across hundreds of cities and towns around the world including India. It champions robustly funded and publicly communicated science as a pillar of human freedom and prosperity."
+coverimg: /data/events/2019/2019.6/IMFS 2019 poster.jpg
+postid: 2019.6
+date:   "2019-08-09"
+categories: data events 2019 2019.6
+active: false
+---
+India March For Science 2019 will be organized on 9th August 2019

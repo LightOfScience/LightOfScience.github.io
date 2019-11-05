@@ -1,0 +1,13 @@
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+
+
+title: Light Of Science
+email: LightOfScienceOfficial@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://LightOfScience.tk" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  LightOfScience
+
+permalink: /:categories/:title:output_ext
