@@ -5,6 +5,7 @@
     box-shadow: 1px 1px 5px hsl(0, 0%, 20%);
     //top:0px;
     position: sticky;
+    z-index: 999999;
 }
 
 #motto
@@ -18,7 +19,7 @@
     justify-content: space-around;
     background-color:#00111f;
     align-items: center;
-    z-index: 999;
+    z-index: 999999999;
 
     .motto-element
     {
@@ -101,7 +102,7 @@
         transition:transform .2s linear, max-height .2s linear;
         @include mobile {transform:translateY(-100%);max-height:0; overflow: hidden;}
         @include desktop {transform:translateY(0%);}
-        z-index: 900;
+        z-index: 999;
         #nav
         {
             //width:100%;
@@ -337,7 +338,7 @@
     background-color: #0073d1dd;
     border: solid #fff 2px;
     transition: color .3s ease-in-out, background-color .3s ease-in-out,  border .3s ease-in-out;
-    font-size: 3rem;
+    font-size: 1rem;
     color:white;
     z-index: 999;
 
@@ -347,7 +348,7 @@
 }
 #back-to-top-btn:hover, #back-to-top-btn:focus
 {
-    background-color:#ffffffaa;
+    background-color:#ffffff;
     color:#0073D1;
     border: solid #0073D1 2px;
     outline:none;

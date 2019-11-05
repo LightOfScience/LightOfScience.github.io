@@ -5,4 +5,3 @@
 
 <script src="/assets/js/website_version.js"></script>
 <script src="/assets/js/nav.js"></script>
-<script src="/assets/js/home-landing-carousel.js"></script>
