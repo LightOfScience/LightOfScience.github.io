@@ -10,7 +10,7 @@ var mouseover =  function(btn_ID)
                     btn_content = document.getElementById(btn_content_ID);  
                     btn_content.classList.remove("slide-out");
                     btn_content.classList.add("slide-in");
-                    console.log(btn_ID + " over");
+                    //console.log(btn_ID + " over");
                 }
 
 var mouseleave = function(btn_ID)
@@ -20,7 +20,7 @@ var mouseleave = function(btn_ID)
                     btn_content = document.getElementById(btn_content_ID);
                     btn_content.classList.remove("slide-in");
                     btn_content.classList.add("slide-out");
-                    console.log(btn_ID + " left");
+                    //console.log(btn_ID + " left");
 
                 }
 // Publications & Books - Books Details on hover show JS : END
