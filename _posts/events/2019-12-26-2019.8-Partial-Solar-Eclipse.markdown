@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Observe Partial Solar Eclipase"
+important_details: "Date: 26 December 2019"
+short_description: "Observe Partial Solar Eclipase on 26th December 2019"
+coverimg: /data/events/2019/2019.8/Solar Eclipse - 26 Decemebr 2019.jpg
+postid: 2019.8
+date:   "2019-12-26"
+categories: data events 2019 2019.6
+active: false
+---
+Observe Partial Solar Eclipase on 26th December 2019
