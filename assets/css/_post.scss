@@ -1,0 +1,101 @@
+#content-wrapper
+{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+#posts-container
+{
+    width:100%;
+    padding:10px 0;
+    margin:0;
+    @include mobile{background-color:#ffffff;}
+    @include desktop {background-color:rgb(230, 230, 230);}
+}
+
+.post-wrapper
+{
+    @include desktop {margin:10px 100px;}
+    @include mobile {margin:10px 10px;}
+    padding:10px;
+
+    background-color:white;
+
+    display: flex;
+    @include desktop {flex-direction: row;}
+    @include mobile {flex-direction: column;}
+
+    .post_coverimg_wrapper
+    {
+        padding:5px;   
+        flex:1;
+        text-align: center;
+
+        .coverimg
+        {
+            width:auto; height: auto; max-height: 300px; max-width: 100%;
+        }
+    }
+    .post-details
+    {
+        padding:5px; 
+        flex:3;
+
+        .post-title
+        {
+            padding:0;
+            margin: 0 5px 10px 5px;
+            color: #0062b2;
+            font-size:2.5rem;
+        }
+        .post-important-details
+        {
+            padding:0;
+            margin: 0 5px 10px 5px;
+            color: hsl(0, 0%, 25%);
+            font-size:1.8rem;
+        }
+        .post-short-description
+        {
+            padding:0;
+            margin:5px;
+            color: hsl(0, 0%, 50%);
+            font-size:1.3rem;
+        }
+
+        a
+        {
+            float:right;
+            cursor: pointer;
+        }
+        .post-details-btn
+        {
+            cursor: pointer;
+            padding:10px 20px;
+            margin:5px;
+            background: #0061b1;
+            background:linear-gradient(110deg, #0061b1 60%, #007be0 60%);
+            color:white;
+            font-size: 1.3rem;
+            border:none;
+            border-radius:5px;
+            box-shadow: 1px 1px 5px hsl(0, 0%, 20%);
+        }
+        .post-details-btn:hover, .post-details-btn:focus
+        {
+            background: #004985;
+            background:linear-gradient(110deg, #004985 60%, #0066b9 60%);
+            outline:none;
+        }
+    }
+}
+
+#post-separater
+{
+    width:100%;
+    text-align: center;
+    color:#c7c7c7;
+    padding:0;
+    margin:0;
+}

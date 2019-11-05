@@ -1,0 +1,62 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+title: Light Of Science - Home
+layout: home
+---
+
+ {% include home-landing-carousel.html %}
+
+<div id="posts-container">
+
+    {% for post in site.posts %}
+        {% if post.active == true %}
+        <h1>Upcoming:</h1>
+        {%break%}
+        {% endif %}
+    {%endfor%}
+    {% for post in site.posts %}
+        {% if post.active == true %}
+            <div class="post-wrapper">
+                <div class="post_coverimg_wrapper"><img class="coverimg" src="{{ post.coverimg }}" alt="{{ post.title }} Cover"></div>
+                <div class="post-details">
+                    <h1 class="post-title">{{ post.title }}</h1>
+                    <h3 class="post-important-details">{{ post.important_details }}</h3>
+                    <p class="post-short-description">{{ post.short_description }}</p>
+                    <a href="{{ post.url }}" title="Click for more details on {{post.title}}"><button class="post-details-btn">More Details</button></a>
+                </div>
+            </div>
+        {% else %}
+            {% continue %}
+        {% endif %}
+    {% endfor %}
+
+    <h1 style="margin-left:20px;">Recent:</h1>
+    <h5 id="post-separater">.....................................................................................</h5>
+    {% if site.posts.size >= 4 %}
+        {% assign posts_size = 4 %}
+    {% else %}
+        {% assign posts_size = site.posts.size | minus:1 %}
+    {% endif %}
+
+    {% for post_index in (0..posts_size) %}
+        {% assign post = site.posts[post_index] %}
+        {% if post.tittle != '' %}
+            <div class="post-wrapper">
+                <div class="post_coverimg_wrapper"><img class="coverimg" src="{{ post.coverimg }}" alt="{{ post.title }} Cover"></div>
+                <div class="post-details">
+                    <h1 class="post-title">{{ post.title }}</h1>
+                    <h3 class="post-important-details">{{ post.important_details }}</h3>
+                    <p class="post-short-description">{{ post.short_description }}</p>
+                    <a href="{{ post.url }}" title="Click for more details on {{post.title}}"><button class="post-details-btn">More Details</button></a>
+                </div>
+            </div>
+            <h5 id="post-separater">.....................................................................................</h5>
+
+            
+        {% else %}
+            {% break %}
+        {% endif %}
+    {% endfor %} 
+</div>
