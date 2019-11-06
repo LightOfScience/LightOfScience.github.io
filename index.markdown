@@ -5,7 +5,7 @@
 title: Light Of Science - Home
 layout: home
 ---
-
+<h3 style="text-align: center;">Website is under development. You may lack some contents from the past and also experience some glitches.</h3>
  {% include home-landing-carousel.html %}
 
 <div id="posts-container">
