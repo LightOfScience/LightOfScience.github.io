@@ -105,7 +105,7 @@
         z-index: 999;
         #nav
         {
-            //width:100%;
+            width:100%;
             padding:0px;
             margin:0;
             display:flex;
@@ -121,7 +121,7 @@
                 border-top:solid transparent;
                 border-bottom:solid transparent;
                 border-width: thin;
-                transform: scale(1);
+                transform: scale(.95);
                 transition-property:  border-bottom, color, transform;
                 transition-duration: 0.3s;
                 transition-delay: 0s;
@@ -133,7 +133,7 @@
                 font-weight: 700;
                 border:solid #0073D1 thin;
                 color:#0073D1;
-                transform: scale(1.1);
+                transform: scale(1.01);
                 .nav-element{color:#0073D1;}
             }
             .nav-element
@@ -162,10 +162,10 @@
             .nav-element-social:hover {color:#0073D1;}
             .nav-element-wrapper:hover
             {
-                font-weight: 700;
+                //font-weight: 700;
                 border-bottom-color:#0073D1;
                 color:#0073D1;
-                transform: scale(1.1);
+                transform: scale(1);
                 .nav-element{color:#0073D1;}
             }
         }
