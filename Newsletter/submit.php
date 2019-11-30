@@ -6,5 +6,5 @@
     $sql = "INSERT INTO `newsletter_subscriber_list` (`Name`, `Email`) VALUES ('$name','$email');";
     mysqli_query($conn, $sql);
 
-    header("Location: https://LightOfScience.tk?NewsletterSubmit=SUCCESSFUL");
+    header("Location: ?NewsletterSubmit=SUCCESSFUL");
 ?>
