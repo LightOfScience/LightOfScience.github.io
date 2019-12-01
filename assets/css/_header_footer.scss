@@ -188,78 +188,8 @@
 ////////////////////////////////////////////
 ///////////////////////////////////////////
 
-// NEWSLETTER
-#newsletter-wrapper
-{
-    #newsletter-form
-    {
-        #newsletter-name
-        {
-
-        }
-        #newsletter-email
-        {
-
-        }
-        #newsletter-submit-btn
-        {
-
-        }
-    }
-}
-
-#newsletter-wrapper
-{
-    background:linear-gradient(90deg, rgba(74,63,255,1) 0%, rgba(87,169,255,1) 42%, rgba(114,255,142,1) 100%);
-    width:100%;
-    padding:0;
-    margin:0;
-    text-align: center;
-}
-
-#newsletter-form
-{
-    padding:10px 20px;
-    display: flex;
-    @include desktop{flex-direction: row;}
-    @include mobile{flex-direction:column;}
-    justify-content: center;
-    align-items: center;
-
-}
-
-#newsletter-heading
-{
-    font-size: 1.3rem;
-}
-
-#newsletter-name, #newsletter-email
-{
-    font-family: 'Comfortaa', cursive;
-    width:400px;
-    background: #ffffff54;
-    outline: none;
-    border: solid 2px transparent;
-    border-radius:10px;
-    padding:5px;
-    margin:2px;
-    text-align: center;
-    font-size: 1.3rem;
-    color: #000;
-}
-
-#newsletter-submit-btn
-{
-    cursor: pointer;
-    font-family: 'Comfortaa', cursive;
-    font-size: 1.1rem;
-    font-weight: 700;
-    border: solid 2px transparent;
-    border-radius:10px;
-    padding:5px 10px;
-    margin:2px;
-    background: #ffffff54;
-}
+//Newsletter
+@import "newsletter";
 
 // FOOTER
 #footer
