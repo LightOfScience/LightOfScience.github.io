@@ -32,7 +32,7 @@ layout: home
     <h1 style="margin-left:20px;">Recent:</h1>
     <h5 id="post-separater">.....................................................................................</h5>
     {% if site.posts.size >= 4 %}
-        {% assign posts_size = 4 %}
+        {% assign posts_size = 3 %}
     {% else %}
         {% assign posts_size = site.posts.size | minus:1 %}
     {% endif %}
