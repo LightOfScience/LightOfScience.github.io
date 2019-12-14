@@ -22,7 +22,9 @@ html
     @include desktop{font-size: 15px;}
     @include mobile{font-size: 12px;}
     font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
+	scrollbar-color: #0073d1 #000000 ;
+	scrollbar-width: thin;
 }
 
 body
@@ -36,6 +38,10 @@ body
     font-family: Arial, Helvetica, sans-serif
 }
 
+button
+{
+	cursor: pointer;
+}
 button:focus
 {
     outline: none;
