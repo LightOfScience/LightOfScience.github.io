@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
 <channel>
-  <title>ROR Sitemap for https://lightofscience.tk/</title>
-  <link>https://lightofscience.tk/</link>
+  <title>ROR Sitemap for http://lightofscience.tk/</title>
+  <link>http://lightofscience.tk/</link>
 
 <item>
      <link>https://lightofscience.tk/</link>
      <title>Light Of Science</title>
      <description>Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</description>
-     <ror:updatePeriod></ror:updatePeriod>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>0</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
@@ -16,7 +16,7 @@
      <link>https://lightofscience.tk/index.html</link>
      <title>Light Of Science</title>
      <description>Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</description>
-     <ror:updatePeriod></ror:updatePeriod>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
@@ -24,7 +24,7 @@
      <link>https://lightofscience.tk/Notifications.html</link>
      <title>Notifications</title>
      <description>Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</description>
-     <ror:updatePeriod></ror:updatePeriod>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
@@ -32,7 +32,7 @@
      <link>https://lightofscience.tk/Events_&amp;_Activities.html</link>
      <title>Events &amp;amp; Activities</title>
      <description>Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</description>
-     <ror:updatePeriod></ror:updatePeriod>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
@@ -40,7 +40,7 @@
      <link>https://lightofscience.tk/Publications_&amp;_Books.html</link>
      <title>Publications &amp;amp; Books</title>
      <description>Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</description>
-     <ror:updatePeriod></ror:updatePeriod>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
@@ -48,7 +48,7 @@
      <link>https://lightofscience.tk/Member.html</link>
      <title>Member</title>
      <description>Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</description>
-     <ror:updatePeriod></ror:updatePeriod>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
@@ -56,7 +56,15 @@
      <link>https://lightofscience.tk/About_Us.html</link>
      <title>About Light Of Science</title>
      <description>Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</description>
-     <ror:updatePeriod></ror:updatePeriod>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://lightofscience.tk/data/events/2020/bss-1/7th-All-Bengal-Science-Conference-Breakthrough-Science-Society-West-Bengal-State-Chapter.html</link>
+     <title>7th All Bengal Science Conference</title>
+     <description>Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
@@ -64,7 +72,7 @@
      <link>https://lightofscience.tk/data/events/2019/2019.8/2019.8-Partial-Solar-Eclipse.html</link>
      <title>Observe Partial Solar Eclipase</title>
      <description>Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</description>
-     <ror:updatePeriod></ror:updatePeriod>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
@@ -72,7 +80,7 @@
      <link>https://lightofscience.tk/data/events/2019/2019.7/2019.7-Global-Climate-Strike.html</link>
      <title>Global Climate Strike</title>
      <description>Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</description>
-     <ror:updatePeriod></ror:updatePeriod>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
@@ -80,7 +88,15 @@
      <link>https://lightofscience.tk/data/events/2019/2019.6/IMFS2019.html</link>
      <title>India March For Science 2019</title>
      <description>Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</description>
-     <ror:updatePeriod></ror:updatePeriod>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://lightofscience.tk/sitemap.html</link>
+     <title>lightofscience.tk Site Map - Generated by www.xml-sitemaps.com</title>
+     <description>lightofscience.tk Site Map - Generated by www.xml-sitemaps.com</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
@@ -88,15 +104,31 @@
      <link>https://lightofscience.tk/data/events/2019/2019.5/2019.5-Observing_Aranya_Saptaha.html</link>
      <title>Observing Aranya Saptaha</title>
      <description>Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
      <link>https://lightofscience.tk/Contact_Us.html</link>
      <title>Contact Light Of Science</title>
      <description>Light of Science is a science organization located in the Jalpaiguri district of West Bengal. This Science Organization is affiliated to Breakthrough Science Society (Registration Number - 53166/92).</description>
-     <ror:updatePeriod></ror:updatePeriod>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://lightofscience.tk/data/membership/Light%20of%20Science%20Membership%20Form.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://lightofscience.tk/data/membership/The%20Constitution%20of%20Breakthrough%20Science%20Society.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>weekly</ror:updatePeriod>
      <ror:sortOrder>2</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
