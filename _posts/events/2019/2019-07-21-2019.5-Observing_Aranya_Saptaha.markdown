@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Observing Aranya Saptaha"
+important_details: "Date: 21 July 2019<br>Venu: Marowari Balika Vidyalaya, Jalpaiguri"
+short_description: "Essay Competition, Debate Competition, Drawing Competition for School Students <br>Contact your school or contact us to participate"
+coverimg: /data/events/2019/2019.5/2019.5 banner.jpg
+postid: 2019.5
+date:   "2019-07-21"
+categories: data events 2019 2019.5
+tag: event
+active: false
+---
