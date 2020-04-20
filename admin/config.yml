@@ -22,7 +22,7 @@ collections:
   - name : "news"
     label: "News"
     folder: "collections/_news"
-    media_folder: "/news/{{fields.yr}}/{{slug}}/"
+    media_folder: "/news/{{fields.YYYY}}/{{slug}}/"
     create: true
     slug: "{{fields.YYYY}}-{{fields.MM}}-{{fields.DD}}-{{slug}}"
     fields:
