@@ -14,7 +14,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post-news"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Image", name: "image", widget: "image", default: /news/{{year}}/}
+      - {label: "Image", name: "image", widget: "image", default: "/news/{{year}}/{{slug}}/"}
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
