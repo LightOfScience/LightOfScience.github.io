@@ -9,10 +9,10 @@ collections:
   - name : "post-news"
     label: "News"
     folder: "collections/_news"
-    path: "{{year}}//{{slug}}/{{slug}}"
-    media_folder: "/news/{{year}}/{{slug}}/"
+    # path: "{{year}}//{{slug}}/{{slug}}"
+    media_folder: "/news/{{fields.yr}}/{{fields.date}}-{{slug}}/"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{fields.date}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post-news"}
       - {label: "Title", name: "title", widget: "string"}
@@ -20,3 +20,6 @@ collections:
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Date", name: "date", widget: "datetime", dateFormat: "DD-MM-YYYY", timeFormat:false, format: "YYYY-MM-DD"}
+      - {label: "Year", name: "yr", widget: "datetime", dateFormat: "DD-MM-YYYY", format: "YYYY"}
+

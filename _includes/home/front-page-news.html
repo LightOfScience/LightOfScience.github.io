@@ -16,8 +16,9 @@
 <!-- Front Page News -->
 <div id="front-page-news-container">
     <div id="front-page-news-wrapper">
+        <!-- news card 1-->
         <div id="news1" class="news">
-            <div class="news-img-container"><img src="{{news1_link}}{{news1_image}}" alt="{{news1_image_alt}}"></div>
+            <div class="news-img-container"><img src="{{news1_image}}" alt="{{news1_image_alt}}"></div>
             <h2 class="news-title">{{news1_title}}</h2>
             <h5 class="news-date-tag">
                 <span>{{news1_date}} • </span>
@@ -28,22 +29,9 @@
             <p class="news-excerpt">{{news1_excerpt}}</p>
             <a href="{{news1_link}}"><button class="news-btn">More ... </button></a>
         </div>
-
-                <div id="news1" class="news">
-            <div class="news-img-container"><img src="{{news1_link}}/{{news1_image}}" alt="{{news1_image_alt}}"></div>
-            <h2 class="news-title">{{news1_title}}</h2>
-            <h5 class="news-date-tag">
-                <span>{{news1_date}} • </span>
-                {%for tag in site.news[news1_index].tags%}
-                    <span>#{{tag}}</span>
-                {%endfor%}
-                </h5>
-            <p class="news-excerpt">{{news1_excerpt}}</p>
-            <a href="{{news1_link}}"><button class="news-btn">More ... </button></a>
-        </div>
-        
+        <!-- news card 2-->
         <div id="news1" class="news">
-            <div class="news-img-container"><img src="{{news1_link}}/{{news1_image}}" alt="{{news1_image_alt}}"></div>
+            <div class="news-img-container"><img src="{{news1_image}}" alt="{{news1_image_alt}}"></div>
             <h2 class="news-title">{{news1_title}}</h2>
             <h5 class="news-date-tag">
                 <span>{{news1_date}} • </span>
@@ -54,9 +42,9 @@
             <p class="news-excerpt">{{news1_excerpt}}</p>
             <a href="{{news1_link}}"><button class="news-btn">More ... </button></a>
         </div>
-
+        <!-- news card 3-->
         <div id="news1" class="news">
-            <div class="news-img-container"><img src="{{news1_link}}/{{news1_image}}" alt="{{news1_image_alt}}"></div>
+            <div class="news-img-container"><img src="{{news1_image}}" alt="{{news1_image_alt}}"></div>
             <h2 class="news-title">{{news1_title}}</h2>
             <h5 class="news-date-tag">
                 <span>{{news1_date}} • </span>
@@ -67,8 +55,9 @@
             <p class="news-excerpt">{{news1_excerpt}}</p>
             <a href="{{news1_link}}"><button class="news-btn">More ... </button></a>
         </div>
+        <!-- news card 4-->
         <div id="news1" class="news">
-            <div class="news-img-container"><img src="{{news1_link}}/{{news1_image}}" alt="{{news1_image_alt}}"></div>
+            <div class="news-img-container"><img src="{{news1_image}}" alt="{{news1_image_alt}}"></div>
             <h2 class="news-title">{{news1_title}}</h2>
             <h5 class="news-date-tag">
                 <span>{{news1_date}} • </span>
@@ -79,6 +68,18 @@
             <p class="news-excerpt">{{news1_excerpt}}</p>
             <a href="{{news1_link}}"><button class="news-btn">More ... </button></a>
         </div>
-
+        <!-- news card 5-->
+        <div id="news1" class="news">
+            <div class="news-img-container"><img src="{{news1_image}}" alt="{{news1_image_alt}}"></div>
+            <h2 class="news-title">{{news1_title}}</h2>
+            <h5 class="news-date-tag">
+                <span>{{news1_date}} • </span>
+                {%for tag in site.news[news1_index].tags%}
+                    <span>#{{tag}}</span>
+                {%endfor%}
+                </h5>
+            <p class="news-excerpt">{{news1_excerpt}}</p>
+            <a href="{{news1_link}}"><button class="news-btn">More ... </button></a>
+        </div>
     </div>
 </div>
