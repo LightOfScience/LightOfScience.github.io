@@ -3,12 +3,13 @@ backend:
   branch: netlify-cms
   publish_mode: editorial_workflow
 
-media_folder: "/{{name}}/{{year}}/{{slug}}/"
+media_folder: "/media/"
 
 collections:
   - name : "post-news"
     label: "News"
-    folder: "collections/_news"
+    folder: "collections/_news/{{year}}/"
+    path: "{{slug}}/"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
