@@ -1,0 +1,24 @@
+$sm:500px;
+$md:899px;
+$lg:900px;
+@mixin lg 
+{
+	@media (min-width:#{$lg})
+	{
+		@content;
+	}
+}
+@mixin md 
+{
+	@media (max-width:#{$md})
+	{
+		@content;
+	}
+}
+@mixin sm 
+{
+	@media (max-width:#{$sm})
+	{
+		@content;
+	}
+}
