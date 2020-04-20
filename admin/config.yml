@@ -8,8 +8,8 @@ media_folder: "/media/"
 collections:
   - name : "post-news"
     label: "News"
-    folder: "collections/_news/{{year}}/"
-    path: "{{slug}}/"
+    folder: "collections/_news/{{year}}"
+    path: "{{slug}}/{{slug}}"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
