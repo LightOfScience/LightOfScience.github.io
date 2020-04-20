@@ -54,7 +54,15 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+liquid:
+  error_mode        : warn
+  strict_filters    : false
+  strict_variables  : false
+
 collections_dir: collections
 collections:
   front-page-carousel:
     output: false
+  news:
+    output: true
+    permalink: /news/:year/:title/
