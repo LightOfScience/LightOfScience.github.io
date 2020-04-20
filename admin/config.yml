@@ -14,10 +14,10 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
-      - {label: "Title", name: "title", widget: "string", defaul: ""}
-      - {label: "Image", name: "image", widget: "image", defaul: ""}
-      - {label: "Body", name: "body", widget: "text", defaul: ""}
-      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", default: ""}
+      - {label: "Image", name: "image", widget: "image", default: ""}
+      - {label: "Body", name: "body", widget: "text", default: ""}
+      - {label: "Link", name: "link", widget: "string", required: "false", default: ""}
 
   - name : "news"
     label: "News"
