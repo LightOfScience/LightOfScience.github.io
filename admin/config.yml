@@ -1,10 +1,9 @@
 backend:
   name: git-gateway
   branch: netlify-cms
+  publish_mode: editorial_workflow
 
-publish_mode: editorial_workflow
-
-media_folder: "data/"
+media_folder: "/data/"
 
 collections:
   - name : "post-news"
