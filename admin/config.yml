@@ -3,19 +3,20 @@ backend:
   branch: netlify-cms
   publish_mode: editorial_workflow
 
-media_folder: "/media/"
+media_folder: "/media"
 
 collections:
   - name : "post-news"
     label: "News"
-    folder: "collections/_news/{{year}}"
-    path: "{{slug}}/{{slug}}"
+    folder: "collections/_news"
+    path: "{{year}}//{{slug}}/{{slug}}"
+    media_folder: "/news/{{year}}/{{slug}}/"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post-news"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Image", name: "image", widget: "image", default: "/news/{{year}}/{{slug}}/"}
+      - {label: "Image", name: "image", widget: "image", default: ""}
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
