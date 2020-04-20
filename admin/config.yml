@@ -3,7 +3,7 @@ backend:
   branch: netlify-cms
   publish_mode: editorial_workflow
 
-media_folder: "/data/"
+media_folder: "/{{name}}/{{year}}/{{slug}}/"
 
 collections:
   - name : "post-news"
