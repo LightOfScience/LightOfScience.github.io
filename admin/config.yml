@@ -9,6 +9,7 @@ collections:
   - name: "front-carousel"
     label: "Front Page Carousel"
     folder: "collections/_front-page-carousel"
+    path: "{{year}}/{{year}}-{{month}}-{{day}}-{{slug}}"
     media_folder: "/front-page/carousel"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
@@ -16,12 +17,13 @@ collections:
       - {label: "Title", name: "title", widget: "string", defaul: ""}
       - {label: "Image", name: "image", widget: "image", defaul: ""}
       - {label: "Body", name: "body", widget: "text", defaul: ""}
-      - {label: "Link", name: "link", widget: "string", defaul: ""}
+      - {label: "Link", name: "link", widget: "string"}
 
   - name : "news"
     label: "News"
     folder: "collections/_news"
     media_folder: "/news/{{fields.yr}}/{{slug}}/"
+    path: "{{year}}/{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     slug: "{{fields.date}}-{{slug}}"
     fields:
