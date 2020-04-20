@@ -1,3 +1,4 @@
+
 backend:
   name: git-gateway
   branch: netlify-cms
@@ -26,13 +27,12 @@ collections:
     slug: "{{fields.date}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post-news"}
+      - {label: "Date", name: "date", widget: "datetime", dateFormat: "DD-MM-YYYY", timeFormat:false, format: "YYYY-MM-DD"}
+      - {label: "Year", name: "yr", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image", default: ""}
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
       - {label: "Tags (separate by ',' of ' ')", name: "tags", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Date", name: "date", widget: "datetime", dateFormat: "DD-MM-YYYY", timeFormat:false, format: "YYYY-MM-DD"}
-      - {label: "Year", name: "yr", widget: "datetime", dateFormat: "DD-MM-YYYY", format: "YYYY"}
-
 
