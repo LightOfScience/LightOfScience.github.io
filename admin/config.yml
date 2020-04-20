@@ -29,7 +29,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post-news"}
       - {label: "DD-MM", name: "MMDD", widget: "datetime", dateFormat: "DD-MM", timeFormat:false, format: "MM-DD"}
       - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
-      - {label: "Date", name: "date", widget: "hidden", default: "{{labels.YYYY}}-{{labels.MMDD}}"}
+      - {label: "Date", name: "date", widget: "hidden", default: {{labels.YYYY}}"-"{{labels.MMDD}}}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image", default: ""}
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
