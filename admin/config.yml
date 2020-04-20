@@ -9,7 +9,7 @@ collections:
   - name: "front-carousel"
     label: "Front Page Carousel"
     folder: "collections/_front-page-carousel"
-    media_flder: "/front-page/carousel"
+    media_folder: "/front-page/carousel"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
