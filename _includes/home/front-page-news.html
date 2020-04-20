@@ -1,0 +1,84 @@
+{%assign news_post_length = site.news | size %}
+
+{%assign news1_index = news_post_length | minus:1 %}
+{%assign news1_title = site.news[news1_index].title %}
+{%assign news1_excerpt = site.news[news1_index].excerpt %}
+{%assign news1_date = site.news[news1_index].date | date: "%d %b %Y" %}
+{%assign news1_image = site.news[news1_index].image %}
+{%assign news1_image_alt = site.news[news1_index].image_alt %}
+{%assign news1_link = site.news[news1_index].url %}
+
+
+
+<!-- Carousel Stylesheet-->
+<link rel="stylesheet" type="text/css" href="/assets/css/front-page-news.css">
+
+<!-- Front Page News -->
+<div id="front-page-news-container">
+    <div id="front-page-news-wrapper">
+        <div id="news1" class="news">
+            <div class="news-img-container"><img src="{{news1_link}}{{news1_image}}" alt="{{news1_image_alt}}"></div>
+            <h2 class="news-title">{{news1_title}}</h2>
+            <h5 class="news-date-tag">
+                <span>{{news1_date}} • </span>
+                {%for tag in site.news[news1_index].tags%}
+                    <span>#{{tag}}</span>
+                {%endfor%}
+                </h5>
+            <p class="news-excerpt">{{news1_excerpt}}</p>
+            <a href="{{news1_link}}"><button class="news-btn">More ... </button></a>
+        </div>
+
+                <div id="news1" class="news">
+            <div class="news-img-container"><img src="{{news1_link}}/{{news1_image}}" alt="{{news1_image_alt}}"></div>
+            <h2 class="news-title">{{news1_title}}</h2>
+            <h5 class="news-date-tag">
+                <span>{{news1_date}} • </span>
+                {%for tag in site.news[news1_index].tags%}
+                    <span>#{{tag}}</span>
+                {%endfor%}
+                </h5>
+            <p class="news-excerpt">{{news1_excerpt}}</p>
+            <a href="{{news1_link}}"><button class="news-btn">More ... </button></a>
+        </div>
+        
+        <div id="news1" class="news">
+            <div class="news-img-container"><img src="{{news1_link}}/{{news1_image}}" alt="{{news1_image_alt}}"></div>
+            <h2 class="news-title">{{news1_title}}</h2>
+            <h5 class="news-date-tag">
+                <span>{{news1_date}} • </span>
+                {%for tag in site.news[news1_index].tags%}
+                    <span>#{{tag}}</span>
+                {%endfor%}
+                </h5>
+            <p class="news-excerpt">{{news1_excerpt}}</p>
+            <a href="{{news1_link}}"><button class="news-btn">More ... </button></a>
+        </div>
+
+        <div id="news1" class="news">
+            <div class="news-img-container"><img src="{{news1_link}}/{{news1_image}}" alt="{{news1_image_alt}}"></div>
+            <h2 class="news-title">{{news1_title}}</h2>
+            <h5 class="news-date-tag">
+                <span>{{news1_date}} • </span>
+                {%for tag in site.news[news1_index].tags%}
+                    <span>#{{tag}}</span>
+                {%endfor%}
+                </h5>
+            <p class="news-excerpt">{{news1_excerpt}}</p>
+            <a href="{{news1_link}}"><button class="news-btn">More ... </button></a>
+        </div>
+        <div id="news1" class="news">
+            <div class="news-img-container"><img src="{{news1_link}}/{{news1_image}}" alt="{{news1_image_alt}}"></div>
+            <h2 class="news-title">{{news1_title}}</h2>
+            <h5 class="news-date-tag">
+                <span>{{news1_date}} • </span>
+                {%for tag in site.news[news1_index].tags%}
+                    <span>#{{tag}}</span>
+                {%endfor%}
+                </h5>
+            <p class="news-excerpt">{{news1_excerpt}}</p>
+            <a href="{{news1_link}}"><button class="news-btn">More ... </button></a>
+        </div>
+
+    </div>
+</div>
