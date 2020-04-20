@@ -9,7 +9,6 @@ collections:
   - name: "front-carousel"
     label: "Front Page Carousel"
     folder: "collections/_front-page-carousel"
-    path: "{{year}}/{{slug}}"
     media_flder: "/front-page/carousel"
     slug: "{{fields.date}}-{{slug}}"
     create: true
@@ -21,7 +20,6 @@ collections:
   - name : "news"
     label: "News"
     folder: "collections/_news"
-    path: "{{year}}/{{slug}}"
     media_folder: "/news/{{fields.yr}}/{{slug}}/"
     create: true
     slug: "{{fields.date}}-{{slug}}"
