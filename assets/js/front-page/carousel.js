@@ -25,7 +25,6 @@ const slide_length = document.getElementById("carousel-slides").childElementCoun
 let slideshow = (i) =>
 {
     show("slide"+i)
-    console.log(i);
     if(i==slide_length){
         n=1
     }

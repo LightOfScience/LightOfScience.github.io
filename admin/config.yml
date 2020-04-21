@@ -14,9 +14,9 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
-      - {label: "Title", name: "title", widget: "string", default: ""}
+      - {label: "Title", name: "title", widget: "string",  default: ""}
       - {label: "Image", name: "image", widget: "image", default: ""}
-      - {label: "Body", name: "body", widget: "text", default: ""}
+      - {label: "Body", name: "body", widget: "text", required: false, default: ""}
       - {label: "Link", name: "link", widget: "string", required: false, default: ""}
 
   - name : "news"
@@ -27,13 +27,32 @@ collections:
     slug: "{{fields.YYYY}}-{{fields.MM}}-{{fields.DD}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post-news"}
-      - {label: "Date", name: "DD", widget: "datetime", dateFormat: "DD", timeFormat:false, format: "DD"}
-      - {label: "Month", name: "MM", widget: "datetime", dateFormat: "MM", timeFormat:false, format: "MM"}
+      - {label: "Date", name: "DD", widget: "datetime", dateFormat: "DD", timeFormat: false, format: "DD"}
+      - {label: "Month", name: "MM", widget: "datetime", dateFormat: "MM", timeFormat: false, format: "MM"}
       - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image", default: ""}
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
       - {label: "Tags (separate by ',' of ' ')", name: "tags", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name : "blog"
+    label: "Blog"
+    folder: "collections/_posts"
+    media_folder: "/blog/{{fields.YYYY}}/{{fields.MM}}/{{slug}}/"
+    create: true
+    slug: "{{fields.YYYY}}-{{fields.MM}}-{{fields.DD}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post-blog"}
+      - {label: "Date", name: "DD", widget: "datetime", dateFormat: "DD", timeFormat: false, format: "DD"}
+      - {label: "Month", name: "MM", widget: "datetime", dateFormat: "MM", timeFormat: false, format: "MM"}
+      - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", default: ""}
+      - {label: "Image Alt text", name: "image_alt", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Tags (separate by ',' of ' ')", name: "tags", widget: "string"}
+      - {label: "Categories (separate by ',' of ' ')", name: "tags", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 

@@ -1,117 +1,38 @@
 {%assign news_post_length = site.news | size %}
 
-{%assign news1_index = news_post_length | minus:1 %}
-{%assign news1_title = site.news[news1_index].title %}
-{%assign news1_excerpt = site.news[news1_index].excerpt %}
-{%assign news1_date = site.news[news1_index].date | date: "%d %b %Y" %}
-{%assign news1_image = site.news[news1_index].image %}
-{%assign news1_image_alt = site.news[news1_index].image_alt %}
-{%assign news1_link = site.news[news1_index].url %}
-
-{%assign news2_index = news_post_length | minus:2 %}
-{%assign news2_title = site.news[news2_index].title %}
-{%assign news2_excerpt = site.news[news2_index].excerpt %}
-{%assign news2_date = site.news[news2_index].date | date: "%d %b %Y" %}
-{%assign news2_image = site.news[news2_index].image %}
-{%assign news2_image_alt = site.news[news2_index].image_alt %}
-{%assign news2_link = site.news[news2_index].url %}
-
-{%assign news3_index = news_post_length | minus:3 %}
-{%assign news3_title = site.news[news3_index].title %}
-{%assign news3_excerpt = site.news[news3_index].excerpt %}
-{%assign news3_date = site.news[news3_index].date | date: "%d %b %Y" %}
-{%assign news3_image = site.news[news3_index].image %}
-{%assign news3_image_alt = site.news[news3_index].image_alt %}
-{%assign news3_link = site.news[news3_index].url %}
-
-{%assign news4_index = news_post_length | minus:4 %}
-{%assign news4_title = site.news[news4_index].title %}
-{%assign news4_excerpt = site.news[news4_index].excerpt %}
-{%assign news4_date = site.news[news4_index].date | date: "%d %b %Y" %}
-{%assign news4_image = site.news[news4_index].image %}
-{%assign news4_image_alt = site.news[news4_index].image_alt %}
-{%assign news4_link = site.news[news4_index].url %}
-
-{%assign news5_index = news_post_length | minus:5 %}
-{%assign news5_title = site.news[news5_index].title %}
-{%assign news5_excerpt = site.news[news5_index].excerpt %}
-{%assign news5_date = site.news[news5_index].date | date: "%d %b %Y" %}
-{%assign news5_image = site.news[news5_index].image %}
-{%assign news5_image_alt = site.news[news5_index].image_alt %}
-{%assign news5_link = site.news[news5_index].url %}
-
-
-
 <!-- Carousel Stylesheet-->
 <link rel="stylesheet" type="text/css" href="/assets/css/front-page-news.css">
 
-<!-- Front Page News -->
-<div id="front-page-news-container">
-    <div id="front-page-news-wrapper">
-        <!-- news card 1-->
-        <div id="news1" class="news">
-            <div class="news-img-container"><img src="{{news1_image}}" alt="{{news1_image_alt}}"></div>
-            <h2 class="news-title">{{news1_title}}</h2>
-            <h5 class="news-date-tag">
-                <span>{{news1_date}} • </span>
-                {%for tag in site.news[news1_index].tags%}
-                    <span>#{{tag}}</span>
-                {%endfor%}
-                </h5>
-            <p class="news-excerpt">{{news1_excerpt}}</p>
-            <a href="{{news1_link}}"><button class="news-btn">More ... </button></a>
-        </div>
-        <!-- news card 2-->
-        <div id="news2" class="news">
-            <div class="news-img-container"><img src="{{news2_image}}" alt="{{news2_image_alt}}"></div>
-            <h2 class="news-title">{{news2_title}}</h2>
-            <h5 class="news-date-tag">
-                <span>{{news2_date}} • </span>
-                {%for tag in site.news[news2_index].tags%}
-                    <span>#{{tag}}</span>
-                {%endfor%}
-                </h5>
-            <p class="news-excerpt">{{news2_excerpt}}</p>
-            <a href="{{news2_link}}"><button class="news-btn">More ... </button></a>
-        </div>
-        <!-- news card 3-->
-        <div id="news3" class="news">
-            <div class="news-img-container"><img src="{{news3_image}}" alt="{{news3_image_alt}}"></div>
-            <h2 class="news-title">{{news3_title}}</h2>
-            <h5 class="news-date-tag">
-                <span>{{news3_date}} • </span>
-                {%for tag in site.news[news3_index].tags%}
-                    <span>#{{tag}}</span>
-                {%endfor%}
-                </h5>
-            <p class="news-excerpt">{{news3_excerpt}}</p>
-            <a href="{{news3_link}}"><button class="news-btn">More ... </button></a>
-        </div>
-        <!-- news card 4-->
-        <div id="news4" class="news">
-            <div class="news-img-container"><img src="{{news4_image}}" alt="{{news4_image_alt}}"></div>
-            <h2 class="news-title">{{news4_title}}</h2>
-            <h5 class="news-date-tag">
-                <span>{{news4_date}} • </span>
-                {%for tag in site.news[news4_index].tags%}
-                    <span>#{{tag}}</span>
-                {%endfor%}
-                </h5>
-            <p class="news-excerpt">{{news4_excerpt}}</p>
-            <a href="{{news4_link}}"><button class="news-btn">More ... </button></a>
-        </div>
-        <!-- news card 5-->
-        <div id="news5" class="news">
-            <div class="news-img-container"><img src="{{news5_image}}" alt="{{news5_image_alt}}"></div>
-            <h2 class="news-title">{{news5_title}}</h2>
-            <h5 class="news-date-tag">
-                <span>{{news5_date}} • </span>
-                {%for tag in site.news[news5_index].tags%}
-                    <span>#{{tag}}</span>
-                {%endfor%}
-                </h5>
-            <p class="news-excerpt">{{news5_excerpt}}</p>
-            <a href="{{news5_link}}"><button class="news-btn">More ... </button></a>
+<div id="front-page-news">
+    <div id="front-page-news-container">
+        <div id="front-page-news-wrapper">
+            {% for i in (1..5) %}
+                {%assign news_index = news_post_length | minus:{{i}} %}
+                {%assign news_title = site.news[news_index].title %}
+                {%assign news_excerpt = site.news[news_index].excerpt %}
+                {%assign news_date = site.news[news_index].date | date: "%d %b %Y" %}
+                {%assign news_image = site.news[news_index].image %}
+                {%assign news_image_alt = site.news[news_index].image_alt %}
+                {%assign news_link = site.news[news_index].url %}
+                <!-- news card {{i}}-->
+                    <div id="news{{i}}" class="news">
+                        <div class="news-img-container"><a href="{{news_link}}"><img src="{{news_image}}" alt="{{news_image_alt}}"></a></div>
+                        <h2 class="news-title">{{news_title}}</h2>
+                        <h5 class="news-date-tag">
+                            <span>{{news_date}} • </span>
+                            {%for tag in site.news[news_index].tags%}
+                                <span>#{{tag}}</span>
+                            {%endfor%}
+                            </h5>
+                        <p class="news-excerpt">{{news_excerpt}}</p>                  
+                    </div>
+            {%endfor%}
         </div>
     </div>
+    <div id="news-controller">
+        <button id="news-left-btn"><img src="/assets/img/left-arrow.svg" width="100%" height="100%"></button>
+        <button id="news-right-btn"><img src="/assets/img/right-arrow.svg" width="100%" height="100%"></button>
+    </div>
 </div>
+<!-- News-bar Script-->
+<script src="/assets/js/front-page/news-bar.js"></script> 
