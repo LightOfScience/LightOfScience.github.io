@@ -9,11 +9,5 @@ img: /data/df.img
 
 {% include home/front-page-carousel.html %}
 {% include home/front-page-news.html %} 
+{% include home/front-page-blog.html %} 
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>

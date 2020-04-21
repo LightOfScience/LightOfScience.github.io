@@ -5,14 +5,15 @@
     display: block;
     @include lg{margin:10px;}
     @include sm{margin:5px;}
-    @include md{margin:0px;}
+    @include md{margin:5px;}
     overflow-x: scroll;
-    overflow-y: hidden;
+    //overflow-y: hidden;
     scrollbar-width: thin;
 }
 
 #front-page-news-wrapper
 {
+    position: relative;
     display: inline-flex;
     flex-direction: row;
     @include lg{margin:0 10px;}
@@ -20,21 +21,55 @@
     @include md{margin:0 5px;}
 }
 
+
+#news-controller
+{
+    position: relative;
+    bottom:calc(100vw / 4);
+
+    #news-left-btn, #news-right-btn
+    {
+        position: absolute;
+        padding:0;
+        margin:0;
+        background: #ffffff;
+        width: 4rem;
+        height: 5rem;
+        border: none;
+    }
+    #news-left-btn:hover, #news-right-btn:hover
+    {
+        background: #ffffffdd;
+    }
+    #news-left-btn
+    {
+        left: 0px;
+    }
+    #news-right-btn
+    {
+        right: 0px;
+    }
+}
+
+
 .news
 {
+    width:calc(100vw /3);
+    height: 70%;    
     //background: #f8f8f8;
     @include lg{padding:10px;}
     @include sm{margin:5px;}
     @include md{margin:2px;}
-    height: calc(100vw / 3.5 + 20px);
-    width: calc((100% - 10px)/3);
-    vertical-align: top;
-    width: 400px;
+    //height: calc(100vw / 2.7);
+    //width: calc((100% - 10px)/3);
+    vertical-align: top; 
     .news-img-container
     {
-        width:100%;
-        height: 70%;
+        width: calc(100vw / 3);
+        height: calc(100vw / 4);
         overflow: hidden;
+        padding:0;
+        margin:0;
         img{ 
             height: 100%;
             width: 100%;
