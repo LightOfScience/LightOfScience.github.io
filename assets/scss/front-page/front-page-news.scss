@@ -6,13 +6,15 @@
     @include lg{margin:10px;}
     @include sm{margin:5px;}
     @include md{margin:0px;}
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: thin;
 }
 
 #front-page-news-wrapper
 {
-    display: block ruby;
-    overflow-x: scroll;
-    //scrollbar-width: thin;
+    display: inline-flex;
+    flex-direction: row;
     @include lg{margin:0 10px;}
     @include sm{margin:0 5px;}
     @include md{margin:0 5px;}
@@ -20,14 +22,14 @@
 
 .news
 {
-    background: #f8f8f8;
+    //background: #f8f8f8;
     @include lg{padding:10px;}
     @include sm{margin:5px;}
     @include md{margin:2px;}
     height: calc(100vw / 3.5 + 20px);
     width: calc((100% - 10px)/3);
     vertical-align: top;
-
+    width: 400px;
     .news-img-container
     {
         width:100%;
@@ -35,7 +37,7 @@
         overflow: hidden;
         img{ 
             height: 100%;
-            min-width: 100%;
+            width: 100%;
             transition: transform .3s ease-in-out;
             transform: scale(1);
             }
