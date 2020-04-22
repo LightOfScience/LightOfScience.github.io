@@ -1,9 +1,9 @@
 <!-- Carousel Stylesheet-->
 <link rel="stylesheet" type="text/css" href="/assets/css/front-page-news.css">
 
-<div id="front-page-news">
-    <div id="front-page-news-container">
-        <div id="front-page-news-wrapper">
+<div id="front-page-news-container">
+    <div id="front-page-news-wrapper">
+        <div id="front-page-news">
             {%assign news_post_length = site.news | size %}
             {% for i in (1..5) %}
                 {%assign news_index = {{news_post_length}} | minus:{{i}} %}
@@ -16,21 +16,20 @@
                 <!-- news card {{i}}-->
                     <div id="news{{i}}" class="news">
                         <div class="news-img-container"><a href="{{news_link}}"><img src="{{news_image}}" alt="{{news_image_alt}}"></a></div>
-                        <h2 class="news-title">{{news_title}}</h2>
                         <h5 class="news-date-tag">
                             <span>{{news_date}} • </span>
                             {%for tag in site.news[news_index].tags%}
                                 <span>#{{tag}}</span>
                             {%endfor%}
-                            </h5>
-                        <p class="news-excerpt">{{news_excerpt}}</p>                  
+                        </h5>
+                        <h2 class="news-title">{{news_title}}</h2>
+                        <h3 class="news-excerpt">{{news_excerpt}}</h3>                  
                     </div>
             {%endfor%}
         </div>
-    </div>
-    <div id="news-controller">
-        <button id="news-left-btn"><img src="/assets/img/left-arrow.svg" width="100%" height="100%"></button>
-        <button id="news-right-btn"><img src="/assets/img/right-arrow.svg" width="100%" height="100%"></button>
+
+        <button id="news-btn-left"><img src="/assets/img/left-arrow.svg" width="100%" height="100%"></button>
+        <button id="news-btn-right"><img src="/assets/img/right-arrow.svg" width="100%" height="100%"></button>
     </div>
 </div>
 <!-- News-bar Script-->
