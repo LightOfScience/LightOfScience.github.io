@@ -34,7 +34,8 @@ collections:
       - {label: "Image", name: "image", widget: "image", default: ""}
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
-      - {label: "Tags (separate by ',' of ' ')", name: "tags", widget: "string"}
+      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
+      - {label: "Categories (separate by ',' or ' ')", name: "categories", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name : "blog"
@@ -52,7 +53,7 @@ collections:
       - {label: "Image", name: "image", widget: "image", default: ""}
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
-      - {label: "Tags (separate by ',' of ' ')", name: "tags", widget: "string"}
-      - {label: "Categories (separate by ',' of ' ')", name: "tags", widget: "string"}
+      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
+      - {label: "Categories (separate by ',' or ' ')", name: "categories", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 

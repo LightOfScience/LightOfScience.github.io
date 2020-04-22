@@ -16,4 +16,4 @@ setInterval(() => {
     }
     news_slide.scrollBy({left:tmpVar, behavior:"smooth" });
 
-}, 4000); 
+}, 3989); 

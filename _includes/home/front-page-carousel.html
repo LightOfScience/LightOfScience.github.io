@@ -1,40 +1,3 @@
-{%assign slide_post_length = site.front-page-carousel | size%}
-
-{%assign slide1_index = slide_post_length | minus:1 %}
-{%assign slide1_title = site.front-page-carousel[slide1_index].title %}
-{%assign slide1_img = site.front-page-carousel[slide1_index].image %}
-{%assign slide1_img_alt = site.front-page-carousel[slide1_index].image_alt %}
-{%assign slide1_link = site.front-page-carousel[slide1_index].link %}
-{%assign slide1_content = site.front-page-carousel[slide1_index].content %}
-
-{%assign slide2_index = slide_post_length | minus:2 %}
-{%assign slide2_title = site.front-page-carousel[slide2_index.title %}
-{%assign slide2_img = site.front-page-carousel[slide2_index].image %}
-{%assign slide2_img_alt = site.front-page-carousel[slide2_index].image_alt %}
-{%assign slide2_link = site.front-page-carousel[slide2_index].link %}
-{%assign slide2_content = site.front-page-carousel[slide2_index].content %}
-
-{%assign slide3_index = slide_post_length | minus:3 %}
-{%assign slide3_title = site.front-page-carousel[slide3_index].title %}
-{%assign slide3_img = site.front-page-carousel[slide3_index].image %}
-{%assign slide3_img_alt = site.front-page-carousel[slide3_indexs].image_alt %}
-{%assign slide3_link = site.front-page-carousel[slide3_index].link %}
-{%assign slide3_content = site.front-page-carousel[slide3_index].content %}
-
-{%assign slide4_index = slide_post_length | minus:4 %}
-{%assign slide4_title = site.front-page-carousel[slide4_index].title %}
-{%assign slide4_img = site.front-page-carousel[slide4_index].image %}
-{%assign slide4_img_alt = site.front-page-carousel[slide4_index].image_alt %}
-{%assign slide4_link = site.front-page-carousel[slide4_index].link %}
-{%assign slide4_content = site.front-page-carousel[slide4_index].content %}
-
-{%assign slide5_index = slide_post_length | minus:5 %}
-{%assign slide5_title = site.front-page-carousel[slide5_index].title %}
-{%assign slide5_img = site.front-page-carousel[slide5_index].image %}
-{%assign slide5_img_alt = site.front-page-carousel[slide5_index].image_alt %}
-{%assign slide5_link = site.front-page-carousel[slide5_index].link %}
-{%assign slide5_content = site.front-page-carousel[slide5_index].content %}
-
 <!-- Carousel Stylesheet-->
 <link rel="stylesheet" type="text/css" href="/assets/css/front-page-carousel.css">
 
@@ -42,42 +5,28 @@
 <div id="front-page-carousel-wrapper">
     <div id="front-page-carousel">
         <div id="carousel-slides">
-            <div id="slide1" class="slide slide-show">
-                <div class="img-container"><img src="{{slide1_img}}" alt="{{slide1_img_alt}}"></div>
-                <div class="slide-description">
-                    <h2 class="slide-title">{{slide1_title}}</h2>
-                    <p class="clide-details">{{slide1_content}}<a href="{{slide1_link}}"> more details ...</a></p>
+            {%assign slide_post_length = site.front-page-carousel | size %}
+            {%for i in (1..5) %}
+                {%assign slide_index = {{slide_post_length}} | minus:{{i}} %}
+                {%assign slide_title = site.front-page-carousel[slide_index].title %}
+                {%assign slide_img = site.front-page-carousel[slide_index].image %}
+                {%assign slide_img_alt = site.front-page-carousel[slide_index].image_alt %}
+                {%assign slide_link = site.front-page-carousel[slide_index].link %}
+                {%assign slide_content = site.front-page-carousel[slide_index].content %}
+                <!-- Slide {{i}}} -->
+                <div id="slide{{i}}" class="slide slide-show">
+                    <div class="img-container"><img src="{{slide_img}}" alt="{{slide_img_alt}}"></div>
+                    <div class="slide-description">
+                        <h2 class="slide-title">{{slide_title}}</h2>
+                        <h3 class="slide-details">{{slide_content}}</h3>
+                        {%if slide_link != "" %}
+                            <a href="{{slide_link}}"> more details ...</a>
+                        {%endif%}
+                    </div>
                 </div>
-            </div>
-            <div id="slide2" class="slide slide-hide">
-                <div class="img-container"><img src="{{slide2_img}}" alt="{{slide2_img_alt}}"></div>
-                <div class="slide-description">
-                    <h2 class="slide-title">{{slide2_title}}</h2>
-                    <p class="clide-details">{{slide2_content}}<a href="{{slide2_link}}"> more details ...</a></p>
-                </div>
-            </div>
-            <div id="slide3" class="slide slide-hide">
-                <div class="img-container"><img src="{{slide3_img}}" alt="{{slide3_img_alt}}"></div>
-                <div class="slide-description">
-                    <h2 class="slide-title">{{slide3_title}}</h2>
-                    <p class="clide-details">{{slide3_content}}<a href="{{slide3_link}}"> more details ...</a></p>
-                </div>
-            </div>
-            <div id="slide4" class="slide slide-hide">
-                <div class="img-container"><img src="{{slide4_img}}" alt="{{slide4_img_alt}}"></div>
-                <div class="slide-description">
-                    <h2 class="slide-title">{{slide4_title}}</h2>
-                    <p class="clide-details">{{slide4_content}}<a href="{{slide4_link}}"> more details ...</a></p>
-                </div>
-            </div>
-            <div id="slide5" class="slide slide-hide">
-                <div class="img-container"><img src="{{slide5_img}}" alt="{{slide5_img_alt}}"></div>
-                <div class="slide-description">
-                    <h2 class="slide-title">{{slide5_title}}</h2>
-                    <p class="clide-details">{{slide5_content}}<a href="{{slide5_link}}"> more details ...</a></p>
-                </div>
-            </div>
+            {%endfor%}
         </div>
+
         <div id="carousel-nav">
             <button id="slide1-btn" class="slide-btn slide-btn-active" onclick="show('slide1')"></button>
             <button id="slide2-btn" class="slide-btn" onclick="show('slide2')"></button>

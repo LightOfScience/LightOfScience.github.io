@@ -1,0 +1,113 @@
+@import "../scss_vars_mixins";
+////////////////////////////
+
+#front-page-blog-container
+{
+    display: block;
+    @include lg{width: calc(100% - 40px); padding:20px;}
+    @include md{width: calc(100% - 20px); padding:10px;}
+    @include sm{width: calc(100% - 10px); padding:5px;}
+}
+
+#front-page-blog-warpper
+{
+    position: relative;
+}
+
+#front-page-blog-slides
+{
+    display: flex;
+    display: -webkit-box;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+
+}
+#blog-nav-btn-left, #blog-nav-btn-right
+{
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    bottom: 30px;
+    background: #ffffff80;
+    @include lg{width: 50px;}
+    @include md{width: 30px;}
+    @include sm{width: 30px;}
+    border: none;
+    border-radius: none;
+}
+#blog-nav-btn-left:hover, #blog-nav-btn-right:hover
+{
+    background: #fff;
+}
+#blog-nav-btn-left
+{
+    left: 0;
+}
+#blog-nav-btn-right
+{
+    right: 0;
+}
+
+.blog
+{
+    @include lg{padding: 10px;}
+    @include md{padding: 5px;}
+    @include sm{padding: 2px;}
+    width: 20%;
+    background:#ffffff;
+    //border-left: solid #ccc;
+    border-right: solid 1px #dddddd;
+
+    .blog-img-container
+    {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        padding-top: 75%;
+
+        img
+        {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            transition: transform .3s ease-in-out;
+            transform: scale(1.1);
+        }
+     
+        .blog-date
+        {
+            background: #fff;
+            padding: 0 .2rem;
+            margin:0;
+            font-size: .6rem;
+            position: absolute;
+            top: 0;
+        }
+    }
+    a{text-decoration: none;}
+    .blog-title
+    {
+        padding: 0;
+        margin:0px;
+        font-size: 1rem;
+        color:#0f0f0f;
+        text-align: justify;
+    }
+    .blog-excerpt
+    {
+        margin:0 .3rem;
+        font-size: .9rem;
+        text-align: justify;
+    }
+
+}
+
+.blog:hover{
+    img
+    {
+        transform: scale(1.2) rotateZ(5deg);
+    }     
+}
