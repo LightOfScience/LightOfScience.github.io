@@ -1,13 +1,12 @@
-{%assign news_post_length = site.news | size %}
-
 <!-- Carousel Stylesheet-->
 <link rel="stylesheet" type="text/css" href="/assets/css/front-page-news.css">
 
 <div id="front-page-news">
     <div id="front-page-news-container">
         <div id="front-page-news-wrapper">
+            {%assign news_post_length = site.news | size %}
             {% for i in (1..5) %}
-                {%assign news_index = news_post_length | minus:{{i}} %}
+                {%assign news_index = {{news_post_length}} | minus:{{i}} %}
                 {%assign news_title = site.news[news_index].title %}
                 {%assign news_excerpt = site.news[news_index].excerpt %}
                 {%assign news_date = site.news[news_index].date | date: "%d %b %Y" %}

@@ -4,29 +4,31 @@
 <div id="front-page-blog-container">
     <div id="front-page-blog-warpper">
         <div id="front-page-blog-slides">
-            {%assign blog_length = site.posts | size %}
             {% for i in (1..10) %}
-                {%assign blog_index = blog_length | minus:1 %}
+                {%assign blog_index = {{i}} | minus:1 %}
                 {%assign blog_title = site.posts[blog_index].title%}
+                {%assign blog_excerpt = site.posts[blog_index].excerpt%}
                 {%assign blog_url = site.posts[blog_index].url%}
                 {%assign blog_image = site.posts[blog_index].image%}
                 {%assign blog_image_alt = site.posts[blog_index].image_alt%}
                 {%assign blog_tags = site.posts[blog_index].tags%}
                 {%assign blog_category = site.posts[blog_index].category%}
-                {%assign blog_date = site.posts[blog_index].date%}
+                {%assign blog_date = site.posts[blog_index].date | date: "%d %b %Y"%}
 
                 <div id="blog{{i}}" class="blog">
-                    <div class="blog-img-container"><a href="{{site.url}}{{blog_url}}"><img src="{{site.url}}{{blog_image}}" alt="{{blog_image_alt}}" width="100%" height="100%"></a></div>
-                    <h2 class="blog-title">{{blog_title}}</h2>
+                    <div class="blog-img-container">
+                        <a href="{{blog_url}}"><img src="{{blog_image}}" alt="{{blog_image_alt}}"></a>
+                        <h6 class="blog-date">{{blog_date}}</h6>
+                    </div>
+                    <a href="{{blog_url}}"><h2 class="blog-title">{{blog_title}}</h2></a>
+                    <p class="blog-excerpt">{{blog_excerpt}}</p>
                 </div>
           {% endfor %}
         </div>
         
-        <div id="blog-nav">
-
-        </div>
+        <button id="blog-nav-btn-left"><img src="/assets/img/left-arrow.svg" width="100%" height="100%"></button>
+        <button id="blog-nav-btn-right"><img src="/assets/img/right-arrow.svg" width="100%" height="100%"></button>
     </div>
 </div>
-
-
-
+<!-- Carousel Script-->
+<script src="/assets/js/front-page/blog.js"></script> 
