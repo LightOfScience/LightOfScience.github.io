@@ -17,7 +17,7 @@ permalink: /blog/
 <div class="page-banner-wrapper">
     <div class="page-banner-container">
         <div class="page-img-wrapper">
-            <img class="page-banner-img" src="/media/blog.jpg" alt="">
+            <img class="page-banner-img" src="{{site.data.page-banner-background.blog-banner-background}}" alt="">
         </div>
     </div>
     <h5 class="page-banner-header">Blog</h5>

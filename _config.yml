@@ -40,6 +40,9 @@ collections:
   posts:
     output: true
     permalink: /blog/:year/:month/:title/
+  publication:
+    output: true
+    permalink: /publication/:title/
 
 
 
