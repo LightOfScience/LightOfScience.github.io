@@ -1,0 +1,35 @@
+<div id="news-list-wrapper">
+    <div id="news-list-container">
+        {%assign news_length = site.news | size %}
+        {%for news in site.news reversed %}
+            {%assign news_date = news.date | date: "%d %b %Y"%}
+            {%assign news_title = news.title%}
+            {%assign news_image = news.image%}
+            {%assign news_image_alt = news.image_alt%}
+            {%assign news_excerpt = news.excerpt%}
+            {%assign news_content = news.content%}
+            {%assign news_url = news.url%}
+
+            <div class="news">
+                <div class="news-cover">
+                  <a href="{{news_url}}">
+                        <div class="news-img-wrapper">
+                            <img  class="news-img" src="{{news_image}}" alt="{{news_img_alt}}">
+                            <h5 class="news-date">{{news_date}}</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="news-details">
+                    <h2 class="news-title"><a href="{{news_url}}">{{news_title}}</a></h2>
+                    <h3 class="news-excerpt">{{news_excerpt}}</h3>
+                    <h5 class="news-tag-container">
+                        {%for tag in news.tags%}
+                            <span><a class="news-tag" href="https://www.google.com/search?q=site%3ALightOfScience.org.in+{{tag}}">#{{tag}}</a></span>
+                        {%endfor%}
+                    </h5>
+                </div>
+            </div>
+            <hr class="hr">
+        {%endfor%}
+    </div>
+</div>

@@ -1,0 +1,154 @@
+@import '../scss_vars_mixins';
+
+///news banner
+.page-banner-wrapper
+{
+    display: block;
+    height: calc(100vw/3);
+    overflow: hidden;
+    position: relative;
+}
+
+.page-banner-container
+{
+    position: fixed;
+    width: 100vw;
+    top:0;
+    z-index: -1;
+}
+.page-img-wrapper{
+    width: 100%;
+    padding-top: 50%;
+    position: relative;
+    overflow: hidden;
+
+    .page-banner-img
+    {
+        position: absolute;
+        top:0; bottom:0;
+        left:0; right:0;
+        width: 100%;
+        filter: brightness(.5);
+    }
+}
+
+.page-banner-header
+{
+    padding:0; margin:0;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    bottom:0;
+    left:0;
+    right:0;
+    font-size: 3rem;
+    color:#fff;
+}
+
+//// News List 
+.news-content-wrapper
+{
+    background: #fff;
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+
+.news-content
+{
+    @include lg{padding:0 100px;}
+    @include md{padding:0 10px;}
+    @include sm{padding:0px;}
+}
+
+
+#news-list-wrapper
+{
+    padding: 2rem;
+}
+
+.news
+{
+    margin: 2rem 0;
+    display: flex;
+    @include lg{flex-direction: row;}
+    @include md{flex-direction: column;}
+    @include sm{flex-direction: column;}
+    .news-cover
+    {
+        flex: 1;
+        .news-img-wrapper
+        {
+            width: 100%;
+            position: relative;
+            padding-top: 50%;
+            overflow: hidden;
+            .news-img
+            {
+                width: 100%;
+                position: absolute;
+                top:0;
+                bottom:0;
+                right: 0;
+                left: 0;
+            }
+            .news-date
+            {
+                position: absolute;
+                top:0;
+                left:0;
+                padding:0 .2rem;
+                margin:0;
+                background:white;
+                font-size: .8rem;
+                color: #000;
+            }
+        }
+    }
+
+    .news-details
+    {
+        position: relative;
+        flex:3;
+        margin: 0 1rem;
+        @include sm {margin: .2rem 1rem;}
+        .news-title
+        {
+            margin:0;
+            padding:0;
+            a{text-decoration: none; color: #111;}
+        }
+        .news-title:hover:hover
+        {
+            text-decoration: underline;
+        }
+
+        .news-excerpt
+        {
+            margin:.5rem;
+            font-size: 1rem;
+            text-align: justify;
+            color: #777;
+        }
+
+        .news-tag-container
+        {
+            position: absolute;
+            bottom: -1rem;
+            margin:0;
+            padding:0;
+
+            .news-tag
+            {
+                text-decoration: none;
+                padding: .1rem;
+                background: #ebebeb;
+                border-radius: .1rem;
+                border: solid .08rem #aaa;
+                color: #000;
+            }
+        }
+    }
+
+    
+}

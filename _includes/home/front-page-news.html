@@ -19,7 +19,7 @@
                         <h5 class="news-date-tag">
                             <span>{{news_date}} • </span>
                             {%for tag in site.news[news_index].tags%}
-                                <span>#{{tag}}</span>
+                                <span><a class="news-tag" href="https://www.google.com/search?q=site%3ALightOfScience.org.in+{{tag}}">#{{tag}}</a></span>
                             {%endfor%}
                         </h5>
                         <h2 class="news-title">{{news_title}}</h2>
