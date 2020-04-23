@@ -72,9 +72,17 @@
     }
     .news-date-tag
     {
-        padding:0;margin:0;
+        padding:.1rem; margin:.3rem;
         font-size: .6rem;
         color: #aaa;
+    }
+    .news-tag
+    {
+        text-decoration: none;
+        padding: .1rem;
+        background: #ebebeb;
+        border-radius: .1rem;
+        border: solid .08rem #aaa;
     }
     .news-excerpt, .news-excerpt>*
     {

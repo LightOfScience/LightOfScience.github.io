@@ -61,14 +61,16 @@
 {% case include.vard %}
     {% when "home" %}
         <script>document.getElementsByClassName("nav-element")[0].classList.add("active");</script>
+    {% when "blog" %}
+        <script>document.getElementsByClassName("nav-element")[1].classList.add("active");</script>
     {% when "news" %}
-        <script>document.getElementsByClassName("nav-element")[0].classList.add("active");</script>
+        <script>document.getElementsByClassName("nav-element")[2].classList.add("active");</script>
     {% when "activities" %}
-        <script>document.getElementsByClassName("nav-element")[0].classList.add("active");</script>
+        <script>document.getElementsByClassName("nav-element")[3].classList.add("active");</script>
     {% when "publications" %}
-        <script>document.getElementsByClassName("nav-element")[0].classList.add("active");</script>
+        <script>document.getElementsByClassName("nav-element")[4].classList.add("active");</script>
     {% when "about" %}
-        <script>document.getElementsByClassName("nav-element")[0].classList.add("active");</script>
+        <script>document.getElementsByClassName("nav-element")[5].classList.add("active");</script>
 {% endcase %}
 
 

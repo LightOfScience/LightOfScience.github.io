@@ -1,0 +1,35 @@
+<div id="blog-list-wrapper">
+    <div id="blog-list-container">
+        {%assign blog_length = site.posts | size %}
+        {%for blog in site.posts reversed %}
+            {%assign blog_date = blog.date | date: "%d %b %Y"%}
+            {%assign blog_title = blog.title%}
+            {%assign blog_image = blog.image%}
+            {%assign blog_image_alt = blog.image_alt%}
+            {%assign blog_excerpt = blog.excerpt%}
+            {%assign blog_content = blog.content%}
+            {%assign blog_url = blog.url%}
+
+            <div class="blog">
+                <div class="blog-cover">
+                  <a href="{{blog_url}}">
+                        <div class="blog-img-wrapper">
+                            <img  class="blog-img" src="{{blog_image}}" alt="{{blog_img_alt}}">
+                            <h5 class="blog-date">{{blog_date}}</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-details">
+                    <h2 class="blog-title"><a href="{{blog_url}}">{{blog_title}}</a></h2>
+                    <h3 class="blog-excerpt">{{blog_excerpt}}</h3>
+                    <h5 class="blog-tag-container">
+                        {%for tag in blog.tags%}
+                            <span><a class="blog-tag" href="https://www.google.com/search?q=site%3ALightOfScience.org.in+{{tag}}">#{{tag}}</a></span>
+                        {%endfor%}
+                    </h5>
+                </div>
+            </div>
+            <hr class="hr">
+        {%endfor%}
+    </div>
+</div>
