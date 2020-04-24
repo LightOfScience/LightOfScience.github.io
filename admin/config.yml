@@ -83,7 +83,7 @@ collections:
     create: true
     slug: "{{fields.slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "none", default: "post-book"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post-book"}
       - {label: "ID", name: "id", widget: "number", valueType: int, step: 1, default: 0}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "sub-title", widget: "string", required: false}
@@ -102,7 +102,7 @@ collections:
     create: true
     slug: "{{fields.YYYY}}-{{fields.MMM}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "none", default: "post-book"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post-book"}
       - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
       - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
       - {label: "Month", name: "MMM", widget: "datetime", dateFormat: "MMM", timeFormat: false, format: "MMM"}
@@ -121,7 +121,7 @@ collections:
     create: true
     slug: "{{fields.YYYY}}-{{fields.MMM}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "none", default: "post-book"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post-book"}
       - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
       - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
       - {label: "Month", name: "MMM", widget: "datetime", dateFormat: "MMM", timeFormat: false, format: "MMM"}
