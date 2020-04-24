@@ -83,6 +83,7 @@ collections:
     create: true
     slug: "{{fields.slug}}"
     fields:
+      - {label: "Layout", name: "layout", widget: "none", default: "post-book"}
       - {label: "ID", name: "id", widget: "number", valueType: int, step: 1, default: 0}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "sub-title", widget: "string", required: false}
