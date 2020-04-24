@@ -1,4 +1,3 @@
-
 backend:
   name: git-gateway
   branch: netlify-cms
@@ -82,7 +81,7 @@ collections:
     folder: "collections/_publications"
     media_folder: "/publications/{{slug}}/"
     create: true
-    slug: "{{fields.id}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "ID", name: "id", widget: "number", valueType: int, step: 1, default: 0}
       - {label: "Title", name: "title", widget: "string"}
@@ -99,7 +98,7 @@ collections:
     folder: "collections/_breakthrough"
     media_folder: "/publications/breakthrough/{{fields.YYYY}}-{{fields.MMM}}/"
     create: true
-    slug: "{{fields.vol}}.{{fields.no}}-{{fields.YYYY}}-{{fields.MMM}}"
+    slug: "{{fields.YYYY}}-{{fields.MMM}}"
     fields:
       - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
       - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
@@ -119,7 +118,7 @@ collections:
     folder: "collections/_prakriti"
     media_folder: "/publications/prakriti/{{fields.YYYY}}-{{fields.MMM}}/"
     create: true
-    slug: "{{fields.vol}}.{{fields.no}}-{{fields.YYYY}}-{{fields.MMM}}"
+    slug: "{{fields.YYYY}}-{{fields.MMM}}"
     fields:
       - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
       - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
@@ -133,6 +132,5 @@ collections:
       - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
       - {label: "Table of Content", name: "file", widget: "file", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Slug", name: slug, default: YYYY-MMM }
 
 
