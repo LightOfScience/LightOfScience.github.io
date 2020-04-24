@@ -42,7 +42,7 @@ collections:
     permalink: /blog/:year/:month/:title/
   publications:
     output: true
-    permalink: /publications/:title/
+    permalink: /publications/:slug/
   prakriti:
     output: true
     permalink: /publications/prakriti/:title/
