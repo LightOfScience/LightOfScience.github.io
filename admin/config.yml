@@ -96,7 +96,7 @@ collections:
 
   - name : "breakthrough-journal"
     label: "Breakthrough Journal"
-    folder: "collections/_publications/_breakthrough"
+    folder: "collections/_breakthrough"
     media_folder: "/publications/breakthrough/{{fields.YYYY}}-{{fields.MMM}}/"
     create: true
     slug: "{{fields.vol}}.{{fields.no}}-{{fields.YYYY}}-{{fields.MMM}}"
@@ -116,7 +116,7 @@ collections:
 
   - name : "prakriti-magazine"
     label: "Prakriti Magazine"
-    folder: "collections/_publications/_prakriti"
+    folder: "collections/_prakriti"
     media_folder: "/publications/prakriti/{{fields.YYYY}}-{{fields.MMM}}/"
     create: true
     slug: "{{fields.vol}}.{{fields.no}}-{{fields.YYYY}}-{{fields.MMM}}"
@@ -133,5 +133,6 @@ collections:
       - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
       - {label: "Table of Content", name: "file", widget: "file", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Slug", name: slug, default: YYYY-MMM }
 
 

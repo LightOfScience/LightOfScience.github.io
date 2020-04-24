@@ -40,16 +40,22 @@ collections:
   posts:
     output: true
     permalink: /blog/:year/:month/:title/
-  publication:
+  publications:
     output: true
-    permalink: /publication/:title/
+    permalink: /publications/:slug/
+  prakriti:
+    output: true
+    permalink: /publications/prakriti/:slug/
+  breakthrough:
+    output: true
+    permalink: /publications/breakthrough/:slug/
 
 
 
-paginate:
-  collection: posts news
-  per_page: 2
-  permalink: '/page:num/'
-  title_suffix: ' - page :num'
-  limit: false
-  reverse: true
+#paginate:
+#  collection: posts news
+#  per_page: 2
+#  permalink: '/page:num/'
+#  title_suffix: ' - page :num'
+#  limit: false
+#  reverse: true
