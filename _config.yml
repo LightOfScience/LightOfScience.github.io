@@ -42,13 +42,13 @@ collections:
     permalink: /blog/:year/:month/:title/
   publications:
     output: true
-    permalink: /publications/:slug/
+    permalink: /publications/:title/
   prakriti:
     output: true
-    permalink: /publications/prakriti/:slug/
+    permalink: /publications/prakriti/:title/
   breakthrough:
     output: true
-    permalink: /publications/breakthrough/:slug/
+    permalink: /publications/breakthrough/:title/
 
 
 

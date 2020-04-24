@@ -74,24 +74,25 @@ collections:
       - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
       - {label: "Categories", name: "categories", widget: "select", multiple: true, options: [competition, seminar, campeign, press-release, BSS]}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Documents", name: "file", widget: "file", required: false}
+      - {label: "Documents", name: "file", widget: "file", required: false, multiple: true,}
 
   - name : "publication"
     label: "Publications (except Brekathrough and Prakriti)"
     folder: "collections/_publications"
-    media_folder: "/publications/{{slug}}/"
+    media_folder: "/publications/{{fields.slug}}/"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     fields:
       - {label: "ID", name: "id", widget: "number", valueType: int, step: 1, default: 0}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
-      - {label: "Image Alt text", name: "image_alt", widget: "string"}
       - {label: "Subtitle", name: "sub-title", widget: "string", required: false}
+      - {label: "Slug", name: "slug", widget: "string", default: ""}
+      - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
       - {label: "Price", name: "price", widget: "number"}
       - {label: "E-commerce Link", name: "ecom-link", widget: "string", required: false}
       - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
-      - {label: "Table of Content", name: "file", widget: "file", required: false}
+      - {label: "Summery File (PDF)", name: "file", widget: "file", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
 
   - name : "breakthrough-journal"
     label: "Breakthrough Journal"
@@ -100,17 +101,16 @@ collections:
     create: true
     slug: "{{fields.YYYY}}-{{fields.MMM}}"
     fields:
+      - {label: "Layout", name: "layout", widget: "none", default: "post-book"}
       - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
       - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
       - {label: "Month", name: "MMM", widget: "datetime", dateFormat: "MMM", timeFormat: false, format: "MMM"}
       - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
       - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
-      - {label: "Image Alt text", name: "image_alt", widget: "string"}
-      - {label: "Subtitle", name: "sub-title", widget: "string", required: false}
       - {label: "Price", name: "price", widget: "number"}
       - {label: "E-commerce Link", name: "ecom-link", widget: "string", required: false}
-      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
-      - {label: "Table of Content", name: "file", widget: "file", required: false}
+      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string", required: false}
+      - {label: "Summery File (PDF)", name: "file", widget: "file", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name : "prakriti-magazine"
@@ -120,17 +120,17 @@ collections:
     create: true
     slug: "{{fields.YYYY}}-{{fields.MMM}}"
     fields:
+      - {label: "Layout", name: "layout", widget: "none", default: "post-book"}
       - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
       - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
       - {label: "Month", name: "MMM", widget: "datetime", dateFormat: "MMM", timeFormat: false, format: "MMM"}
       - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
       - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
-      - {label: "Image Alt text", name: "image_alt", widget: "string"}
-      - {label: "Subtitle", name: "sub-title", widget: "string", required: false}
       - {label: "Price", name: "price", widget: "number"}
       - {label: "E-commerce Link", name: "ecom-link", widget: "string", required: false}
-      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
-      - {label: "Table of Content", name: "file", widget: "file", required: false}
+      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string", required: false}
+      - {label: "Summery File (PDF)", name: "file", widget: "file", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+
 
 
