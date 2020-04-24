@@ -1,6 +1,6 @@
 ---
 layout: post-book
-id: 8
+book_id: 8
 title: Science in Ancient India
 sub-title: Reality versus Myth
 slug: science-in-ancient-india

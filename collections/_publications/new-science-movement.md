@@ -1,6 +1,6 @@
 ---
 layout: post-book
-id: 2
+book_id: 2
 title: What We Need Is A New Science Movement
 sub-title: Menifesto of Breakthrough Science Society
 slug: new-science-movement

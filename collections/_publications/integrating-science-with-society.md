@@ -1,6 +1,6 @@
 ---
 layout: post-book
-id: 16
+book_id: 16
 title: Integrating Science With Society
 sub-title: Proceeding of the national conference held on 15-16 December 2018 at
   Jadavpur University, Kolkata, WB, IN - organized by Breakthrough Science

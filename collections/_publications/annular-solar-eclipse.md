@@ -1,6 +1,6 @@
 ---
 layout: post-book
-id: 18
+book_id: 18
 title: Annular Solar Eclipse
 sub-title: Observe A Celestial Event
 slug: annular-solar-eclipse

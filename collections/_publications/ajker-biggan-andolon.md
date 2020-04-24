@@ -1,6 +1,6 @@
 ---
 layout: post-book
-id: 1
+book_id: 1
 title: আজকের বিজ্ঞান আন্দোলন
 sub-title: ব্রেকথ্রু সায়েন্স সোসাইটির মুখপত্র
 slug: ajker-biggan-andolon

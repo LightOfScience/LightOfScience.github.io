@@ -1,6 +1,6 @@
 ---
 layout: post-book
-id: 3
+book_id: 3
 title: আচার্য প্রফুল্ল চন্দ্র রায়
 sub-title: বিজ্ঞানের ইতিহাসে মানবিক মূল্যবোধে ভাস্বর এক অবিস্মরণীয় চরিত্র
 slug: "acharya-prafulla-chandra-roy "

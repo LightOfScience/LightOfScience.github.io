@@ -51,18 +51,30 @@
             </div>
         
         <!-- ALl other publications -->
-
-        {%for publication in site.publications%}         
-            <div class="book">
-                <div class="book-cover-container">
-                    <img class="book-cover" src="{{publication.image}}" alt="{{}}">
-                </div>
-                <div class="book-details">
-                    <h5 class="book-tags">tags</h5>
-                    <h2 class="book-title">{{publication.title}}</h2>
-                    <a href="{{publication.url}}"><button>More Details</button></a>
-                </div>
-            </div>
+        {%assign book_legth = site.publications | size%}
+        {%for i in (1..{{book_legth}})%}
+            {%for j in (1..{{book_legth}})%}
+                {%assign post_index = j | minus:1%}
+                {%assign post_id = site.publications[post_index].book_id%}
+                {%if i == post_id %}
+                    {%assign book_image = site.publications[post_index].image%}
+                    {%assign book_title = site.publications[post_index].title%}
+                    {%assign book_url = site.publications[post_index].url%}
+                    {%assign book_tag = site.publications[post_index].tag%}
+                    <!-- Book {{i}}-->
+                    <div class="book">
+                        <div class="book-cover-container">
+                            <img class="book-cover" src="{{book_image}}" alt="{{}}">
+                        </div>
+                        <div class="book-details">
+                            <h5 class="book-tags">tags</h5>
+                            <h2 class="book-title">{{book_title}}</h2>
+                            <a href="{{book_url}}"><button>More Details</button></a>
+                        </div>
+                    </div>
+                {%endif%}
+            {%endfor%}
         {%endfor%}
     </div>
 </div>
+

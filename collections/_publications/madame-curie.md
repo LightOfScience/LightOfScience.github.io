@@ -1,6 +1,6 @@
 ---
 layout: post-book
-id: 4
+book_id: 4
 title: মাদাম কুরী
 sub-title: বিজ্ঞানের জগতে মানবিকতা ও নৈতিকতার এক অনন্যসাধারন উজ্জ্বল নক্ষত্র
 slug: madame-curie

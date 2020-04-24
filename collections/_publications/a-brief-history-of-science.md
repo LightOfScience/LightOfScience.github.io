@@ -1,6 +1,6 @@
 ---
 layout: post-book
-id: 5
+book_id: 5
 title: A Brief History of Science
 sub-title: "A Brief History of Science: And its Relationship with the
   Development of Productive Forces, Production Relations, and Philosophy"
