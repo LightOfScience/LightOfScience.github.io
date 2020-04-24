@@ -1,0 +1,68 @@
+
+<div class="book-list-wrapper">
+    <div class="book-list-container">
+
+            <!-- Latest Prakriti Edition -->
+            <div class="book">
+                <div class="book-cover-container">
+                    <img class="book-cover" src="{{site.prakriti[0].image}}" alt="{{}}">
+                </div>
+                <div class="book-details">
+                    <h5 class="book-tags">tags</h5>
+                    <h2 class="book-title">Latest Edition of <br>Prakriti</h2>
+                    <h3><span>{{site.prakriti[0].MMM}}</span><span> • </span><span>{{site.prakriti[0].YYYY}}</span></h3>
+                    <a href="{{site.prakriti[0].url}}"><button>More Details</button></a>
+                </div>
+            </div>
+
+            <!-- Latest Brekathrough Edition -->
+            <div class="book">
+                <div class="book-cover-container">
+                    <img class="book-cover" src="{{site.breakthrough[0].image}}" alt="{{}}">
+                </div>
+                <div class="book-details">
+                    <h5 class="book-tags">tags</h5>
+                    <h2 class="book-title">Latest Edition of <br> Breakthrough</h2>
+                    <a href="{{site.breakthrough[0].url}}"><button>More Details</button></a>
+                </div>
+            </div>
+
+            <!-- Link to all Prakriti Editions-->
+            <div class="book">
+                <div class="book-cover-container">
+                    <img class="book-cover" src="{{site.prakriti[1].image}}" alt="{{}}">
+                </div>
+                <div class="book-details">
+                    <h2 class="book-title">Latest Prakriti</h2>
+                    <a href="{{site.prakriti[1].url}}"><button>More Details</button></a>
+                </div>
+            </div>
+
+            <!-- Link to all Breakthrough Editions -->
+            <div class="book">
+                <div class="book-cover-container">
+                    <img class="book-cover" src="{{site.breakthrough[0].image}}" alt="{{}}">
+                </div>
+                <div class="book-details">
+                    <h5 class="book-tags">tags</h5>
+                    <h2 class="book-title">Latest Breakthrough</h2>
+                    <a href="{{site.breakthrough[0].url}}"><button>More Details</button></a>
+                </div>
+            </div>
+        
+        <!-- ALl other publications -->
+
+        {%for publication in site.publications%}         
+            <div class="book">
+                <div class="book-cover-container">
+                    <img class="book-cover" src="{{publication.image}}" alt="{{}}">
+                </div>
+                <div class="book-details">
+                    <h5 class="book-tags">tags</h5>
+                    <h2 class="book-title">{{publication.title}}</h2>
+                    <a href="{{publication.url}}"><button>More Details</button></a>
+                </div>
+            </div>
+        {%endfor%}
+    </div>
+</div>

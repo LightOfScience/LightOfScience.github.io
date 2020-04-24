@@ -7,20 +7,8 @@ seo:
 img: /data/df.img
 permalink: /publications/
 ---
-<div>
+{% include page-banner.html title='Publications' bg="/media/page-banner-background/books-library.jpg" %}
 
-    {%for publication in site.publications%}
-    {{publication.image}}
-    <a href="{{publication.url}}">link</a>
-    
-{%endfor%}
-</div>
-
-<div>
-
-    {%for publication in site.prakriti%}
-    {{publication.image}}
-    <a href="{{publication.url}}">link</a>
-    
-{%endfor%}
-</div>
+<!-- News page style-->
+<link rel="stylesheet" href="/assets/css/page-publications.css">
+{%include publications/publication-list.html %}
