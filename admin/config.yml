@@ -99,7 +99,7 @@ collections:
     folder: "collections/_publications/_breakthrough"
     media_folder: "/publications/breakthrough/{{slug}}/"
     create: true
-    slug: "{{fields.vol}}.{{fields.no}}-{{slug}}"
+    slug: "{{fields.vol}}.{{fields.no}}-{{fields.YYYY}}-{{fields.MM}}"
     fields:
       - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
       - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
@@ -114,24 +114,25 @@ collections:
       - {label: "Table of Content", name: "file", widget: "file", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name : "prakriti-magazine"
-    label: "Prakriti Magazine"
-    folder: "collections/_publications/_prakriti"
-    media_folder: "/publications/prakriti/{{slug}}/"
-    create: true
-    slug: "{{fields.vol}}.{{fields.no}}-{{slug}}"
-    fields:
-      - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
-      - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
-      - {label: "Month", name: "MM", widget: "datetime", dateFormat: "MM", timeFormat: false, format: "MM"}
-      - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
-      - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
-      - {label: "Image Alt text", name: "image_alt", widget: "string"}
-      - {label: "Subtitle", name: "sub-title", widget: "string", required: false}
-      - {label: "Price", name: "price", widget: "number"}
-      - {label: "E-commerce Link", name: "ecom-link", widget: "string", required: false}
-      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
-      - {label: "Table of Content", name: "file", widget: "file", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
-
-
+#  - name : "prakriti-magazine"
+#    label: "Prakriti Magazine"
+#    folder: "collections/_publications/_prakriti"
+#    media_folder: "/publications/prakriti/{{slug}}/"
+#    create: true
+#    slug: "{{fields.vol}}.{{fields.no}}-{{slug}}"
+#    fields:
+#      - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
+#      - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
+#      - {label: "Month", name: "MM", widget: "datetime", dateFormat: "MM", timeFormat: false, format: "MM"}
+#      - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
+#      - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
+#      - {label: "Image Alt text", name: "image_alt", widget: "string"}
+#      - {label: "Subtitle", name: "sub-title", widget: "string", required: false}
+#      - {label: "Price", name: "price", widget: "number"}
+#      - {label: "E-commerce Link", name: "ecom-link", widget: "string", required: false}
+#      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
+#      - {label: "Table of Content", name: "file", widget: "file", required: false}
+#      - {label: "Body", name: "body", widget: "markdown"}
+#
+#
+#
