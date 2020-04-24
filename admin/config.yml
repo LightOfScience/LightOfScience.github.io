@@ -97,13 +97,13 @@ collections:
   - name : "breakthrough-journal"
     label: "Breakthrough Journal"
     folder: "collections/_publications/_breakthrough"
-    media_folder: "/publications/breakthrough/{{fields.YYYY}}-{{fields.MM}}/"
+    media_folder: "/publications/breakthrough/{{fields.YYYY}}-{{fields.MMM}}/"
     create: true
-    slug: "{{fields.vol}}-{{fields.no}}-{{fields.YYYY}}-{{fields.MM}}"
+    slug: "{{fields.vol}}.{{fields.no}}-{{fields.YYYY}}-{{fields.MMM}}"
     fields:
       - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
       - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
-      - {label: "Month", name: "MM", widget: "datetime", dateFormat: "MM", timeFormat: false, format: "MM"}
+      - {label: "Month", name: "MMM", widget: "datetime", dateFormat: "MMM", timeFormat: false, format: "MMM"}
       - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
       - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
