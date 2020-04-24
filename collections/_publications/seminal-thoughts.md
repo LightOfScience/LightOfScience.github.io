@@ -1,6 +1,6 @@
 ---
 layout: post-book
-id: 7
+book_id: 7
 title: Seminal Thoughts
 sub-title: A collection of articles by great men of science.
 slug: seminal-thoughts

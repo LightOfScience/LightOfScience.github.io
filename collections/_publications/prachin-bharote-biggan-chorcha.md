@@ -1,6 +1,6 @@
 ---
 layout: post-book
-id: 9
+book_id: 9
 title: প্রাচীন ভারতে বিজ্ঞান চর্চা
 sub-title: বাস্তব বনাম কল্পনা
 slug: prachin-bharote-biggan-chorcha

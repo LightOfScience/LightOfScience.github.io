@@ -1,6 +1,6 @@
 ---
 layout: post-book
-id: 14
+book_id: 14
 title: প্রাচীন ভারতে বস্তুবাদের চর্চা
 slug: prachin-bharote-bostubader-chorcha
 image: /publications/prachin-bharote-bostubader-chorcha/prachin-bharote-bostubader-chorcha-cover.jpg

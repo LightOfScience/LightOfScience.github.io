@@ -1,6 +1,6 @@
 ---
 layout: post-book
-id: 6
+book_id: 6
 title: বিবর্তন যুগে যুগে
 slug: biborton-juge-juge
 image: /publications/biborton-juge-juge/biborton-juge-juge-cover.jpg
