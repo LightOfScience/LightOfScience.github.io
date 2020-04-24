@@ -97,7 +97,7 @@ collections:
   - name : "breakthrough-journal"
     label: "Breakthrough Journal"
     folder: "collections/_publications/_breakthrough"
-    media_folder: "/publications/breakthrough/{{slug}}/"
+    media_folder: "/publications/breakthrough/"
     create: true
     slug: "{{fields.vol}}-{{fields.no}}-{{fields.YYYY}}-{{fields.MM}}"
     fields:
