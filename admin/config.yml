@@ -103,6 +103,8 @@ collections:
     slug: "{{fields.YYYY}}-{{fields.MMM}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post-book"}
+      - {label: "Title", name: "title", default: "{{fields.vol}}"}
+      - {label: "Vol.", name: "title", widget: "string"}
       - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
       - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
       - {label: "Month", name: "MMM", widget: "datetime", dateFormat: "MMM", timeFormat: false, format: "MMM"}
@@ -132,6 +134,4 @@ collections:
       - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string", required: false}
       - {label: "Summery File (PDF)", name: "file", widget: "file", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-
-
 
