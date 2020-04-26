@@ -103,7 +103,7 @@ collections:
     slug: "{{fields.YYYY}}-{{fields.MMM}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post-book"}
-      - {label: "Title", name: "title", default: "{{fields.vol}}"}
+      - {label: "Title", name: "title", default: "Breakthrough - {{fields.YYYY}}-{{fields.MMM}}"}
       - {label: "Vol.", name: "title", widget: "string"}
       - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
       - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
