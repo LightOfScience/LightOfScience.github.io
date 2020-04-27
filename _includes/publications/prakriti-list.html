@@ -1,0 +1,19 @@
+<div class="book-list-wrapper">
+    <div class="book-list-container">
+        <!-- ALl other publications -->
+        {%for prakriti in site.prakriti reversed%}
+            <!-- Book {{i}}-->
+            <div class="book">
+                <div class="book-cover-container">
+                    <img class="book-cover" src="{{prakriti.image}}" alt="{{}}">
+                </div>
+                <div class="book-details">
+                    <h5 class="book-tags">tags</h5>
+                    <h2 class="book-title">প্রকৃতি ম্যাগাজিন </h2>
+                    <h3><span>{{prakriti.MMM}}</span><span> • </span><span>{{prakriti.YYYY}}</span></h3>
+                    <a href="{{prakriti.url}}"><button>More Details</button></a>
+                </div>
+            </div>
+        {%endfor%}
+    </div>
+</div>

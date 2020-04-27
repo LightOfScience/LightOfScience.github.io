@@ -1,0 +1,23 @@
+<div class="book-list-wrapper">
+    <div class="book-list-container">
+        <!-- ALl other publications -->
+        {%for breakthrough in site.breakthrough reversed%}
+            {%assign book_image = breakthrough.image%}
+            {%assign book_title = breakthrough.title%}
+            {%assign book_url = breakthrough.url%}
+            {%assign book_tag = breakthrough.tag%}
+            <!-- Book {{i}}-->
+            <div class="book">
+                <div class="book-cover-container">
+                    <img class="book-cover" src="{{book_image}}" alt="{{}}">
+                </div>
+                <div class="book-details">
+                    <h5 class="book-tags">tags</h5>
+                    <h2 class="book-title">{{book_title}}</h2>
+                    <a href="{{book_url}}"><button>More Details</button></a>
+                </div>
+            </div>
+        {%endfor%}
+    </div>
+</div>
+
