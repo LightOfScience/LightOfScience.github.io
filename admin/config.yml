@@ -103,7 +103,7 @@ collections:
     slug: "{{fields.YYYY}}-{{fields.MMM}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post-book"}
-      - {label: "Title", name: "title", default: "[Prakriti," ", *YYYY, " ", *MMM]" }
+      - {label: "Title", name: "title", default: "[Prakriti,' ', *YYYY, ' ', *MMM]" }
       - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
       - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
       - {label: "Month", name: "MMM", widget: "datetime", dateFormat: "MMM", timeFormat: false, format: "MMM"}
@@ -123,7 +123,7 @@ collections:
     slug: "{{fields.YYYY}}-{{fields.MMM}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post-book"}
-      - {label: "Title", name: "title", default: "[Prakriti," ", *YYYY, " ", *MMM]" }
+      - {label: "Title", name: "title", default: "[Prakriti,' ', *YYYY,' ', *MMM]" }
       - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
       - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
       - {label: "Month", name: "MMM", widget: "datetime", dateFormat: "MMM", timeFormat: false, format: "MMM"}
