@@ -1,16 +1,15 @@
 @import '../scss_vars_mixins';
 
-//// activitiy List 
-.activitiy-content-wrapper
+//// activity List 
+.activities-content-wrapper
 {
     background: #fff;
     width: 100%;
-    height: 1000px;
     padding:0;
     margin:0;
 }
 
-.activitiy-content
+.activity-content
 {
     @include lg{padding:0 100px;}
     @include md{padding:0 10px;}
@@ -18,28 +17,29 @@
 }
 
 
-#activitiy-list-wrapper
+#activity-list-wrapper
 {
     padding: 2rem;
 }
 
-.activitiy
+.activity
 {
     margin: 2rem 0;
+    
     display: flex;
     @include lg{flex-direction: row;}
     @include md{flex-direction: column;}
     @include sm{flex-direction: column;}
-    .activitiy-cover
+    .activity-cover
     {
         flex: 1;
-        .activitiy-img-wrapper
+        .activity-img-wrapper
         {
             width: 100%;
             position: relative;
             padding-top: 50%;
             overflow: hidden;
-            .activitiy-img
+            .activity-img
             {
                 width: 100%;
                 position: absolute;
@@ -48,7 +48,7 @@
                 right: 0;
                 left: 0;
             }
-            .activitiy-date
+            .activity-date
             {
                 position: absolute;
                 top:0;
@@ -62,24 +62,24 @@
         }
     }
 
-    .activitiy-details
+    .activity-details
     {
         position: relative;
         flex:3;
         margin: 0 1rem;
         @include sm {margin: .2rem 1rem;}
-        .activitiy-title
+        .activity-title
         {
             margin:0;
             padding:0;
             a{text-decoration: none; color: #111;}
         }
-        .activitiy-title:hover:hover
+        .activity-title:hover:hover
         {
             text-decoration: underline;
         }
 
-        .activitiy-excerpt
+        .activity-excerpt
         {
             margin:.5rem;
             font-size: 1rem;
@@ -87,14 +87,14 @@
             color: #777;
         }
 
-        .activitiy-tag-container
+        .activity-tag-container
         {
             position: absolute;
             bottom: -1rem;
             margin:0;
             padding:0;
 
-            .activitiy-tag
+            .activity-tag
             {
                 text-decoration: none;
                 padding: .1rem;
