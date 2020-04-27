@@ -7,7 +7,7 @@ seo:
 img: /data/df.img
 permalink: /publications/
 ---
-{% include page-banner.html title='Publications' bg="/media/page-banner-background/books-library.jpg" %}
+{% include page-banner.html title='Publications' bg="publications-banner-background" %}
 
 <!-- News page style-->
 <link rel="stylesheet" href="/assets/css/page-publications.css">
