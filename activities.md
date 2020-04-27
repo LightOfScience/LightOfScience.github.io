@@ -13,13 +13,10 @@ permalink: /activities/
 ---
 <!-- News page style-->
 <link rel="stylesheet" href="/assets/css/page-activities.css">
+{%include page-banner.html title="Activities" bg="activities-banner-background"%}
 
-<div class="page-banner-wrapper">
-    <div class="page-banner-container">
-        <div class="page-img-wrapper">
-            <img class="page-banner-img" src="{{site.data.page-banner-background.activities-banner-background}}" alt="">
-        </div>
+<div class="activities-content-wrapper">
+    <div class="activity-content">
+        {%include activities/activities-list.html %}
     </div>
-    <h5 class="page-banner-header">Activities</h5>
 </div>
-

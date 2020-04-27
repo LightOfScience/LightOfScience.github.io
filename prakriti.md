@@ -7,7 +7,7 @@ seo:
 img: /data/df.img
 permalink: /publications/prakriti/
 ---
-{% include page-banner.html title='প্রকৃতি ম্যাগাজিন<br>ISSN:<br>Published by, Breakthrough Science Society' bg="/media/page-banner-background/books-library.jpg" %}
+{% include page-banner.html title='প্রকৃতি ম্যাগাজিন<br>ISSN:<br>Published by, Breakthrough Science Society' bg="publications-banner-background" %}
 
 <!-- News page style-->
 <link rel="stylesheet" href="/assets/css/page-publications.css">
