@@ -6,7 +6,7 @@ YYYY: "2020"
 title: Science Cultivation
 image: /activities/2020/science-cultivation/science-cultivaition-online-state-level-competition-bss.jpg
 image_alt: Online State Level Science Cultivation - Breakthrough Science Society 2020
-excerpt: |-
+excerpt: |
   Online State Level Competition
   Last Date of Submission: 15 April 2020 [extended up to 30 April]
   Science Essay Writing, Poster Demonstration, Experiment Demonstration, Cartoon
