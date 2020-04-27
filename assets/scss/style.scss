@@ -29,12 +29,23 @@ $lg:900px;
 	font-style:normal;
 	font-weight:normal;
 }
+@font-face {
+  font-family: 'Kalpakush';
+  src: url('../fonts/bangla.ttf');
+  font-style: normal;
+  unicode-range: U+0980-09FF; //Bangla Range (source: http://www.unicode.org/charts/PDF/U0980.pdf‎‎)
+}
  //////////////////////////////////////////////
+ *{
+     
+ }
 html 
 {
     @include lg {font-size: 20px;}
     @include md {font-size: 15px;}
     @include sm {font-size: 8px;}
+    font-family: Kalpakush;
+
 }
 body
 {
@@ -48,7 +59,6 @@ body
     color: #3c3c3c;
     cursor: default;
     scroll-behavior: smooth;
-    outline:none!important;
 }
 
 button, a {outline:none!important;}
