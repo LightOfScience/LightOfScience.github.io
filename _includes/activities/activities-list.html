@@ -1,6 +1,6 @@
 <div id="activity-list-wrapper">
     <div id="activity-list-container">
-        {%for activity in site.activities %}
+        {%for activity in site.activities reversed %}
             {%assign activity_date = activity.date | date: "%d %b %Y"%}
             {%assign activity_title = activity.title%}
             {%assign activity_image = activity.image%}
