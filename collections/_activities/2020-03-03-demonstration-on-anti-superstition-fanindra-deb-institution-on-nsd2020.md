@@ -16,4 +16,6 @@ categories:
 
 ### Place: Fanindra Deb Institution.
 
-youtube lbgTFg4LLtg
+youtube https://youtu.be/lbgTFg4LLtg
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lbgTFg4LLtg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
