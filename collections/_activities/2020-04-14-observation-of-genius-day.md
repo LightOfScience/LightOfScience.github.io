@@ -1,7 +1,7 @@
 ---
 layout: post-activity
 DD: "14"
-MM: "04"
+MM: "03"
 YYYY: "2020"
 title: Observation of Genius Day
 image: /activities/2020/observation-of-genius-day/genius-day-albert-einstein.png
