@@ -14,14 +14,7 @@ permalink: /blog/
 <!-- News page style-->
 <link rel="stylesheet" href="/assets/css/page-blog.css">
 
-<div class="page-banner-wrapper">
-    <div class="page-banner-container">
-        <div class="page-img-wrapper">
-            <img class="page-banner-img" src="{{site.data.page-banner-background.blog-banner-background}}" alt="">
-        </div>
-    </div>
-    <h5 class="page-banner-header">Blog</h5>
-</div>
+{%include page-banner.html title="Blog" bg="blog-banner-background"%}
 
 <div class="blog-content-wrapper">
     <div class="blog-content">

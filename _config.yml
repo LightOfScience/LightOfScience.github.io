@@ -7,7 +7,7 @@ twitter_username: _LightOfScience
 github_username:  LightOfScience
 
 # Build settings
-theme: minima
+future: true
 plugins:
   - jekyll-feed
   - octopress-paginate

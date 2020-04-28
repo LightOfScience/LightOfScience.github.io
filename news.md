@@ -14,14 +14,7 @@ permalink: /news/
 <!-- News page style-->
 <link rel="stylesheet" href="/assets/css/page-news.css">
 
-<div class="page-banner-wrapper">
-    <div class="page-banner-container">
-        <div class="page-img-wrapper">
-            <img class="page-banner-img" src="{{site.data.page-banner-background.news-banner-background}}" alt="">
-        </div>
-    </div>
-    <h5 class="page-banner-header">News & Notifications</h5>
-</div>
+{%include page-banner.html title="News & Notifications" bg="news-banner-background"%}
 
 <div class="news-content-wrapper">
     <div class="news-content">
