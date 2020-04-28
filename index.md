@@ -7,6 +7,7 @@ seo:
 img: /data/df.img
 ---
 
+{% include home/landing-overlay.html %}
 {% include home/front-page-carousel.html %}
 {% include home/front-page-news.html %} 
 {% include home/front-page-blog.html %} 
