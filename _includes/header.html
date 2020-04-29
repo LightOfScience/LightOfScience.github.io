@@ -12,7 +12,24 @@
     <meta property="og:title" content="{{page.title}}" />
     <meta property="og:url" content="https://LightOfScience.org.in{{page.url}}" />
     <meta property="og:image" content="https://LightOfScience.org.in{{page.img}}" /> 
-    {% include stylesheets.md %}
+
+    {% case include.nav_menu %}
+        {% when "home" %}
+            {%include home/home-styles.md %}
+        {% when "blog" %}
+            {%include blog/blog-styles.md %}
+        {% when "news" %}
+            {%include news/news-styles.md %}
+        {% when "activities" %}
+            {%include activities/activities-styles.md %}
+        {% when "publications" %}
+            {%include publications/publications-styles.md %}
+        {% when "about" %}
+            {%include about/about-styles.md %}
+        {% when "member" %}
+            {%include member/member-styles.md %}
+    {% endcase %}
+
 </head>
 <body>
     <header id="header-wrapper">
@@ -43,7 +60,7 @@
         </div>
     </header>
 
-{% case include.vard %}
+{% case include.nav_menu %}
     {% when "home" %}
         <script>document.getElementsByClassName("nav-element")[0].classList.add("active");</script>
     {% when "blog" %}
@@ -59,5 +76,3 @@
     {% when "member" %}
         <script>document.getElementsByClassName("nav-element")[6].classList.add("active");</script>
 {% endcase %}
-
-

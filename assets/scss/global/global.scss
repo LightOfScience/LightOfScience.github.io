@@ -1,8 +1,6 @@
 @font-face {
   font-family: 'Kalpakush';
   src: url('../fonts/kalpakush.ttf');
-  src: local('Kalpurush'),  url('fonts/Kalpurush.woff') format('woff'),
-                            url('fonts/Kalpurush.ttf') format('truetype');
   font-style: normal;
   unicode-range: U+0980-09FF; //Bangla Range (source: http://www.unicode.org/charts/PDF/U0980.pdf‎‎)
 }
@@ -13,3 +11,12 @@
 	font-style:normal;
 	font-weight:normal;
 }
+
+
+@import '../scss_vars_mixins';
+@import './html-style';
+@import './header';
+@import './footer';
+@import './page-banner';
+@import './content-container';
+@import './post';

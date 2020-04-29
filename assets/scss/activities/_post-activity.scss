@@ -1,0 +1,30 @@
+#activity-post
+{
+
+    .activity-title
+    {
+        font-size: 1.2rem;
+    }
+    .activity-cover
+    {
+        @include lg {width: 500px;}
+        @include md {width: 100%}
+        @include sm {width: 100%}
+        position: relative;
+        padding-top: 50%;
+        overflow: hidden;
+        img
+        {
+            width: 100%;
+            position: absolute;
+            top:50%;
+            bottom:0;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+    .activity-description
+    {
+
+    }
+}

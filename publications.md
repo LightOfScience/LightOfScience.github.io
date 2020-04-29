@@ -9,6 +9,9 @@ permalink: /publications/
 ---
 {% include page-banner.html title='Publications' bg="publications-banner-background" %}
 
-<!-- News page style-->
-<link rel="stylesheet" href="/assets/css/page-publications.css">
-{%include publications/publication-list.html %}
+
+<div class="content-wrapper">
+    <div class="content">
+        {%include publications/publication-list.html %}
+    </div>
+</div>

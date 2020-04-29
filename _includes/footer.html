@@ -11,6 +11,22 @@
     </div>
 </footer>
 
-{% include scripts.md %}
+{% case include.nav_menu %}
+    {% when "home" %}
+        {%include home/home-scripts.md %}
+    {% when "blog" %}
+        {%include blog/blog-scripts.md %}
+    {% when "news" %}
+        {%include news/news-scripts.md %}
+    {% when "activities" %}
+        {%include activities/activities-scripts.md %}
+    {% when "publications" %}
+        {%include publications/publications-scripts.md %}
+    {% when "about" %}
+        {%include about/about-scripts.md %}
+    {% when "member" %}
+        {%include member/member-scripts.md %}
+{% endcase %}
+
 </body>
 </html>

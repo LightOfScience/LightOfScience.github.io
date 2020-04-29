@@ -15,8 +15,8 @@ permalink: /activities/
 <link rel="stylesheet" href="/assets/css/page-activities.css">
 {%include page-banner.html title="Activities" bg="activities-banner-background"%}
 
-<div class="activities-content-wrapper">
-    <div class="activity-content">
+<div class="content-wrapper">
+    <div class="content">
         {%include activities/activities-list.html %}
     </div>
 </div>

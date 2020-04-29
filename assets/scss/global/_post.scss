@@ -1,0 +1,45 @@
+#post-wrapper
+{
+    width:100%;
+    background: rgb(243, 243, 243);
+}
+#post-container
+{
+    min-height: 900px;
+    background: #fff;
+    margin: auto;
+    padding: 1rem 2rem;
+    @include lg {width: 880px;}
+    @include md {width: 500px;}
+    @include sm {width: calc(100vw - 1rem);padding:0;}
+    display: flex;
+    @include lg{flex-direction: row;}
+    @include md{flex-direction: column;}
+    @include sm{flex-direction: column;}
+    flex-grow: 0;
+    flex-shrink: 0;
+
+}
+#activity-post
+{
+    flex:2.5; 
+    position: relative;
+}
+
+#post-side-pane
+{
+    flex:1;
+    padding: 0 1rem;
+    margin-left: 1rem;
+    @include lg{margin-top: 20rem; border-left: .1rem solid #dddddd;}
+    @include md{margin-top: 2rem 0 0 0; }
+    @include sm{margin: 2rem 0 0 0;}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fb-page-wrapper
+{
+    width: 100%;
+}

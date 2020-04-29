@@ -16,8 +16,8 @@ permalink: /news/
 
 {%include page-banner.html title="News & Notifications" bg="news-banner-background"%}
 
-<div class="news-content-wrapper">
-    <div class="news-content">
+<div class="content-wrapper">
+    <div class="content">
         {%include news/news-list.html %}
     </div>
 </div>
