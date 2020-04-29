@@ -4,7 +4,7 @@ DD: "30"
 MM: "04"
 YYYY: "2020"
 title: Science Cultivation
-image: /activities/2020/science-cultivation/science-cultivaition-online-state-level-competition-bss.jpg
+image: /media/activities/2020/science-cultivation/science-cultivaition-online-state-level-competition-bss.jpg
 image_alt: Online State Level Science Cultivation - Breakthrough Science Society 2020
 excerpt: |
   Online State Level Competition

@@ -4,7 +4,7 @@ DD: "28"
 MM: "02"
 YYYY: "2020"
 title: Observing National Science Day 2020
-image: /activities/2020/observing-national-science-day-2020/national-science-day-2020-seminar.jpg
+image: /media/activities/2020/observing-national-science-day-2020/national-science-day-2020-seminar.jpg
 image_alt: National Science Day Seminar on Evolution of Scientific Thoughts in
   the Present Context
 excerpt: |-

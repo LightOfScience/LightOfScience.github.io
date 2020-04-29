@@ -4,7 +4,7 @@ DD: "09"
 MM: "02"
 YYYY: "2020"
 title: Sky Watching with Ananada Chandra College Students
-image: /activities/2020/sky-watching-with-ananada-chandra-college-students/sky-watching.jpg
+image: /media/activities/2020/sky-watching-with-ananada-chandra-college-students/sky-watching.jpg
 image_alt: Sky Watching with Ananada Chandra College Students
 excerpt: Sky Watching with Ananada Chandra College Students
 tags: Ananda Chandra College, Sky Watching

@@ -4,7 +4,7 @@ DD: "24"
 MM: "03"
 YYYY: "2020"
 title: "COVID19: Do's & Don'ts"
-image: /news/2020/covid19-dos-donts/covid19-dos-donts.jpg
+image: /media/news/2020/covid19-dos-donts/covid19-dos-donts.jpg
 image_alt: "COVID19: Do's & Don'ts"
 excerpt: "COVID19: Do's & Don'ts in Bengali"
 tags: COVID19

@@ -4,7 +4,7 @@ DD: "20"
 MM: "04"
 YYYY: "2020"
 title: COVID19 Proposal by IMFS
-image: /news/2020/covid19-proposal-by-imfs/covid19-proposal-by-imfs.jpg
+image: /media/news/2020/covid19-proposal-by-imfs/covid19-proposal-by-imfs.jpg
 image_alt: COVID19 Proposal by IMFS
 excerpt: Provide adequate financial, material, and health support to daily-wage
   laborers and poor people.
