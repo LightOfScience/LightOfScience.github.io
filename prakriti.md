@@ -7,7 +7,7 @@ seo:
 img: /data/df.img
 permalink: /publications/prakriti/
 ---
-{% include page-banner.html title='প্রকৃতি ম্যাগাজিন<br>ISSN:<br>Published by, Breakthrough Science Society' bg="publications-banner-background" %}
+{% include page-banner.html title='প্রকৃতি ম্যাগাজিন<br>ISSN:<a href="https://portal.issn.org/resource/ISSN/0974-2425" target="_blank">0974-2425</a> RNI: <a href="http://rni.nic.in/registerdtitle_search/registeredtitle_ser.aspx" target="_blank">71018/1998</a><br>Published by, Breakthrough Science Society' bg="publications-banner-background" %}
 
 <!-- News page style-->
 <link rel="stylesheet" href="/assets/css/page-publications.css">
