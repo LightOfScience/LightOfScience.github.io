@@ -1,1 +1,12 @@
-{{content}}
+{%include header.html vard="news" %}
+
+<!-- Post Style-->
+<link rel="stylesheet" href="/assets/css/post-activity.css">
+
+<div id="post-wrapper">
+    <div id="post-container">
+        {%include news/news.html %}
+    </div>
+</div>
+
+{%include footer.html %}
