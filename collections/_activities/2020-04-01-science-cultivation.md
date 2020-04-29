@@ -1,7 +1,7 @@
 ---
 layout: post-activity
 active: true
-DD: "30"
+DD: "01"
 MM: "04"
 YYYY: "2020"
 title: Science Cultivation
@@ -15,10 +15,9 @@ tags: COVID19 Competition Essay Poster Experiment BSS
 categories:
   - BSS
   - competition
-file: 
+file:
   - url: /media/activities/2020/science-cultivation/bss-cultivation-of-science-online-competition-2020.pdf
-    file_description: "Event Details (PDF)"
-  
+    file_description: Event Details (PDF)
 ---
 ## **Online State Level Competition** 
 
