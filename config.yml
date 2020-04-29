@@ -65,9 +65,9 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post-activity"}
       - {label: "Status", name: "active", widget: "boolean", default: false, required: true}
-      - {label: "Date", name: "DD", widget: "datetime", dateFormat: "DD", format: "DD"}
-      - {label: "Month", name: "MM", widget: "datetime", dateFormat: "MMMM", format: "MM"}
-      - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
+      - {label: "Date", name: "DD", widget: "date", dateFormat: "DD", format: "DD"}
+      - {label: "Month", name: "MM", widget: "date", dateFormat: "MMMM", format: "MM"}
+      - {label: "Year", name: "YYYY", widget: "date", dateFormat: "YYYY", format: "YYYY"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
@@ -79,6 +79,7 @@ collections:
         name: "file"
         widget: "list"
         required: false
+        collapsed: false
         fields:
           - {label: "File", name: "url", widget: "file", required: true}
           - {label: "File Description", name: "file_description", widget: "text", required: true}
