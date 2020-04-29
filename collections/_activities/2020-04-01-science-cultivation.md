@@ -13,8 +13,8 @@ excerpt: |
   Science Essay Writing, Poster Demonstration, Experiment Demonstration, Cartoon
 tags: COVID19 Competition Essay Poster Experiment BSS
 categories:
-  - BSS
   - competition
+  - breakthrough science society
 file:
   - url: /media/activities/2020/science-cultivation/bss-cultivation-of-science-online-competition-2020.pdf
     file_description: Event Details (PDF)
