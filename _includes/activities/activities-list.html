@@ -8,6 +8,7 @@
             {%assign activity_excerpt = activity.excerpt%}
             {%assign activity_content = activity.content%}
             {%assign activity_url = activity.url%}
+            {%assign activity_status = activity.active%}
             
             <div class="activity">
                 <div class="activity-cover">
@@ -19,7 +20,14 @@
                     </a>
                 </div>
                 <div class="activity-details">
-                    <h2 class="activity-title"><a href="{{activity_url}}">{{activity_title}}</a></h2>
+                    <h2 class="activity-title">
+                        <a href="{{activity_url}}">
+                            <span>{{activity_title}}</span>
+                            {%if activity_status == true%} 
+                                <span class="active"></span>
+                            {%endif%}
+                        </a>
+                    </h2>
                     <h3 class="activity-excerpt">{{activity_excerpt}}</h3>
                     <h5 class="activity-tag-container">
                         {%for tag in activity.tags%}

@@ -27,3 +27,10 @@ a:visited
     color:blue;
 }
 
+hr, .hr
+{
+    width: 99%;
+    border:none;
+    border-top: solid .05rem #ccc;
+    padding: .01rem 0;
+}

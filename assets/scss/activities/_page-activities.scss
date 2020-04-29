@@ -55,7 +55,21 @@
             margin:0;
             padding:0;
             a{text-decoration: none; color: #111;}
-        }
+            .active::before
+            {
+                content: "Active";
+                color: red;
+                animation: active .5s infinite;
+                border: solid .2rem red;
+                padding: .2rem;
+                border-radius: .5rem;
+            }
+            @keyframes active {
+                0%{color: red;}
+                50%{color: #0000ff;}
+                100%{color: red;}
+            }
+            }
         .activity-title:hover:hover
         {
             text-decoration: underline;

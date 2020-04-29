@@ -1,4 +1,5 @@
 <!--Facebook -->
+
 <div id="fb-page-wrapper">
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
@@ -18,24 +19,26 @@
     </script>
 </div>
 
+<hr class="hr">
+
 <div class="recent-news">
-    <h2>Recent News</h2>
-    <ul>
+    <h2 class="heading">Recent News</h2>
+    <ul class="item-list">
         {%assign news_length = site.news | size%}
         {%for i in (1..5)%}
             {%assign news_index = news_length | minus:i%}
-            <li><a href="{{site.news[news_index].url}}">{{site.news[news_index].title}}</a></li>
+            <li class="list-item"><a href="{{site.news[news_index].url}}">{{site.news[news_index].title}}</a></li>
         {%endfor%}
     </ul>
 </div>
-
+<hr>
 <div class="recent-blogs">
-    <h2>Recent Blogs</h2>
-    <ul>
+    <h2 class="heading">Recent Blogs</h2>
+    <ul class="item-list">
         {%assign blog_length = site.post | size%}
         {%for i in (1..5)%}
             {%assign blog_index = blog_length | minus:i%}
-            <li><a href="{{site.posts[blog_index].url}}">{{site.posts[blog_index].title}}</a></li>
+            <li class="list-item"><a href="{{site.posts[blog_index].url}}">{{site.posts[blog_index].title}}</a></li>
         {%endfor%}
     </ul>
 </div>
