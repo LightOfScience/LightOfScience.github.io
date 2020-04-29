@@ -64,17 +64,25 @@ collections:
     slug: "{{fields.YYYY}}-{{fields.MM}}-{{fields.DD}}-{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post-activity"}
-      - {label: "Date", name: "DD", widget: "datetime", dateFormat: "DD", timeFormat: false, format: "DD"}
-      - {label: "Month", name: "MM", widget: "datetime", dateFormat: "MM", timeFormat: false, format: "MM"}
+      - {label: "Status", name: "active", widget: "boolean", default: false, required: true}
+      - {label: "Date", name: "DD", widget: "datetime", dateFormat: "DD", format: "DD"}
+      - {label: "Month", name: "MM", widget: "datetime", dateFormat: "MMMM", format: "MM"}
       - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
       - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
-      - {label: "Categories", name: "categories", widget: "select", multiple: true, options: [competition, seminar, campeign, press-release, BSS]}
+      - {label: "Categories", name: "categories", widget: "select", multiple: true, options: [competition, seminar, campeign, press-release, breakthrough science society]}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Documents", name: "file", widget: "file", required: false, multiple: true,}
+      - label: "Documents"
+        name: "file"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "File", name: "url", widget: "file", required: true}
+          - {label: "File Description", name: "file_description", widget: "text", required: true}
+
 
   - name : "publication"
     label: "Publications (except Brekathrough and Prakriti)"
