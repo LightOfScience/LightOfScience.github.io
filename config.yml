@@ -1,0 +1,138 @@
+backend:
+  name: git-gateway
+  branch: master
+  publish_mode: editorial_workflow
+
+media_folder: "/media"
+
+collections:
+  - name: "front-carousel"
+    label: "Front Page Carousel"
+    folder: "collections/_front-page-carousel"
+    media_folder: "/media/front-page/carousel"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string",  default: ""}
+      - {label: "Image", name: "image", widget: "image", default: ""}
+      - {label: "Body", name: "body", widget: "text", required: false, default: ""}
+      - {label: "Link", name: "link", widget: "string", required: false, default: ""}
+
+  - name : "news"
+    label: "News"
+    folder: "collections/_news"
+    media_folder: "/media/news/{{fields.YYYY}}/{{slug}}/"
+    create: true
+    slug: "{{fields.YYYY}}-{{fields.MM}}-{{fields.DD}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post-news"}
+      - {label: "Date", name: "DD", widget: "datetime", dateFormat: "DD", timeFormat: false, format: "DD"}
+      - {label: "Month", name: "MM", widget: "datetime", dateFormat: "MM", timeFormat: false, format: "MM"}
+      - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", default: ""}
+      - {label: "Image Alt text", name: "image_alt", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
+      - {label: "Categories (separate by ',' or ' ')", name: "categories", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name : "blog"
+    label: "Blog"
+    folder: "collections/_posts"
+    media_folder: "/media/blog/{{fields.YYYY}}/{{fields.MM}}/{{slug}}/"
+    create: true
+    slug: "{{fields.YYYY}}-{{fields.MM}}-{{fields.DD}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post-blog"}
+      - {label: "Date", name: "DD", widget: "datetime", dateFormat: "DD", timeFormat: false, format: "DD"}
+      - {label: "Month", name: "MM", widget: "datetime", dateFormat: "MM", timeFormat: false, format: "MM"}
+      - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", default: ""}
+      - {label: "Image Alt text", name: "image_alt", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
+      - {label: "Categories (separate by ',' or ' ')", name: "categories", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name : "activity"
+    label: "Activities"
+    folder: "collections/_activities"
+    media_folder: "/media/activities/{{fields.YYYY}}/{{slug}}/"
+    create: true
+    slug: "{{fields.YYYY}}-{{fields.MM}}-{{fields.DD}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post-activity"}
+      - {label: "Date", name: "DD", widget: "datetime", dateFormat: "DD", timeFormat: false, format: "DD"}
+      - {label: "Month", name: "MM", widget: "datetime", dateFormat: "MM", timeFormat: false, format: "MM"}
+      - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
+      - {label: "Image Alt text", name: "image_alt", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
+      - {label: "Categories", name: "categories", widget: "select", multiple: true, options: [competition, seminar, campeign, press-release, BSS]}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Documents", name: "file", widget: "file", required: false, multiple: true,}
+
+  - name : "publication"
+    label: "Publications (except Brekathrough and Prakriti)"
+    folder: "collections/_publications"
+    media_folder: "/media/publications/{{fields.slug}}/"
+    create: true
+    slug: "{{fields.slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post-book"}
+      - {label: "ID", name: "book_id", widget: "number", valueType: int, step: 1, default: 0}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "sub-title", widget: "string", required: false}
+      - {label: "Slug", name: "slug", widget: "string", default: ""}
+      - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
+      - {label: "Price", name: "price", widget: "number"}
+      - {label: "E-commerce Link", name: "ecom-link", widget: "string", required: false}
+      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
+      - {label: "Summery File (PDF)", name: "file", widget: "file", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name : "breakthrough-journal"
+    label: "Breakthrough Journal"
+    folder: "collections/_breakthrough"
+    media_folder: "/media/publications/breakthrough/{{fields.YYYY}}-{{fields.MMM}}/"
+    create: true
+    slug: "{{fields.YYYY}}-{{fields.MMM}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post-book"}
+      - {label: "Title (please specify year, month)", name: "title", widget:"string" default: "Breakthrough" }
+      - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
+      - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
+      - {label: "Month", name: "MMM", widget: "datetime", dateFormat: "MMM", timeFormat: false, format: "MMM"}
+      - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
+      - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
+      - {label: "Price", name: "price", widget: "number"}
+      - {label: "E-commerce Link", name: "ecom-link", widget: "string", required: false}
+      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string", required: false}
+      - {label: "Summery File (PDF)", name: "file", widget: "file", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name : "prakriti-magazine"
+    label: "Prakriti Magazine"
+    folder: "collections/_prakriti"
+    media_folder: "/media/publications/prakriti/{{fields.YYYY}}-{{fields.MMM}}/"
+    create: true
+    slug: "{{fields.YYYY}}-{{fields.MMM}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post-book"}
+      - {label: "Title (please specify year, month)", name: "title", widget:"string" default: "Prakriti" }
+      - {label: "Vol.", name: "vol", widget: "number", valueType: int, default: 0}
+      - {label: "No.", name: "no", widget: "number", valueType: int, default: 0}
+      - {label: "Month", name: "MMM", widget: "datetime", dateFormat: "MMM", timeFormat: false, format: "MMM"}
+      - {label: "Year", name: "YYYY", widget: "datetime", dateFormat: "YYYY", format: "YYYY"}
+      - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
+      - {label: "Price", name: "price", widget: "number"}
+      - {label: "E-commerce Link", name: "ecom-link", widget: "string", required: false}
+      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string", required: false}
+      - {label: "Summery File (PDF)", name: "file", widget: "file", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+
