@@ -1,15 +1,19 @@
 #footer-bottom
 {
     background: black;
-    color:#838383;
     font-size: .9rem;
     display: flex;
     justify-content: space-between;
     flex-direction:row;
+    align-items: center;
 
-    h5
+    *
     {
-        padding:0;
+        text-decoration: none; 
+        color: #838383;
+        flex: 1;
+        padding:.3rem;
         margin:0;
+        text-align: center;
     }
 }
