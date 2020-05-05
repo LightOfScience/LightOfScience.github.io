@@ -12,7 +12,7 @@ excerpt: >-
   topic,"করোনা ভাইরাস কতটা ভয়ঙ্কর"` (How Dangerous is Coronavirus). Dr. Partha
   Pratim Majumder will be our special guest on the webinar.
 
-  visit, <a href="https://tiny.cc/bss_webniar" target="_blank">https://tiny.cc/bss_webniar</a> to register.
+  visit, <a href="https://tiny.cc/bss_webinar" target="_blank">https://tiny.cc/bss_webinar</a> to register.
 tags: COVID19 Webinar Breakthrough Science Society BSS
 categories: Breakthrough Science Society, Webinar
 ---
