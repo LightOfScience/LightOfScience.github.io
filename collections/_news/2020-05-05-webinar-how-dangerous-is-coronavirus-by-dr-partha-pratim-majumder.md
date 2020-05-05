@@ -16,7 +16,7 @@ excerpt: >-
 tags: COVID19 Webinar Breakthrough Science Society BSS
 categories: Breakthrough Science Society, Webinar
 ---
-### *Webinar visit, <a href="https://tiny.cc/bss_webniar" target="_blank">https://tiny.cc/bss_webniar</a> to register.*
+### *Webinar visit, <a href="https://tiny.cc/bss_webinar" target="_blank">https://tiny.cc/bss_webinar</a> to register.*
 
 # **করোনা ভাইরাস কতটা ভয়ঙ্কর?**
 
