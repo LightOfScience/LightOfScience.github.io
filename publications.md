@@ -1,6 +1,6 @@
 ---
 layout: page-publication
-title: Light Of Science - Science for Society | Science for Man | Science in Thinking
+title: Publications & Books
 seo: 
     keywords: sadf,asdf
     description:
