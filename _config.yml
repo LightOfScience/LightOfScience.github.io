@@ -24,6 +24,12 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - gulpfile.js
+  - CNAME
+  - COPYING
+  - README
+  - package.json
+  - package-lock.json
 
 liquid:
   error_mode        : warn
