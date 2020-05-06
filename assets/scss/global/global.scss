@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'Kalpakush';
-  src: url('../fonts/Kalpurush-Regular.ttf');
-  font-style: normal;
-  font-weight: 100;
+  font-family: 'Kalpurush';
+  src: url('/assets/fonts/Kalpurush-Regular.ttf');
   unicode-range: U+0980-09FF; //Bangla Range (source: http://www.unicode.org/charts/PDF/U0980.pdf‎‎)
+  font-display: block;
+  font-weight: 0; 
 }
 
 @font-face{
