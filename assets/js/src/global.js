@@ -41,3 +41,18 @@ nav_btn.onclick = () => {
 }
 
 
+//share button
+
+var fb_share_btn = document.getElementsByClassName("fb-share-btn")[0];
+var wp_share_btn = document.getElementsByClassName("wp-share-btn")[0];
+
+fb_share_btn.onclick = () => {
+  var link = fb_share_btn.dataset.href;
+  var title = fb_share_btn.dataset.title;
+  window.open(link, title);
+}
+wp_share_btn.onclick = () => {
+  var link = wp_share_btn.dataset.href;
+  var title = wp_share_btn.dataset.title;
+  window.open(link, title);
+}

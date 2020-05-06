@@ -1,18 +1,8 @@
-    <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+<button class="fb-share-btn" data-title="{{include.title}}" data-href="https://www.facebook.com/sharer/sharer.php?u=https://LightOfScience.org.in{{include.link}}">
+    <img src="/assets/img/fb.svg">
+</button>
 
-  <!-- Your share button code -->
-  <div class="fb-share-button" data-href="https://LightOfScience.org.in{{include.link}}" 
-    data-layout="button"
-    data-size="large">
-  </div>
+<button class="wp-share-btn" data-title="{{include.title}}" data-href="https://wa.me/?text={{include.title}}.   https://LightOfScience.org.in{{include.link}}">
+    <img src="/assets/img/wp.svg">
+</button>
 
-
-  <a target="_blank" href="https://wa.me/?text={{include.title}}   https://LightOfScience.org.in{{include.link}}"><button style="height: 28px; padding: 0; margin: 0;"><img style="height: 100%;" src="https://whatsapp.com/favicon.ico"></button></a>
