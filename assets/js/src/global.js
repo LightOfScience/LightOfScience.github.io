@@ -58,3 +58,20 @@ if(typeof(document.getElementsByClassName("fb-share-btn")[0]) != 'undefined')
     window.open(link, title);
   }
 } else {}
+
+
+
+// Youtube Embed
+window.onload = () => {
+  var yt_width = document.querySelector('.yt-embed').parentNode.offsetWidth;
+  var yt_height = Math.ceil(yt_width/16*9);
+
+  var yt = document.querySelectorAll('.yt-embed');
+
+  for (i=0;i<yt.length;i++)
+  {
+    yt[i].querySelector('.yt').setAttribute("width", yt_width);
+    yt[i].querySelector('.yt').setAttribute("height", yt_height);
+  }
+}
+

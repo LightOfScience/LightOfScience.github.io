@@ -1,0 +1,31 @@
+.yt-embed-wrapper
+{
+    margin: 2rem;
+}
+
+.yt-embed
+{
+
+}
+
+.yt-sub
+{
+    background: red;
+    border:none;
+    border-radius: .1rem;
+    margin:0;
+    padding:.2rem;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    img
+    {
+        height: 100%;
+    }
+    h3
+    {
+        color: #fff;
+        margin:0;
+        padding-left: .1rem;
+    }
+}
