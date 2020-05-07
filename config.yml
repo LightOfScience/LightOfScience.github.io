@@ -33,7 +33,7 @@ collections:
       - {label: "Image", name: "image", widget: "image", default: ""}
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
-      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
+      - {label: "Tags (separate by ',')", name: "tags-list", widget: "string"}
       - {label: "Categories (separate by ',' or ' ')", name: "categories", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -52,8 +52,8 @@ collections:
       - {label: "Image", name: "image", widget: "image", default: ""}
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
-      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
-      - {label: "Categories (separate by ',' or ' ')", name: "categories", widget: "string"}
+      - {label: "Tags (separate by ',')", name: "tags-list", widget: "string"}
+      - {label: "Categories (separate by ',')", name: "categories", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name : "activity"
@@ -72,7 +72,7 @@ collections:
       - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
-      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
+      - {label: "Tags (separate by ',' or ' ')", name: "tags-list", widget: "string"}
       - {label: "Categories", name: "categories", widget: "select", multiple: true, options: [competition, seminar, campeign, press-release, breakthrough science society]}
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Documents"
@@ -100,7 +100,7 @@ collections:
       - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
       - {label: "Price", name: "price", widget: "number"}
       - {label: "E-commerce Link", name: "ecom-link", widget: "string", required: false}
-      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string"}
+      - {label: "Tags (separate by ',')", name: "tags-list", widget: "string"}
       - {label: "Summery File (PDF)", name: "file", widget: "file", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -120,7 +120,7 @@ collections:
       - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
       - {label: "Price", name: "price", widget: "number"}
       - {label: "E-commerce Link", name: "ecom-link", widget: "string", required: false}
-      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string", required: false}
+      - {label: "Tags (separate by ','", name: "tags-list", widget: "string", required: false}
       - {label: "Summery File (PDF)", name: "file", widget: "file", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -140,7 +140,7 @@ collections:
       - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
       - {label: "Price", name: "price", widget: "number"}
       - {label: "E-commerce Link", name: "ecom-link", widget: "string", required: false}
-      - {label: "Tags (separate by ',' or ' ')", name: "tags", widget: "string", required: false}
+      - {label: "Tags (separate by ','", name: "tags-list", widget: "string", required: false}
       - {label: "Summery File (PDF)", name: "file", widget: "file", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
