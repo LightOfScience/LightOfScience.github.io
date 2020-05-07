@@ -1,5 +1,6 @@
 ---
 layout: post-activity
+active: false
 DD: "03"
 MM: "03"
 YYYY: "2020"
@@ -16,6 +17,6 @@ categories:
 
 ### Place: Fanindra Deb Institution.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lbgTFg4LLtg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include yt-embed.html id="lbgTFg4LLtg" type="video" %}
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-tE0k9GhalI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include yt-embed.html id="\-tE0k9GhalI" type="video" %}
