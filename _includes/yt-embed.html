@@ -2,9 +2,9 @@
     <div class="yt-embed">
         {%case include.type%}
             {%when 'video'%}
-                <iframe class="yt" width="240" height="200" src="https://www.youtube-nocookie.com/embed/{{include.id}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="yt" src="https://www.youtube-nocookie.com/embed/{{include.id}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             {%when 'playlist'%}
-                <iframe class="yt" width="240" height="200" src="https://www.youtube-nocookie.com/embed/videoseries?list={{include.id}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="yt" src="https://www.youtube-nocookie.com/embed/videoseries?list={{include.id}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         {%endcase%}
         <a href="https://www.youtube.com/channel/UC9SgA7fF5rI3XNj11N4GPwA?sub_confirmation=1" target="_blank">
             <button class="yt-sub">

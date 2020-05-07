@@ -63,15 +63,14 @@ if(typeof(document.getElementsByClassName("fb-share-btn")[0]) != 'undefined')
 
 // Youtube Embed
 window.onload = () => {
-  var yt_width = document.querySelector('.yt-embed').parentNode.offsetWidth;
+  var yt_width = document.querySelector('.yt').offsetWidth;
   var yt_height = Math.ceil(yt_width/16*9);
 
-  var yt = document.querySelectorAll('.yt-embed');
+  var yt = document.querySelectorAll('.yt');
 
   for (i=0;i<yt.length;i++)
   {
-    yt[i].querySelector('.yt').setAttribute("width", yt_width);
-    yt[i].querySelector('.yt').setAttribute("height", yt_height);
+    yt[i].style.height = yt_height+"px";
   }
 }
 
