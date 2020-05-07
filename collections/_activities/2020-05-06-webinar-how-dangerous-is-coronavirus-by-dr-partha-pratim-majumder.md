@@ -24,9 +24,11 @@ file:
   - url: /media/activities/2020/webinar-how-dangerous-is-coronavirus-by-dr-partha-pratim-majumder/webinar-partha-pratim-majumder-breakthrough-science-society-banner.jpg
     file_description: Event Banner
 ---
-### *Webinar:: visit <a href="https://tiny.cc/bss_webinar" target="_blank">https://tiny.cc/bss_webinar</a> to register.*
+#### *Webinar:: visit <a href="https://tiny.cc/bss_webinar" target="_blank">https://tiny.cc/bss_webinar</a> to register.*
 
-### **\[UPDATE/7May]** Also you can visit https://meet.jit.si/PPMtalk to watch live.
+### **\[UPDATE/7May]** Also you can visit <https://meet.jit.si/PPMtalk> to watch live.
+___________________________________________________
+<hr>
 
 # **করোনা ভাইরাস কতটা ভয়ঙ্কর?**
 
