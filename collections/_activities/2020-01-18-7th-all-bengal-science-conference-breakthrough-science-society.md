@@ -1,5 +1,6 @@
 ---
 layout: post-activity
+active: false
 DD: "18"
 MM: "01"
 YYYY: "2020"
@@ -18,7 +19,10 @@ categories:
   - seminar
   - BSS
 ---
-## **7th All Bengal Science Conference of Breakthrough Science Society is going to be organized on 18th and 19th** 
+## **7th All Bengal Science Conference of Breakthrough Science Society is going to be organized on 18th and 19th**
 
-### January 2020. The venu for the conference is Haripada Sahityamandir, Purulia.
+### January 2020. The venue for the conference is Haripada Sahityamandir, Purulia.
+
 Delegate Fee: Rs. 200 only.
+
+{% include yt-embed.html id="PLFWtd7Z7yrlh-DQNLCgyuPgoqk9PX3zWP" type="playlist" %}
