@@ -14,7 +14,8 @@ excerpt: >-
   Pratim Majumder will be our special guest on the webinar.
 
   visit, https://tiny.cc/bss_webinar to register.[UPDATE/7May] Also you can visit https://meet.jit.si/PPMtalk to watch live
-tags: COVID19 Webinar Breakthrough Science Society BSS
+tags-list: COVID19,Webinar, Breakthrough Science Society,BSS
+
 categories:
   - breakthrough science society
   - seminar

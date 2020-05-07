@@ -15,7 +15,8 @@
                         <div class="news-img-container"><a href="{{news_link}}"><img src="{{news_image}}" alt="{{news_image_alt}}"></a></div>
                         <h5 class="news-date-tag">
                             <span>{{news_date}} • </span>
-                            {%for tag in site.news[news_index].tags%}
+                            {%assign tag-list = site.news[news_index].tags-list | split:","%}
+                            {%for tag in tag-list%}
                                 <span><a class="news-tag" href="https://www.google.com/search?q=site%3ALightOfScience.org.in+{{tag}}">#{{tag}}</a></span>
                             {%endfor%}
                         </h5>

@@ -14,7 +14,7 @@ excerpt: >-
   The venu for the conference is Haripada Sahityamandir, Purulia.
 
   Delegate Fee: Rs. 200 only.
-tags: Breakthrough Science Society State Conference
+tags-list: Breakthrough Science Society State Conference
 categories:
   - seminar
   - BSS

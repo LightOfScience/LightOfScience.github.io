@@ -10,7 +10,9 @@
 
     <hr>
     {%endfor%}
-    {%for tag in page.tags%}
+    
+    {%assign tag-list = page.tags-list | split:","%}
+    {%for tag in tag-list%}
     <a href="https://www.google.com/search?q=site%3ALightOfScience.org.in+{{tag}}"><button class="tag-btn">{{tag}}</button></a>
     {%endfor%}
     

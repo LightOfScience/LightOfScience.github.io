@@ -8,7 +8,7 @@ image: /media/news/2020/covid19-proposal-by-imfs/covid19-proposal-by-imfs.jpg
 image_alt: COVID19 Proposal by IMFS
 excerpt: Provide adequate financial, material, and health support to daily-wage
   laborers and poor people.
-tags: COVID19 IMFS
+tags-list: COVID19, IMFS, India March For Science
 ---
 Sign this petition, [follow this link - https://docs.google.com/​forms/d/e/​1FAIpQLSdtteHu8di_ilRf4bMAd​dUCgSEd8q2KL1OSVb9oUXQ82CJ​d8A/](https://docs.google.com/forms/d/e/1FAIpQLSdtteHu8di_ilRf4bMAddUCgSEd8q2KL1OSVb9oUXQ82CJd8A/)
 

@@ -9,7 +9,7 @@ image: /media/activities/2020/demonstration-on-anti-superstition-fanindra-deb-in
 image_alt: Demonstration on Anti-Superstition @Fanindra Deb Institution on
   National Science day 2020
 excerpt: Post observation of National Science Day 2020 at Fanindra Deb Institution.
-tags: National Science Day, Superstition, FDI
+tags-list: National Science Day, Superstition, FDI
 categories:
   - campeign
 ---

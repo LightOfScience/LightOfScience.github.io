@@ -23,7 +23,8 @@
                     <h2 class="news-title"><a href="{{news_url}}">{{news_title}}</a></h2>
                     <h3 class="news-excerpt">{{news_excerpt}}</h3>
                     <h5 class="news-tag-container">
-                        {%for tag in news.tags%}
+                        {%assign tag-list = news.tags-list | split:","%}
+                        {%for tag in tag-list%}
                             <span><a class="news-tag" href="https://www.google.com/search?q=site%3ALightOfScience.org.in+{{tag}}">#{{tag}}</a></span>
                         {%endfor%}
                     </h5>

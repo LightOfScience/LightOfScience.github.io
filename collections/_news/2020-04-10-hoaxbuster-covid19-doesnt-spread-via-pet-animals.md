@@ -10,7 +10,7 @@ excerpt: The initial claim that COVID19 can spread through pet animals. But this
   statement has benn falsified by a group of scientists, <a
   href="https://indscicov.in/" target="_blank">Indian Scientists' Response to
   COVID19</a>
-tags: COVID19 ISRC
+tags-list: COVID19, ISRC, Indian Scientists' Response to COVID19
 ---
 The initial claim that COVID19 can spread through pet animals. But this statement has benn falsified by a group of scientists,
 

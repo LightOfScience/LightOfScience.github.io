@@ -11,7 +11,7 @@ excerpt: |
   Online State Level Competition
   Last Date of Submission: 15 April 2020 [extended up to 30 April]
   Science Essay Writing, Poster Demonstration, Experiment Demonstration, Cartoon
-tags: COVID19 Competition Essay Poster Experiment BSS
+tags-list: COVID19, Competition, Essay, Poster, Experiment, BSS
 categories:
   - competition
   - breakthrough science society

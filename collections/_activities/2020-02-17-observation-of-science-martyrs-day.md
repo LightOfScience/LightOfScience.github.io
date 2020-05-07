@@ -7,7 +7,7 @@ title: Observation of 'Science Martyr's Day'
 image: /media/activities/2020/observation-of-science-martyrs-day/science-martyr-s-day-2020.jpg
 image_alt: Observation of 'Science Martyr's Day'
 excerpt: Observation of 'Science Martyr's Day' in fron of Anandra Chandra College
-tags: Science Martyr Day Giordano Bruno
+tags-list: Science Martyr Day, Giordano Bruno
 categories:
   - campeign
 ---

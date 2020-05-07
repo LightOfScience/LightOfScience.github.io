@@ -12,7 +12,7 @@ excerpt: |-
   Seminal: Evolution of Scientific Thoughts in the Present Context
   Speaker: Dr. Apurbalal Senapati [Assist. Pof., CIT Kokrajhar, Dept. CSE]
   Place: Netaji Subhash Foundation Hall
-tags: National Science Day
+tags-list: National Science Day
 categories:
   - seminar
 ---

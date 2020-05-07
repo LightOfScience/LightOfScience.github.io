@@ -14,8 +14,9 @@
     <a href="{{file.url}}" target="_blank"><button class="file-btn">{{file.file_description}}</button></a>
     <br>
     {%endfor%}
-    {%for tag in page.tags%}
-    <a href="https://www.google.com/search?q=site%3ALightOfScience.org.in+{{tag}}"><button class="tag-btn">{{tag}}</button></a>
+    {%assign tag-list = page.tags-list | split:","%}
+    {%for tag in tag-list%}
+    <a href="https://www.google.com/search?q=LightOfScience.org.in+{{tag}}"><button class="tag-btn">{{tag}}</button></a>
     {%endfor%}
     <hr>
     <h3 class="activity-date">Published on: {{page.date | date: "%d/%m/%Y"}}</h3>
@@ -24,4 +25,3 @@
 <div id="post-side-pane">
     {%include post-side-pane.html %}
 </div>
-

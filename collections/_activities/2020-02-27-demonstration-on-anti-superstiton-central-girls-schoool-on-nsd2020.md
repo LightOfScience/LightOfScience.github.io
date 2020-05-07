@@ -10,7 +10,7 @@ image_alt: Demonstration on Anti-Superstiton @Central Girls' Schoool on National
   Science Day 2020
 excerpt: Demonstration on Anti-Superstiton @Central Girls' Schoool on National
   Science Day 2020
-tags: National Science Day 2020
+tags-list: National Science Day 2020
 categories:
   - campeign
 ---
