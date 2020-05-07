@@ -12,5 +12,3 @@ categories:
   - competition
 ---
 Sky Watching with Ananada Chandra College Students
-
-{%include photo-album.html photos="a,b,c,d"%}
