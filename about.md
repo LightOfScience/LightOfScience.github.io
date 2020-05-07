@@ -5,7 +5,7 @@ seo:
     keywords: Light Of Science, Events, Activities, Campeigns
     description: About Light Of Science
 img: /data/df.img
-permalink: /about-us/
+permalink: /about/
 
 ---
 <!-- News page style-->
