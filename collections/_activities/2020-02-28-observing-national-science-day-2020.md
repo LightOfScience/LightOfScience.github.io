@@ -1,5 +1,6 @@
 ---
 layout: post-activity
+active: false
 DD: "28"
 MM: "02"
 YYYY: "2020"
@@ -20,3 +21,11 @@ categories:
 **Speaker: Dr. Apurbalal Senapati \[Assist. Pof., CIT Kokrajhar, Dept. CSE]** 
 
 **Place: Netaji Subhash Foundation Hall**
+
+{% include yt-embed.html id="KUoeJljo9aA" type="video" %}
+
+{% include yt-embed.html id="-DLH0RtSx9o" type="video" %}
+
+{% include yt-embed.html id="TdAi2v-AuiA" type="video" %}
+
+{% include yt-embed.html id="PLFWtd7Z7yrlipZ19IbQ1HQDWipHYzVY-t" type="playlist" %}
