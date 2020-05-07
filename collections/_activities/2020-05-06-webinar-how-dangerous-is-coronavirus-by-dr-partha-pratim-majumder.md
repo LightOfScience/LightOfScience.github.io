@@ -27,7 +27,9 @@ file:
 #### *Webinar:: visit <a href="https://tiny.cc/bss_webinar" target="_blank">https://tiny.cc/bss_webinar</a> to register.*
 
 ### **\[UPDATE/7May]** Also you can visit <https://meet.jit.si/PPMtalk> to watch live.
-___________________________________________________
+
+- - -
+
 <hr>
 
 # **করোনা ভাইরাস কতটা ভয়ঙ্কর?**
@@ -37,6 +39,8 @@ ___________________________________________________
 # **আমাদের কি করনীয়?**
 
 ### প্রশ্নোত্তরে, [ডঃ পার্থ প্রতিম মজুমদার](https://www.ias.ac.in/describe/fellow/Majumder,_Prof._Partha_Pratim) (সভাপতি, ইন্ডিয়ান অ্যাকাডেমি অফ সায়েন্স )
+
+{% include yt-embed.html id="G75LNoJffMA" type="video" %}
 
 <hr>
 
