@@ -62,7 +62,8 @@ if(typeof(document.getElementsByClassName("fb-share-btn")[0]) != 'undefined')
 
 
 // Youtube Embed
-window.onload = () => {
+ 
+if(document.querySelector('.yt')){
   var yt_width = document.querySelector('.yt').offsetWidth;
   var yt_height = Math.ceil(yt_width/16*9);
 
@@ -72,5 +73,13 @@ window.onload = () => {
   {
     yt[i].style.height = yt_height+"px";
   }
+} else {
+  continue;
 }
 
+
+//Flickr Embed
+if(document.querySelector('.flickr-guide-img'))
+{
+document.querySelector('.flickr-guide-img').setAttribute('width',document.querySelector('.flickr-embed').offsetWidth);
+}
