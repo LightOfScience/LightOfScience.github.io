@@ -11,9 +11,6 @@ permalink: /news/
 #    per_page: 10
 #    permalink: '/page:num/'
 ---
-<!-- News page style-->
-<link rel="stylesheet" href="/assets/css/page-news.css">
-
 {%include page-banner.html title="News & Notifications" bg="news-banner-background"%}
 
 <div class="content-wrapper">

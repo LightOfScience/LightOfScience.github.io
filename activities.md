@@ -11,8 +11,6 @@ permalink: /activities/
 #    per_page: 10
 #    permalink: '/page:num/'
 ---
-<!-- News page style-->
-<link rel="stylesheet" href="/assets/css/page-activities.css">
 {%include page-banner.html title="Activities" bg="activities-banner-background"%}
 
 <div class="content-wrapper">

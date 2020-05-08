@@ -8,6 +8,4 @@ img: /data/df.img
 permalink: /about/
 
 ---
-<!-- News page style-->
-<link rel="stylesheet" href="/assets/css/page-activities.css">
 {%include page-banner.html title="About Us" bg="about-banner-background"%}
