@@ -25,4 +25,6 @@ categories:
 
 Delegate Fee: Rs. 200 only.
 
-{% include yt-embed.html id="PLFWtd7Z7yrlh-DQNLCgyuPgoqk9PX3zWP" type="playlist" %}
+{%include yt-embed.html id="PLFWtd7Z7yrlh-DQNLCgyuPgoqk9PX3zWP" type="playlist"%}
+
+{%include flickr-embed.html album-title="BSS WB 7th State Conference" album-link="https://www.flickr.com/photos/158536880@N07/albums/72157714233118018" first-image="https://live.staticflickr.com/65535/49874738677_f2a689ff60_b.jpg"%}
