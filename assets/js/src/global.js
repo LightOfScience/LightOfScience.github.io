@@ -76,7 +76,7 @@ youtubeEmbed();
 window.onresize = function(){this.youtubeEmbed();}
 
 //Flickr Embed
-var flickrEmbed() = () =>
+var flickrEmbed = () =>
 {
   if(document.querySelector('.flickr-guide-img'))
   {
