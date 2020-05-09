@@ -72,7 +72,7 @@ collections:
       - {label: "Image", name: "image", widget: "image", default: "", allow_multiple: false}
       - {label: "Image Alt text", name: "image_alt", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
-      - {label: "Tags (separate by ',' or ' ')", name: "tags-list", widget: "string"}
+      - {label: "Tags (separate by ',')", name: "tags-list", widget: "string"}
       - {label: "Categories", name: "categories", widget: "select", multiple: true, options: [competition, seminar, campeign, press-release, breakthrough science society]}
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Documents"

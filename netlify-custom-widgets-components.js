@@ -1,3 +1,19 @@
+// Image
+imageEmbed = {
+    id: "image",
+    label: "Single Image",
+    fields: 
+        [
+            {name: 'img_link', label: 'Image', widget: 'file'},
+            {name: 'img_title', label: 'Image Title', widget: 'string'},
+            {name: 'img_alt', label: 'Image Alternative Text', widget: 'string'},
+        ],
+    pattern: /^\{\%include\simage\-embed.html\s\img\_link=\"(.+)\"\simg\_title\=\"(.+)\"\simg\_alt\=\"(.+)\"\%\}$/,
+    fromBlock: function(match) {return {id: match[1], type: match[2]};},
+    toBlock: function(obj) {return '{%include image-embed.html img_link="' + obj.img_link + '" img_title="' + obj.img_title + '" img_alt="'+obj.img_alt+'"%}';},
+    toPreview: function(obj) {return ('<img src="'+obj.img_link+'" alt="Image"/>');}
+}
+
 // Youtube
 youtubeEmbed = {
     id: "youtube",
@@ -8,7 +24,7 @@ youtubeEmbed = {
         ],
     pattern: /^\{\%\sinclude\syt-embed\.html\sid=\"(\S+)\"\stype\=\"(video|playlist)\"\s\%\}$/,
     fromBlock: function(match) {return {id: match[1], type: match[2]};},
-    toBlock: function(obj) {return '{% include yt-embed.html id="' + obj.id + '" type="' + obj.type + '" %}';},
+    toBlock: function(obj) {return '{%include yt-embed.html id="' + obj.id + '" type="' + obj.type + '"%}';},
     toPreview: function(obj) {return ('<img src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" alt="Youtube Video"/>');}
 }
 
@@ -31,3 +47,4 @@ flickrEmbed = {
 // Register Editor Component
 CMS.registerEditorComponent(youtubeEmbed);
 CMS.registerEditorComponent(flickrEmbed);
+CMS.registerEditorComponent(imageEmbed);
