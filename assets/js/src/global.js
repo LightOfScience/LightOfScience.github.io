@@ -85,3 +85,18 @@ var flickrEmbed = () =>
   else{}
 }
 flickrEmbed();
+
+
+//Fb Page width
+/*
+var fb_page = document.getElementById("fb-page");
+if (screen.width <= 900)
+{
+    var width = fb_page.parentElement.clientWidth - 50;
+}
+else
+{
+    var width = fb_page.parentElement.clientWidth;
+}
+fb_page.setAttribute("width",width);
+*/
