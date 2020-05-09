@@ -62,24 +62,26 @@ if(typeof(document.getElementsByClassName("fb-share-btn")[0]) != 'undefined')
 
 
 // Youtube Embed
- 
-if(document.querySelector('.yt')){
-  var yt_width = document.querySelector('.yt').offsetWidth;
-  var yt_height = Math.ceil(yt_width/16*9);
 
-  var yt = document.querySelectorAll('.yt');
-
-  for (i=0;i<yt.length;i++)
-  {
-    yt[i].style.height = yt_height+"px";
-  }
-} else {
-  continue;
+var youtubeEmbed = () =>{
+  if(document.querySelector('.yt')){
+    var yt_width = document.querySelector('.yt').offsetWidth;
+    var yt_height = Math.ceil(yt_width/16*9);
+    var yt = document.querySelectorAll('.yt');
+    for (i=0;i<yt.length;i++)  yt[i].style.height = yt_height+"px";
+  } 
+  else {}
 }
-
+youtubeEmbed();
+window.onresize = function(){this.youtubeEmbed();}
 
 //Flickr Embed
-if(document.querySelector('.flickr-guide-img'))
+var flickrEmbed() = () =>
 {
-document.querySelector('.flickr-guide-img').setAttribute('width',document.querySelector('.flickr-embed').offsetWidth);
+  if(document.querySelector('.flickr-guide-img'))
+  {
+    document.querySelector('.flickr-guide-img').setAttribute('width',document.querySelector('.flickr-embed').offsetWidth);
+  } 
+  else{}
 }
+flickrEmbed();
