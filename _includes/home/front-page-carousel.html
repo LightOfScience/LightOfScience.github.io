@@ -11,8 +11,8 @@
                 {%assign slide_link = site.front-page-carousel[slide_index].link %}
                 {%assign slide_content = site.front-page-carousel[slide_index].content %}
                 <!-- Slide {{i}}} -->
-                <div id="slide{{i}}" class="slide slide-show">
-                    <div class="img-container"><img src="{{slide_img}}" alt="{{slide_img_alt}}"></div>
+                <div id="slide{{i}}" class="slide slide-hide">
+                    <div class="slide-img-container"><img src="{{slide_img}}" alt="{{slide_img_alt}}"></div>
                     <div class="slide-description">
                         <h2 class="slide-title">{{slide_title}}</h2>
                         <h3 class="slide-details">{{slide_content}}</h3>

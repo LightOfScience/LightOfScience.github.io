@@ -54,7 +54,7 @@
     left: 0;
     right: 0;
     overflow: hidden;
-    .img-container
+    .slide-img-container
     {
         
         height: 100%; 
@@ -100,7 +100,7 @@
 .slide-show
 {
     z-index: 10;
-    .img-container
+    .slide-img-container
     {
         transform: scale(1.15);
         opacity: 1;
@@ -114,7 +114,7 @@
 .slide-hide
 {
     z-index: 1;
-    .img-container
+    .slide-img-container
     {
         transform: scale(1);
         opacity: 0;

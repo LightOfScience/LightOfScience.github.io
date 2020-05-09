@@ -26,7 +26,7 @@ let slideshow = (i) =>
 {
     show("slide"+i)
     if(i==slide_length){
-        n=1
+        n=1;
     }
     else{
         n = i+1;
@@ -34,4 +34,4 @@ let slideshow = (i) =>
     // add logical exp: outof view no exec
     setTimeout(function(){slideshow(n)}, 5000);
 }
-slideshow(2);
+slideshow(1);
