@@ -1,6 +1,8 @@
-// Youtube
-CMS.registerEditorComponent({
-// Internal id of the component
+
+CMS.registerEditorComponent(
+    // Youtube
+    {
+    // Internal id of the component
     id: "youtube",
     // Visible label
     label: "Youtube",
@@ -18,11 +20,11 @@ CMS.registerEditorComponent({
     // Preview output for this component. Can either be a string or a React component
     // (component gives better render performance)
     toPreview: function(obj) {return ('<img src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" alt="Youtube Video"/>');}
-});
+},
 
 // Flickr
-CMS.registerEditorComponent({
-// Internal id of the component
+{
+    // Internal id of the component
     id: "flickr",
     // Visible label
     label: "Flickr Album",
@@ -42,5 +44,8 @@ CMS.registerEditorComponent({
     // Preview output for this component. Can either be a string or a React component
     // (component gives better render performance)
     toPreview: function(obj) {return ('<img src="'+ obj.album_image + '" alt="Youtube Video"/>');}
-});
+}
+
+);
+
 
