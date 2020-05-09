@@ -9,7 +9,7 @@ imageEmbed = {
             {name: 'img_alt', label: 'Image Alternative Text', widget: 'string'},
         ],
     pattern: /^\{\%include\simage\-embed.html\s\img\_link=\"(.+)\"\simg\_title\=\"(.+)\"\simg\_alt\=\"(.+)\"\%\}$/,
-    fromBlock: function(match) {return {id: match[1], type: match[2]};},
+    fromBlock: function(match) {return {img_link: match[1], img_title: match[2], img_alt: match[3]};},
     toBlock: function(obj) {return '{%include image-embed.html img_link="' + obj.img_link + '" img_title="' + obj.img_title + '" img_alt="'+obj.img_alt+'"%}';},
     toPreview: function(obj) {return ('<img src="'+obj.img_link+'" alt="Image"/>');}
 }
