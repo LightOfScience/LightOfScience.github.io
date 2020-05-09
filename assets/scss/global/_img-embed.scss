@@ -1,0 +1,23 @@
+.img-container
+{
+    width: calc(100% - 4rem);
+    margin: 2rem;
+    position: relative;
+
+    .img-title
+    {
+        margin:0;
+        padding:.2rem;
+        position: absolute;
+        bottom: .2rem;
+        left: 0; right: 0;
+        color: white;
+        text-align: center;
+        background: #00000085;
+        font-size: .8rem;
+    }
+    .img
+    {
+        width: 100%;
+    }
+}
