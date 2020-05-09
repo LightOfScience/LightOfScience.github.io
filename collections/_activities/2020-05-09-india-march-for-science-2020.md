@@ -27,10 +27,4 @@ Since the country is under lock-down due to COVID19, everyone is requested to ta
 
 {%include fb-embed.html fb_link="https://www.facebook.com/breakthrough.wb/posts/945821012533715"%}
 
-\|
-
-{%include fb-embed.html fb_link="https://www.facebook.com/watch/?v=678448712718425"%}
-
-\|
-
-{%include fb-embed.html fb_link="https://www.facebook.com/breakthrough.wb/videos/660275694535190/"%}
+|{%include fb-embed.html fb_link="https://www.facebook.com/watch/?v=678448712718425"%}|{%include fb-embed.html fb_link="https://www.facebook.com/breakthrough.wb/videos/660275694535190/"%}|
