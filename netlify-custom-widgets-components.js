@@ -29,4 +29,4 @@ flickrEmbed = {
 }
 
 // Register Editor Component
-CMS.registerEditorComponent(youtubeEmbed,flickrEmbed);
+CMS.registerEditorComponent(youtubeEmbed);
