@@ -44,7 +44,20 @@ flickrEmbed = {
     toPreview: function(obj) {return ('<img src="'+ obj.album_image + '" alt="Youtube Video"/>');}
 }
 
+// Facebook
+facebookEmbed = {
+    id: "facebook",
+    label: "Facebook Post/Image/Video",
+    fields: 
+        [{name: 'fb_link', label: 'Facebook Post/Image/Video Link', widget: 'string'}],
+    pattern: /^\{\%include\sfb\-embed\.html\sfb\_link\=\"(.+)\"\%\}$/,
+    fromBlock: function(match) {return {fb_link: match[1]}},
+    toBlock: function(obj) {return '{%include fb-embed.html fb_link="'+obj.fb_link+'"%}';},
+    toPreview: function(obj) {return ('<h4>Facebook Embed</h4>');}
+}
+
 // Register Editor Component
 CMS.registerEditorComponent(youtubeEmbed);
 CMS.registerEditorComponent(flickrEmbed);
 CMS.registerEditorComponent(imageEmbed);
+CMS.registerEditorComponent(facebookEmbed);
