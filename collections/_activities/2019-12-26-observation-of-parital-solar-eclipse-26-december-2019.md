@@ -13,3 +13,5 @@ categories:
   - campeign
 ---
 # Observation of Partial Solar Eclipse - December 26 2019
+
+{%include flickr-embed.html album-title="Solar Eclipse Observation - 26 December 2019" album-link="https://www.flickr.com/photos/158536880@N07/albums/72157712369124266" first-image="https://live.staticflickr.com/65535/49277781746_cf6e84a66e_b_d.jpg"%}
