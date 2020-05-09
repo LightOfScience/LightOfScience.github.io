@@ -26,10 +26,10 @@ file:
 
 The Visakhapatnam gas leak, also referred to as the Vizag gas leak, was an industrial accident that occurred at the LG Polymers chemical plant in R. R. Venkatapuram village near Gopalapatnam on the outskirts of Visakhapatnam, Andhra Pradesh, India, on the early morning of 7 May 2020. 7 People Died in the Incident.\[source: thepirnt.in]. Breakthrough Science Society released a press statement on the matter.
 
-{%include image-embed.html img_link="undefined" img_title="undefined" img_alt="undefined"%}
+{%include image-embed.html img_link="/media/activities/2020/vizag-gas-leak-press-statement/bss-ts.jpg" img_title="Breakthrough Science Society Telengana State Chapter Press Statement" img_alt="Vizag Gas Leak - Breakthrough Science Society Telengana State Chapter Press Statement"%}
 
-{%include image-embed.html img_link="undefined" img_title="undefined" img_alt="undefined"%}
+{%include image-embed.html img_link="/media/activities/2020/vizag-gas-leak-press-statement/bss-press-statement.jpg" img_title="Breakthrough Science Society  Press Statement" img_alt="Vizag Gas Leak - Breakthrough Science Society  Press Statement"%}
 
-{%include image-embed.html img_link="undefined" img_title="undefined" img_alt="undefined"%}
+{%include image-embed.html img_link="/media/activities/2020/vizag-gas-leak-press-statement/bss-wb-demands.jpg" img_title="Breakthrough Science Society West Bengal Chapter Demands" img_alt="Vizag Gas Leak - Breakthrough Science Society West Bengal Chapter Demands"%}
 
 Read More [@TheTimesOfIndia](https://timesofindia.indiatimes.com/city/visakhapatnam/vizag-gas-leak-live-updates-arogyasri-to-cover-gas-leak-victims-treatment-cost-cm-jagan/liveblog/75591477.cms)
