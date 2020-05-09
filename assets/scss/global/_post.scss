@@ -2,12 +2,14 @@
 {
     width:100%;
     background: rgb(243, 243, 243);
+    padding: 2rem 0;
 }
 #post-container
 {
     min-height: 900px;
     background: #fff;
     margin: auto;
+    border-radius: .3rem;
     padding: 1rem 2rem;
     @include lg {width: 880px;}
     @include md {width: 500px;}
@@ -20,15 +22,17 @@
     flex-shrink: 0;
 
 }
-#activity-post
+#activity-post,#blog-post,#news-post
 {
-    flex:2.5; 
+    flex:70; 
     position: relative;
+
 }
 
 #post-side-pane
 {
-    flex:1.1;
+    flex:30;
+    background: #fcfcfc;
     padding: 0 1rem;
     margin-left: 1rem;
     @include lg{margin-top: 20rem; border-left: .1rem solid #dddddd;}
