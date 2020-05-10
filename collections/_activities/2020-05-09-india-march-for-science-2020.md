@@ -25,7 +25,7 @@ categories:
 
 Since the country is under lock-down due to COVID19, everyone is requested to take a photo of themself holding a banner/page/laptop/similar-things showing their demand in support of March For Science/India March For Science initiative, and then post it in the social media including hashtag ***\#IndiaMarchForScience #MarchForScience #IMFS2020***
 
-{%include image-embed.html img_link="/media/activities/2020/india-march-for-science-2020/imfs2020.jpg" img_title="Demands Of India March For Science 2020" img_alt="Demands Of India March For Science 2020"%}
+{%include image-embed.html img_link="/media/activities/2020/india-march-for-science-2020/imfs2020-bss.jpg" img_title="Demands Of India March For Science 2020" img_alt="Demands Of India March For Science 2020"%}
 
 ## Few of the demands,
 
@@ -43,7 +43,9 @@ Since the country is under lock-down due to COVID19, everyone is requested to ta
 
   {%include image-embed.html img_link="/media/activities/2020/india-march-for-science-2020/imfs2020.jpg" img_title="In Support of India March For Science 2020" img_alt="Light Of Science In Support of India March For Science 2020"%}
 
+
 - - -
+
 
 {%include fb-embed.html fb_link="https://www.facebook.com/breakthrough.wb/posts/945821012533715"%}
 
