@@ -41,7 +41,7 @@ Since the country is under lock-down due to COVID19, everyone is requested to ta
 * Use BSL2 Research Labs with RT-PCR Facility for COVID19 test.
 * Increase the Genomic Sequencing of SARS-CoV-2.
 
-  {%include image-embed.html img_link="/media/activities/2020/india-march-for-science-2020/imfs2020.jpg" img_title="In Support of India March For Science 2020" img_alt="Light Of Science In Support of India March For Science 2020"%}
+{%include image-embed.html img_link="/media/activities/2020/india-march-for-science-2020/imfs2020.jpg" img_title="In Support of India March For Science 2020" img_alt="Light Of Science In Support of India March For Science 2020"%}
 
 
 - - -
