@@ -1,7 +1,6 @@
 <div id="blog-list-wrapper">
     <div id="blog-list-container">
-        {%assign blog_length = site.posts | size %}
-        {%for blog in site.posts reversed %}
+        {%for blog in site.posts%}
             {%assign blog_date = blog.date | date: "%d %b %Y"%}
             {%assign blog_title = blog.title%}
             {%assign blog_image = blog.image%}
