@@ -101,13 +101,14 @@
     {
         display: none;
     }
+
 .nav-desktop
 {
-    @include lg {position: absolute; right: 0px;}
-    @include md {position: block;}
-    @include sm {position: block;}
-    
-    
+    @media (min-width:#{1189px})
+	{
+		position: absolute; right: 0px;
+	}  
+
 
     #nav-wrapper
         {

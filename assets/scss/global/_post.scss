@@ -1,42 +1,42 @@
 #post-wrapper
 {
     width:100%;
-    background: rgb(243, 243, 243);
-    padding: 2rem 0;
+    background: rgb(235, 235, 235);
 }
 #post-container
 {
     min-height: 900px;
-    background: #fff;
     margin: auto;
     border-radius: .3rem;
-    padding: 1rem;
     @include lg {width: 880px;}
     @include md {width: 500px;}
-    @include sm {width: calc(100vw - 1rem);padding:0;}
+    @include sm {width: calc(100vw);padding:0;}
     display: flex;
     @include lg{flex-direction: row;}
     @include md{flex-direction: column;}
     @include sm{flex-direction: column;}
     flex-grow: 0;
     flex-shrink: 0;
-
 }
 #activity-post,#blog-post,#news-post
 {
     flex:70; 
-    margin: .2rem 1rem;
+    margin: 1rem;
+    background: #fff;
+    padding:2rem;
+    border-radius: .5rem;
 
 }
 
 #post-side-pane
 {
+    background: rgb(245, 245, 245);
     flex:30;
-    background: #fcfcfc;
     padding: 0 1rem;
-    @include lg{margin-top: 20rem; border-left: .1rem solid #dddddd;}
-    @include md{margin-top: 2rem 0 0 0; }
-    @include sm{margin: 2rem 0 0 0;}
+    border-radius: .5rem;
+    @include lg{margin: 20rem 0 1rem 0;}
+    @include md{margin: 2rem 0 1rem 0; }
+    @include sm{margin: 2rem 0 1rem 0;}
 
 }
 
