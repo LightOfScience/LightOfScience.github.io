@@ -22,9 +22,9 @@
 <div class="recent-blogs">
     <h2 class="heading">Recent Blogs</h2>
     <ul class="item-list">
-        {%assign blog_length = site.post | size%}
-        {%for i in (1..5)%}
-            {%assign blog_index = blog_length | minus:i%}
+
+        {%for i in (0..4)%}
+            {%assign blog_index = i%}
             <li class="list-item"><a href="{{site.posts[blog_index].url}}">{{site.posts[blog_index].title}}</a></li>
         {%endfor%}
     </ul>
