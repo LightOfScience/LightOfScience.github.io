@@ -22,6 +22,10 @@ categories: seminar, webinar, environment
 
 {%include yt-embed.html id="UvDGRtX-LZs" type="video"%}
 
-
-
 {%include image-embed.html img_link="/media/news/2020/webinar-the-right-way-to-environmental-activism/weibnar-world-environment-day-bss-poster.jpg" img_title="Webinar: The Right way to Environmental Activism" img_alt="Webinar: The Right way to Environmental Activism by Dr. Soumitro Banerjee, Breakthrough Science Society"%}
+
+
+
+### Organised by,\
+Breakthrough Science Society\
+Contact- 9547883168, 9432810145
