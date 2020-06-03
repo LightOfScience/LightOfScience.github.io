@@ -26,6 +26,8 @@ categories: seminar, webinar, environment
 
 
 
-### Organised by,\
-Breakthrough Science Society\
-Contact- 9547883168, 9432810145
+### Organised by,
+
+### Breakthrough Science Society
+
+### Contact- 9547883168, 9432810145
