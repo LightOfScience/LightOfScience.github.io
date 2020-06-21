@@ -14,3 +14,5 @@ categories:
   - breakthrough science society
 ---
 # **Observation of World Environment Day 2020**
+
+{%include image-embed.html img_link="/media/activities/2020/world-environment-day-2020/world-environment-day-5-june-2020.jpg" img_title="World Environment Day - 2020" img_alt="World Environment Day - 2020 - Light Of Science"%}
