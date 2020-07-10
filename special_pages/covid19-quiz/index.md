@@ -8,7 +8,9 @@ img: covid19-quiz.jpg
 permalink: /covid19-quiz/
 ---
 
-<form name="quiz" method="POST" action="" style="width: 90%; margin: auto; margin-top:50px; ">
+<div style="width: 100%;"><img src="quiz-banner.jpg" alt="" width="100%"></div>
+
+<form name="quiz" method="POST" action="" style="width: 90%; margin: auto; margin:50px auto; ">
     
     <!-- Question 1 : Start-->
     <div class="question">
@@ -51,12 +53,12 @@ permalink: /covid19-quiz/
 
     <!-- Question 4 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q4) </h1>
+        <h1 class="qn-title">Q4) In lockdown period, who  releases her first  single "candle" (song) dedicated to COVID-19 frontline warriors?</h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q4" id="A4" value="A"><label class="option-label" for="A">A) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q4" id="B4" value="B"><label class="option-label" for="B">B) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q4" id="C4" value="C"><label class="option-label" for="C">C) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q4" id="D4" value="D"><label class="option-label" for="D">D) </label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q4" id="A4" value="A"><label class="option-label" for="A">A) Dipika Padukone</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q4" id="B4" value="B"><label class="option-label" for="B">B) Madhuri Dixit</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q4" id="C4" value="C"><label class="option-label" for="C">C) Jaya Ahaasan</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q4" id="D4" value="D"><label class="option-label" for="D">D) Priyanka Chopra</label></li>
         </ul>
     </div>
     <!-- Question 4: End -->
@@ -64,12 +66,12 @@ permalink: /covid19-quiz/
 
     <!-- Question 5 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q5) </h1>
+        <h1 class="qn-title">Q5) Which very trending  word , Swami Vivekananda used in his popular literary work "suyej khale hangor shikar" , mening  40 days?</h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q5" id="A5" value="A"><label class="option-label" for="A">A) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q5" id="B5" value="B"><label class="option-label" for="B">B) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q5" id="C5" value="C"><label class="option-label" for="C">C) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q5" id="D5" value="D"><label class="option-label" for="D">D) </label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q5" id="A5" value="A"><label class="option-label" for="A">A) COVID</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q5" id="B5" value="B"><label class="option-label" for="B">B) Lockdown</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q5" id="C5" value="C"><label class="option-label" for="C">C) Qurantine</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q5" id="D5" value="D"><label class="option-label" for="D">D) Containment</label></li>
         </ul>
     </div>
     <!-- Question 5: End -->
