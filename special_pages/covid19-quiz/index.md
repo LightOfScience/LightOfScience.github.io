@@ -4,12 +4,14 @@ title: COVID19 Awareness Quiz
 seo: 
     keywords: COVID19, Quiz, COVID19 Quiz
     description: COVID19 Awereness Quiz.
-img: quiz-banner.jpg
+img: /media/special_pages/covid19-quiz/quiz-banner.jpg
 permalink: /covid19-quiz/
 ---
 
-<div style="width: 100%;"><img src="quiz-banner.jpg" alt="" width="100%"></div>
-
+<div style="width: 100%; background: #014880;" ><img id="quiz-banner" src="/media/special_pages/covid19-quiz/quiz-banner.jpg" alt="" width="100%"></div>
+<script>
+    if (isMobile() == false) document.getElementById('quiz-banner').style.width = "50%";
+</script>
 <form name="quiz" method="POST" action="" style="width: 90%; margin: auto; margin:50px auto; ">
     
     <!-- Question 1 : Start-->
@@ -210,8 +212,8 @@ permalink: /covid19-quiz/
     <!--participant details-->
     <ul style="display: flex; flex-wrap: wrap; width: 80%; text-align: center; margin:auto; padding:5px; background: rgb(255, 204, 204); border-radius:1rem;">
         <input class="generic-ip" type="text" name="Name" id="qz-name" placeholder="Enter your Name" required>
-        <input class="generic-ip" type="email" name="Email" id="qz-email" placeholder="Enter your Eamil" required>
-        <input class="generic-ip" type="text" name="Institution" id="qz-institution" placeholder="Which Institution/Office you belong to?">
+        <input class="generic-ip" type="email" name="Email" id="qz-email" placeholder="Enter your Email" required>
+        <input class="generic-ip" type="text" name="Institution" id="qz-institution" placeholder="Which Institution/Office do you belong to?">
         <input class="generic-ip" type="text" name="Department" id="qz-dept" placeholder="Your Department?">
         <button class="generic-ip" id="submit" type="submit" style="margin: 10px 60px;">Submit&nbsp;&nbsp;</button>
         <h3 id="response"></h3>
@@ -261,17 +263,17 @@ permalink: /covid19-quiz/
     width:30px;
     height: 30px;
     margin:0 10px 0 0;
-    border: 6px solid green;
-    border-radius: 50%;
+    border: 4px solid rgb(0, 62, 177);
+    border-radius: 0%;
     transition: .2s all linear;
     transform: scale(1);
 }
 .option-ip:checked
 {
-    border: 3px solid rgb(0, 62, 177);
-    background: rgb(255, 223, 81);
+    border: 6px solid green;
+    background: rgb(238, 255, 0);
     transform: scale(1.05);
-    border-radius: 0;
+    border-radius: 50%;
     
 }
 .option-label
