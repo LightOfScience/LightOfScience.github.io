@@ -4,7 +4,7 @@ title: COVID19 Awareness Quiz
 seo: 
     keywords: COVID19, Quiz, COVID19 Quiz
     description: COVID19 Awereness Quiz.
-img: covid19-quiz.jpg
+img: quiz-banner.jpg
 permalink: /covid19-quiz/
 ---
 
