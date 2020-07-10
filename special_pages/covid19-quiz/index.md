@@ -1,10 +1,10 @@
 ---
 layout: page-generic-default
-title: COVID19 Quiz
+title: COVID19 Awareness Quiz
 seo: 
     keywords: COVID19, Quiz, COVID19 Quiz
-    description:
-img: /data/df.img
+    description: COVID19 Awereness Quiz.
+img: covid19-quiz.jpg
 permalink: /covid19-quiz/
 ---
 
