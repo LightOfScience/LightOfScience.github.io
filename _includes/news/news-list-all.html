@@ -1,9 +1,7 @@
 <div id="news-list-wrapper">
     <div id="news-list-container">
         {%assign news_length = site.news | size %}
-        {%for i in (1..10) %}
-            {%assign news_id = news_length | minus: i%}
-            {%assign news = site.news[news_id]}
+        {%for news in site.news reversed %}
             {%assign news_date = news.date | date: "%d %b %Y"%}
             {%assign news_title = news.title%}
             {%assign news_image = news.image%}
@@ -35,8 +33,4 @@
             <hr class="hr">
         {%endfor%}
     </div>
-</div>
-<div id="all-news-btn-container">
-    <a href="/news/all"><button id="all-news-btn">All Previous News</button></a>
-
 </div>

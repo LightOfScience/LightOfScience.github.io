@@ -2,7 +2,7 @@
     <div id="front-page-news-wrapper">
         <div id="front-page-news">
             {%assign news_post_length = site.news | size %}
-            {% for i in (1..5) %}
+            {% for i in (1..4) %}
                 {%assign news_index = {{news_post_length}} | minus:{{i}} %}
                 {%assign news_title = site.news[news_index].title %}
                 {%assign news_excerpt = site.news[news_index].excerpt %}
