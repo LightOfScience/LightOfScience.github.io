@@ -8,7 +8,7 @@ img: covid19-quiz.jpg
 permalink: /covid19-quiz/
 ---
 
-<form name="quiz" style="width: 90%; margin: auto; margin-top:50px; ">
+<form name="quiz" method="POST" action="" style="width: 90%; margin: auto; margin-top:50px; ">
     
     <!-- Question 1 : Start-->
     <div class="question">
@@ -211,8 +211,8 @@ permalink: /covid19-quiz/
         <input class="generic-ip" type="email" name="Email" id="qz-email" placeholder="Enter your Eamil" required>
         <input class="generic-ip" type="text" name="Institution" id="qz-institution" placeholder="Which Institution/Office you belong to?">
         <input class="generic-ip" type="text" name="Department" id="qz-dept" placeholder="Your Department?">
-        <button class="generic-ip" type="submit" style="margin: 10px 60px;">Submit</button>
-        <h3 class="generic-ip" id="response"></h3>
+        <button class="generic-ip" id="submit" type="submit" style="margin: 10px 60px;">Submit&nbsp;&nbsp;</button>
+        <h3 id="response"></h3>
     </ul>
 </form>
 
@@ -278,12 +278,35 @@ permalink: /covid19-quiz/
     margin:0;
 }
 
-.generic-ip
+.generic-ip, #response
 {
     text-align: center;
     flex-basis: 100%;
     margin:2px 10px;
     height: 40px;
+}
+.submitting
+{   
+    
+}
+.submitting::after
+{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px dotted black;
+    border-radius: 50%;
+    background-color: transparent;
+
+    animation: bg-rotate .5s infinite;
+    
+}
+@keyframes bg-rotate {
+  0%   {transform: rotate(0deg);}
+  50% {transform: rotate(360deg);}
+  100% {transform: rotate(0deg);}
+
 }
 </style>
 
@@ -306,6 +329,23 @@ const form = document.forms['quiz'];
 
 
 form.addEventListener('submit', e => {
+
+    try {
+        if (localStorage.getItem("COVID19-Quiz") == "true")
+        {
+            throw "err";
+            console.log("err");
+        }
+        else{
+            console.log("dd");
+        }
+    } catch(err) {
+            alert("You've already participated!");
+            return false;
+        }
+
+    document.getElementById('submit').classList.add("submitting")
+
     var data = {
         "name":        "",
         "email":       "",
@@ -318,11 +358,14 @@ form.addEventListener('submit', e => {
     data.score = calcScore();
     data.institution = document.getElementById('qz-institution').value;
     data.dept = document.getElementById('qz-dept').value;
-
     
     e.preventDefault()
     fetch(scriptURL, {method: 'POST', body: JSON.stringify(data), mode: 'no-cors', cache: 'no-cache', headers:{'Content-Type': 'application/json'}})
-        .then(response => document.getElementById('response').innerHTML = "Success!")
+        .then(response => {
+            document.getElementById('response').innerHTML = "Success!";
+            document.getElementById('submit').classList.remove("submitting");
+            localStorage.setItem("COVID19-Quiz",true);
+            })
         .catch(error => document.getElementById('response').innerHTML = "Error!")
 })
 </script>
