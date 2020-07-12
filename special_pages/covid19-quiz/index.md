@@ -16,24 +16,24 @@ permalink: /covid19-quiz/
     
     <!-- Question 1 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q1) What is the Name  of beer produced by  Mexican brewery Cervecería Modelo and owned by Belgian company AB InBev?</h1>
+        <h1 class="qn-title">Q1) Which are the Mid Symptoms of COVID-19?</h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q1" id="A1" value="A"><label class="option-label" for="A">A) Corona Power</label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q1" id="B1" value="B"><label class="option-label" for="B">B) Corona Extra</label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q1" id="C1" value="C"><label class="option-label" for="C">C) Covid Extra</label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q1" id="D1" value="D"><label class="option-label" for="D">D) Corona Pro</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q1" id="A1" value="A"><label class="option-label" for="A">A) Fever.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q1" id="B1" value="B"><label class="option-label" for="B">B) Cough.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q1" id="C1" value="C"><label class="option-label" for="C">C) Shortness of Breath.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q1" id="D1" value="D"><label class="option-label" for="D">D) All of the above.</label></li>
         </ul>
     </div>
     <!-- Question 1: End -->
 
     <!-- Question 2 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q2) In which age group the COVID-19 spreads?</h1>
+        <h1 class="qn-title">Q2) The capital of Hubie Provinces, is in the news for, </h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q2" id="A2" value="A"><label class="option-label" for="A">A) COVID-19 occur in all age groups.</label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q2" id="B2" value="B"><label class="option-label" for="B">B) Corona virus infection is mild in children.</label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q2" id="C2" value="C"><label class="option-label" for="C">C) Older person and persons with pre-existing medical conditions are at high risk to develop serious illness.</label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q2" id="D2" value="D"><label class="option-label" for="D">D) all of the above</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q2" id="A2" value="A"><label class="option-label" for="A">A) Most COVID19 Positive in China.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q2" id="B2" value="B"><label class="option-label" for="B">B) First COVID19 Positive in China.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q2" id="C2" value="C"><label class="option-label" for="C">C) COVID19 Free Zone of China.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q2" id="D2" value="D"><label class="option-label" for="D">D) None of the Above.</label></li>
         </ul>
     </div>
     <!-- Question 2: End -->
@@ -55,12 +55,12 @@ permalink: /covid19-quiz/
 
     <!-- Question 4 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q4) In lockdown period, who  releases her first  single "candle" (song) dedicated to COVID-19 frontline warriors?</h1>
+        <h1 class="qn-title">Q4) The first tiger at Bronx Zoo Tiger, tested positive for COVID-19. What is the name of the tiger?</h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q4" id="A4" value="A"><label class="option-label" for="A">A) Dipika Padukone</label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q4" id="B4" value="B"><label class="option-label" for="B">B) Madhuri Dixit</label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q4" id="C4" value="C"><label class="option-label" for="C">C) Jaya Ahaasan</label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q4" id="D4" value="D"><label class="option-label" for="D">D) Priyanka Chopra</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q4" id="A4" value="A"><label class="option-label" for="A">A) Sadia.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q4" id="B4" value="B"><label class="option-label" for="B">B) Nadia.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q4" id="C4" value="C"><label class="option-label" for="C">C) Naunia.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q4" id="D4" value="D"><label class="option-label" for="D">D) Kimono.</label></li>
         </ul>
     </div>
     <!-- Question 4: End -->
@@ -68,12 +68,12 @@ permalink: /covid19-quiz/
 
     <!-- Question 5 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q5) Which very trending  word , Swami Vivekananda used in his popular literary work "suyej khale hangor shikar" , mening  40 days?</h1>
+        <h1 class="qn-title">Q5) According th WHO, what should be the minimum gap between two individuals under social distancing?</h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q5" id="A5" value="A"><label class="option-label" for="A">A) COVID</label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q5" id="B5" value="B"><label class="option-label" for="B">B) Lockdown</label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q5" id="C5" value="C"><label class="option-label" for="C">C) Qurantine</label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q5" id="D5" value="D"><label class="option-label" for="D">D) Containment</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q5" id="A5" value="A"><label class="option-label" for="A">A) 3 Meters.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q5" id="B5" value="B"><label class="option-label" for="B">B) 1 Meters.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q5" id="C5" value="C"><label class="option-label" for="C">C) 2.5 Meters.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q5" id="D5" value="D"><label class="option-label" for="D">D) 2 Meters.</label></li>
         </ul>
     </div>
     <!-- Question 5: End -->
@@ -81,12 +81,12 @@ permalink: /covid19-quiz/
 
     <!-- Question 6 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q6) </h1>
+        <h1 class="qn-title">Q6) Which very trending word, Narendra Nath Datta used in his popular literary work "Suyej Khale Hangor Shikar"(সুয়েজ খালে হাঙ্গর শিকার), meaning 40 days?</h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q6" id="A6" value="A"><label class="option-label" for="A">A) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q6" id="B6" value="B"><label class="option-label" for="B">B) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q6" id="C6" value="C"><label class="option-label" for="C">C) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q6" id="D6" value="D"><label class="option-label" for="D">D) </label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q6" id="A6" value="A"><label class="option-label" for="A">A) Coronavirus.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q6" id="B6" value="B"><label class="option-label" for="B">B) Lockdown.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q6" id="C6" value="C"><label class="option-label" for="C">C) Quarantine.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q6" id="D6" value="D"><label class="option-label" for="D">D) Containment.</label></li>
         </ul>
     </div>
     <!-- Question 6: End -->
@@ -94,12 +94,12 @@ permalink: /covid19-quiz/
 
     <!-- Question 7 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q7) </h1>
+        <h1 class="qn-title">Q7) In January 2020, a new type of Coronavirus __???__ was identified as the cause of an out break of viral pneumonia in the capital of Hubei Province. (fill in the blank)</h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q7" id="A7" value="A"><label class="option-label" for="A">A) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q7" id="B7" value="B"><label class="option-label" for="B">B) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q7" id="C7" value="C"><label class="option-label" for="C">C) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q7" id="D7" value="D"><label class="option-label" for="D">D) </label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q7" id="A7" value="A"><label class="option-label" for="A">A) MARS-CoV-2</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q7" id="B7" value="B"><label class="option-label" for="B">B) SARS-nCoV-19</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q7" id="C7" value="C"><label class="option-label" for="C">C) SARS-CoV-2</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q7" id="D7" value="D"><label class="option-label" for="D">D) MARS-nCoV-19</label></li>
         </ul>
     </div>
     <!-- Question 7: End -->
@@ -107,12 +107,12 @@ permalink: /covid19-quiz/
 
     <!-- Question 8 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q8) </h1>
+        <h1 class="qn-title">Q8) What is the reason behind the naming of the Coronavirus group?</h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q8" id="A8" value="A"><label class="option-label" for="A">A) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q8" id="B8" value="B"><label class="option-label" for="B">B) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q8" id="C8" value="C"><label class="option-label" for="C">C) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q8" id="D8" value="D"><label class="option-label" for="D">D) </label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q8" id="A8" value="A"><label class="option-label" for="A">A) Due to crown like projection.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q8" id="B8" value="B"><label class="option-label" for="B">B) Due to crown like tail.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q8" id="C8" value="C"><label class="option-label" for="C">C) Due to crown like tail.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q8" id="D8" value="D"><label class="option-label" for="D">D) None of the above.</label></li>
         </ul>
     </div>
     <!-- Question 8: End -->
@@ -120,12 +120,12 @@ permalink: /covid19-quiz/
 
     <!-- Question 9 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q9) </h1>
+        <h1 class="qn-title">Q9) Due to recent COVID19 outbreak "N95" masks are very popular in this vital situation. What does the 'N' stands for?</h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q9" id="A9" value="A"><label class="option-label" for="A">A) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q9" id="B9" value="B"><label class="option-label" for="B">B) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q9" id="C9" value="C"><label class="option-label" for="C">C) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q9" id="D9" value="D"><label class="option-label" for="D">D) </label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q9" id="A9" value="A"><label class="option-label" for="A">A) Non-Resistance to Virus.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q9" id="B9" value="B"><label class="option-label" for="B">B) Non-Resistance to Oil.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q9" id="C9" value="C"><label class="option-label" for="C">C) Non-Resistance to Bacteria.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q9" id="D9" value="D"><label class="option-label" for="D">D) Non-Resistance to Dust.</label></li>
         </ul>
     </div>
     <!-- Question 9: End -->
@@ -133,12 +133,12 @@ permalink: /covid19-quiz/
 
     <!-- Question 10 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q10) </h1>
+        <h1 class="qn-title">Q10) What electronic device under consideration were infected by several microbes, most of which belonged to the natural flora of the human body as well as airborne fungi and soil?</h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q10" id="A10" value="A"><label class="option-label" for="A">A) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q10" id="B10" value="B"><label class="option-label" for="B">B) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q10" id="C10" value="C"><label class="option-label" for="C">C) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q10" id="D10" value="D"><label class="option-label" for="D">D) </label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q10" id="A10" value="A"><label class="option-label" for="A">A) Television.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q10" id="B10" value="B"><label class="option-label" for="B">B) DVD Player.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q10" id="C10" value="C"><label class="option-label" for="C">C) Mobile Phone.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q10" id="D10" value="D"><label class="option-label" for="D">D) Microwave Oven.</label></li>
         </ul>
     </div>
     <!-- Question 10: End -->
@@ -146,12 +146,12 @@ permalink: /covid19-quiz/
 
     <!-- Question 11 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q11) </h1>
+        <h1 class="qn-title">Q11) A new COVID19 diagnostic kit, called "FNCAS9 Editor Linked Uniform Detection Assay" has been developed by IGIB (New Delhi). The name of the kit is inspired form,</h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q11" id="A11" value="A"><label class="option-label" for="A">A) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q11" id="B11" value="B"><label class="option-label" for="B">B) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q11" id="C11" value="C"><label class="option-label" for="C">C) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q11" id="D11" value="D"><label class="option-label" for="D">D) </label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q11" id="A11" value="A"><label class="option-label" for="A">A) Sirshendu Mukhopadhay.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q11" id="B11" value="B"><label class="option-label" for="B">B) Saradindu Bandopadhya.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q11" id="C11" value="C"><label class="option-label" for="C">C) Sunil Ganguly</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q11" id="D11" value="D"><label class="option-label" for="D">D) Satyajit Roy.</label></li>
         </ul>
     </div>
     <!-- Question 11: End -->
@@ -172,12 +172,12 @@ permalink: /covid19-quiz/
 
     <!-- Question 13 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q13) </h1>
+        <h1 class="qn-title">Q13) In lockdown period, who  releases her first single called "Candle" dedicated to COVID-19 frontline warriors?</h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q13" id="A13" value="A"><label class="option-label" for="A">A) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q13" id="B13" value="B"><label class="option-label" for="B">B) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q13" id="C13" value="C"><label class="option-label" for="C">C) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q13" id="D13" value="D"><label class="option-label" for="D">D) </label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q13" id="A13" value="A"><label class="option-label" for="A">A) Dipika Padukone.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q13" id="B13" value="B"><label class="option-label" for="B">B) Madhuri Dixit.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q13" id="C13" value="C"><label class="option-label" for="C">C) Jaya Ahaasan.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q13" id="D13" value="D"><label class="option-label" for="D">D) Priyanka Chopra Jonas.</label></li>
         </ul>
     </div>
     <!-- Question 13: End -->
@@ -185,18 +185,96 @@ permalink: /covid19-quiz/
 
     <!-- Question 14 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q14) </h1>
+        <h1 class="qn-title">Q14) What should be the proportion of Alcohol in Ethanol based Hand Sanitizer?</h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q14" id="A14" value="A"><label class="option-label" for="A">A) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q14" id="B14" value="B"><label class="option-label" for="B">B) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q14" id="C14" value="C"><label class="option-label" for="C">C) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q14" id="D14" value="D"><label class="option-label" for="D">D) </label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q14" id="A14" value="A"><label class="option-label" for="A">A) 89.3%</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q14" id="B14" value="B"><label class="option-label" for="B">B) 85%</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q14" id="C14" value="C"><label class="option-label" for="C">C) 96%</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q14" id="D14" value="D"><label class="option-label" for="D">D) 99.8%</label></li>
         </ul>
     </div>
     <!-- Question 14: End -->
 
 
     <!-- Question 15 : Start-->
+    <div class="question">
+        <h1 class="qn-title">Q15) On which animal, Thailand began trials of their COVID19 Vaccine?</h1>
+        <ul class="option-list">
+            <li class="option"><input class="option-ip" type="radio" name="q15" id="A15" value="A"><label class="option-label" for="A">A) Rat.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q15" id="B15" value="B"><label class="option-label" for="B">B) Guinea Pig.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q15" id="C15" value="C"><label class="option-label" for="C">C) Monkey.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q15" id="D15" value="D"><label class="option-label" for="D">D) Chimpanzee.</label></li>
+        </ul>
+    </div>
+    <!-- Question 15: End -->
+
+
+    <!-- Question 16 : Start-->
+    <div class="question">
+        <h1 class="qn-title">Q16) A 15-year-old girl from Bihar who cycled nearly 1200 km, with her father riding pillion, to reach home amid the COVID19 Lockdown, has been offered free tuition to appear for the IIT-JEE by Anand Kumar, the founder of the widely-acclaimed coaching centre Super 30. What is the name of the girl?</h1>
+        <ul class="option-list">
+            <li class="option"><input class="option-ip" type="radio" name="q16" id="A16" value="A"><label class="option-label" for="A">A) Jaya Roy</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q16" id="B16" value="B"><label class="option-label" for="B">B) Jyoti Roy</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q16" id="C16" value="C"><label class="option-label" for="C">C) Jyoti Kumari</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q16" id="D16" value="D"><label class="option-label" for="D">D) Jaya Paswan</label></li>
+        </ul>
+    </div>
+    <!-- Question 16: End -->
+
+
+    <!-- Question 17 : Start-->
+    <div class="question">
+        <h1 class="qn-title">Q17) What is the Name  of beer produced by  Mexican brewery Cervecería Modelo and owned by Belgian company AB InBev?</h1>
+        <ul class="option-list">
+            <li class="option"><input class="option-ip" type="radio" name="q17" id="A17" value="A"><label class="option-label" for="A">A) Corona Power.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q17" id="B17" value="B"><label class="option-label" for="B">B) Corona Extra.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q17" id="C17" value="C"><label class="option-label" for="C">C) Corona Strong.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q17" id="D17" value="D"><label class="option-label" for="D">D) Corona Mild.</label></li>
+        </ul>
+    </div>
+    <!-- Question 17: End -->
+
+
+    <!-- Question 18 : Start-->
+    <div class="question">
+        <h1 class="qn-title">Q18) Which age group is more prone to be affected by COVID-19?</h1>
+        <ul class="option-list">
+            <li class="option"><input class="option-ip" type="radio" name="q18" id="A18" value="A"><label class="option-label" for="A">A) COVID19 infection is mild in children.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q18" id="B18" value="B"><label class="option-label" for="B">B) COVID19 occurs in all age groups.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q18" id="C18" value="C"><label class="option-label" for="C">C) Older person and persons with pre-existing medical conditions are at high risk to develop serious illness.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q18" id="D18" value="D"><label class="option-label" for="D">D) All of the above.</label></li>
+        </ul>
+    </div>
+    <!-- Question 18: End -->
+
+
+    <!-- Question 19 : Start-->
+    <div class="question">
+        <h1 class="qn-title">Q19) A very heart-breaking video went viral when, "A Child was trying to wake his/her dead mother, who died of starvation during COVID19 lockdown, at a railway station." What was the station, which somehow connected to Revolutionary Khudiram Bose?</h1>
+        <ul class="option-list">
+            <li class="option"><input class="option-ip" type="radio" name="q19" id="A19" value="A"><label class="option-label" for="A">A) </label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q19" id="B19" value="B"><label class="option-label" for="B">B) </label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q19" id="C19" value="C"><label class="option-label" for="C">C) </label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q19" id="D19" value="D"><label class="option-label" for="D">D) </label></li>
+        </ul>
+    </div>
+    <!-- Question 19: End -->
+
+
+    <!-- Question 20 : Start-->
+    <div class="question">
+        <h1 class="qn-title">Q20) Which of the following was discovered by Issac Newton during the lockdown during Great Plague of London?</h1>
+        <ul class="option-list">
+            <li class="option"><input class="option-ip" type="radio" name="q20" id="A20" value="A"><label class="option-label" for="A">A) Laws of Motion.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q20" id="B20" value="B"><label class="option-label" for="B">B) Laws governing the Reflection of Light.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q20" id="C20" value="C"><label class="option-label" for="C">C) Laws of Cooling</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q20" id="D20" value="D"><label class="option-label" for="D">D) Laws of Gravity.</label></li>
+        </ul>
+    </div>
+    <!-- Question 20: End -->
+
+    
+    <!-- Question 15 : Start--
     <div class="question">
         <h1 class="qn-title">Q15) </h1>
         <ul class="option-list">
@@ -206,7 +284,7 @@ permalink: /covid19-quiz/
             <li class="option"><input class="option-ip" type="radio" name="q15" id="D15" value="D"><label class="option-label" for="D">D) </label></li>
         </ul>
     </div>
-    <!-- Question 15: End -->
+    !-- Question 15: End -->
 
 
     <!--participant details-->
@@ -326,11 +404,8 @@ var calcScore = () => {
     return score;
 };
 
-
-const scriptURL = 'https://script.google.com/macros/s/AKfycby_ud_GWfqVoS-Z7A5MFo6nL4GWrL1RFI1dH_r5/exec';
+const scriptURL = '';
 const form = document.forms['quiz'];
-
-
 
 form.addEventListener('submit', e => {
 
@@ -366,7 +441,7 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, {method: 'POST', body: JSON.stringify(data), mode: 'no-cors', cache: 'no-cache', headers:{'Content-Type': 'application/json'}})
         .then(response => {
-            document.getElementById('response').innerHTML = "Success!";
+            document.getElementById('response').innerHTML = "Successfully Submitted! You have scored " + data.score;
             document.getElementById('submit').classList.remove("submitting");
             localStorage.setItem("COVID19-Quiz",true);
             })
