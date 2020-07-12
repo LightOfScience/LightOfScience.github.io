@@ -3,7 +3,7 @@ layout: page-generic-default
 title: COVID19 Awareness Quiz
 seo: 
     keywords: COVID19, Quiz, COVID19 Quiz
-    description: COVID19 Awereness Quiz.
+    description: COVID19 Awereness Quiz. All the participants will be awarded a participation certificate. This quiz is organized by Light Of Science.
 img: /media/special_pages/covid19-quiz/quiz-banner.jpg
 permalink: /covid19-quiz/
 ---
@@ -159,12 +159,12 @@ permalink: /covid19-quiz/
 
     <!-- Question 12 : Start-->
     <div class="question">
-        <h1 class="qn-title">Q12) </h1>
+        <h1 class="qn-title">Q12) Can COVID-19 be cured?</h1>
         <ul class="option-list">
-            <li class="option"><input class="option-ip" type="radio" name="q12" id="A12" value="A"><label class="option-label" for="A">A) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q12" id="B12" value="B"><label class="option-label" for="B">B) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q12" id="C12" value="C"><label class="option-label" for="C">C) </label></li>
-            <li class="option"><input class="option-ip" type="radio" name="q12" id="D12" value="D"><label class="option-label" for="D">D) </label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q12" id="A12" value="A"><label class="option-label" for="A">A) Yes – Hot drinks can cure COVID-19.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q12" id="B12" value="B"><label class="option-label" for="B">B) No – COVID-19 is a death sentence.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q12" id="C12" value="C"><label class="option-label" for="C">C) Yes - Worshipping the Goddess Corona will bless us cure.</label></li>
+            <li class="option"><input class="option-ip" type="radio" name="q12" id="D12" value="D"><label class="option-label" for="D">D) No – but most people get better by themselves.</label></li>
         </ul>
     </div>
     <!-- Question 12: End -->
