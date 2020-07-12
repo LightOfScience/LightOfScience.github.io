@@ -302,7 +302,7 @@ permalink: /covid19-quiz/
 <style>
 .question
 {
-    background:hsl(99, 100%, 97%);
+    background:#fff3ad;
     padding:5px;
     margin:20px 0;
     border-radius: 1rem;
