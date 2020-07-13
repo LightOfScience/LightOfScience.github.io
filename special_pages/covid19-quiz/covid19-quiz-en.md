@@ -30,7 +30,7 @@ permalink: /covid19-quiz/
 
     <div id="questions-list">
         <div id="qn-cover"></div>
-        <p id="timer">5 min. : 0 sec.</p>
+        <p id="timer">10 min. : 0 sec.</p>
         <!-- Question 1 : Start-->
         <div class="question">
             <h1 class="qn-title">Q1) Which are the Mid Symptoms of COVID-19?</h1>
@@ -539,7 +539,7 @@ function start (event)
 
     document.getElementById('questions-list').style.display='block';
     document.getElementById('submit').style.display='block';
-    var total_time=5;//in seconds
+    var total_time=600;//in seconds
     var timer = document.getElementById('timer');
     var refreshIntervalId = setInterval(() => {
         var min = Math.trunc(total_time/60);
