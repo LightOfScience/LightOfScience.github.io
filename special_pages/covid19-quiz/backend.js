@@ -17,12 +17,13 @@ function doPost(e)
   var timestamp = new Date();
   var name = data.name;
   var email = data.email;
+  var phone = data.phone;
   var score = data.score;
   var institution = data.institution;
   var dept = data.dept;
   
   try {
-    var storeData_status = storeData(timestamp, name, email, score, institution, dept); // Storing Data to Spreadsheet
+    var storeData_status = storeData(timestamp, name, email, phone, score, institution, dept); // Storing Data to Spreadsheet
     var pdf_id = createCertificate(name, email, score, institution, dept, timestamp); // Generating Certificate PDF
     var email_status = sendEmail(email, pdf_id, name, score); //Sending Email
     return ContentService.createTextOutput(JSON.stringify({ 'result': 'Successful!', 'Status': "" })).setMimeType(ContentService.MimeType.JSON);
@@ -36,11 +37,11 @@ function doPost(e)
 }
 
 
-function storeData(timestamp, name, email, score, institution, dept)
+function storeData(timestamp, name, email, phone, score, institution, dept)
 {
   var spreadsheet = SpreadsheetApp.openById(sheetId);
   var sheet = spreadsheet.getSheetByName(sheetName);
-  sheet.appendRow([timestamp, name, email, score, institution, dept]);
+  sheet.appendRow([timestamp, name, email, phone, score, institution, dept]);
   return true;
 }
 
