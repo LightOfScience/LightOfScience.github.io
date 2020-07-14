@@ -319,12 +319,12 @@ permalink: /covid19-quiz/
         
         <!-- Question 23 : Start-->
         <div class="question">
-            <h1 class="qn-title">Q23) </h1>
+            <h1 class="qn-title">Q23) According to the 2019 report, about how much area is covered by forests in India?</h1>
             <ul class="option-list">
-                <li class="option"><input class="option-ip" type="radio" name="q23" id="A23" value="A"><label class="option-label" for="A">A) </label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q23" id="B23" value="B"><label class="option-label" for="B">B) </label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q23" id="C23" value="C"><label class="option-label" for="C">C) </label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q23" id="D23" value="D"><label class="option-label" for="D">D) </label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q23" id="A23" value="A"><label class="option-label" for="A">A) 21.67%</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q23" id="B23" value="B"><label class="option-label" for="B">B) 33.34%</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q23" id="C23" value="C"><label class="option-label" for="C">C) 19.87%</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q23" id="D23" value="D"><label class="option-label" for="D">D) 45.89%</label></li>
             </ul>
         </div>
         <!-- Question 23: End -->
@@ -332,12 +332,12 @@ permalink: /covid19-quiz/
         
         <!-- Question 24 : Start-->
         <div class="question">
-            <h1 class="qn-title">Q24) </h1>
+            <h1 class="qn-title">Q24) If 'X' is the primary organ in the respiratory system of human body. Then what is 'X' of Earth?</h1>
             <ul class="option-list">
-                <li class="option"><input class="option-ip" type="radio" name="q24" id="A24" value="A"><label class="option-label" for="A">A) </label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q24" id="B24" value="B"><label class="option-label" for="B">B) </label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q24" id="C24" value="C"><label class="option-label" for="C">C) </label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q24" id="D24" value="D"><label class="option-label" for="D">D) </label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q24" id="A24" value="A"><label class="option-label" for="A">A) Congo Basi Forest.</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q24" id="B24" value="B"><label class="option-label" for="B">B) The Sundarbans.</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q24" id="C24" value="C"><label class="option-label" for="C">C) Black Forest.</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q24" id="D24" value="D"><label class="option-label" for="D">D) Amazon Rain Forest.</label></li>
             </ul>
         </div>
         <!-- Question 24: End -->
@@ -345,12 +345,12 @@ permalink: /covid19-quiz/
         
         <!-- Question 25 : Start-->
         <div class="question">
-            <h1 class="qn-title">Q25) </h1>
+            <h1 class="qn-title">Q25) If India spents ₹290802 crore (12.56%) in Defence, ₹24755 crores (1.06%) in Scientific Departments, how much India spends in Health?</h1>
             <ul class="option-list">
-                <li class="option"><input class="option-ip" type="radio" name="q25" id="A25" value="A"><label class="option-label" for="A">A) </label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q25" id="B25" value="B"><label class="option-label" for="B">B) </label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q25" id="C25" value="C"><label class="option-label" for="C">C) </label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q25" id="D25" value="D"><label class="option-label" for="D">D) </label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q25" id="A25" value="A"><label class="option-label" for="A">A) ₹236836 crores (10.23%).</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q25" id="B25" value="B"><label class="option-label" for="B">B) ₹197016 crores (8.51%).</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q25" id="C25" value="C"><label class="option-label" for="C">C) ₹54477 crores (2.3%).</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q25" id="D25" value="D"><label class="option-label" for="D">D) ₹134971 crores (5.83%).</label></li>
             </ul>
         </div>
         <!-- Question 25: End -->
@@ -382,7 +382,7 @@ permalink: /covid19-quiz/
 <style>
 #questions-list
 {
-    display: none;
+    /*display: none; Remove on Production*/
     position: relative;
 }
 #qn-cover
@@ -513,7 +513,7 @@ var calcScore = () => {
     return score;
 };
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxVwU64hxFdDj3ZVuTgFNfeXaHZ7gEgThKXPQNy/exec';
+const scriptURL = ''; //'https://script.google.com/macros/s/AKfycbxVwU64hxFdDj3ZVuTgFNfeXaHZ7gEgThKXPQNy/exec';
 const question_form = document.forms['quiz'];
 const kyc_form = document.forms['kyc'];
 
