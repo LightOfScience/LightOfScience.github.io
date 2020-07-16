@@ -233,7 +233,7 @@ permalink: /covid19-quiz/
                 <li class="option"><input class="option-ip" type="radio" name="q16" id="A16" value="A"><label class="option-label" for="A">A) Increasing Oxygen Concentration in the Atmosphere.</label></li>
                 <li class="option"><input class="option-ip" type="radio" name="q16" id="B16" value="B"><label class="option-label" for="B">B) Losing their leaves in Winter.</label></li>
                 <li class="option"><input class="option-ip" type="radio" name="q16" id="C16" value="C"><label class="option-label" for="C">C) Providing shade from UV rays.</label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q16" id="D16" value="D"><label class="option-label" for="D">D) Reducing Carbon-di-oxide Concentrations in the atmosphere.</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q16" id="D16" value="D"><label class="option-label" for="D">D) Increasing Carbon-di-oxide Concentrations in the atmosphere.</label></li>
             </ul>
         </div>
         <!-- Question 16: End -->
