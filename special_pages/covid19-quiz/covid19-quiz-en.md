@@ -508,7 +508,7 @@ permalink: /covid19-quiz/
 var qnStat = (id) => {return document.getElementById(id).checked == true ? true : false;} //enter the true options qnStat(trueOption)
 var calcScore = (ans) => {
     var score =0;
-    var option = docuemtn.getElementsByTagName('input');
+    var option = document.getElementsByTagName('input');
     ans.forEach(element => {
         if(option[element].checked == true) score = score+5;
     });
