@@ -163,7 +163,7 @@ permalink: /covid19-quiz/
 
         <!-- Question 11 : Start-->
         <div class="question">
-            <h1 class="qn-title">Q11) A new COVID19 diagnostic kit, called "FNCAS9 Editor Linked Uniform Detection Assay" has been developed by IGIB (New Delhi). The name of the kit is inspired form,</h1>
+            <h1 class="qn-title">Q11) A new COVID19 diagnostic kit, called "FNCAS9 Editor Linked Uniform Detection Assay" has been developed by IGIB (New Delhi). The name of the kit is inspired from a fictional character created by,</h1>
             <ul class="option-list">
                 <li class="option"><input class="option-ip" type="radio" name="q11" id="A11" value="A"><label class="option-label" for="A">A) Sirshendu Mukhopadhay.</label></li>
                 <li class="option"><input class="option-ip" type="radio" name="q11" id="B11" value="B"><label class="option-label" for="B">B) Saradindu Bandopadhya.</label></li>
