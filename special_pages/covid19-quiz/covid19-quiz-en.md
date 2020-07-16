@@ -382,7 +382,7 @@ permalink: /covid19-quiz/
 <style>
 #questions-list
 {
-    /*display: none; Remove on Production*/
+    display: none;
     position: relative;
 }
 #qn-cover
@@ -506,17 +506,20 @@ permalink: /covid19-quiz/
 <script>
 
 var qnStat = (id) => {return document.getElementById(id).checked == true ? true : false;} //enter the true options qnStat(trueOption)
-var calcScore = () => {
+var calcScore = (ans) => {
     var score =0;
-    if (qnStat('A1')) score++; //True Option q1
-    if (qnStat('C2')) score++; //Enter option q2
+    var option = docuemtn.getElementsByTagName('input');
+    ans.forEach(element => {
+        if(option[element].checked == true) score = score+5;
+    });
+
     return score;
 };
 
-const scriptURL = ''; //'https://script.google.com/macros/s/AKfycbxVwU64hxFdDj3ZVuTgFNfeXaHZ7gEgThKXPQNy/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxVwU64hxFdDj3ZVuTgFNfeXaHZ7gEgThKXPQNy/exec';
 const question_form = document.forms['quiz'];
 const kyc_form = document.forms['kyc'];
-
+const ans = [3,5,11,13,19,22,26,28,33,38,43,47,49,55,58,60,65,71,74,79,80,86,88,95,98];
 kyc_form.addEventListener('submit', start);
 
 function start (event)
