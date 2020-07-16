@@ -519,7 +519,7 @@ var calcScore = (ans) => {
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxVwU64hxFdDj3ZVuTgFNfeXaHZ7gEgThKXPQNy/exec';
 const question_form = document.forms['quiz'];
 const kyc_form = document.forms['kyc'];
-const ans = [3,5,11,13,19,22,26,28,33,38,43,47,49,55,58,60,65,71,74,79,80,86,88,95,98];
+const truth = [3,5,11,13,19,22,26,28,33,38,43,47,49,55,58,60,65,71,74,79,80,86,88,95,98];
 kyc_form.addEventListener('submit', start);
 
 function start (event)
@@ -588,7 +588,7 @@ function submit(event){
     data.name = document.getElementById('qz-name').value;
     data.email = document.getElementById('qz-email').value;
     data.phone = document.getElementById('qz-phone').value;
-    data.score = calcScore();
+    data.score = calcScore(truth);
     data.institution = document.getElementById('qz-institution').value;
     data.dept = document.getElementById('qz-dept').value;
     
@@ -599,7 +599,7 @@ function submit(event){
             document.getElementById('response').innerHTML = "Successfully Submitted! You have scored " + data.score +". An email has been sent to "+data.email+" along with your participation certificate.";
             document.getElementById('submit').classList.remove("submitting");
             localStorage.setItem("COVID19-Quiz",true);
-            showAnswers([0,4]);
+            showAnswers(truth);
             document.getElementById('timer').style.display='none';
             })
         .catch(error => document.getElementById('response').innerHTML = "Error!")
