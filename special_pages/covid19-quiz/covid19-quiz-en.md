@@ -516,7 +516,7 @@ function calcScore(ans){
     return score;
 };
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxVwU64hxFdDj3ZVuTgFNfeXaHZ7gEgThKXPQNy/exec';
+const scriptURL = '';//'https://script.google.com/macros/s/AKfycbxVwU64hxFdDj3ZVuTgFNfeXaHZ7gEgThKXPQNy/exec';
 const question_form = document.forms['quiz'];
 const kyc_form = document.forms['kyc'];
 const truth = [3,5,11,13,19,22,26,28,33,38,43,47,49,55,58,60,65,71,74,79,80,86,88,95,98];
