@@ -508,7 +508,7 @@ permalink: /covid19-quiz/
 var qnStat = (id) => {return document.getElementById(id).checked == true ? true : false;} //enter the true options qnStat(trueOption)
 function calcScore(ans){
     var score = 0;
-    var option = document.getElementsByTagName('input');
+    var option = document.getElementsByClassName('option-ip');
     ans.forEach(element => {
         if(option[element].checked == true) score = score+5;
     });
@@ -574,6 +574,7 @@ function showAnswers(ans)
 question_form.addEventListener('submit', submit);
 function submit(event){
     try{event.preventDefault();}catch{}
+    document.getElementById('qn-cover').style.display='block';
     document.getElementById('submit').classList.add("submitting");
     document.getElementById('submit').innerText='Submitting';
 
