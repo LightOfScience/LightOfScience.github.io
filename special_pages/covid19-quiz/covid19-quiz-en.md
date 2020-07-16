@@ -189,12 +189,12 @@ permalink: /covid19-quiz/
 
         <!-- Question 13 : Start-->
         <div class="question">
-            <h1 class="qn-title">Q13) In lockdown period, who  releases her first single called "Candle" dedicated to COVID-19 frontline warriors?</h1>
+            <h1 class="qn-title">Q13) As a preventive medication for asymptomatic healthcare workers working in non-COVID19 hospitals, ICMR issues revised advisory on use of,</h1>
             <ul class="option-list">
-                <li class="option"><input class="option-ip" type="radio" name="q13" id="A13" value="A"><label class="option-label" for="A">A) Dipika Padukone.</label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q13" id="B13" value="B"><label class="option-label" for="B">B) Madhuri Dixit.</label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q13" id="C13" value="C"><label class="option-label" for="C">C) Jaya Ahaasan.</label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q13" id="D13" value="D"><label class="option-label" for="D">D) Priyanka Chopra Jonas.</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q13" id="A13" value="A"><label class="option-label" for="A">A) Goumutra (Cow Urine).</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q13" id="B13" value="B"><label class="option-label" for="B">B) Hydroxy-chloroquine.</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q13" id="C13" value="C"><label class="option-label" for="C">C) Coronil by Ramdev.</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q13" id="D13" value="D"><label class="option-label" for="D">D) Hydroxy-bromoquine.</label></li>
             </ul>
         </div>
         <!-- Question 13: End -->
