@@ -13,7 +13,7 @@ permalink: /covid19-quiz/
     if (isMobile() == false) document.getElementById('quiz-banner').style.width = "50%";
 </script>
 
-<form name="kyc" action="" method="POST">
+<form name="kyc" action="" method="">
     <!--participant details-->
     <ul style="display: flex; flex-wrap: wrap; width: 80%; text-align: center; margin:auto; padding:5px; margin:10px auto; background: rgb(211, 255, 169); border-radius:1rem;">
         <input class="generic-ip" type="text" name="Name" id="qz-name" placeholder="Enter your Name" required>
@@ -516,7 +516,7 @@ function calcScore(ans){
     return score;
 };
 
-const scriptURL = '';//'https://script.google.com/macros/s/AKfycbxVwU64hxFdDj3ZVuTgFNfeXaHZ7gEgThKXPQNy/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxVwU64hxFdDj3ZVuTgFNfeXaHZ7gEgThKXPQNy/exec';
 const question_form = document.forms['quiz'];
 const kyc_form = document.forms['kyc'];
 const truth = [3,5,11,13,19,22,26,28,33,38,43,47,49,55,58,60,65,71,74,79,80,86,88,95,98];
@@ -524,6 +524,7 @@ kyc_form.addEventListener('submit', start);
 
 function start (event)
 {
+    console.log("Start");
     event.preventDefault();
     try {
         if (localStorage.getItem("COVID19-Quiz") == "true")
@@ -573,7 +574,8 @@ function showAnswers(ans)
 
 question_form.addEventListener('submit', submit);
 function submit(event){
-    try{event.preventDefault();}catch{}
+    try{event.preventDefault();}
+    finally{}
     document.getElementById('qn-cover').style.display='block';
     document.getElementById('submit').classList.add("submitting");
     document.getElementById('submit').innerText='Submitting';
@@ -593,7 +595,7 @@ function submit(event){
     data.institution = document.getElementById('qz-institution').value;
     data.dept = document.getElementById('qz-dept').value;
     
-    
+    /*
     fetch(scriptURL, {method: 'POST', body: JSON.stringify(data), mode: 'no-cors', cache: 'no-cache', headers:{'Content-Type': 'application/json'}})
         .then(response => {
             document.getElementById('submit').innerText='Submit Successful!';
@@ -604,5 +606,6 @@ function submit(event){
             document.getElementById('timer').style.display='none';
             })
         .catch(error => document.getElementById('response').innerHTML = "Error!")
+    */
 }
 </script>
