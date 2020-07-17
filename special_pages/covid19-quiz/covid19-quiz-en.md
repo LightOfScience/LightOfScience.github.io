@@ -33,7 +33,7 @@ permalink: /covid19-quiz/
         <p id="timer">10 min. : 0 sec.</p>
         <!-- Question 1 : Start-->
         <div class="question">
-            <h1 class="qn-title">Q1) Which are the Mid Symptoms of COVID-19?</h1>
+            <h1 class="qn-title">Q1) Which are the Mild Symptoms of COVID-19?</h1>
             <ul class="option-list">
                 <li class="option"><input class="option-ip" type="radio" name="q1" id="A1" value="A"><label class="option-label" for="A">A) Fever.</label></li>
                 <li class="option"><input class="option-ip" type="radio" name="q1" id="B1" value="B"><label class="option-label" for="B">B) Cough.</label></li>
@@ -345,12 +345,12 @@ permalink: /covid19-quiz/
         
         <!-- Question 25 : Start-->
         <div class="question">
-            <h1 class="qn-title">Q25) If India spents ₹290802 crore (12.56%) in Defence, ₹24755 crores (1.06%) in Scientific Departments, how much India spends in Health?</h1>
+            <h1 class="qn-title">Q25) If India estimated to spend ₹323053 crore (10.61%) in Defence, ₹30023 crores (00.98%) in Scientific Departments, how much did India spend in Health?</h1>
             <ul class="option-list">
-                <li class="option"><input class="option-ip" type="radio" name="q25" id="A25" value="A"><label class="option-label" for="A">A) ₹236836 crores (10.23%).</label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q25" id="B25" value="B"><label class="option-label" for="B">B) ₹197016 crores (8.51%).</label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q25" id="C25" value="C"><label class="option-label" for="C">C) ₹54477 crores (2.3%).</label></li>
-                <li class="option"><input class="option-ip" type="radio" name="q25" id="D25" value="D"><label class="option-label" for="D">D) ₹134971 crores (5.83%).</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q25" id="A25" value="A"><label class="option-label" for="A">A) ₹219953 crores (7.23%).</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q25" id="B25" value="B"><label class="option-label" for="B">B) ₹258893 crores (8.51%).</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q25" id="C25" value="C"><label class="option-label" for="C">C) ₹67484 crores (2.21%).</label></li>
+                <li class="option"><input class="option-ip" type="radio" name="q25" id="D25" value="D"><label class="option-label" for="D">D) ₹177362 crores (5.83%).</label></li>
             </ul>
         </div>
         <!-- Question 25: End -->
