@@ -345,7 +345,7 @@ permalink: /covid19-quiz/
         
         <!-- Question 25 : Start-->
         <div class="question">
-            <h1 class="qn-title">Q25) If India estimated to spend ₹323053 crore (10.61%) in Defence, ₹30023 crores (00.98%) in Scientific Departments, how much did India spend in Health?</h1>
+            <h1 class="qn-title">Q25) If India estimated to spend ₹323053 crore (10.61%) in Defence, ₹30023 crores (00.98%) in Scientific Departments, how much did India estimate to spend in Health?</h1>
             <ul class="option-list">
                 <li class="option"><input class="option-ip" type="radio" name="q25" id="A25" value="A"><label class="option-label" for="A">A) ₹219953 crores (7.23%).</label></li>
                 <li class="option"><input class="option-ip" type="radio" name="q25" id="B25" value="B"><label class="option-label" for="B">B) ₹258893 crores (8.51%).</label></li>
