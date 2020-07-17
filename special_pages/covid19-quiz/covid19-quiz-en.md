@@ -595,7 +595,7 @@ function submit(event){
     data.institution = document.getElementById('qz-institution').value;
     data.dept = document.getElementById('qz-dept').value;
     
-    /*
+    
     fetch(scriptURL, {method: 'POST', body: JSON.stringify(data), mode: 'no-cors', cache: 'no-cache', headers:{'Content-Type': 'application/json'}})
         .then(response => {
             document.getElementById('submit').innerText='Submit Successful!';
@@ -606,6 +606,6 @@ function submit(event){
             document.getElementById('timer').style.display='none';
             })
         .catch(error => document.getElementById('response').innerHTML = "Error!")
-    */
+    
 }
 </script>
