@@ -595,16 +595,16 @@ function submit(event){
     data.institution = document.getElementById('qz-institution').value;
     data.dept = document.getElementById('qz-dept').value;
     
-    
-    fetch(scriptURL, {method: 'POST', body: JSON.stringify(data), mode: 'no-cors', cache: 'no-cache', headers:{'Content-Type': 'application/json'}})
-        .then(response => {
+    fetch(scriptURL, {method: 'POST', headers:{'Content-Type': 'application/json','Access-Control-Allow-Origin': '*'}, body: JSON.stringify(data), redirect: 'follow' })
+        .then(response => console.log(response.json()))
+        .then( () => {
             document.getElementById('submit').innerText='Submit Successful!';
             document.getElementById('response').innerHTML = "Successfully Submitted! You have scored " + data.score +". An email has been sent to "+data.email+" along with your participation certificate.<br> If any problem occours (Submission Error/Email Not Arrived etc.) please contact us via email, <a href='mailto:LightOfScience@outlook.com'>LightOfScience@outlook.com</a>";
             document.getElementById('submit').classList.remove("submitting");
-            localStorage.setItem("COVID19-Quiz",true);
+            //localStorage.setItem("COVID19-Quiz",true);
             showAnswers(truth);
             document.getElementById('timer').style.display='none';
-            })
+        })
         .catch(error => document.getElementById('response').innerHTML = "Error!<br>Please contact us via email, <a href='mailto:LightOfScience@outlook.com'>LightOfScience@outlook.com</a>")
     
 }
