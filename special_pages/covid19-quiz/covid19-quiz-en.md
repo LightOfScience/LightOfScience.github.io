@@ -595,7 +595,7 @@ function submit(event){
     data.institution = document.getElementById('qz-institution').value;
     data.dept = document.getElementById('qz-dept').value;
     
-    fetch(scriptURL, {method: 'POST', headers:{'Content-Type': 'application/json','Access-Control-Allow-Origin': '*'}, body: JSON.stringify(data), redirect: 'follow' })
+    fetch(scriptURL, {method: 'POST', headers:{'Content-Type': 'application/json','Access-Control-Allow-Origin': 'https://LightOfScience.org.in'}, body: JSON.stringify(data), redirect: 'follow' })
         .then(response => console.log(response.json()))
         .then( () => {
             document.getElementById('submit').innerText='Submit Successful!';
