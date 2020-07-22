@@ -603,7 +603,7 @@ function submit(event){
         .then(response => console.log(response))
         .then( () => {
             document.getElementById('submit').innerText='Submit Successful!';
-            document.getElementById('response').innerHTML = "Successfully Submitted! You have scored " + data.score +". An email has been sent to "+data.email+" along with your participation certificate.<br>Please follow this link to download your certificate. <a href='https://drive.google.com/drive/folders/1PAHmy3JqqYSnNtOGIRjo6JTrGJrqQro9?usp=sharing' target='_blank'>https://drive.google.com/drive/folders/1PAHmy3JqqYSnNtOGIRjo6JTrGJrqQro9?usp=sharing</a><Br>If any problem occours (Submission Error/Email Not Arrived etc.) please contact us via email, <a href='mailto:LightOfScience@outlook.com'>LightOfScience@outlook.com</a>";
+            document.getElementById('response').innerHTML = "Successfully Submitted! You have scored " + data.score +". An email has been sent to "+data.email+" along with your participation certificate.<br>Please follow this link to download your certificate. <a href='https://drive.google.com/drive/folders/1PAHmy3JqqYSnNtOGIRjo6JTrGJrqQro9?usp=sharing' target='_blank'>https://drive.google.com/drive/folders/1PAHmy3JqqYSnNtOGIRjo6JTrGJrqQro9?usp=sharing</a> (To easily find your certificate, short the folder on the basis of 'Last Modified' insted of 'Names')<Br>If any problem occours (Submission Error/Email Not Arrived etc.) please contact us via email, <a href='mailto:LightOfScience@outlook.com'>LightOfScience@outlook.com</a>";
             document.getElementById('submit').classList.remove("submitting");
             localStorage.setItem("COVID19-Quiz",true);
             showAnswers(truth);
