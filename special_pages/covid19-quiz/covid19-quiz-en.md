@@ -595,8 +595,12 @@ function submit(event){
     data.institution = document.getElementById('qz-institution').value;
     data.dept = document.getElementById('qz-dept').value;
     
-    fetch(scriptURL, {method: 'POST', headers:{'Content-Type': 'application/json','Access-Control-Allow-Origin': 'https://LightOfScience.org.in'}, body: JSON.stringify(data), redirect: 'follow' })
-        .then(response => console.log(response.json()))
+    var myHeaders = new Headers();
+    myHeaders.set('Content-Type', 'application/json');
+    myHeaders.set('Access-Control-Allow-Origin', '*');
+
+    fetch(scriptURL, {method: 'POST', headers: myHeaders, body: JSON.stringify(data),mode: 'no-cors', cache: 'no-cache' })
+        .then(response => console.log(response)
         .then( () => {
             document.getElementById('submit').innerText='Submit Successful!';
             document.getElementById('response').innerHTML = "Successfully Submitted! You have scored " + data.score +". An email has been sent to "+data.email+" along with your participation certificate.<br> If any problem occours (Submission Error/Email Not Arrived etc.) please contact us via email, <a href='mailto:LightOfScience@outlook.com'>LightOfScience@outlook.com</a>";
