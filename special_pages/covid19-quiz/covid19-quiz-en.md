@@ -600,7 +600,7 @@ function submit(event){
     myHeaders.set('Access-Control-Allow-Origin', '*');
 
     fetch(scriptURL, {method: 'POST', headers: myHeaders, body: JSON.stringify(data),mode: 'no-cors', cache: 'no-cache' })
-        .then(response => console.log(response)
+        .then(response => console.log(response))
         .then( () => {
             document.getElementById('submit').innerText='Submit Successful!';
             document.getElementById('response').innerHTML = "Successfully Submitted! You have scored " + data.score +". An email has been sent to "+data.email+" along with your participation certificate.<br> If any problem occours (Submission Error/Email Not Arrived etc.) please contact us via email, <a href='mailto:LightOfScience@outlook.com'>LightOfScience@outlook.com</a>";
