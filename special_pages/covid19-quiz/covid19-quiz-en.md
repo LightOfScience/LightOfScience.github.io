@@ -374,9 +374,11 @@ permalink: /covid19-quiz/
     <ul id="submit-block" style="display: flex; flex-wrap: wrap; width: 80%; text-align: center; margin:auto; padding:5px; background: rgb(255, 204, 204); border-radius:1rem;">
         <button class="generic-ip" id="submit" type="submit" style="margin: 10px 60px;">Submit&nbsp;&nbsp;</button>
         <h3 id="response" style="padding: 0 margin:0;"></h3>
+       
     </ul>
 </form>
-
+<a id="pdf_download_btn" href="#" style="display: none; text-align: center;"><button style="padding: 10px; font-size: larger;">Download PDF</button></a>
+<iframe id="pdf_download_iframe" style="display:none;"></iframe>
 
 
 <style>
@@ -596,20 +598,31 @@ function submit(event){
     data.dept = document.getElementById('qz-dept').value;
     
     var myHeaders = new Headers();
-    myHeaders.set('Content-Type', 'application/json');
-    myHeaders.set('Access-Control-Allow-Origin', '*');
+    myHeaders.set('Content-Type', 'text/plain');
+    data = JSON.stringify(data); // converted from JSON to Txt
 
-    fetch(scriptURL, {method: 'POST', headers: myHeaders, body: JSON.stringify(data),mode: 'no-cors', cache: 'no-cache' })
-        .then(response => console.log(response))
-        .then( () => {
+    var requestOptions = {
+        method: 'POST', 
+        headers: myHeaders, 
+        body: data,
+        cache: 'no-cache',
+        redirect: 'follow'
+    }
+
+    fetch(scriptURL, requestOptions)
+        .then(response => response.text())
+        .then(result => {
             document.getElementById('submit').innerText='Submit Successful!';
-            document.getElementById('response').innerHTML = "Successfully Submitted! You have scored " + data.score +". An email has been sent to "+data.email+" along with your participation certificate.<br>Please follow this link to download your certificate. <a href='https://drive.google.com/drive/folders/1PAHmy3JqqYSnNtOGIRjo6JTrGJrqQro9?usp=sharing' target='_blank'>https://drive.google.com/drive/folders/1PAHmy3JqqYSnNtOGIRjo6JTrGJrqQro9?usp=sharing</a> (To easily find your certificate, short the folder on the basis of 'Last Modified' insted of 'Names')<Br>If any problem occours (Submission Error/Email Not Arrived etc.) please contact us via email, <a href='mailto:LightOfScience@outlook.com'>LightOfScience@outlook.com</a>";
+            document.getElementById('response').innerHTML = "Successfully Submitted! You have scored " + data.score +". An email has been sent to "+data.email+" along with your participation certificate.<br>Please follow this link to download your certificate.<Br>If any problem occours (Submission Error/Email Not Arrived etc.) please contact us via email, <a href='mailto:LightOfScience@outlook.com'>LightOfScience@outlook.com</a>";
             document.getElementById('submit').classList.remove("submitting");
-            localStorage.setItem("COVID19-Quiz",true);
+            //localStorage.setItem("COVID19-Quiz",true);
             showAnswers(truth);
             document.getElementById('timer').style.display='none';
+            document.getElementById('pdf_download_btn').href = "https://drive.google.com/uc?id="+result+"&export=download";
+            document.getElementById('pdf_download_btn').style.display="block";
+            document.getElementById('pdf_download_iframe').src = "https://drive.google.com/uc?id="+result+"&export=download"
         })
-        .catch(error => document.getElementById('response').innerHTML = "Error!<br>Please contact us via email, <a href='mailto:LightOfScience@outlook.com'>LightOfScience@outlook.com</a>")
+        .catch(error => document.getElementById('response').innerHTML = "Error!<br>Please contact us via email, <a href='mailto:LightOfScience@outlook.com'>LightOfScience@outlook.com</a>"+error)
     
 }
 </script>
