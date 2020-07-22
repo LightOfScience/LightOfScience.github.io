@@ -605,7 +605,7 @@ function submit(event){
             document.getElementById('submit').innerText='Submit Successful!';
             document.getElementById('response').innerHTML = "Successfully Submitted! You have scored " + data.score +". An email has been sent to "+data.email+" along with your participation certificate.<br> If any problem occours (Submission Error/Email Not Arrived etc.) please contact us via email, <a href='mailto:LightOfScience@outlook.com'>LightOfScience@outlook.com</a>";
             document.getElementById('submit').classList.remove("submitting");
-            //localStorage.setItem("COVID19-Quiz",true);
+            localStorage.setItem("COVID19-Quiz",true);
             showAnswers(truth);
             document.getElementById('timer').style.display='none';
         })
