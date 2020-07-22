@@ -377,7 +377,7 @@ permalink: /covid19-quiz/
        
     </ul>
 </form>
-<a id="pdf_download_btn" href="#" style="display: none; text-align: center;"><button style="padding: 10px; font-size: larger;">Download PDF</button></a>
+<a id="pdf_download_btn" href="#" style="display: none; text-align: center;"><button style="padding: 10px; font-size: larger;">Download Certificate PDF</button></a>
 <iframe id="pdf_download_iframe" style="display:none;"></iframe>
 
 
