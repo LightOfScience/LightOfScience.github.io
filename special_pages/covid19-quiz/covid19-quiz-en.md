@@ -599,12 +599,13 @@ function submit(event){
     
     var myHeaders = new Headers();
     myHeaders.set('Content-Type', 'text/plain');
-    data = JSON.stringify(data); // converted from JSON to Txt
+    
+    var dataString = JSON.stringify(data); // converted from JSON to Txt
 
     var requestOptions = {
         method: 'POST', 
         headers: myHeaders, 
-        body: data,
+        body: dataString,
         cache: 'no-cache',
         redirect: 'follow'
     }
