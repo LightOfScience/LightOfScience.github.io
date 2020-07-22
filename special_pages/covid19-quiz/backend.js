@@ -7,14 +7,16 @@ function doGet()
 {
   return ContentService.createTextOutput("Please Visit https://LightOfScience.org.in/").setMimeType(ContentService.MimeType.TEXT);
 }
-
 function doPost(e)
 {
   var lock = LockService.getScriptLock();
   lock.tryLock(10000);  
   
-  var data = JSON.parse(e.postData.contents);
-  var timestamp = new Date();
+  var data = JSON.stringify(e);
+  data = JSON.parse(data);
+  data = JSON.parse(data.postData.contents);
+
+  var timestamp = Utilities.formatDate(new Date(), "GMT+5:30", "dd-MM-YYYY' 'HH:mm:ss");
   var name = data.name;
   var email = data.email;
   var phone = data.phone;
@@ -25,15 +27,16 @@ function doPost(e)
   try {
     var storeData_status = storeData(timestamp, name, email, phone, score, institution, dept); // Storing Data to Spreadsheet
     var pdf_id = createCertificate(name, email, score, institution, dept, timestamp); // Generating Certificate PDF
-    var email_status = sendEmail(email, pdf_id, name, score); //Sending Email
-    return ContentService.createTextOutput(JSON.stringify({ 'result': 'Successful!', 'Status': "" })).setMimeType(ContentService.MimeType.JSON);
+    try{
+      var email_status = sendEmail(email, pdf_id, name, score); //Sending Email //Due to Daily Email Quota, Email service ommitted.
+    }catch(er){}
+    return ContentService.createTextOutput(pdf_id);
+    lock.releaseLock();
   } 
   catch(error){
-    return ContentService.createTextOutput(JSON.stringify({ 'result': 'Failed!', 'Status': error })).setMimeType(ContentService.MimeType.JSON);
+    return ContentService.createTextOutput(JSON.stringify(error));
+    lock.releaseLock();
   } 
-  finally {
-    lock.releaseLock()
-  }
 }
 
 
