@@ -581,7 +581,7 @@ function submit(event){
     document.getElementById('qn-cover').style.display='block';
     document.getElementById('submit').classList.add("submitting");
     document.getElementById('submit').innerText='Submitting';
-    document.getElementById('submit').style.pointer-events='none';
+    document.getElementById('submit').style.pointerEvents='none';
 
     var data = {
         "name":        "",
