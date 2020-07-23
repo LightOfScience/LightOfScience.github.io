@@ -581,6 +581,7 @@ function submit(event){
     document.getElementById('qn-cover').style.display='block';
     document.getElementById('submit').classList.add("submitting");
     document.getElementById('submit').innerText='Submitting';
+    document.getElementById('submit').style.pointer-events='none';
 
     var data = {
         "name":        "",
@@ -616,7 +617,7 @@ function submit(event){
             document.getElementById('submit').innerText='Submit Successful!';
             document.getElementById('response').innerHTML = "Successfully Submitted! You have scored " + data.score +". An email has been sent to "+data.email+" along with your participation certificate.<br>Please follow this link to download your certificate.<Br>If any problem occours (Submission Error/Email Not Arrived etc.) please contact us via email, <a href='mailto:LightOfScience@outlook.com'>LightOfScience@outlook.com</a>";
             document.getElementById('submit').classList.remove("submitting");
-            //localStorage.setItem("COVID19-Quiz",true);
+            localStorage.setItem("COVID19-Quiz",true);
             showAnswers(truth);
             document.getElementById('timer').style.display='none';
             document.getElementById('pdf_download_btn').href = "https://drive.google.com/uc?id="+result+"&export=download";
