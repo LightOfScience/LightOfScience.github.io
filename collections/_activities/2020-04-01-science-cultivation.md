@@ -19,11 +19,17 @@ file:
   - url: /media/activities/2020/science-cultivation/bss-cultivation-of-science-online-competition-2020.pdf
     file_description: Event Details (PDF)
 ---
-## **Online State Level Competition** 
+## **Online State Level Competition**
 
-#### **Last Date of Submission:** 15 April 2020 **\[extended up to 30 April]** 
+#### **Last Date of Submission:** 15 April 2020 **\[extended up to 30 April]**
 
 * Science Essay Writing, 
 * Poster Demonstration, 
 * Experiment Demonstration, 
 * Cartoon
+
+  \------------------
+
+  # **Result Declared**
+
+  {%include fb-embed.html fb_link="https://www.facebook.com/breakthrough.wb/videos/974031263040109/"%}
