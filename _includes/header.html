@@ -1,0 +1,26 @@
+<header>
+    <div id="header-wrapper">
+        <div id="motto-wrapper">
+            <h1 class="motto">Science for Society</h1>
+            <h1 class="motto">Science for Man</h1>
+            <h1 class="motto">Science in Thinking</h1>
+        </div>
+        <div id="nav-container">
+            <div id="logo-org-wrapper">
+                <div id="logo-wrapper"><img src="/assets/img/logo.svg" alt="Light Of Science Logo" width="50px" id="logo"></div>
+                <h1 id="org-name">Light Of Science</h1>
+            </div>
+            <nav id="nav-wrapper">
+                <ul id="navbar">
+                    <li class="nav-element {% if include.nav == 'home' %}active{% endif %}"><a href="/">Home</a></li>
+                    <li class="nav-element {% if include.nav == 'news' %}active{% endif %}"><a href="/news/">News</a></li>
+                    <li class="nav-element {% if include.nav == 'activities' %}active{% endif %}"><a href="/activities/">Activities</a></li>
+                    <li class="nav-element {% if include.nav == 'blog' %}active{% endif %}"><a href="/blog/">Blog</a></li>
+                    <li class="nav-element {% if include.nav == 'publications' %}active{% endif %}"><a href="/publications/">Publications</a></li>
+                    <li class="nav-element {% if include.nav == 'member' %}active{% endif %}"><a href="/member/">Member</a></li>
+                    <li class="nav-element {% if include.nav == 'about' %}active{% endif %}"><a href="/about/">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
