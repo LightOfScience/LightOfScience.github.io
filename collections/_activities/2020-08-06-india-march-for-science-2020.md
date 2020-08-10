@@ -1,6 +1,6 @@
 ---
 layout: post-activity
-active: true
+active: false
 DD: "06"
 MM: "08"
 YYYY: "2020"
