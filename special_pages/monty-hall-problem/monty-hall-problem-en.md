@@ -72,6 +72,7 @@ permalink: /monty-hall-problem/
 
     .door-wrapper
     {
+        width: calc(25% - 20px);
         margin: 10px;
         padding: 10px;
         border: solid black 1px;
@@ -81,7 +82,7 @@ permalink: /monty-hall-problem/
 
     .doorimg-container
     {
-        width: 200px;
+        max-width: 200px;
     }
 
     .door-selected{
