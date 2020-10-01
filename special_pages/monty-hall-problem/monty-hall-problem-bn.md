@@ -64,6 +64,7 @@ permalink: /monty-hall-problem/bn/
 
     .doors-group
     {
+        max-width: calc(25% - 20px);
         display: flex;
         width: 100%;
         justify-content: center;
