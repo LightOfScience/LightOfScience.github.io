@@ -8,43 +8,43 @@ img: /media/special_pages/monty-hall-problem/monty-hall-problem-banner.jpg
 permalink: /monty-hall-problem/bn/
 ---
 <hr>
-<h1>Monty Hall Problem</h1>
-<p>Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, "Do you want to pick door No. 2?" Is it to your advantage to switch your choice?</p>
+<h1>মন্টি-হল ধাঁধা</h1>
+<p>ধরা যাক আপনি একটি গেম-শো'তে গিয়েছেন। সেখানে আপনাকে তিনটি বন্ধ দরজার মধ্যে যেকোনো একটি বাছতে দেওয়া হল। কোনো এক টি দরজার পেছনে রয়েছে একটি নতুন গাড়ি এবং বাকি গুলোর পেছনে রয়েছে ছাগল।    ধরা যাক আপনি দরজা নং ১ বাছলেন। এরপর গেম-শো' পরিচালক, যে জানে যে কোন দরজার পেছনে গাড়ীটি রয়েছে, সে বাকি দুটি দরজার মধ্যে একটি দরজা খুলে দিল এবং দেখা গেল যে তার পেছনে রয়েছে ছাগল।    এখন আপনাকে বলা হল যে আপনি কি আপনার বাছা দরজা পরিবর্তন করতে চান নাকি প্রথমে বাছা দরজাকেই রাখতে চান?    এরপর আপনার বাছা দরজা খুলে দেওয়া হবে এবং আপনি পুরষ্কার পেলেন কি পেলেন না সেটা দেখা যাবে।       আপনি কি করবেন?</p>
 <hr>
 
 <div class="host">
     <div class="host-img-container"><img src="/media/special_pages/monty-hall-problem/host.png" alt="" width="100%" ></div>
     <div class="message-container">
-        <h1>Message from the Host</h1>
-        <p id="host-message">Welcome<br>Please select a Box where you think the prize is at.</p>
+        <h1>খেলা পরিচালকের বক্তব্য - </h1>
+        <p id="host-message">দয়া করে আপনার পছন্দমত একটি বাক্স বাছুন।</p>
     </div>
 </div>
 
 <div class="doors-group">
     <div class="door-wrapper">
         <button id="door1">
-            <h2>Box A</h2>
+            <h2>বাক্স ১</h2>
             <div class="doorimg-container"><img src="/media/special_pages/monty-hall-problem/door-closed.png" alt=""  width="100%"></div>
         </button>
     </div>
     <div class="door-wrapper">
         <button id="door2">
-            <h2>Box B</h2>
+            <h2>বাক্স ২</h2>
             <div class="doorimg-container"><img src="/media/special_pages/monty-hall-problem/door-closed.png" alt="" width="100%"></div>
         </button>
     </div>
     <div class="door-wrapper">
         <button id="door3">
-            <h2>Box C</h2>
+            <h2>বাক্স ৩</h2>
             <div class="doorimg-container"><img src="/media/special_pages/monty-hall-problem/door-closed.png" alt="" width="100%"></div>
         </button>
     </div>
 </div>
 
 <form action="" method="" style="padding: 10px; text-align: center;">
-    <h3>Please Submit Your Game Result.</h3>
-    <p>Name of the player:<input id="playerName" type="text" name="name"></p>
-    <input type = "submit" name = "submit" value = "Submit" />
+    <h3>দয়া করে আপনার খেলার ফলাফল সাবমিট করুন।</h3>
+    <p>খেলোয়ারের নাম:<input id="playerName" type="text" name="name"></p>
+    <input type = "submit" name = "submit" value = "সাবমিট" />
     <h1 id="submitStat"></h1>
 </form>
 
@@ -160,7 +160,7 @@ permalink: /monty-hall-problem/bn/
 
         doors[rand2].children[0].children[1].children[0].src = "/media/special_pages/monty-hall-problem/door-empty.png"
         
-        hostMsg.innerText="So, you've selected Box "+ (doorSelect+1) + ".\nNow I've revealed Door " + (rand2+1) +".\nSo do you like to change your choice or would you like to hold on to your previous choice?"
+        hostMsg.innerText="আপনি বাক্স "+ (doorSelect+1) + " বেছেছেন।\nযেহেতু আমি দরজা " + (rand2+1) +"খুলে দিলাম, আপনি কি আপনার বাছা দরজা পরিবর্তন করবেন?"
 
         doors[rand2].classList.add("door-empty");
 
