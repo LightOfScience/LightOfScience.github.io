@@ -35,5 +35,5 @@ whatsapp_number_container.addEventListener("change",()=>{
 
 sendMsg.addEventListener("click",()=>{
     whatsapp_number = apiNum(whatsapp_number_container.value.toString());
-    window.open("https://api.whatsapp.com/send?phone="+whatsapp_number, '_blank');
+    window.open("whatsapp://send?phone="+whatsapp_number, '_blank');
 });
