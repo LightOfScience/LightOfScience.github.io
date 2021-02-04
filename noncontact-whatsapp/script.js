@@ -16,11 +16,9 @@ apiNum = function(whatsapp_number){
     else if(whatsapp_number.length == 12){
         
     }
-    else if(whatsapp_number.length <10 && whatsapp_number.length>0) {
-        alert("Please enter a valid number.\nYou've entered a less than ten digits.");
-    }
-    else if(whatsapp_number.length >12) {
-        alert("Please enter a valid number.\nYou've entered a more than twelve digits.");
+    else if(whatsapp_number.length>0 && whatsapp_number.length <10 || whatsapp_number.length >12 || whatsapp_number.length == 11) {
+        alert("Please enter a valid number.\nYou must enter either a 10 digit number (without country code) or 12 digit number (including country code).");
+        return 0;
     }
     else{}
 
@@ -31,9 +29,12 @@ apiNum = function(whatsapp_number){
 
 whatsapp_number_container.addEventListener("change",()=>{
     whatsapp_number = apiNum(whatsapp_number_container.value.toString());
+    if(whatsapp_number == 0) return "Error!";
+    else {}
 });
 
 sendMsg.addEventListener("click",()=>{
     whatsapp_number = apiNum(whatsapp_number_container.value.toString());
-    window.open("whatsapp://send?phone="+whatsapp_number, '_blank');
+    if(whatsapp_number == 0) return "Error!";
+    else window.open("whatsapp://send?phone="+whatsapp_number, '_blank');
 });
