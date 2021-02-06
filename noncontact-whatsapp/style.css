@@ -6,7 +6,6 @@
     background: #f5f5f5;
     position: absolute;
     top: 50%; transform: translateY(-50%);
-    bottom:0;
     left: 0;
     right:0;
     display: flex;
