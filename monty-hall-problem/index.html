@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./scripts/style.css">
+</head>
+<body>
+
+    <header>
+        <div><h1>Light Of Science</h1></div>
+    </header>
+
+    <div>
+        <div>
+            <h1>Monty Hall Problem - Game</h1>
+        </div>
+        <div class="lang-select-container">
+            <div class="lang-text-container"><h2>Language/ভাষা - </h2></div>
+            <div class="lang-btn-en-container"><button><h2>English</h2></button></div>
+            <div class="lang-btn-bn-container"><button><h2>বাংলা</h2></button></div>
+        </div>
+    </div>
+
+    <div class="host-container">
+        <div class="host-img-container"><img src="./assets/host.png" alt="Host Image" width="100%"></div> <!-- Host Image -->
+        <div class="host-msg-container"><h2 id="host-msg"></h2></div>
+    </div>
+
+    <div class="box-wrapper-parent"> <!-- Game Spot-->
+        <div id="boxes-wrapper"> <!-- Choice Boxes container-->
+            <div id="box1" class="box-container"> <!-- BOX 1 -->
+                <div id="box1-cover"><img src="./assets/mystrybox.svg" alt="Mystry Box" width="100%"></div>
+                <div id="box1-lock"><img src="./assets/lock.svg" alt="Mystry Box" width="100%"></div>
+                <div id="box1-content"><img src="./assets/emptybox.png" alt="Content Box" width="100%"></div>
+            </div>     
+            <div id="box2" class="box-container"> <!-- BOX 2 -->
+                <div id="box2-cover"><img src="./assets/mystrybox.svg" alt="Mystry Box" width="100%"></div>
+                <div id="box2-lock"><img src="./assets/lock.svg" alt="Mystry Box" width="100%"></div>
+                <div id="box2-content"><img src="./assets/emptybox.png" alt="Content Box" width="100%"></div>
+            </div>     
+            <div id="box3" class="box-container"> <!-- BOX 2 -->
+                <div id="box3-cover"><img src="./assets/mystrybox.svg" alt="Mystry Box" width="100%"></div>
+                <div id="box3-lock"><img src="./assets/lock.svg" alt="Mystry Box" width="100%"></div>
+                <div id="box3-content"><img src="./assets/emptybox.png" alt="Content Box" width="100%"></div>
+            </div>     
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+<button id="submit">submit</button>
