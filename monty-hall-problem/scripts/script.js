@@ -9,6 +9,7 @@ var box2 = null;
 var box3 = null;
 var submitBtn = null;
 var playername = null;
+var submitStat = false;
 
 ////////////////////////
 //    INITIALIZATION  //
@@ -29,7 +30,8 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 function submitData(data)
 {
-    httpGETAsync(scriptAPI + data, (response) => {hostMsg(response)});
+    if(!submitStat) httpGETAsync(scriptAPI + data, (response) => {hostMsg(response);submitStat=true;});
+    else hostMsg("You've already Submitted! Please Reload to play again.");
 }
 
 //////////////////////////
@@ -47,6 +49,10 @@ function httpGETAsync(theUrl, callback)
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+//////////////////////////////////////////////////
+//  Main Game        /////////////////////////////
+//////////////////////////////////////////////////
 async function game()
 {
     var rand1 = Math.floor(Math.random()*10)%3;
@@ -127,10 +133,16 @@ async function game()
 
     //Submit Result
     playername = document.getElementById("input").value;
-    let data = "name:${playername},choice1:${choice1},choice2:${choice2},prize:${prize}";
+    let data = "name="+playername+"&choice1="+choice1+"&choice2="+choice2+"&prize="+prize;
     submitData(data);
 }
+////////////////// Game End   //////////////////////////////////////////
 
+
+
+//////////////////////////////////////////////////////
+// Clicked Box  //////////////////////////////////////
+///////////////////////////////////////////////////
 function selectBox()
 {
     return new Promise((resolve, reject)=>{
@@ -139,8 +151,13 @@ function selectBox()
         box3.onclick = ()=>{console.log("Box 3 selected."); resolve("C");} 
     })   
 }
+/////////////////////////////////////////////////////////////////////////
 
 
+
+//////////////////////////////////////////
+// Reveal Box             ///////////////
+/////////////////////////////////////////
 function openBox(box)
 {
     if(box=="A")
@@ -156,7 +173,12 @@ function openBox(box)
         box3.children[0].classList.add("slide-mystry");
     }
 }
+//////////////////////////////////////////////////////////////////////////////
 
+
+//////////////////////////////////////////
+// Add Lock Over Box    ///////////////
+/////////////////////////////////////////
 function lockBox(box)
 {
     if(box=="A")
@@ -172,6 +194,12 @@ function lockBox(box)
         box3.children[1].classList.add("show");
     }
 }
+////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////
+// Remove Lock Over Box    ///////////////
+/////////////////////////////////////////
 function unlockBox(box)
 {
     if(box=="A")
@@ -187,14 +215,18 @@ function unlockBox(box)
         box3.children[1].classList.remove("show");
     }
 }
+/////////////////////////////////////////////////////////
 
 
 
 
 
-
+///////////////////////////////////////////////
+//   Host Message         /////////////////////
+//////////////////////////////////////////////
 function hostMsg(msg,delay)
 {
+    // TypeWriter JS Documentation: https://github.com/tameemsafi/typewriterjs
     var typewriter = new Typewriter(msgBox, {
         loop: false,
         delay: 25,
@@ -206,10 +238,15 @@ function hostMsg(msg,delay)
     return new Promise((resolve, reject) => {
         setTimeout(()=>{resolve(true);},delay);})
 }
+////////////////////////////////////////////////////////
 
 
+//////////////////////////////////////////////
+// Generic Delay Function ////////////////////
+//////////////////////////////////////////////
 function delay(delay)
 {
     return new Promise((resolve, reject) => {
         setTimeout(()=>{resolve(true);},delay);})
 }
+////////////////////////////////////////////////////////
