@@ -1,22 +1,35 @@
+// Global Variables
+const scriptAPI = "https://script.google.com/macros/s/AKfycbwzTzelmUJfJwEQIuzk8pkw0rpvJ_ISKF24fuh6M5XKXABDqvuGAIvPrsM9VBT31TKxAw/exec?"
+var choice1 = null;
+var choice2 = null;
+var prize = null;
+var msgBox = null;
+var box1 = null;
+var box2 = null;
+var box3 = null;
+var submitBtn = null;
+var playername = null;
+
 ////////////////////////
 //    INITIALIZATION  //
 ////////////////////////
 document.addEventListener("DOMContentLoaded", () =>{
+    msgBox = document.getElementById("host-msg");
+    box1 = document.getElementById("box1"); // Box 1 Button
+    box2 = document.getElementById("box2"); // Box 2 Button
+    box3 = document.getElementById("box3"); // Box 3 Button
+    submitBtn = document.getElementById("submit"); // Submit Button
+    submitBtn.addEventListener("click", submitData);     // Submit Button Click Listener
     game();
 })
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 
-const scriptAPI = "https://script.google.com/macros/s/AKfycbwzTzelmUJfJwEQIuzk8pkw0rpvJ_ISKF24fuh6M5XKXABDqvuGAIvPrsM9VBT31TKxAw/exec?"
-var choice1 = null;
-var choice2 = null;
-var prize = null;
 
 
-
-function submitData()
+function submitData(data)
 {
-    httpGETAsync(scriptAPI + data, (response) => {console.log(response)});
+    httpGETAsync(scriptAPI + data, (response) => {hostMsg(response)});
 }
 
 //////////////////////////
@@ -36,13 +49,6 @@ function httpGETAsync(theUrl, callback)
 
 async function game()
 {
-    const box1 = document.getElementById("box1"); // Box 1 Button
-    const box2 = document.getElementById("box2"); // Box 2 Button
-    const box3 = document.getElementById("box3"); // Box 3 Button
-
-    const submitBtn = document.getElementById("submit"); // Submit Button
-    submitBtn.addEventListener("click", submitData);     // Submit Button Click Listener
-
     var rand1 = Math.floor(Math.random()*10)%3;
     if(rand1==0) {
         prize = "A"; 
@@ -61,12 +67,14 @@ async function game()
     
     //Phase 1
     console.log("Phase 1");
-    await hostMsg("Hello, Welcome to the game of Statistics.");
+    await hostMsg("Hello, Welcome to the game of Statistics.",3000);
+    await hostMsg("There are, three boxes. Only one of them contains a reward. Choose wisely!");
     choice1 = await selectBox(); 
     lockBox(choice1);
 
     //Phase 2
     console.log("Phase 2");
+    await hostMsg("So, You've selected Box "+ choice1 + ". Now, I'me revealing one box.",1000);
     if(choice1==prize)
     {
         if(choice1=="A")
@@ -94,32 +102,37 @@ async function game()
         else if(choice1=="C"&&prize=="A") openBox("B");
         else if(choice1=="C"&&prize=="B") openBox("A");
     }
+    await delay(2000);
 
 
     //Phase 3
     console.log("Phase 3");
-    choice2 = await selectBox(); 
+    await hostMsg("Do you want to change your choice? Choose Wisely!");
     unlockBox(choice1);
+    choice2 = await selectBox(); 
     lockBox(choice2);
 
 
     //Phase 4
     console.log("Phase 4");
-    //unlockBox(choice1);
-    //unlockBox(choice2);
-    //unlockBox(prize);
+    if(choice1==choice2) await hostMsg("So, you have not switched!. Now lets see if this was a wise decision.",4000);
+    else await hostMsg("So, you have switched!. Now lets see if this was a wise decision.",4000);
     openBox("A");
     openBox("B");
     openBox("C");
+    unlockBox(choice2);
+    if(choice2==prize) await hostMsg("CONGRATULATIONS! You have WON!!!");
+    else await await hostMsg("SORRY! You have LOST!!!");
     
+
+    //Submit Result
+    playername = document.getElementById("input").value;
+    let data = "name:${playername},choice1:${choice1},choice2:${choice2},prize:${prize}";
+    submitData(data);
 }
 
 function selectBox()
 {
-    const box1 = document.getElementById("box1"); // Box 1 Button
-    const box2 = document.getElementById("box2"); // Box 2 Button
-    const box3 = document.getElementById("box3"); // Box 3 Button
-
     return new Promise((resolve, reject)=>{
         box1.onclick = ()=>{console.log("Box 1 selected."); resolve("A");} 
         box2.onclick = ()=>{console.log("Box 2 selected."); resolve("B");} 
@@ -130,10 +143,6 @@ function selectBox()
 
 function openBox(box)
 {
-    const box1 = document.getElementById("box1"); // Box 1 Button
-    const box2 = document.getElementById("box2"); // Box 2 Button
-    const box3 = document.getElementById("box3"); // Box 3 Button
-
     if(box=="A")
     {
         box1.children[0].classList.add("slide-mystry"); //Show Lock 1
@@ -150,10 +159,6 @@ function openBox(box)
 
 function lockBox(box)
 {
-    const box1 = document.getElementById("box1"); // Box 1 Button
-    const box2 = document.getElementById("box2"); // Box 2 Button
-    const box3 = document.getElementById("box3"); // Box 3 Button
-
     if(box=="A")
     {
         box1.children[1].classList.add("show"); //Show Lock 1
@@ -169,10 +174,6 @@ function lockBox(box)
 }
 function unlockBox(box)
 {
-    const box1 = document.getElementById("box1"); // Box 1 Button
-    const box2 = document.getElementById("box2"); // Box 2 Button
-    const box3 = document.getElementById("box3"); // Box 3 Button
-
     if(box=="A")
     {
         box1.children[1].classList.remove("show");
@@ -192,10 +193,23 @@ function unlockBox(box)
 
 
 
-function hostMsg(msg)
+function hostMsg(msg,delay)
+{
+    var typewriter = new Typewriter(msgBox, {
+        loop: false,
+        delay: 25,
+    });
+    typewriter
+        .deleteAll()
+        .typeString(msg)
+        .stop().start();
+    return new Promise((resolve, reject) => {
+        setTimeout(()=>{resolve(true);},delay);})
+}
+
+
+function delay(delay)
 {
     return new Promise((resolve, reject) => {
-        console.log(msg);
-        resolve(true);
-    })
+        setTimeout(()=>{resolve(true);},delay);})
 }
