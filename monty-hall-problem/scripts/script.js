@@ -10,6 +10,7 @@ var box3 = null;
 var submitBtn = null;
 var playername = null;
 var submitStat = false;
+var gamePlayStat = false;
 
 ////////////////////////
 //    INITIALIZATION  //
@@ -30,8 +31,13 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 function submitData(data)
 {
-    if(!submitStat) httpGETAsync(scriptAPI + data, (response) => {hostMsg(response);submitStat=true;});
-    else hostMsg("You've already Submitted! Please Reload to play again.");
+    if(!submitStat&&gamePlayStat) httpGETAsync(scriptAPI + data, (response) => {hostMsg(response);submitStat=true;});
+    else 
+    {
+        if(submitStat) hostMsg("You've already Submitted! Please Reload to play again.");
+        else if(!gamePlayStat) hostMsg("Please Play the game before submitting results.");
+        else hostMsg("Error while submitting! Please reload the page and try again.")
+    }
 }
 
 //////////////////////////
@@ -132,6 +138,7 @@ async function game()
     
 
     //Submit Result
+    gamePlayStat = true;
     playername = document.getElementById("input").value;
     let data = "name="+playername+"&choice1="+choice1+"&choice2="+choice2+"&prize="+prize;
     submitData(data);
