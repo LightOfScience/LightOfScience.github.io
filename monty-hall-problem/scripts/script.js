@@ -31,7 +31,12 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 function submitData(data)
 {
-    if(!submitStat&&gamePlayStat) httpGETAsync(scriptAPI + data, (response) => {hostMsg(response);submitStat=true;});
+    if(!submitStat&&gamePlayStat) httpGETAsync(scriptAPI + data, (response) => {
+        if(JSON.parse(response).status==true) {
+            hostMsg("Your gameplay has been successfully submitted.");submitStat=true;
+        }
+        else hostMsg("Error occured. Please reload and replay.");
+    });
     else 
     {
         if(submitStat) hostMsg("You've already Submitted! Please Reload to play again.");
@@ -79,14 +84,14 @@ async function game()
     
     //Phase 1
     console.log("Phase 1");
-    await hostMsg("Hello, Welcome to the game of Statistics.",3000);
-    await hostMsg("There are, three boxes. Only one of them contains a reward. Choose wisely!");
+    await hostMsg("রাশিবিজ্ঞানের এই খেলায় আপনাকে স্বাগত।",3000);
+    await hostMsg("এখানে তিনটি বাক্স আছে। কোন একটির পেছনে রয়েছে পুরস্কার। ভেবেচিন্তে একটি বাক্স নির্বাচন করুন।");
     choice1 = await selectBox(); 
     lockBox(choice1);
 
     //Phase 2
     console.log("Phase 2");
-    await hostMsg("So, You've selected Box "+ choice1 + ". Now, I'me revealing one box.",1000);
+    await hostMsg("তাহলে আপনি "+ choice1 + " বাক্স নির্বাচন করেছেন। আপনার সুবিধার জন্য আমি একটি বাক্স খুলে দিচ্ছি।",1000);
     if(choice1==prize)
     {
         if(choice1=="A")
@@ -119,7 +124,7 @@ async function game()
 
     //Phase 3
     console.log("Phase 3");
-    await hostMsg("Do you want to change your choice? Choose Wisely!");
+    await hostMsg("এখন আপনি কী আপনার আগের সিদ্ধান্ত বদলাতে চান? ভেবেচিন্তে নতুন বাক্স নির্বাচন করুন।");
     unlockBox(choice1);
     choice2 = await selectBox(); 
     lockBox(choice2);
@@ -127,14 +132,14 @@ async function game()
 
     //Phase 4
     console.log("Phase 4");
-    if(choice1==choice2) await hostMsg("So, you have not switched!. Now lets see if this was a wise decision.",4000);
-    else await hostMsg("So, you have switched!. Now lets see if this was a wise decision.",4000);
+    if(choice1==choice2) await hostMsg("তাহলে, আপনি আপনার আগের সিদ্ধান্তে অটল!   দেখা যাক আপনার সিদ্ধান্ত কতটা ফল্প্রসু হল...",4000);
+    else await hostMsg("তাহলে আপনি সিদ্ধান্ত পরিবর্তন করেছেন!   দেখা যাক আপনার সিদ্ধান্ত কতটা ফল্প্রসু হল...",4000);
     openBox("A");
     openBox("B");
     openBox("C");
     unlockBox(choice2);
-    if(choice2==prize) await hostMsg("CONGRATULATIONS! You have WON!!!");
-    else await await hostMsg("SORRY! You have LOST!!!");
+    if(choice2==prize) await hostMsg("CONGRATULATIONS! You've WON!!!");
+    else await await hostMsg("SORRY! You've LOST!!!");
     
 
     //Submit Result
@@ -257,3 +262,13 @@ function delay(delay)
         setTimeout(()=>{resolve(true);},delay);})
 }
 ////////////////////////////////////////////////////////
+
+
+
+//////////////////////////////////////////////////
+// Reload    /////////////////////////////////////
+/////////////////////////////////////////////////
+function reload()
+{
+    location.reload();
+}
